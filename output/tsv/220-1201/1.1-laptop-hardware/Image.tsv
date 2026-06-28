@@ -2,4 +2,11 @@
 #html:true
 #tags column:11
 #columns:Card ID	Prompt	Question Image	Answer	Answer Image	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
-1.1-I001	<p>Which memory module is commonly used in laptops?</p>	"<img src=""laptop-memory-question.svg"">"	<p>SO-DIMM</p>	"<img src=""laptop-memory-answer.svg"">"	<p>SO-DIMM modules are smaller than desktop DIMMs and are commonly used in laptops.</p>	easy	image	1.1	Original OpenAPlus diagram	A+::220-1201::1.1 A+::220-1201::LaptopHardware Image HighYield Memory ImageOcclusionStyle
+1.1-I001	<p>Which illustrated module—A or B—is the SO-DIMM?</p>	"<img src=""laptop-memory-question.svg"">"	<p><strong>Module B</strong>.</p>	"<img src=""laptop-memory-answer.svg"">"	"<h3>Why</h3>
+<p>The original comparison diagram shows module B as the shorter memory-module form factor. SO-DIMM is commonly used where space is constrained.</p>
+<h3>Related Cards</h3>
+<p><code>1.1-B001</code> tests upgrade selection; <code>1.1-C001</code> tests the acronym expansion. This card tests visual recognition.</p>"	easy	image	1.1	Professor Messer 220-1201 v1.70 p.1; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.1; Original OpenAPlus diagram	A+::220-1201::1.1 A+::220-1201::LaptopHardware Image Memory Identification
+1.1-I002	<p>Which labeled path—A, B, or C—shows the common Wi-Fi antenna routing?</p>	"<img src=""laptop-wifi-antennas-question.svg"">"	<p><strong>Path A</strong>, around the display assembly.</p>	"<img src=""laptop-wifi-antennas-answer.svg"">"	"<h3>Why</h3>
+<p>The source places multiple antenna wires around the laptop screen, including main and auxiliary Wi-Fi leads.</p>
+<h3>Related Cards</h3>
+<p><code>1.1-B012</code> tests identifying the routed wires; this card tests their placement visually.</p>"	easy	image	1.1	Professor Messer 220-1201 v1.70 p.2; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.1; Original OpenAPlus diagram	A+::220-1201::1.1 A+::220-1201::LaptopHardware Image WiFi Antenna Identification
