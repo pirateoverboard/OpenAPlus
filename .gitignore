@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+.coverage
+htmlcov/
+
+# Docusaurus / Node.js
+node_modules/
+website/.docusaurus/
+website/build/
+website/.cache-loader/
+npm-debug.log*
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local configuration
+.env
+.env.*
+!.env.example
