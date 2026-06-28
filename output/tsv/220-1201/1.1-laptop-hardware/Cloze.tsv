@@ -1,0 +1,5 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.1-C001	<p>Modern laptops commonly use {{c1::SO-DIMM}} memory.</p>	<p>SO-DIMM stands for Small Outline Dual In-line Memory Module.</p>	<p>Do not confuse SO-DIMM laptop memory with larger desktop DIMMs.</p>	easy	cloze	1.1	Phase 2 prompt example	A+::220-1201::1.1 A+::220-1201::LaptopHardware Cloze HighYield Memory

@@ -9,7 +9,7 @@ description = "Open-source learning platform for CompTIA certifications"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "LICENSE-CONTENT"]
 authors = [{ name = "OpenAPlus contributors" }]
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
@@ -21,7 +21,10 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Typing :: Typed",
 ]
-dependencies = []
+dependencies = [
+  "Markdown>=3.7",
+  "PyYAML>=6.0.2",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -41,8 +44,11 @@ packages = ["src/openaplus"]
 [tool.hatch.build.targets.sdist]
 include = [
   "/LICENSE",
+  "/LICENSE-CONTENT",
   "/README.md",
+  "/docs",
   "/pyproject.toml",
+  "/scripts",
   "/src",
   "/tests",
 ]

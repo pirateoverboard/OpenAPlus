@@ -16,9 +16,13 @@ Educational contributions must be original or compatible with CC BY 4.0 and
 must include required attribution. Do not contribute exam dumps, recalled exam
 questions, or copyrighted material from proprietary study products.
 
-By contributing educational content under `docs/`, you agree to license it
+By contributing educational content under `content/` or `docs/`, diagrams under
+`assets/diagrams/`, or derived content under `output/`, you agree to license it
 under CC BY 4.0. By contributing code or configuration elsewhere, you agree to
 license it under MIT unless the file explicitly states otherwise.
+
+Card contributors must follow the [card schema](docs/CARD_SCHEMA.md), preserve
+published card IDs, and include generated TSV changes in the same pull request.
 
 ## Reporting security issues
 

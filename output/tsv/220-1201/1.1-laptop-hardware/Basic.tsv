@@ -1,0 +1,5 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.1-B001	<p>What does SO-DIMM stand for, and where is it commonly used?</p>	<p><strong>Small Outline Dual In-line Memory Module</strong>; used in laptops and many mobile devices.</p>	<p>Desktop systems usually use larger DIMMs. SO-DIMMs are designed for compact systems.</p>	easy	basic	1.1	Phase 2 prompt example	A+::220-1201::1.1 A+::220-1201::LaptopHardware Basic HighYield Scenario Memory

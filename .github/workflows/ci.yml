@@ -34,6 +34,18 @@ jobs:
         run: ruff check .
       - name: Check formatting
         run: ruff format --check .
+      - name: Validate cards
+        run: python scripts/validate.py
+      - name: Build content outputs
+        run: python scripts/build.py
+      - name: Check generated outputs
+        run: |
+          changes="$(git status --porcelain --untracked-files=all -- output/tsv)"
+          if [[ -n "$changes" ]]; then
+            echo "Generated TSV output is missing, stale, or uncommitted:"
+            echo "$changes"
+            exit 1
+          fi
       - name: Test
         run: pytest
       - name: Build package
