@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-06-28 — Objective 1.1 accepted with documented scope caveats
+
+- Objective 1.1 accepted with documented scope caveats for camera/webcam
+  placement and wireless-card replacement details.
+- Maintainer accepted the camera/webcam and wireless-card replacement-detail
+  caveats for this pass because the available approved source material does not
+  provide enough source-backed detail to create reliable OpenAPlus cards for
+  those items. These caveats remain documented and may be revisited later if
+  approved sources are added.
+- Manual Anki smoke test: Passed in the `OpenAPlus Import Test` profile/deck.
+- Basic, Cloze, and Image TSV imports verified with custom OpenAPlus Basic,
+  Cloze, and Image note types.
+- Expected note count: 19; actual note count: 19.
+- Import headers were not imported as notes.
+- Card ID was first field and used for duplicate/update behavior.
+- HTML rendered correctly.
+- Cloze cards generated correctly.
+- Instructor Notes displayed correctly after answer reveal.
+- Tags imported correctly as Anki metadata, not learner-facing fields.
+- Media pipeline verified: generated media was installed into
+  `collection.media`, and image media rendered correctly.
+- Re-import updated existing notes instead of duplicating them.
+- No Objective 1.2 content was created.
+
 ## 2026-06-28 — Independent-review corrections
 
 - Rewrote `1.1-B005` to test model-specific keyboard replacement planning,
@@ -13,11 +37,9 @@
 - Redesigned `1.1-I001` as an original A/B DIMM versus SO-DIMM comparison and
   redesigned `1.1-I002` with three neutral candidate cable paths.
 - Removed unsupported repair-detail and antenna-fault prose from the study guide.
-- Added an explicit not-accepted scope status for camera/webcam and wireless-card
+- Added explicit documented scope caveats for camera/webcam and wireless-card
   replacement details. No Objective 1.2 content was created.
-- Applied all concrete changes requested by the independent review; follow-up
-  reviewer approval remains pending.
-- Anki smoke testing remains pending and continues to block acceptance.
+- Applied all concrete changes requested by the independent review.
 
 ## 2026-06-28 — Objective 1.1 authoring
 
@@ -50,7 +72,7 @@
 
 - Self-review completed for wording, source attribution, atomicity, duplication,
   HighYield rationale, and diagram originality.
-- Independent content review requested corrections; follow-up approval is still
-  required before production acceptance.
-- Anki smoke testing is still required because this objective contains image
-  cards; no Anki installation is available in the authoring environment.
+- Independent content review requested corrections; follow-up review accepted
+  Objective 1.1 with documented scope caveats.
+- Manual Anki smoke testing passed for Basic, Cloze, and Image imports,
+  including media rendering and re-import update behavior.

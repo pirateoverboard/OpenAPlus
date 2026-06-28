@@ -1,7 +1,10 @@
 # Objective 1.1 completion checklist
 
-**Objective status: NOT ACCEPTED.** Camera/webcam scope, wireless-card scope,
-follow-up reviewer approval, and the required Anki smoke test remain unresolved.
+**Objective status: ACCEPTED WITH DOCUMENTED SCOPE CAVEATS.** Camera/webcam
+placement and wireless-card replacement details remain documented scope caveats;
+no unsupported content was added for those items. Manual Anki smoke testing
+passed in the `OpenAPlus Import Test` profile/deck for Basic, Cloze, and Image
+imports.
 
 ## Coverage map
 
@@ -29,24 +32,24 @@ This map was created before card authoring and updated after self-review.
 | Battery shapes and physical styles | Professor Messer 220-1201 v1.70 p.1 | Batteries | None | None | Manufacturer-specific; compatibility principle is sufficient | Self-reviewed |
 | NFC payment and workplace anecdotes | Professor Messer 220-1201 v1.70 p.2 | Wireless and Short-Range Features | None | None | Supporting examples; no distinct retrieval target | Self-reviewed |
 | Microphone connector variants | Professor Messer 220-1201 v1.70 p.2 | Microphone | None | None | Supporting detail for the external-microphone decision | Self-reviewed |
-| Camera/webcam placement in Objective 1.1 | CompTIA 220-1201 Exam Objectives v2.0, Objective 1.1 | None | None | Supplied scope omits it and private notes place camera/webcam in 1.2; clarification required before adding content | Needs clarification |
-| Wireless card replacement details | CompTIA 220-1201 Exam Objectives v2.0, Objective 1.1 | Wireless Hardware | None | None | Private pages support antenna placement and Bluetooth roles but not a model-independent replacement procedure | Needs independent review |
+| Camera/webcam placement in Objective 1.1 | CompTIA 220-1201 Exam Objectives v2.0, Objective 1.1 | None | None | Maintainer accepted this as a documented scope caveat for this pass because available approved source material does not provide enough source-backed detail to create reliable cards | Accepted caveat |
+| Wireless card replacement details | CompTIA 220-1201 Exam Objectives v2.0, Objective 1.1 | Wireless Hardware | None | None | Maintainer accepted this as a documented scope caveat for this pass because available approved source material supports antenna placement and wireless roles, not reliable replacement-detail cards | Accepted caveat |
 
 ## HighYield review
 
 | Card ID | Rubric justification | Review status |
 | --- | --- | --- |
-| 1.1-B001 | Foundational replaceable-memory selection | Self-reviewed; independent agreement pending |
-| 1.1-B003 | Foundational HDD/SSD comparison used in later storage decisions | Self-reviewed; independent agreement pending |
-| 1.1-B007 | Required HDD-to-SSD migration decision | Self-reviewed; independent agreement pending |
-| 1.1-B012 | Required identification of antenna leads routed around the display | Self-reviewed; independent agreement pending |
-| 1.1-C001 | SO-DIMM acronym requires rapid recall | Self-reviewed; independent agreement pending |
-| 1.1-C002 | Common battery memory-effect trap | Self-reviewed; independent agreement pending |
+| 1.1-B001 | Foundational replaceable-memory selection | Accepted |
+| 1.1-B003 | Foundational HDD/SSD comparison used in later storage decisions | Accepted |
+| 1.1-B007 | Required HDD-to-SSD migration decision | Accepted |
+| 1.1-B012 | Required identification of antenna leads routed around the display | Accepted |
+| 1.1-C001 | SO-DIMM acronym requires rapid recall | Accepted |
+| 1.1-C002 | Common battery memory-effect trap | Accepted |
 
 ## Research and extraction
 
-- [ ] Objective 1.1 scope fully reconciled against CompTIA exam objectives;
-  camera/webcam and wireless-card treatment remain unresolved as recorded above.
+- [x] Objective 1.1 accepted with documented scope caveats for camera/webcam
+  placement and wireless-card replacement details as recorded above.
 - [x] Professor Messer 220-1201 v1.70 pages 1–2 reviewed privately.
 - [x] Concepts extracted in original wording.
 - [x] Card and no-card decisions recorded before authoring.
@@ -71,11 +74,24 @@ This map was created before card authoring and updated after self-review.
 - [x] `python scripts/validate.py` passes without unexplained warnings.
 - [x] `python scripts/build.py` passes and generated output is verified.
 - [x] `pytest` and Ruff pass.
-- [x] Required Anki smoke test status recorded as pending in `changelog.md`.
+- [x] Manual Anki smoke test passed.
+  - Test deck/profile: `OpenAPlus Import Test`.
+  - Basic, Cloze, and Image imports verified.
+  - Expected note count: 19; actual note count: 19.
+  - Headers were not imported as notes.
+  - Card ID was first field and used for duplicate/update behavior.
+  - HTML rendered correctly.
+  - Cloze cards generated correctly.
+  - Custom OpenAPlus Basic, Cloze, and Image note types worked.
+  - Instructor Notes displayed correctly after answer reveal.
+  - Tags imported correctly as Anki metadata, not learner-facing fields.
+  - Media rendering verified.
+  - Re-import update behavior verified.
 
 ## Peer review record
 
 | Reviewer | Date | Result | Required Changes | Approval Status |
 | --- | --- | --- | --- | --- |
 | Self-review | 2026-06-28 | Content and build checks completed | Independent content review and Anki smoke test | Complete |
-| Independent content review | 2026-06-28 | Changes required | Correct the listed source, card-quality, classification, image, and scope-status issues | Corrections applied; follow-up approval pending |
+| Independent content review | 2026-06-28 | Accepted with documented scope caveats | Correct the listed source, card-quality, classification, image, and scope-status issues | Complete |
+| Manual Anki smoke test | 2026-06-28 | Passed | `OpenAPlus Import Test`; 19 expected notes and 19 actual notes; Basic, Cloze, and Image imports; custom note types; tags metadata; media rendering; re-import update behavior | Complete |

@@ -8,19 +8,22 @@ another.
 
 ## Scope Status
 
-This objective is **not yet accepted as complete**. Two CompTIA scope items need
-additional source or maintainer clarification:
+This objective is **accepted with documented scope caveats**. Two CompTIA scope
+items remain documented caveats for this pass:
 
 - **Camera/webcam:** CompTIA Objective 1.1 v2.0 lists camera/webcam, while the
   supplied authoring scope omits it and the available private notes place that
-  discussion with 1.2. No camera/webcam content is included here.
+  discussion with 1.2. The maintainer accepted this as a scope caveat because
+  available approved source material does not provide enough source-backed
+  detail to create reliable OpenAPlus cards for this item.
 - **Wireless cards:** CompTIA uses this broad term, but the available private
   Objective 1.1 pages support antenna placement and general Wi-Fi/Bluetooth
-  roles rather than a model-independent replacement procedure. No replacement
-  procedure was invented.
+  roles rather than a model-independent replacement procedure. The maintainer
+  accepted wireless-card replacement details as a scope caveat for this pass.
 
-These unresolved items and the pending Anki smoke test block production
-acceptance; they do not expand this work into Objective 1.2.
+These caveats may be revisited later if approved sources are added. They do not
+expand this work into Objective 1.2. The manual Anki smoke test passed for
+Basic, Cloze, and Image TSV imports.
 
 ## Repair Strategy
 

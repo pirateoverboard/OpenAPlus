@@ -17,12 +17,15 @@ distributed in this phase.
 
 For each TSV type:
 
-1. Select or create a note type whose fields match the `#columns` line, in the
-   same order. Card ID must be its first field.
-2. Use a Cloze-derived note type for `Cloze.tsv`; its template must apply the
-   cloze filter to the Text field.
+1. Select or create a custom OpenAPlus note type whose fields match the
+   `#columns` line, in the same order. Card ID must be its first field.
+2. Use separate OpenAPlus Basic, Cloze, and Image note types. The Cloze note
+   type must be Cloze-derived, and its template must apply the cloze filter to
+   the Text field.
 3. Confirm the separator is Tab, HTML is enabled, and the final field maps to
-   Tags. The file headers normally set these options automatically.
+   Anki's special Tags metadata row. Tags should not be imported as a normal
+   learner-facing note field. The file headers normally set these options
+   automatically.
 4. Enable updating when the first field matches. Anki will then use the stable
    Card ID to update existing notes without replacing review history.
 
@@ -122,11 +125,13 @@ Record the result in the objective's `checklist.md` or `changelog.md`.
 8. Verify HTML renders rather than appearing as markup.
 9. Verify every expected Cloze card is generated correctly.
 10. Verify generated and custom tags are assigned correctly.
-11. Verify `question_image` appears on the front.
-12. Verify `answer_image` appears on the back.
-13. Re-import the same files and confirm notes update rather than duplicate.
-14. Confirm note counts match the data rows in the TSV files.
-15. Record the date, Anki version, tester, files tested, note counts, and result.
+11. Verify tags are Anki metadata, not visible learner-facing fields.
+12. Verify the OpenAPlus Basic, Cloze, and Image note types render as expected.
+13. Verify `question_image` appears on the front.
+14. Verify `answer_image` appears on the back.
+15. Re-import the same files and confirm notes update rather than duplicate.
+16. Confirm note counts match the data rows in the TSV files.
+17. Record the date, Anki version, tester, files tested, note counts, and result.
 
 ### Pass/fail criteria
 
@@ -135,6 +140,6 @@ import creates no duplicate notes, and observed counts equal expected data rows.
 An image check is not applicable when the objective has no Image TSV.
 
 Any unexpected note, missing or duplicate note, literal HTML, incorrect tag,
-broken Cloze, missing image, or update failure is a failed test. Record the
-failure and do not accept the objective until it is resolved and the complete
-smoke test passes.
+tag imported as a normal learner-facing field, broken Cloze, missing image, or
+update failure is a failed test. Record the failure and do not accept the
+objective until it is resolved and the complete smoke test passes.
