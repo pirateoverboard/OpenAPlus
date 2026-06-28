@@ -40,9 +40,9 @@ jobs:
         run: python scripts/build.py
       - name: Check generated outputs
         run: |
-          changes="$(git status --porcelain --untracked-files=all -- output/tsv)"
+          changes="$(git status --porcelain --untracked-files=all -- output/tsv output/media)"
           if [[ -n "$changes" ]]; then
-            echo "Generated TSV output is missing, stale, or uncommitted:"
+            echo "Generated output is missing, stale, or uncommitted:"
             echo "$changes"
             exit 1
           fi

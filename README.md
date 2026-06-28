@@ -57,17 +57,18 @@ Validate all source cards:
 python scripts/validate.py
 ```
 
-Run validation and generate all TSV files:
+Run validation and generate all TSV and staged media files:
 
 ```bash
 python scripts/build.py
 ```
 
-Generated files are written below. The build replaces this complete tree, so
-deleted or renamed objectives cannot leave stale TSV files.
+Generated files are written below. The build replaces these complete trees, so
+deleted or renamed objectives cannot leave stale TSV or media files.
 
 ```text
 output/tsv/
+output/media/
 ```
 
 The supported card types are:
@@ -82,7 +83,9 @@ Instructor Notes are required for accepted production cards unless the
 objective checklist or changelog explains why they add no value.
 
 Image cards mimic image occlusion with separate concealed and revealed images.
-They do not generate native Anki Image Occlusion notes or APKG packages.
+Their generated TSV fields reference staged media filenames only; copy the
+matching files from `output/media/<exam>/<objective>/` into Anki media during
+import. They do not generate native Anki Image Occlusion notes or APKG packages.
 
 Markdown source is converted to HTML in generated TSV fields. Every TSV uses
 Card ID as its first field and includes Anki headers for tab separation, HTML,

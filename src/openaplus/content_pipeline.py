@@ -40,6 +40,7 @@ _FRONT_MATTER = re.compile(
 _HEADING = re.compile(r"^##[ \t]+(?P<name>.+?)[ \t]*$")
 _FENCE_OPEN = re.compile(r"^[ ]{0,3}(?P<fence>`{3,}|~{3,})[^\r\n]*$")
 _VALID_CLOZE = re.compile(r"\{\{c[1-9]\d*::[^{}\r\n]+\}\}")
+_IMAGE_SOURCE = re.compile(r'<img\s+src="(?P<src>[^"]+)">')
 _ID = re.compile(r"^(?P<objective>\d+(?:\.\d+)+)-(?P<kind>[BCI])(?P<number>\d{3})$")
 _OBJECTIVE_DIRECTORY = re.compile(
     r"^(?P<objective>\d+(?:\.\d+)+)-[a-z0-9]+(?:-[a-z0-9]+)*$"
@@ -115,6 +116,7 @@ class ErrorCode(StrEnum):
     INVALID_YAML = "OA016_INVALID_YAML"
     DUPLICATE_SECTION = "OA017_DUPLICATE_SECTION"
     NO_CARDS = "OA018_NO_CARDS"
+    INVALID_MEDIA_REFERENCE = "OA019_INVALID_MEDIA_REFERENCE"
 
 
 class WarningCode(StrEnum):
@@ -593,6 +595,12 @@ def final_tags(metadata: dict[str, Any]) -> list[str]:
     return ordered
 
 
+def rendered_objective(metadata: dict[str, Any]) -> str:
+    """Return the Anki display value for the Objective field."""
+
+    return f"{metadata['exam']} {metadata['objective']} - {metadata['objective_name']}"
+
+
 def _validate_tags(card: Card, errors: list[ValidationIssue]) -> None:
     tags = card.metadata.get("tags")
     if not isinstance(tags, list):
@@ -644,6 +652,16 @@ def _validate_images(
                     ErrorCode.MISSING_IMAGE,
                     card.path,
                     f"missing or invalid image metadata: {field}",
+                )
+            )
+            continue
+        source_path = Path(value)
+        if source_path.is_absolute() or ".." in source_path.parts:
+            errors.append(
+                ValidationIssue(
+                    ErrorCode.INVALID_IMAGE_PATH,
+                    card.path,
+                    f"image path must be relative without traversal: {value}",
                 )
             )
             continue
@@ -791,7 +809,7 @@ def _tsv_row(card: Card, card_type: str) -> tuple[str, ...]:
     common = (
         str(metadata["difficulty"]),
         str(metadata["type"]),
-        str(metadata["objective"]),
+        rendered_objective(metadata),
         "; ".join(metadata["source"]),
         " ".join(final_tags(metadata)),
     )
@@ -816,17 +834,154 @@ def _tsv_row(card: Card, card_type: str) -> tuple[str, ...]:
     return (
         card_id,
         markdown_to_html(card.sections["Prompt"]),
-        _image_reference(str(metadata["question_image"])),
+        _image_reference(card, "question_image"),
         markdown_to_html(card.sections["Answer"]),
-        _image_reference(str(metadata["answer_image"])),
+        _image_reference(card, "answer_image"),
         notes,
         *common,
     )
 
 
-def _image_reference(path: str) -> str:
-    filename = Path(path).name
+def media_filename(card: Card, field: str) -> str:
+    """Return the deterministic staged Anki media filename for one image field."""
+
+    suffix = Path(str(card.metadata[field])).suffix.lower()
+    role = "question" if field == "question_image" else "answer"
+    return f"{card.metadata['id']}-{role}{suffix}"
+
+
+def _image_reference(card: Card, field: str) -> str:
+    filename = media_filename(card, field)
     return f'<img src="{html.escape(filename, quote=True)}">'
+
+
+def build_media(
+    cards: list[Card], content_root: Path, repository_root: Path, media_root: Path
+) -> list[Path]:
+    """Stage image-card media into the complete output media tree atomically."""
+
+    content_root = content_root.resolve()
+    repository_root = repository_root.resolve()
+    media_root = media_root.resolve()
+    media_root.parent.mkdir(parents=True, exist_ok=True)
+    temporary_root = Path(
+        tempfile.mkdtemp(prefix=f".{media_root.name}-", dir=media_root.parent)
+    )
+    backup_root: Path | None = None
+    try:
+        relative_outputs: list[Path] = []
+        for card in sorted(cards, key=lambda item: str(item.metadata["id"])):
+            if card.metadata.get("type") != "image":
+                continue
+            relative_path = card.path.resolve().relative_to(content_root)
+            objective_directory = relative_path.parent.parent.name
+            exam = str(card.metadata["exam"])
+            for field in ("question_image", "answer_image"):
+                source = (repository_root / str(card.metadata[field])).resolve()
+                relative_output = (
+                    Path(exam) / objective_directory / media_filename(card, field)
+                )
+                destination = temporary_root / relative_output
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source, destination)
+                relative_outputs.append(relative_output)
+
+        if media_root.exists():
+            backup_root = media_root.with_name(f".{media_root.name}-previous")
+            if backup_root.exists():
+                shutil.rmtree(backup_root)
+            media_root.replace(backup_root)
+        try:
+            temporary_root.replace(media_root)
+        except OSError:
+            if backup_root is not None and backup_root.exists():
+                backup_root.replace(media_root)
+            raise
+        if backup_root is not None:
+            shutil.rmtree(backup_root)
+        return [media_root / path for path in relative_outputs]
+    finally:
+        if temporary_root.exists():
+            shutil.rmtree(temporary_root)
+
+
+def validate_generated_media(tsv_root: Path, media_root: Path) -> list[ValidationIssue]:
+    """Validate that generated Image TSV references match staged media files."""
+
+    tsv_root = tsv_root.resolve()
+    media_root = media_root.resolve()
+    errors: list[ValidationIssue] = []
+    referenced: set[Path] = set()
+
+    for image_tsv in sorted(tsv_root.rglob("Image.tsv")):
+        try:
+            relative_directory = image_tsv.parent.relative_to(tsv_root)
+        except ValueError:
+            relative_directory = Path()
+        media_directory = media_root / relative_directory
+        with image_tsv.open(encoding="utf-8", newline="") as handle:
+            for _ in range(4):
+                handle.readline()
+            reader = csv.reader(handle, delimiter="\t")
+            for row_number, row in enumerate(reader, start=5):
+                if len(row) < 5:
+                    continue
+                for value in (row[2], row[4]):
+                    match = _IMAGE_SOURCE.fullmatch(value.strip())
+                    if match is None:
+                        errors.append(
+                            ValidationIssue(
+                                ErrorCode.INVALID_MEDIA_REFERENCE,
+                                image_tsv,
+                                f"row {row_number} has invalid image HTML: {value}",
+                            )
+                        )
+                        continue
+                    src = match.group("src")
+                    source_path = Path(src)
+                    if (
+                        source_path.name != src
+                        or source_path.is_absolute()
+                        or ".." in source_path.parts
+                        or "assets" in source_path.parts
+                    ):
+                        message = (
+                            f"row {row_number} image reference is not "
+                            f"filename-only: {src}"
+                        )
+                        errors.append(
+                            ValidationIssue(
+                                ErrorCode.INVALID_MEDIA_REFERENCE,
+                                image_tsv,
+                                message,
+                            )
+                        )
+                        continue
+                    destination = media_directory / src
+                    referenced.add(destination)
+                    if not destination.is_file():
+                        errors.append(
+                            ValidationIssue(
+                                ErrorCode.MISSING_IMAGE,
+                                image_tsv,
+                                f"TSV references missing staged media file: {src}",
+                            )
+                        )
+
+    actual = (
+        {path for path in media_root.rglob("*") if path.is_file()}
+        if media_root.exists()
+        else set()
+    )
+    for path in sorted(actual - referenced):
+        errors.append(
+            ValidationIssue(
+                ErrorCode.INVALID_MEDIA_REFERENCE,
+                path,
+                "staged media file is not referenced by generated Image.tsv",
+            )
+        )
+    return errors
 
 
 def format_issue(issue: ValidationIssue, repository_root: Path) -> str:

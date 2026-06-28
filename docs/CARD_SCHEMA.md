@@ -24,7 +24,28 @@ The validator rejects malformed YAML and duplicate YAML keys.
 | `source` | list of strings | Non-empty source citations |
 
 Image cards additionally require string-valued `question_image` and
-`answer_image` paths.
+`answer_image` paths. Source images must stay under the approved
+`assets/diagrams/` tree, but generated TSV files reference only staged filenames
+from `output/media/`.
+
+## Rendered Anki fields
+
+Source metadata remains atomic so validation, paths, IDs, and derived tags can
+use stable values. During TSV generation, the Anki `Objective` field is rendered
+as a display value:
+
+```text
+<exam> <objective> - <objective_name>
+```
+
+For example, source metadata `exam: 220-1201`, `objective: "1.1"`, and
+`objective_name: Laptop Hardware` renders as:
+
+```text
+220-1201 1.1 - Laptop Hardware
+```
+
+This display field does not change card IDs, source citations, or derived tags.
 
 ## Difficulty rubric
 

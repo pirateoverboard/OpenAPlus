@@ -12,12 +12,14 @@ import yaml
 import openaplus.content_pipeline as pipeline
 from openaplus.content_pipeline import (
     ErrorCode,
+    build_media,
     derived_tags,
     final_tags,
     generate_tsv,
     markdown_to_html,
     parse_card,
     validate_cards,
+    validate_generated_media,
 )
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -137,6 +139,18 @@ def generated_files(repository: Path) -> dict[str, Path]:
     output = repository / "output" / "tsv"
     paths = generate_tsv(result.cards, repository / "content", output)
     return {path.name: path for path in paths}
+
+
+def generated_outputs(repository: Path) -> tuple[dict[str, Path], list[Path]]:
+    result = validate(repository)
+    assert result.valid
+    output = repository / "output" / "tsv"
+    media = repository / "output" / "media"
+    tsv_paths = generate_tsv(result.cards, repository / "content", output)
+    media_paths = build_media(result.cards, repository / "content", repository, media)
+    errors = validate_generated_media(output, media)
+    assert not errors
+    return {path.name: path for path in tsv_paths}, media_paths
 
 
 def test_valid_basic_cloze_and_image_cards(tmp_path: Path) -> None:
@@ -412,7 +426,7 @@ def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
         "<p>Minimal test note.</p>",
         "easy",
         "basic",
-        "1.1",
+        "220-1201 1.1 - Laptop Hardware",
         "Test fixture",
         "A+::220-1201::1.1 A+::220-1201::LaptopHardware "
         "Basic HighYield Memory Scenario",
@@ -423,14 +437,93 @@ def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
         "<p>Minimal context.</p>",
         "<p>Minimal test note.</p>",
     ]
+    assert cloze_rows[0][6] == "220-1201 1.1 - Laptop Hardware"
     assert image_rows[0][0:6] == [
         "1.1-I001",
         "<p>Identify the item.</p>",
-        '<img src="question.svg">',
+        '<img src="1.1-I001-question.svg">',
         "<p>The item.</p>",
-        '<img src="answer.svg">',
+        '<img src="1.1-I001-answer.svg">',
         "<p>Minimal test note.</p>",
     ]
+    assert image_rows[0][8] == "220-1201 1.1 - Laptop Hardware"
+
+
+def test_media_folder_is_created_and_tsv_references_filenames_only(
+    tmp_path: Path,
+) -> None:
+    write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+
+    files, media_paths = generated_outputs(tmp_path)
+    _, image_rows, _ = read_tsv(files["Image.tsv"])
+
+    assert sorted(path.name for path in media_paths) == [
+        "1.1-I001-answer.svg",
+        "1.1-I001-question.svg",
+    ]
+    assert all(
+        path.parent
+        == tmp_path / "output" / "media" / "220-1201" / "1.1-laptop-hardware"
+        for path in media_paths
+    )
+    assert image_rows[0][2] == '<img src="1.1-I001-question.svg">'
+    assert image_rows[0][4] == '<img src="1.1-I001-answer.svg">'
+    assert "assets/" not in image_rows[0][2]
+    assert "/" not in image_rows[0][2]
+
+
+def test_generated_media_validation_rejects_missing_staged_media(
+    tmp_path: Path,
+) -> None:
+    write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+    result = validate(tmp_path)
+    assert result.valid
+    output = tmp_path / "output" / "tsv"
+    media = tmp_path / "output" / "media"
+
+    generate_tsv(result.cards, tmp_path / "content", output)
+
+    codes = [issue.code for issue in validate_generated_media(output, media)]
+    assert ErrorCode.MISSING_IMAGE in codes
+
+
+def test_build_cli_fails_when_image_file_is_missing(tmp_path: Path) -> None:
+    card_metadata = metadata("1.1-I001", "image")
+    card_metadata["question_image"] = "assets/diagrams/220-1201/1.1/missing.svg"
+    card_metadata["answer_image"] = "assets/diagrams/220-1201/1.1/also-missing.svg"
+    write_card(tmp_path, card_metadata, IMAGE_BODY)
+    environment = os.environ.copy()
+    environment["PYTHONPATH"] = os.pathsep.join(
+        filter(None, [str(PROJECT_ROOT / "src"), environment.get("PYTHONPATH")])
+    )
+
+    completed = subprocess.run(
+        [
+            sys.executable,
+            str(PROJECT_ROOT / "scripts" / "build.py"),
+            "--repository-root",
+            str(tmp_path),
+        ],
+        cwd=PROJECT_ROOT,
+        env=environment,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert completed.returncode == 1
+    assert ErrorCode.MISSING_IMAGE in completed.stdout
+
+
+def test_media_generation_removes_stale_output(tmp_path: Path) -> None:
+    write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+    stale = tmp_path / "output" / "media" / "old-exam" / "old-objective" / "old.svg"
+    stale.parent.mkdir(parents=True)
+    stale.write_text("<svg/>", encoding="utf-8")
+
+    generated_outputs(tmp_path)
+
+    assert not stale.exists()
 
 
 def test_tsv_escapes_tabs_quotes_multiline_and_unicode(tmp_path: Path) -> None:

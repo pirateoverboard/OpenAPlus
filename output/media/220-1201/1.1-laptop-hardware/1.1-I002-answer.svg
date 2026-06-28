@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-labelledby="title description">
+  <title id="title">Laptop Wi-Fi antenna-routing answer</title>
+  <desc id="description">An original laptop diagram highlighting path A around the display assembly as Wi-Fi antenna routing.</desc>
+  <rect width="800" height="520" fill="#f4f7fa"/>
+  <text x="400" y="32" fill="#263746" font-family="sans-serif" font-size="24" font-weight="700" text-anchor="middle">Path A: Wi-Fi antenna leads around the display</text>
+  <rect x="150" y="55" width="500" height="320" rx="18" fill="#263746"/>
+  <rect x="174" y="82" width="452" height="260" rx="8" fill="#dceaf2"/>
+  <circle cx="400" cy="68" r="5" fill="#8fa6b5"/>
+  <rect x="125" y="375" width="550" height="44" rx="8" fill="#9cacb7"/>
+  <path d="M95 419h610l-48 42H143Z" fill="#c8d2d9" stroke="#657985" stroke-width="4"/>
+  <rect x="315" y="426" width="170" height="22" rx="6" fill="#aebbc4"/>
+  <path d="M205 337V115q0-24 24-24h148" fill="none" stroke="#d13c3c" stroke-width="8"/>
+  <path d="M595 337V115q0-24-24-24H423" fill="none" stroke="#176b87" stroke-width="8"/>
+  <path d="M230 398h340" fill="none" stroke="#b7c0c6" stroke-width="7" stroke-dasharray="15 10"/>
+  <path d="M175 445h450" fill="none" stroke="#b7c0c6" stroke-width="7" stroke-dasharray="5 10"/>
+  <g font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    <circle cx="620" cy="145" r="20" fill="#176b87"/><text x="620" y="153" fill="#fff">A</text>
+    <circle cx="592" cy="398" r="20" fill="#aeb8be"/><text x="592" y="406" fill="#fff">B</text>
+    <circle cx="647" cy="445" r="20" fill="#aeb8be"/><text x="647" y="453" fill="#fff">C</text>
+  </g>
+  <rect x="270" y="172" width="260" height="50" rx="8" fill="#fff" stroke="#176b87" stroke-width="3"/>
+  <text x="400" y="204" fill="#176b87" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle">WI-FI ANTENNA LEADS</text>
+</svg>

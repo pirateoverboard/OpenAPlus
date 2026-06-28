@@ -26,19 +26,71 @@ For each TSV type:
 4. Enable updating when the first field matches. Anki will then use the stable
    Card ID to update existing notes without replacing review history.
 
+The `Objective` field is a rendered display field, not the raw source metadata.
+It uses:
+
+```text
+<exam> <objective> - <objective_name>
+```
+
+Example:
+
+```text
+220-1201 1.1 - Laptop Hardware
+```
+
 If an Anki client does not recognize the headers, configure those four settings
 manually. The `#columns` line is a comment, not a data row.
 
 ## Image cards
 
-Image TSV fields contain HTML such as `<img src="laptop-memory-question.svg">`.
-Before importing, copy each referenced source image into Anki's
-`collection.media` directory using the basename shown in the TSV. Do not create
-subdirectories there. The validator prevents different source images from
-sharing a basename.
+Image TSV fields contain HTML such as `<img src="1.1-I001-question.svg">`.
+Before importing, copy the staged files from
+`output/media/<exam>/<objective>/` into Anki's `collection.media` directory
+using the filenames shown in the TSV. Do not create subdirectories there.
+
+The build uses deterministic staged filenames:
+
+- `<card-id>-question.<ext>`
+- `<card-id>-answer.<ext>`
+
+TSV files must reference filenames only. They must not contain source asset
+paths such as `assets/diagrams/...`.
 
 The question image appears on the front and the answer image on the back. This
 is an occlusion-style workflow, not native Anki Image Occlusion.
+
+## Installing Media for Manual Anki Smoke Tests
+
+After running `python scripts/build.py`, install staged media into the local
+Anki profile used for smoke testing. The helper copies files from
+`output/media/<exam>/<objective>/` into the profile's `collection.media`
+directory.
+
+```bash
+python scripts/install_anki_media.py --profile "User 1" --objective 1.1-laptop-hardware
+```
+
+Preview the copy without modifying Anki media:
+
+```bash
+python scripts/install_anki_media.py --profile "User 1" --objective 1.1-laptop-hardware --dry-run
+```
+
+Use an explicit destination when the profile is outside the default Anki
+location:
+
+```bash
+python scripts/install_anki_media.py --media-dir "$HOME/.local/share/Anki2/User 1/collection.media" --objective 1.1-laptop-hardware
+```
+
+By default, the installer is conservative:
+
+- identical existing files are skipped;
+- differing existing files fail the install;
+- `--overwrite` is required to replace differing files;
+- missing source or destination directories fail the install;
+- unsupported file types fail the install.
 
 ## Rendering contract
 
@@ -62,7 +114,8 @@ Record the result in the objective's `checklist.md` or `changelog.md`.
 1. Create a disposable Anki profile or test deck.
 2. Import `Basic.tsv`.
 3. Import `Cloze.tsv`.
-4. Import `Image.tsv` when it exists, after copying its media files.
+4. Import `Image.tsv` when it exists, after copying its staged media files from
+   `output/media/<exam>/<objective>/`.
 5. Verify comment and import headers were not imported as notes.
 6. Verify Card ID is the first field.
 7. Verify the first field is used for duplicate and update detection.
