@@ -1,0 +1,8 @@
+#separator:Tab
+#html:true
+#tags column:11
+#columns:Card ID	Prompt	Question Image	Answer	Answer Image	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.2-I001	<p>Which illustrated connector is USB-C?</p>	"<img src=""1.2-I001-question.svg"">"	<p><strong>Connector B</strong>.</p>	"<img src=""1.2-I001-answer.svg"">"	"<h3>Why</h3>
+<p>The original diagram compares common mobile connector shapes. Connector B is symmetric and reversible, matching the USB-C recognition target.</p>
+<h3>Related Cards</h3>
+<p><code>1.2-B003</code> tests the USB-C feature-support trap. This image card tests visual connector recognition.</p>"	easy	image	220-1201 1.2 - Connecting Mobile Devices	Professor Messer 220-1201 v1.70 p.2; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.2; Original OpenAPlus diagram	A+::220-1201::1.2 A+::220-1201::ConnectingMobileDevices Image HighYield Connector Identification
