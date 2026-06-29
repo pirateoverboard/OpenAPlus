@@ -58,6 +58,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "2.2-wireless-network-technologies": "A+::220-1201::Domain2-Networking",
     "2.3-network-services": "A+::220-1201::Domain2-Networking",
     "2.4-common-network-configuration-concepts": "A+::220-1201::Domain2-Networking",
+    "2.5-networking-hardware-devices": "A+::220-1201::Domain2-Networking",
 }
 _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
 _MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"

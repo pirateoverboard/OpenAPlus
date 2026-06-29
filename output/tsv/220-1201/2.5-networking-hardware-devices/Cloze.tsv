@@ -1,0 +1,14 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.5-C001	<p>NIC stands for {{c1::network interface card}}.</p>	<p>A NIC provides a device's interface to a network.</p>	"<h3>Exam Trap</h3>
+<p>The NIC is the interface hardware; its MAC address identifies that interface for local data-link communication.</p>"	easy	cloze	220-1201 2.5 - Networking Hardware Devices	Professor Messer 220-1201 v1.70 p.16; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.5	A+::220-1201::2.5 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingHardwareDevices Cloze NIC Acronym Source::Messer-v170
+2.5-C002	<p>In a physical MAC address, MAC stands for {{c1::media access control}}.</p>	<p>Switches use MAC addresses when forwarding Ethernet frames on a local network.</p>	"<h3>Exam Trap</h3>
+<p>Do not confuse the NIC's MAC address with its network-layer IP address.</p>"	easy	cloze	220-1201 2.5 - Networking Hardware Devices	Professor Messer 220-1201 v1.70 p.16; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.5	A+::220-1201::2.5 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingHardwareDevices Cloze HighYield MAC Acronym Source::Messer-v170
+2.5-C003	<p>PoE stands for {{c1::Power over Ethernet}}.</p>	<p>PoE can carry electrical power and network data over an Ethernet connection.</p>	"<h3>Why</h3>
+<p>PoE can simplify installation where a separate nearby power outlet is inconvenient, but the source and powered device must support compatible standards.</p>"	easy	cloze	220-1201 2.5 - Networking Hardware Devices	Professor Messer 220-1201 v1.70 p.16; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.5	A+::220-1201::2.5 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingHardwareDevices Cloze PoE Acronym Source::Messer-v170
+2.5-C004	<p>ONT stands for {{c1::optical network terminal}}.</p>	<p>An ONT terminates a provider's optical connection at the customer premises.</p>	"<h3>Exam Trap</h3>
+<p>The ONT is associated with the fiber handoff, not cable or DSL service.</p>"	easy	cloze	220-1201 2.5 - Networking Hardware Devices	Professor Messer 220-1201 v1.70 p.16; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.5	A+::220-1201::2.5 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingHardwareDevices Cloze ONT Acronym Source::Messer-v170
+2.5-C005	<p>DSL stands for {{c1::digital subscriber line}}.</p>	<p>DSL broadband uses telephone-line infrastructure.</p>	"<h3>Source Note</h3>
+<p>This card keeps recall to the explicit hardware acronym; speed and distance comparisons are deferred to Objective 2.7.</p>"	easy	cloze	220-1201 2.5 - Networking Hardware Devices	Professor Messer 220-1201 v1.70 p.16; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.5	A+::220-1201::2.5 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingHardwareDevices Cloze DSL Acronym Source::Messer-v170
