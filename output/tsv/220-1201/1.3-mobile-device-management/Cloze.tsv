@@ -1,0 +1,6 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.3-C006	<p>MDM stands for {{c1::Mobile Device Management}}.</p>	<p>MDM centrally manages mobile-device policies, settings, access control, and application restrictions.</p>	"<h3>Why</h3>
+<p>MDM is the enterprise control layer for company-owned and user-owned mobile devices.</p>"	easy	cloze	220-1201 1.3 - Mobile Device Networks	Professor Messer 220-1201 v1.70 p.5; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.3	A+::220-1201::1.3 A+::220-1201::Domain1-MobileDevices A+::220-1201::MobileDeviceNetworks Cloze HighYield MDM Acronym Source::Messer-v170

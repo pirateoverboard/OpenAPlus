@@ -1,0 +1,16 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.3-B008	<p>An organization wants to require screen locks, configure corporate email, and restrict unauthorized apps on employee mobile devices. What type of system should it use?</p>	<p><strong>Mobile Device Management</strong>.</p>	"<h3>Why</h3>
+<p>MDM centrally applies mobile-device policies, including access controls, app restrictions, and corporate email configuration.</p>
+<h3>Real Help Desk</h3>
+<p>When an enterprise phone “sets itself up,” MDM may be applying policy rather than a user manually configuring each setting.</p>"	medium	basic	220-1201 1.3 - Mobile Device Networks	Professor Messer 220-1201 v1.70 p.5; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.3	A+::220-1201::1.3 A+::220-1201::Domain1-MobileDevices A+::220-1201::MobileDeviceNetworks Basic HighYield Scenario MDM Security Source::Messer-v170
+1.3-B011	<p>A phone is about to synchronize a large amount of business data, and the user has a limited cellular plan. What should you verify before allowing the sync over mobile data?</p>	<p>Verify <strong>data restrictions, data caps, and transfer costs</strong>, and prefer Wi-Fi when appropriate.</p>	"<h3>Why</h3>
+<p>Synchronization can move enough data to create cost or cap problems. The approved source specifically warns that cellular/mobile and 802.11 choices can have financial consequences.</p>
+<h3>Real Help Desk</h3>
+<p>For managed devices, policy may disable cellular downloads or force certain network choices.</p>"	medium	basic	220-1201 1.3 - Mobile Device Networks	Professor Messer 220-1201 v1.70 p.5; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.3	A+::220-1201::1.3 A+::220-1201::Domain1-MobileDevices A+::220-1201::MobileDeviceNetworks Basic HighYield Scenario Synchronization Cellular Source::Messer-v170
+1.3-B012	<p>A user adds a business cloud-storage app to a phone. What two setup tasks are commonly required before data appears on the device?</p>	<p><strong>Authenticate</strong> to the service and <strong>select which items to synchronize</strong>.</p>	"<h3>Why</h3>
+<p>Business applications commonly require username/password authentication and synchronization choices before data appears on the mobile device.</p>
+<h3>Exam Trap</h3>
+<p>Installing the app is not always the same as syncing data. Account setup and sync selection may still be required.</p>"	easy	basic	220-1201 1.3 - Mobile Device Networks	Professor Messer 220-1201 v1.70 p.5; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.3	A+::220-1201::1.3 A+::220-1201::Domain1-MobileDevices A+::220-1201::MobileDeviceNetworks Basic Scenario Synchronization BusinessApps Source::Messer-v170

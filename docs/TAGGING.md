@@ -9,22 +9,42 @@ tags:
 ```
 
 Custom tags must be non-empty and cannot contain whitespace, tabs, or commas.
-The `A+::` namespace and `Basic`, `Cloze`, `Image`, and `HighYield` are reserved.
-Adding a derived tag manually fails validation with
-`OA013_MANUAL_DERIVED_TAG`.
+The `A+::` namespace, `Basic`, `Cloze`, `Image`, `HighYield`, and generated
+source-validation tags such as `Source::Messer-v170` are reserved. Adding a
+derived tag manually fails validation with `OA013_MANUAL_DERIVED_TAG`.
 
 The generator emits tags in this order:
 
 1. `A+::<exam>::<objective>`
-2. `A+::<exam>::<normalized-objective-name>`
-3. `Basic`, `Cloze`, or `Image`
-4. `HighYield` when `high_yield: true`
-5. Custom tags in source order
+2. Domain tags when a domain mapping exists, such as
+   `A+::220-1201::Domain1-MobileDevices`
+3. `A+::<exam>::<normalized-objective-name>`
+4. `Basic`, `Cloze`, or `Image`
+5. `HighYield` when `high_yield: true`
+6. Custom topic tags in source order
+7. Source-validation tags when a validation layer exists, such as
+   `Source::Messer-v170`
 
 Objective names are normalized by removing spaces and non-alphanumeric
 characters. For example, `Mobile Device Networks` becomes
 `MobileDeviceNetworks`. Duplicate tags are removed without changing the order
 of their first occurrence.
+
+## Objective 1.3 domain/source-validation tags
+
+Objective 1.3 is split into domain folders. The generator adds the domain and
+source-validation tags below during TSV export; authors do not write them in
+card front matter.
+
+| Folder | Generated domain tag | Generated source-validation tag |
+| --- | --- | --- |
+| `1.3-mobile-device-networks` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
+| `1.3-mobile-device-management` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
+| `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |
+| `2.1-ip-addressing-and-common-ports` | `A+::220-1201::Domain2-Networking` | `Source::Messer-v170` |
+
+Author-provided tags in these folders are Layer 3 topic tags, such as
+`Bluetooth`, `WiFi`, `MDM`, `BYOD`, or `Synchronization`.
 
 ## HighYield rubric
 
