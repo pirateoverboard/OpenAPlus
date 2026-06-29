@@ -1,0 +1,76 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.3-B001	<p>Users can reach a server by IP address, but the friendly hostname fails. Which network service should be investigated first?</p>	<p><strong>DNS</strong>.</p>	"<h3>Why</h3>
+<p>DNS translates names and IP addresses. A name-only failure points toward the name-resolution service path.</p>
+<h3>Related Cards</h3>
+<p>Objective 2.1 covers common DNS port recall. This card tests network-service symptom recognition.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario DNS NetworkServices Source::Messer-v170
+2.3-B002	<p>A workstation should receive network settings automatically, but it never receives an address from the central service. Which service should be checked?</p>	<p><strong>DHCP</strong>.</p>	"<h3>Why</h3>
+<p>DHCP provides automatic IP address configuration. In larger environments it is commonly centralized and redundant.</p>
+<h3>Exam Trap</h3>
+<p>Do not turn this into manual static addressing until the automatic configuration service has been considered.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario DHCP NetworkServices Source::Messer-v170
+2.3-B003	<p>Authentication events and log timestamps do not line up across systems. Which network service should be checked for synchronized clocks?</p>	<p><strong>NTP</strong>.</p>	"<h3>Why</h3>
+<p>Time synchronization supports authentication, encryption, backups, log timestamps, and troubleshooting timelines.</p>
+<h3>Real Help Desk</h3>
+<p>When logs disagree, verify time before assuming the events happened in the order shown.</p>"	medium	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario NTP TimeSync Source::Messer-v170
+2.3-B004	<p>A department needs centralized storage where users can copy, rename, and delete shared documents. Which network service fits this need?</p>	<p>A <strong>file share</strong>.</p>	"<h3>Why</h3>
+<p>File shares centralize access to files while the user interface hides the underlying protocol details.</p>
+<h3>Exam Trap</h3>
+<p>Do not confuse a file share with a database just because both store information.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario FileShare NetworkServices Source::Messer-v170
+2.3-B005	<p>Multiple network devices need to send jobs to one shared printer. Which network service provides shared printing?</p>	<p>A <strong>print server</strong>.</p>	"<h3>Why</h3>
+<p>A print server provides printing services for network devices. It may be software on a computer or built into the printer.</p>
+<h3>Real Help Desk</h3>
+<p>When every user loses access to the same printer, check the shared print service path before troubleshooting each workstation separately.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario PrintServer NetworkServices Source::Messer-v170
+2.3-B006	<p>Users need a service that stores incoming email and handles outgoing email. Which network service is involved?</p>	<p>A <strong>mail server</strong>.</p>	"<h3>Why</h3>
+<p>Mail servers store incoming mail and send outgoing mail. They are often managed by an ISP or IT department.</p>
+<h3>Related Cards</h3>
+<p>Objective 2.1 covers mail protocol port associations; this card tests service purpose.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario MailServer NetworkServices Source::Messer-v170
+2.3-B007	<p>A browser requests a page, and a server responds with web content. Which network service is providing the page?</p>	<p>A <strong>web server</strong>.</p>	"<h3>Why</h3>
+<p>Web servers respond to browser requests and provide pages to clients.</p>
+<h3>Exam Trap</h3>
+<p>Do not turn this into HTTP/HTTPS port recall; Objective 2.3 is testing the service role.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario WebServer NetworkServices Source::Messer-v170
+2.3-B008	<p>An enterprise wants centralized login authentication for access to multiple resources. Which type of network service is needed?</p>	<p>An <strong>authentication server</strong>.</p>	"<h3>Why</h3>
+<p>Authentication servers centralize login authentication to resources and are commonly enterprise services.</p>
+<h3>Real Help Desk</h3>
+<p>When many unrelated resources reject valid users, check the central authentication path.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario Authentication NetworkServices Source::Messer-v170
+2.3-B009	<p>An application needs a service that stores structured information in tables and lets related data be linked together. Which service type is this?</p>	<p>A <strong>database server</strong>.</p>	"<h3>Why</h3>
+<p>Database servers store structured data. Relational databases organize data in tables and link related information.</p>
+<h3>Source Note</h3>
+<p>This card avoids vendor-specific database product memorization.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario Database NetworkServices Source::Messer-v170
+2.3-B010	<p>A security team wants diverse devices to send event messages to one central logging receiver. Which network service fits this requirement?</p>	<p><strong>Syslog</strong>.</p>	"<h3>Why</h3>
+<p>Syslog centralizes message logging from diverse systems. Central logs help troubleshooting and security review.</p>
+<h3>Exam Trap</h3>
+<p>Do not confuse centralized logging with centralized authentication. They solve different problems.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.9; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario Syslog Logging Source::Messer-v170
+2.3-B011	<p>Clients should send web requests to an intermediate server that fetches the content and returns it, while also allowing filtering and caching. What service is this?</p>	<p>A <strong>proxy server</strong>.</p>	"<h3>Why</h3>
+<p>A proxy performs requests on behalf of clients and may provide access control, caching, URL filtering, or content scanning.</p>
+<h3>Exam Trap</h3>
+<p>The proxy is not the final destination service; it sits between the client and destination.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario Proxy NetworkServices Source::Messer-v170
+2.3-B012	<p>A website uses several back-end servers, but users connect to one front-end service that distributes requests. What network service is providing this distribution?</p>	<p>A <strong>load balancer</strong>.</p>	"<h3>Why</h3>
+<p>Load balancers distribute requests across multiple servers and can help keep services available when one server fails.</p>
+<h3>Exam Trap</h3>
+<p>Do not confuse a load balancer with a backup. It distributes active service traffic.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario LoadBalancer Availability Source::Messer-v170
+2.3-B013	<p>An organization wants to filter unsolicited and phishing email before it reaches users' mailboxes. Which service should handle that filtering?</p>	<p>A <strong>spam gateway</strong>.</p>	"<h3>Why</h3>
+<p>Spam gateways filter unwanted or malicious email before it reaches the user.</p>
+<h3>Source Note</h3>
+<p>This card tests the service purpose, not whether the gateway is on-site or cloud-based.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario SpamGateway Email Source::Messer-v170
+2.3-B014	<p>A small organization wants one appliance that combines firewalling, filtering, malware inspection, VPN endpoint, and other security functions. What class of device fits this description?</p>	<p>An <strong>all-in-one security appliance</strong>, such as a UTM-style device.</p>	"<h3>Why</h3>
+<p>All-in-one security appliances consolidate multiple security and network functions into one platform.</p>
+<h3>Exam Trap</h3>
+<p>Do not memorize an exhaustive feature list. Recognize the consolidated security-appliance role.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario UTM SecurityAppliance Source::Messer-v170
+2.3-B015	<p>A network supports industrial control equipment for manufacturing and must not be reachable from the outside. Which service environment is this most likely describing?</p>	<p><strong>SCADA/ICS</strong>.</p>	"<h3>Why</h3>
+<p>SCADA and ICS environments manage industrial equipment and require strong segmentation.</p>
+<h3>Exam Trap</h3>
+<p>Treat these systems as safety- and operations-critical. Broad outside access is a serious design concern.</p>"	medium	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario SCADA ICS Source::Messer-v170
+2.3-B016	<p>A very old system still runs an important business process. What term describes this kind of older but still important system?</p>	<p>A <strong>legacy system</strong>.</p>	"<h3>Why</h3>
+<p>Legacy systems are older systems that may still be important. Supporting old technology can still be operationally necessary.</p>
+<h3>Exam Trap</h3>
+<p>Old does not automatically mean unimportant or safe to remove.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario LegacySystems NetworkServices Source::Messer-v170
+2.3-B017	<p>A door-security controller is purpose-built and does not normally provide direct operating-system access. What type of system is this?</p>	<p>An <strong>embedded system</strong>.</p>	"<h3>Why</h3>
+<p>Embedded systems are purpose-built devices. Direct access to a general-purpose operating system is not typical.</p>
+<h3>Related Cards</h3>
+<p><code>2.3-B016</code> covers older legacy systems. This card tests purpose-built embedded systems.</p>"	easy	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic Scenario EmbeddedSystems NetworkServices Source::Messer-v170
+2.3-B018	<p>Smart speakers, thermostats, and doorbells are being added to a network. What design choice can limit damage if one of these devices is compromised?</p>	<p>Use <strong>network segmentation</strong> for IoT devices.</p>	"<h3>Why</h3>
+<p>IoT devices may require a segmented network to limit the impact of a security breach.</p>
+<h3>Real Help Desk</h3>
+<p>Low-cost smart devices should not automatically receive the same network trust as business-critical systems.</p>"	medium	basic	220-1201 2.3 - Network Services	Professor Messer 220-1201 v1.70 p.10; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.3	A+::220-1201::2.3 A+::220-1201::Domain2-Networking A+::220-1201::NetworkServices Basic HighYield Scenario IoT Segmentation Source::Messer-v170

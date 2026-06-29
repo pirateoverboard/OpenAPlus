@@ -56,6 +56,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
     "2.1-ip-addressing-and-common-ports": "A+::220-1201::Domain2-Networking",
     "2.2-wireless-network-technologies": "A+::220-1201::Domain2-Networking",
+    "2.3-network-services": "A+::220-1201::Domain2-Networking",
 }
 _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
 _MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"
