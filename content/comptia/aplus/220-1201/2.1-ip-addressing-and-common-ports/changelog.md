@@ -41,3 +41,21 @@
 - LDAPS remains deferred pending approved source support for an exact Objective
   2.1 LDAPS port detail.
 - Wireless 802.11/Bluetooth/RFID/NFC remains excluded as Objective 2.2 content.
+
+## 2026-06-29 — Final acceptance
+
+- Objective 2.1 accepted.
+- Manual Anki smoke test passed in the `OpenAPlus Import Test` deck/profile.
+- Basic.tsv imported successfully.
+- Cloze.tsv imported successfully.
+- Image.tsv was not applicable because Objective 2.1 has no Image cards.
+- Expected note count was 27; actual note count was 27.
+- Headers were not imported as notes.
+- Card ID was first field and used for duplicate/update behavior.
+- HTML rendered correctly.
+- Cloze cards generated correctly.
+- Custom OpenAPlus Basic and Cloze note types worked.
+- Instructor Notes displayed correctly after answer reveal.
+- Tags imported correctly as Anki metadata, not learner-facing fields.
+- Re-import updated existing notes instead of duplicating them.
+- No Objective 2.2 content was created.

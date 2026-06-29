@@ -1,8 +1,7 @@
 # Objective 2.1 completion checklist
 
-**Objective status: DRAFT.** Objective 2.1 has source-backed draft content and
-generated TSV output. It still requires independent content review and a manual
-Anki smoke test before acceptance.
+**Objective status: ACCEPTED.** Objective 2.1 passed independent blocker
+verification and manual Anki smoke testing. It is accepted for this pass.
 
 ## Domain mapping
 
@@ -96,11 +95,34 @@ cited the CompTIA Objective 2.1 reference for those added cards.
 - [x] `python scripts/validate.py` passes without unexplained warnings.
 - [x] `python scripts/build.py` passes and generated output is verified.
 - [x] `pytest` and Ruff pass.
-- [ ] Independent content review completed.
-- [ ] Manual Anki smoke test passed.
+- [x] Independent content review completed.
+- [x] Manual Anki smoke test passed.
+
+## Manual Anki smoke test
+
+| Item | Result |
+| --- | --- |
+| Test deck/profile | OpenAPlus Import Test |
+| Basic.tsv import | Passed |
+| Cloze.tsv import | Passed |
+| Image.tsv import | Not applicable; Objective 2.1 has no Image cards |
+| Expected note count | 27 |
+| Actual note count | 27 |
+| Headers imported as notes | No |
+| Card ID first field and duplicate/update key | Passed |
+| HTML rendering | Passed |
+| Cloze generation | Passed |
+| Custom OpenAPlus note types | Basic and Cloze passed |
+| Instructor Notes after answer reveal | Passed |
+| Tags imported as Anki metadata | Passed |
+| Re-import/update behavior | Existing notes updated without duplication |
+| Result | Pass |
+
+Objective 2.1 accepted. No Objective 2.2 content was created.
 
 ## Peer review record
 
 | Reviewer | Date | Result | Required Changes | Approval Status |
 | --- | --- | --- | --- | --- |
-| Self-review | 2026-06-29 | Draft content and build checks completed | Independent content review and manual Anki smoke test | Pending |
+| Self-review | 2026-06-29 | Draft content and build checks completed | Independent content review and manual Anki smoke test | Complete |
+| Maintainer | 2026-06-29 | Manual Anki smoke test passed | None | Accepted |

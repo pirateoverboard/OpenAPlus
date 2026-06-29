@@ -15,6 +15,7 @@ from openaplus.content_pipeline import (
     build_media,
     derived_tags,
     final_tags,
+    final_tags_for_card,
     generate_tsv,
     markdown_to_html,
     parse_card,
@@ -277,7 +278,13 @@ def test_invalid_custom_tags_are_rejected(tmp_path: Path, tag: str) -> None:
 
 @pytest.mark.parametrize(
     "tag",
-    ["A+::220-1201::1.1", "A+::220-1201::LaptopHardware", "Basic", "HighYield"],
+    [
+        "A+::220-1201::1.1",
+        "A+::220-1201::LaptopHardware",
+        "Basic",
+        "HighYield",
+        "Source::Messer-v170",
+    ],
 )
 def test_manual_derived_tags_are_rejected(tmp_path: Path, tag: str) -> None:
     card_metadata = metadata()
@@ -304,6 +311,68 @@ def test_derived_tags_have_deterministic_order_and_no_duplicates() -> None:
         "HighYield",
         "Memory",
         "Scenario",
+    ]
+
+
+def test_objective_13_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.3-B001")
+    card_metadata.update(
+        {
+            "objective": "1.3",
+            "objective_name": "Mobile Device Networks",
+            "tags": ["Bluetooth", "Pairing"],
+            "source": ["Professor Messer 220-1201 v1.70 p.4"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="1.3-mobile-device-networks",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::1.3",
+        "A+::220-1201::Domain1-MobileDevices",
+        "A+::220-1201::MobileDeviceNetworks",
+        "Basic",
+        "HighYield",
+        "Bluetooth",
+        "Pairing",
+        "Source::Messer-v170",
+    ]
+
+
+def test_objective_21_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("2.1-C001", "cloze")
+    card_metadata.update(
+        {
+            "objective": "2.1",
+            "objective_name": "IP Addressing and Common Ports",
+            "tags": ["TCP", "Ports"],
+            "source": ["Professor Messer 220-1201 v1.70 p.6"],
+            "high_yield": False,
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        CLOZE_BODY,
+        objective_directory="2.1-ip-addressing-and-common-ports",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::2.1",
+        "A+::220-1201::Domain2-Networking",
+        "A+::220-1201::IPAddressingandCommonPorts",
+        "Cloze",
+        "TCP",
+        "Ports",
+        "Source::Messer-v170",
     ]
 
 

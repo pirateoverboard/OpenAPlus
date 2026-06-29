@@ -50,6 +50,14 @@ _RESERVED_TAG = re.compile(r"^A\+::")
 
 _TYPE_LETTERS = {"basic": "B", "cloze": "C", "image": "I"}
 _TYPE_TAGS = {"basic": "Basic", "cloze": "Cloze", "image": "Image"}
+_OBJECTIVE_DOMAIN_TAGS = {
+    "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
+    "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
+    "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
+    "2.1-ip-addressing-and-common-ports": "A+::220-1201::Domain2-Networking",
+}
+_MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
+_MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"
 _SECTION_REQUIREMENTS = {
     "basic": ("Question", "Answer"),
     "cloze": ("Text",),
@@ -595,6 +603,39 @@ def final_tags(metadata: dict[str, Any]) -> list[str]:
     return ordered
 
 
+def final_tags_for_card(card: Card) -> list[str]:
+    """Return deterministic final Anki tags with path-derived domain tags."""
+
+    metadata = card.metadata
+    objective_directory = card.path.resolve().parent.parent.name
+    objective_tag = f"A+::{metadata['exam']}::{metadata['objective']}"
+    normalized_objective_name = normalize_objective_name(metadata["objective_name"])
+    objective_name_tag = f"A+::{metadata['exam']}::{normalized_objective_name}"
+    domain_tag = _OBJECTIVE_DOMAIN_TAGS.get(objective_directory)
+    source_validation_tag = (
+        _MESSER_SOURCE_VALIDATION_TAG
+        if objective_directory in _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES
+        else None
+    )
+    ordered_candidates: list[str | None] = [
+        objective_tag,
+        domain_tag,
+        objective_name_tag,
+        _TYPE_TAGS[metadata["type"]],
+        "HighYield" if metadata["high_yield"] else None,
+        *metadata["tags"],
+        source_validation_tag,
+    ]
+
+    ordered: list[str] = []
+    seen: set[str] = set()
+    for tag in ordered_candidates:
+        if tag is not None and tag not in seen:
+            ordered.append(tag)
+            seen.add(tag)
+    return ordered
+
+
 def rendered_objective(metadata: dict[str, Any]) -> str:
     """Return the Anki display value for the Objective field."""
 
@@ -616,7 +657,11 @@ def _validate_tags(card: Card, errors: list[ValidationIssue]) -> None:
                     f"custom tag contains whitespace, a comma, or is empty: {tag!r}",
                 )
             )
-        if _RESERVED_TAG.match(tag) or tag in {*_TYPE_TAGS.values(), "HighYield"}:
+        if _RESERVED_TAG.match(tag) or tag in {
+            *_TYPE_TAGS.values(),
+            "HighYield",
+            _MESSER_SOURCE_VALIDATION_TAG,
+        }:
             errors.append(
                 ValidationIssue(
                     ErrorCode.MANUAL_DERIVED_TAG,
@@ -811,7 +856,7 @@ def _tsv_row(card: Card, card_type: str) -> tuple[str, ...]:
         str(metadata["type"]),
         rendered_objective(metadata),
         "; ".join(metadata["source"]),
-        " ".join(final_tags(metadata)),
+        " ".join(final_tags_for_card(card)),
     )
     notes = markdown_to_html(card.sections.get("Instructor Notes", ""))
 
