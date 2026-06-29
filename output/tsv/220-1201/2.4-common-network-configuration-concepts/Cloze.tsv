@@ -1,0 +1,14 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.4-C001	<p>A DNS {{c1::A}} record associates a host name with an IPv4 address.</p>	<p>Use AAAA for an IPv6 address.</p>	"<h3>Exam Trap</h3>
+<p>The record name is the letter A; the four-letter AAAA record serves IPv6.</p>"	easy	cloze	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.11; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Cloze HighYield DNS IPv4 Source::Messer-v170
+2.4-C002	<p>A DNS {{c1::AAAA}} record associates a host name with an IPv6 address.</p>	<p>Use A for an IPv4 address.</p>	"<h3>Exam Trap</h3>
+<p>A and AAAA records perform parallel jobs for different IP versions.</p>"	easy	cloze	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.11; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Cloze HighYield DNS IPv6 Source::Messer-v170
+2.4-C003	<p>A DNS {{c1::CNAME}} record makes one name an alias of another host name.</p>	<p>The alias follows the canonical name rather than storing a separate IP address.</p>	"<h3>Why</h3>
+<p>CNAME is useful when multiple service names should resolve through one canonical host name.</p>"	easy	cloze	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.11; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Cloze DNS Alias Source::Messer-v170
+2.4-C004	<p>A DNS {{c1::MX}} record identifies the host name of a domain's mail exchanger.</p>	<p>The named mail host requires its own address record for IP resolution.</p>	"<h3>Exam Trap</h3>
+<p>An MX record points to a host name, not directly to the mail server's IP address.</p>"	easy	cloze	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.12; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Cloze HighYield DNS Email Source::Messer-v170
+2.4-C005	<p>DNS {{c1::TXT}} records publish text used for purposes such as domain verification and email-security information.</p>	<p>SPF, DKIM, and DMARC information can be published through TXT records.</p>	"<h3>Why</h3>
+<p>TXT is a flexible container. The meaning comes from the structured information published in the record.</p>"	easy	cloze	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.12; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Cloze DNS TXT Source::Messer-v170
