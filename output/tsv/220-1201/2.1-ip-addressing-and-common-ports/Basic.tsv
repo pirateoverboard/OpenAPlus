@@ -1,0 +1,40 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.1-B001	<p>An application must recover from lost data and handle messages that arrive out of order. Which transport protocol behavior fits this requirement?</p>	<p>Use <strong>TCP</strong> because it provides connection-oriented, reliable delivery behavior.</p>	"<h3>Why</h3>
+<p>TCP handles transport overhead such as recovery and ordering so the application does not have to solve those problems itself.</p>
+<h3>Exam Trap</h3>
+<p>Do not choose UDP when the requirement specifically calls for retransmission or ordering at the transport layer.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.6; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic HighYield Scenario TCP Transport Source::Messer-v170
+2.1-B002	<p>A real-time service can tolerate some missing data but cannot wait for retransmissions. Which transport protocol is the better fit?</p>	<p>Use <strong>UDP</strong>.</p>	"<h3>Why</h3>
+<p>UDP is connectionless and does not provide TCP-style recovery, ordering, or flow control. That tradeoff can fit time-sensitive traffic.</p>
+<h3>Exam Trap</h3>
+<p>UDP is not “better” than TCP. It is better only when the scenario values low-delay connectionless delivery over transport-layer recovery.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.6; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic HighYield Scenario UDP Transport Source::Messer-v170
+2.1-B003	<p>A firewall rule allows TCP 53, but DNS lookups from clients still fail. What detail should you verify in the rule?</p>	<p>Verify that the rule allows the expected <strong>protocol and port</strong>, such as <strong>UDP 53</strong> for standard DNS queries in this objective.</p>	"<h3>Why</h3>
+<p>Port numbers are not enough by themselves. TCP and UDP have separate port spaces, so the transport protocol matters.</p>
+<h3>Real Help Desk</h3>
+<p>When a rule “opens the port” but traffic still fails, check whether it opened the correct transport protocol.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.6; Professor Messer 220-1201 v1.70 p.7; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic HighYield Scenario Firewall Ports Source::Messer-v170
+2.1-B004	<p>A client connects to a web service. The server listens on a well-known service port, while the client uses a temporary port chosen for that session. What is the temporary client-side port called?</p>	<p>An <strong>ephemeral port</strong>.</p>	"<h3>Why</h3>
+<p>Servers commonly listen on stable service ports. Clients commonly use temporary ports for individual conversations.</p>
+<h3>Exam Trap</h3>
+<p>Do not assume both sides of a conversation use the same port number.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.6; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic Scenario Ports Sockets Source::Messer-v170
+2.1-B005	<p>A technician needs remote terminal access to a network device, but credentials should not be sent in clear text. Which protocol should replace Telnet?</p>	<p>Use <strong>SSH</strong>.</p>	"<h3>Why</h3>
+<p>SSH provides an encrypted remote communication link. Telnet provides remote console-style access but sends communication in clear text.</p>
+<h3>Exam Trap</h3>
+<p>Keep the security distinction separate from the port numbers: SSH uses TCP 22, and Telnet uses TCP 23.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.7; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic HighYield Scenario SSH Telnet Source::Messer-v170
+2.1-B006	<p>A new workstation should automatically receive an IP address, subnet mask, and other network options. Which service provides that configuration?</p>	<p><strong>DHCP</strong>.</p>	"<h3>Why</h3>
+<p>DHCP provides automatic IP configuration from a server, appliance, or integrated network device such as a SOHO router.</p>
+<h3>Related Cards</h3>
+<p><code>2.1-C010</code> tests the DHCP UDP port association.</p>"	easy	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.7; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic HighYield Scenario DHCP IPConfiguration Source::Messer-v170
+2.1-B007	<p>A user can reach a server by IP address but not by its hostname. Which service path should you check first?</p>	<p>Check <strong>DNS</strong> name resolution.</p>	"<h3>Why</h3>
+<p>DNS converts names to IP addresses. If direct IP access works but names fail, name resolution is the focused path to investigate.</p>
+<h3>Exam Trap</h3>
+<p>Do not start by replacing the network adapter when the symptom points to name resolution.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.7; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic HighYield Scenario DNS Troubleshooting Source::Messer-v170
+2.1-B008	<p>An email client can receive messages but cannot send outgoing mail. Which mail protocol path should you check for sending?</p>	<p>Check <strong>SMTP</strong>.</p>	"<h3>Why</h3>
+<p>SMTP is associated with mail transfer and sending mail from a device to a mail server. POP3 and IMAP are used for receiving mail.</p>
+<h3>Exam Trap</h3>
+<p>Do not use POP3 or IMAP as the sending protocol just because the problem involves email.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.7; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic Scenario Email SMTP Source::Messer-v170
+2.1-B009	<p>A user can browse websites and receive email, but cannot reach a shared Windows folder or printer. Which service protocol should be investigated for file and printer sharing?</p>	<p>Check <strong>SMB</strong>.</p>	"<h3>Why</h3>
+<p>SMB is the Windows file-sharing and printer-sharing protocol family. This card tests service recognition, not the exact port recall covered by <code>2.1-C013</code>.</p>
+<h3>Exam Trap</h3>
+<p>Do not troubleshoot this as a web, mail, or DNS issue when the symptom is specifically Windows file/printer sharing.</p>"	medium	basic	220-1201 2.1 - IP Addressing and Common Ports	Professor Messer 220-1201 v1.70 p.7; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.1	A+::220-1201::2.1 A+::220-1201::Domain2-Networking A+::220-1201::IPAddressingandCommonPorts Basic Scenario SMB FileSharing Source::Messer-v170
