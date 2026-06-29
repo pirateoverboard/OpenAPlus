@@ -1,0 +1,32 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.2-B001	<p>A laptop and access point from different vendors can still connect because both follow the same Wi-Fi standards family. Which IEEE standards family is this?</p>	<p><strong>802.11</strong>.</p>	"<h3>Why</h3>
+<p>802.11 is the IEEE wireless networking family used for Wi-Fi. Standards let different vendors build compatible wireless devices.</p>
+<h3>Exam Trap</h3>
+<p>Do not confuse the standards family with a single vendor feature or a router model.</p>"	easy	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic HighYield Scenario WiFi IEEE Source::Messer-v170
+2.2-B002	<p>Several nearby Wi-Fi networks use overlapping frequency groups. What channel-planning goal should improve coexistence when possible?</p>	<p>Use <strong>non-overlapping channels</strong> when possible.</p>	"<h3>Why</h3>
+<p>Channels are groups of frequencies. When nearby networks avoid overlap, they are less likely to compete with each other on the same radio space.</p>
+<h3>Exam Trap</h3>
+<p>Do not jump to replacing hardware before checking basic wireless planning choices.</p>"	medium	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic HighYield Scenario WiFi Channels Source::Messer-v170
+2.2-B003	<p>A user wants a short-range wireless headset without joining the office Wi-Fi network. Which wireless technology is the best match?</p>	<p><strong>Bluetooth</strong>.</p>	"<h3>Why</h3>
+<p>Bluetooth is commonly used to remove cables from nearby peripherals such as headsets, speakers, keyboards, and mice.</p>
+<h3>Exam Trap</h3>
+<p>Bluetooth personal-area connections are not the same as Wi-Fi infrastructure networking.</p>"	medium	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic HighYield Scenario Bluetooth Peripherals Source::Messer-v170
+2.2-B004	<p>A warehouse wants tags that can identify inventory items when scanned by radio. Which wireless technology fits that use case?</p>	<p><strong>RFID</strong>.</p>	"<h3>Why</h3>
+<p>RFID is commonly used for identification and tracking, including inventory, access badges, and similar tagged items.</p>
+<h3>Source Note</h3>
+<p>This card tests the use case, not a specific vendor's tag format.</p>"	easy	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic Scenario RFID Tracking Source::Messer-v170
+2.2-B005	<p>A phone completes a payment by being held very close to a payment terminal. Which short-range wireless technology is being used?</p>	<p><strong>NFC</strong>.</p>	"<h3>Why</h3>
+<p>NFC supports short-range two-way communication and is commonly associated with payment systems and access-token style interactions.</p>
+<h3>Exam Trap</h3>
+<p>Do not choose Bluetooth just because the device is wireless. The close tap-style interaction points to NFC.</p>"	easy	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic HighYield Scenario NFC Payments Source::Messer-v170
+2.2-B006	<p>Which technology is the better match for a short-range two-way tap interaction: RFID-style inventory tracking or NFC?</p>	<p><strong>NFC</strong>.</p>	"<h3>Why</h3>
+<p>NFC builds on RFID concepts but is associated with very short-range two-way interactions such as payment and access-token workflows.</p>
+<h3>Exam Trap</h3>
+<p>RFID is often used for identification and tracking; NFC is the stronger match when the scenario emphasizes a close two-way tap interaction.</p>"	medium	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic Comparison NFC RFID Source::Messer-v170
+2.2-B007	<p>A device uses a brief tap to help start pairing with another wireless technology. Which technology can help bootstrap Bluetooth pairing?</p>	<p><strong>NFC</strong>.</p>	"<h3>Why</h3>
+<p>The approved source identifies NFC as a possible bootstrap method for another wireless connection such as Bluetooth pairing.</p>
+<h3>Exam Trap</h3>
+<p>The tap does not mean the entire connection stays on NFC. NFC can assist setup for a different wireless link.</p>"	medium	basic	220-1201 2.2 - Wireless Network Technologies	Professor Messer 220-1201 v1.70 p.8; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.2	A+::220-1201::2.2 A+::220-1201::Domain2-Networking A+::220-1201::WirelessNetworkTechnologies Basic Scenario NFC Bluetooth Source::Messer-v170
