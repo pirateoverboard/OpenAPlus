@@ -1,0 +1,24 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.2-C001	"<p>Clicking, grinding, or scraping noises are warning signs associated with
+{{c1::mechanical hard drive failure}}.</p>"	"<p>Noise is a clue, not a complete diagnosis. Confirm with data protection,
+inspection, and diagnostics when appropriate.</p>"	"<h3>Why</h3>
+<p>Mechanical drives contain moving parts. This compact recall target supports the
+scenario cards about recognizing serious drive symptoms.</p>"	easy	cloze	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Cloze HDD Storage Memory Source::Messer-v170
+5.2-C002	"<p>Before risky repair work on a suspected failing drive, the priority is
+{{c1::getting a current backup if possible}}.</p>"	"<p>Backups should be verified before actions that may write heavily to unstable
+storage.</p>"	"<h3>Why</h3>
+<p>This is one of the highest-value storage troubleshooting decisions. The goal is
+not to ""fix first""; the goal is to avoid turning a storage symptom into avoidable
+data loss.</p>"	easy	cloze	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Cloze HighYield Backup Storage Memory Source::Messer-v170
+5.2-C003	"<p>During a RAID failure, check the {{c1::RAID management console}} before pulling
+drives.</p>"	"<p>The console helps identify the failed disk or volume and reduces the chance of
+removing the wrong drive.</p>"	"<h3>Why</h3>
+<p>This is compact recall for a safety-critical order of operations. It supports
+the RAID scenario card without duplicating the full escalation decision.</p>"	medium	cloze	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Cloze RAID Memory Source::Messer-v170
+5.2-C004	<p>S.M.A.R.T. stands for {{c1::Self-Monitoring, Analysis, and Reporting Technology}}.</p>	"<p>Use S.M.A.R.T. as a warning system for drive health trends, not as a guarantee
+that a drive will or will not fail.</p>"	"<h3>Why</h3>
+<p>The acronym is a compact recall fact, but the troubleshooting value is acting on
+warning trends before users lose access to data.</p>"	easy	cloze	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Cloze SMART Memory Source::Messer-v170
