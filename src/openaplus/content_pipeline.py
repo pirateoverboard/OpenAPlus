@@ -63,6 +63,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "2.7-internet-connection-and-network-types": "A+::220-1201::Domain2-Networking",
     "2.8-networking-tools": "A+::220-1201::Domain2-Networking",
     "3.1-display-types-and-attributes": "A+::220-1201::Domain3-Hardware",
+    "5.1-troubleshooting-hardware": "A+::220-1201::Domain5-Troubleshooting",
 }
 _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
 _MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"

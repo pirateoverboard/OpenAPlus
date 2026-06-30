@@ -43,6 +43,7 @@ card front matter.
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |
 | `2.1-ip-addressing-and-common-ports` | `A+::220-1201::Domain2-Networking` | `Source::Messer-v170` |
 | `3.1-display-types-and-attributes` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
+| `5.1-troubleshooting-hardware` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 
 Author-provided tags in these folders are Layer 3 topic tags, such as
 `Bluetooth`, `WiFi`, `MDM`, `BYOD`, or `Synchronization`.
