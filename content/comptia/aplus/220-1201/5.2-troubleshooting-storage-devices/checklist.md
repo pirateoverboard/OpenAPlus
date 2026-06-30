@@ -1,7 +1,8 @@
 # Objective 5.2 completion checklist
 
-**Objective status: DRAFT.** Objective 5.2 has source-backed draft content and
-generated output pending review and manual Anki smoke-test decision.
+**Objective status: ACCEPTED.** Objective 5.2 has source-backed content,
+generated output, omitted-concepts review, independent content review, stable
+Basic Hint-field output, and a passing manual Anki smoke test.
 
 ## Domain mapping
 
@@ -87,14 +88,14 @@ from Objective 5.1 are not repeated unless they apply directly to storage.
 
 ## Review and build
 
-- [ ] Omitted-concepts review completed.
-- [ ] Independent content review completed.
+- [x] Omitted-concepts review completed.
+- [x] Independent content review completed.
 - [x] Original diagrams independently reviewed for clarity and licensing, or not applicable.
 - [x] `python scripts/validate.py` passes.
 - [x] `python scripts/build.py` passes and TSV output is regenerated.
 - [x] `pytest` and Ruff checks pass.
-- [ ] Manual Anki smoke test passed, if required.
-- [ ] Objective accepted by maintainer.
+- [x] Manual Anki smoke test passed, if required.
+- [x] Objective accepted by maintainer.
 
 ## Hint update
 
@@ -104,16 +105,38 @@ direct distinction cards were left without hints when a hint would mostly repeat
 the answer. Cloze cards were not changed.
 
 The OpenAPlus Basic TSV schema now includes a Hint field between Front and Back.
-Manual Anki smoke testing for Objective 5.2 has not yet been recorded.
+Manual Anki smoke testing verified the updated OpenAPlus Basic note type with
+the Hint field.
 
 ## Manual Anki smoke test
 
-No manual Anki smoke test has been recorded for Objective 5.2. No image cards
-were created, so image-media smoke testing is not applicable unless Image cards
-are added later.
+No image cards were created, so image-media smoke testing was not applicable.
+
+| Item | Result |
+| --- | --- |
+| Test deck/profile | OpenAPlus Import Test |
+| Expected note count | 23 |
+| Actual note count | 23 |
+| Basic.tsv import | Passed with updated OpenAPlus Basic note type including Hint field |
+| Cloze.tsv import | Passed |
+| Image.tsv import | Not applicable |
+| Media rendering | Not applicable |
+| Headers imported as notes | Passed; headers were not imported as notes |
+| Card ID duplicate/update behavior | Passed; Card ID was the first field and drove updates |
+| Hint field import | Passed; populated and empty Hint fields imported cleanly |
+| HTML rendering | Passed |
+| Cloze generation | Passed |
+| Custom note types | Passed; OpenAPlus Basic and Cloze note types worked |
+| Instructor Notes display | Passed; displayed correctly after answer reveal |
+| Tags | Passed; imported as Anki metadata, not learner-facing fields |
+| Re-import/update behavior | Passed; existing notes updated without duplicates |
+| Final result | Pass |
 
 ## Peer review record
 
 | Reviewer | Date | Result | Required Changes | Approval Status |
 | --- | --- | --- | --- | --- |
 | Self-review | 2026-06-30 | Initial Objective 5.2 draft and coverage decisions completed | Omitted-concepts review, independent content review, automated checks, and manual Anki smoke-test decision | Needs independent review |
+| Omitted-concepts review | 2026-06-30 | GO; intentionally not-carded concepts were correctly omitted, left study-guide-only, or deferred pending source support | None | Approved for independent content review |
+| Independent content review | 2026-06-30 | GO; source fidelity, copyright safety, objective coverage, card quality, generated output, and scope boundaries passed review | Manual Anki smoke test before acceptance | Ready for manual Anki smoke test |
+| Maintainer manual Anki smoke test | 2026-06-30 | Basic and Cloze imports passed; Image import not applicable; Hint field, custom note types, Instructor Notes, tags-as-metadata, and re-import update behavior passed | None | Approved; Objective 5.2 accepted |

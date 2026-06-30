@@ -1,5 +1,33 @@
 # Objective 5.2 changelog
 
+## 2026-06-30 - Final acceptance
+
+- Accepted Objective 5.2 after omitted-concepts review, independent content
+  review, and manual Anki smoke testing passed.
+- Omitted-concepts review result: GO; exact S.M.A.R.T. attribute IDs,
+  vendor-specific disk utilities, deep data-recovery procedures, RAID rebuild
+  commands, exact product IOPS values, low disk space, and BitLocker/encryption
+  recovery-key workflow were correctly omitted, left study-guide-only, or
+  deferred pending source support.
+- Independent content review result: GO; source fidelity, copyright safety,
+  objective coverage, card quality, HighYield decisions, Instructor Notes,
+  generated output, and scope boundaries passed review.
+- Verified `Basic.tsv` imported successfully in the `OpenAPlus Import Test`
+  deck/profile using the updated OpenAPlus Basic note type with the stable Hint
+  field.
+- Verified `Cloze.tsv` imported successfully; `Image.tsv` was not applicable
+  because Objective 5.2 has no Image cards.
+- Verified expected and actual note counts were both 23, headers were not
+  imported as notes, Card ID was the first field and update key, HTML rendered
+  correctly, Cloze cards generated correctly, and re-importing updated existing
+  notes instead of creating duplicates.
+- Verified populated and empty Hint fields imported cleanly.
+- Verified custom OpenAPlus Basic and Cloze note types worked, Instructor Notes
+  displayed correctly after answer reveal, and tags imported as Anki metadata
+  rather than learner-facing fields.
+- Objectives 3.2 through 4.x were not created.
+- Objective 5.3 content was not created.
+
 ## 2026-06-30 - Optional Basic hints
 
 - Added optional learner-facing `## Hint` sections to selected scenario-heavy
