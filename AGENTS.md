@@ -12,6 +12,7 @@ work must consult:
 
 - [docs/CONTENT_CREATION_RULES.md](docs/CONTENT_CREATION_RULES.md)
 - [docs/CARD_SCHEMA.md](docs/CARD_SCHEMA.md)
+- [docs/HINTS.md](docs/HINTS.md)
 - [docs/TAGGING.md](docs/TAGGING.md)
 - [docs/SOURCE_AND_CITATION_RULES.md](docs/SOURCE_AND_CITATION_RULES.md)
 - [docs/OBJECTIVE_COMPLETION_CHECKLIST.md](docs/OBJECTIVE_COMPLETION_CHECKLIST.md)
@@ -40,6 +41,8 @@ All files currently under `docs/`:
 - [docs/IMAGE_WORKFLOW.md](docs/IMAGE_WORKFLOW.md) — Future workflow for
   safely adding real photos, especially Wikimedia Commons images, with license
   review and attribution tracking.
+- [docs/HINTS.md](docs/HINTS.md) — Optional `## Hint` section policy,
+  pre-reveal usage, and bad/okay/great hint examples.
 - [docs/INSTRUCTOR_NOTES_GUIDE.md](docs/INSTRUCTOR_NOTES_GUIDE.md) —
   Instructor Notes policy and acceptable note sections.
 - [docs/LICENSE](docs/LICENSE) — Documentation/content license file.

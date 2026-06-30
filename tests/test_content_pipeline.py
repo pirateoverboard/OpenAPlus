@@ -37,6 +37,10 @@ The **answer**.
 
 Minimal test note.
 """
+BASIC_BODY_WITH_HINT = BASIC_BODY.replace(
+    "## Answer",
+    "## Hint\n\nThink about the test fixture.\n\n## Answer",
+)
 CLOZE_BODY = """\
 ## Text
 
@@ -438,6 +442,37 @@ def test_objective_51_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_52_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("5.2-B001")
+    card_metadata.update(
+        {
+            "objective": "5.2",
+            "objective_name": "Troubleshooting Storage Devices",
+            "tags": ["Storage", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.50"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="5.2-troubleshooting-storage-devices",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::5.2",
+        "A+::220-1201::Domain5-Troubleshooting",
+        "A+::220-1201::TroubleshootingStorageDevices",
+        "Basic",
+        "HighYield",
+        "Storage",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_multiple_valid_clozes_are_allowed(tmp_path: Path) -> None:
     body = CLOZE_BODY.replace(
         "The answer is {{c1::here}}.",
@@ -496,7 +531,7 @@ def test_unsupported_image_extension_is_rejected(tmp_path: Path) -> None:
 
 
 def test_fenced_code_heading_is_not_a_section(tmp_path: Path) -> None:
-    body = BASIC_BODY.replace(
+    body = BASIC_BODY_WITH_HINT.replace(
         "The **answer**.",
         """The answer includes code:
 
@@ -539,7 +574,7 @@ echo "hello"
 
 
 def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
-    write_card(tmp_path, metadata(), BASIC_BODY)
+    write_card(tmp_path, metadata(), BASIC_BODY_WITH_HINT)
     write_card(tmp_path, metadata("1.1-C001", "cloze"), CLOZE_BODY)
     write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
 
@@ -549,10 +584,11 @@ def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
     image_columns, image_rows, _ = read_tsv(files["Image.tsv"])
 
     assert basic_columns[0] == cloze_columns[0] == image_columns[0] == "Card ID"
-    assert basic_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:9"]
+    assert basic_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:10"]
     assert basic_rows[0] == [
         "1.1-B001",
         "<p>What is the answer?</p>",
+        "<p>Think about the test fixture.</p>",
         "<p>The <strong>answer</strong>.</p>",
         "<p>Minimal test note.</p>",
         "easy",
@@ -578,6 +614,42 @@ def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
         "<p>Minimal test note.</p>",
     ]
     assert image_rows[0][8] == "220-1201 1.1 - Laptop Hardware"
+
+
+def test_basic_tsv_always_includes_empty_hint_column(tmp_path: Path) -> None:
+    write_card(tmp_path, metadata(), BASIC_BODY)
+
+    columns, rows, comments = read_tsv(generated_files(tmp_path)["Basic.tsv"])
+
+    assert comments[:3] == ["#separator:Tab", "#html:true", "#tags column:10"]
+    assert columns == [
+        "Card ID",
+        "Front",
+        "Hint",
+        "Back",
+        "Instructor Notes",
+        "Difficulty",
+        "Card Type",
+        "Objective",
+        "Source",
+        "Tags",
+    ]
+    assert rows[0][2] == ""
+    assert rows[0][3] == "<p>The <strong>answer</strong>.</p>"
+
+
+def test_cloze_and_image_tsv_schemas_do_not_include_hint(tmp_path: Path) -> None:
+    write_card(tmp_path, metadata("1.1-C001", "cloze"), CLOZE_BODY)
+    write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+
+    files = generated_files(tmp_path)
+    cloze_columns, _, cloze_comments = read_tsv(files["Cloze.tsv"])
+    image_columns, _, image_comments = read_tsv(files["Image.tsv"])
+
+    assert "Hint" not in cloze_columns
+    assert "Hint" not in image_columns
+    assert cloze_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:9"]
+    assert image_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:11"]
 
 
 def test_media_folder_is_created_and_tsv_references_filenames_only(
@@ -677,8 +749,8 @@ Second paragraph.""",
     assert '"quoted"' in rows[0][1]
     assert "a tab" in rows[0][1]
     assert "café" in rows[0][1]
-    assert "</p>\n<p>" in rows[0][2]
-    assert rows[0][7] == "Test\tfixture"
+    assert "</p>\n<p>" in rows[0][3]
+    assert rows[0][8] == "Test\tfixture"
 
 
 def test_generation_removes_stale_output(tmp_path: Path) -> None:

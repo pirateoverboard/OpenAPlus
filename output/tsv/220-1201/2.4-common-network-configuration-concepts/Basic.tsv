@@ -1,44 +1,44 @@
 #separator:Tab
 #html:true
-#tags column:9
-#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
-2.4-B001	<p>A company adds an approved outbound mail server. Receiving systems reject some of its messages because the server is not listed as an authorized sender for the domain. Which DNS-based email setting should be updated?</p>	<p>The domain's <strong>SPF policy published in a DNS TXT record</strong>.</p>	"<h3>Why</h3>
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.4-B001	<p>A company adds an approved outbound mail server. Receiving systems reject some of its messages because the server is not listed as an authorized sender for the domain. Which DNS-based email setting should be updated?</p>		<p>The domain's <strong>SPF policy published in a DNS TXT record</strong>.</p>	"<h3>Why</h3>
 <p>An SPF policy published in DNS identifies which mail systems are authorized to send for a domain.</p>
 <h3>Exam Trap</h3>
 <p>DKIM validates a message signature. It does not define the domain's authorized sending-server list.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.12; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic HighYield SPF DNS EmailSecurity Source::Messer-v170
-2.4-B002	<p>A receiving mail system must verify the digital signature on a message by retrieving the sender domain's public key from DNS. Which mechanism provides this verification?</p>	<p><strong>DKIM</strong>.</p>	"<h3>Why</h3>
+2.4-B002	<p>A receiving mail system must verify the digital signature on a message by retrieving the sender domain's public key from DNS. Which mechanism provides this verification?</p>		<p><strong>DKIM</strong>.</p>	"<h3>Why</h3>
 <p>DKIM signs outgoing mail, while the matching public key is published in a DNS TXT record for receiving systems to use.</p>
 <h3>Exam Trap</h3>
 <p>SPF evaluates whether a sending server is authorized; DKIM evaluates the message's digital signature.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.12; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic HighYield DKIM DNS EmailSecurity Source::Messer-v170
-2.4-B003	<p>A domain administrator wants receiving mail systems to follow a published policy when messages fail SPF or DKIM checks and to send compliance reports. Which mechanism should the administrator configure?</p>	<p><strong>DMARC</strong>.</p>	"<h3>Why</h3>
+2.4-B003	<p>A domain administrator wants receiving mail systems to follow a published policy when messages fail SPF or DKIM checks and to send compliance reports. Which mechanism should the administrator configure?</p>		<p><strong>DMARC</strong>.</p>	"<h3>Why</h3>
 <p>DMARC adds handling policy and reporting around SPF and DKIM results.</p>
 <h3>Exam Trap</h3>
 <p>SPF and DKIM supply authentication evidence. DMARC tells receivers what policy to apply when that evidence does not validate.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.12; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic HighYield DMARC DNS EmailSecurity Source::Messer-v170
-2.4-B004	<p>A network printer should always receive the same IP address, but the administrator wants to manage the assignment centrally on the DHCP server. Which DHCP setting should be configured?</p>	<p>A <strong>DHCP reservation</strong> for the printer's MAC address.</p>	"<h3>Why</h3>
+2.4-B004	<p>A network printer should always receive the same IP address, but the administrator wants to manage the assignment centrally on the DHCP server. Which DHCP setting should be configured?</p>		<p>A <strong>DHCP reservation</strong> for the printer's MAC address.</p>	"<h3>Why</h3>
 <p>A reservation lets DHCP consistently offer a selected address to a known device.</p>
 <h3>Real Help Desk</h3>
 <p>Centralizing the assignment avoids manually maintaining the IP configuration on the printer itself.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.13; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic HighYield DHCP Reservation Scenario Source::Messer-v170
-2.4-B005	<p>Several infrastructure devices use manually configured addresses that fall inside a DHCP scope. Which setting prevents DHCP from offering those addresses to clients?</p>	<p>A DHCP <strong>exclusion</strong> for those addresses.</p>	"<h3>Why</h3>
+2.4-B005	<p>Several infrastructure devices use manually configured addresses that fall inside a DHCP scope. Which setting prevents DHCP from offering those addresses to clients?</p>		<p>A DHCP <strong>exclusion</strong> for those addresses.</p>	"<h3>Why</h3>
 <p>An exclusion removes selected addresses from the scope's dynamic assignment pool.</p>
 <h3>Exam Trap</h3>
 <p>A reservation assigns a selected address to a known client. An exclusion simply prevents DHCP from distributing an address.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.13; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic DHCP Exclusion Scenario Source::Messer-v170
-2.4-B006	<p>Existing clients retain valid addresses, but newly connected clients cannot obtain a dynamic address. The DHCP service is running. What DHCP configuration should be checked first?</p>	<p>Check whether the DHCP <strong>scope has an available address</strong>.</p>	"<h3>Why</h3>
+2.4-B006	<p>Existing clients retain valid addresses, but newly connected clients cannot obtain a dynamic address. The DHCP service is running. What DHCP configuration should be checked first?</p>		<p>Check whether the DHCP <strong>scope has an available address</strong>.</p>	"<h3>Why</h3>
 <p>The scope defines the pool available to that subnet. A running server cannot lease a new address from an exhausted pool.</p>
 <h3>Exam Trap</h3>
 <p>Service availability and scope capacity are separate checks; a healthy DHCP process does not guarantee usable addresses remain.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.13; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic HighYield DHCP Scope Troubleshooting Source::Messer-v170
-2.4-B007	<p>What DHCP concept allows a client to use an assigned IP address for a configured period and renew the assignment?</p>	<p>A DHCP <strong>lease</strong>.</p>	"<h3>Why</h3>
+2.4-B007	<p>What DHCP concept allows a client to use an assigned IP address for a configured period and renew the assignment?</p>		<p>A DHCP <strong>lease</strong>.</p>	"<h3>Why</h3>
 <p>Leases let DHCP manage address use over time instead of making every dynamic assignment permanent.</p>
 <h3>Tech Wisdom</h3>
 <p>The appropriate lease duration depends on the network; there is no universal value to memorize for this objective.</p>"	easy	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.13; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic DHCP Lease Source::Messer-v170
-2.4-B008	<p>Two departments use the same physical switching infrastructure but must be placed in separate logical broadcast domains. What should the network administrator configure?</p>	<p>Separate <strong>VLANs</strong>.</p>	"<h3>Why</h3>
+2.4-B008	<p>Two departments use the same physical switching infrastructure but must be placed in separate logical broadcast domains. What should the network administrator configure?</p>		<p>Separate <strong>VLANs</strong>.</p>	"<h3>Why</h3>
 <p>VLANs provide logical separation without requiring a different physical switch for every network group.</p>
 <h3>Exam Trap</h3>
 <p>A VLAN defines logical network membership; it is not merely a label applied to an unchanged broadcast domain.</p>"	medium	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.14; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic HighYield VLAN Segmentation Scenario Source::Messer-v170
-2.4-B009	<p>A remote employee needs an encrypted connection from one laptop to the company network. Which VPN model fits this requirement?</p>	<p>A <strong>client-to-site VPN</strong>.</p>	"<h3>Why</h3>
+2.4-B009	<p>A remote employee needs an encrypted connection from one laptop to the company network. Which VPN model fits this requirement?</p>		<p>A <strong>client-to-site VPN</strong>.</p>	"<h3>Why</h3>
 <p>Client-to-site VPN software connects an individual remote device to an organization's VPN endpoint.</p>
 <h3>Exam Trap</h3>
 <p>Site-to-site VPNs connect networks rather than a single roaming client.</p>"	easy	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.15; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic VPN RemoteAccess Scenario Source::Messer-v170
-2.4-B010	<p>Two branch-office networks need a persistent encrypted connection across the internet. Which VPN model should connect them?</p>	<p>A <strong>site-to-site VPN</strong>.</p>	"<h3>Why</h3>
+2.4-B010	<p>Two branch-office networks need a persistent encrypted connection across the internet. Which VPN model should connect them?</p>		<p>A <strong>site-to-site VPN</strong>.</p>	"<h3>Why</h3>
 <p>Site-to-site VPN endpoints connect one network to another, allowing devices at both locations to use the protected path.</p>
 <h3>Exam Trap</h3>
 <p>Use client-to-site when the endpoint is an individual remote device rather than another network.</p>"	easy	basic	220-1201 2.4 - Common Network Configuration Concepts	Professor Messer 220-1201 v1.70 p.15; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.4	A+::220-1201::2.4 A+::220-1201::Domain2-Networking A+::220-1201::CommonNetworkConfigurationConcepts Basic VPN SiteToSite Scenario Source::Messer-v170

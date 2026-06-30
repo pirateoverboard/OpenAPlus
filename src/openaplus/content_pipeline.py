@@ -64,6 +64,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "2.8-networking-tools": "A+::220-1201::Domain2-Networking",
     "3.1-display-types-and-attributes": "A+::220-1201::Domain3-Hardware",
     "5.1-troubleshooting-hardware": "A+::220-1201::Domain5-Troubleshooting",
+    "5.2-troubleshooting-storage-devices": "A+::220-1201::Domain5-Troubleshooting",
 }
 _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
 _MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"
@@ -76,6 +77,7 @@ _TSV_HEADERS = {
     "basic": (
         "Card ID",
         "Front",
+        "Hint",
         "Back",
         "Instructor Notes",
         "Difficulty",
@@ -873,6 +875,7 @@ def _tsv_row(card: Card, card_type: str) -> tuple[str, ...]:
         return (
             card_id,
             markdown_to_html(card.sections["Question"]),
+            markdown_to_html(card.sections.get("Hint", "")),
             markdown_to_html(card.sections["Answer"]),
             notes,
             *common,

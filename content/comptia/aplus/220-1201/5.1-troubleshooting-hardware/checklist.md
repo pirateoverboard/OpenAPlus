@@ -80,6 +80,7 @@ hardware-symptom context.
 - [x] HighYield decisions follow the rubric and are documented for review.
 - [x] No intentionally redundant learning targets retained.
 - [x] Current draft card counts: 17 Basic, 4 Cloze, 0 Image.
+- [x] Optional learner-facing hints added to selected troubleshooting Basic cards; hints guide reasoning without revealing answers.
 
 ## Review and build
 
@@ -91,6 +92,18 @@ hardware-symptom context.
 - [x] `pytest` and Ruff checks pass.
 - [x] Manual Anki smoke test passed, if required.
 - [x] Objective accepted by maintainer.
+
+## Hint update
+
+On 2026-06-30, optional `## Hint` sections were added to selected
+scenario-heavy Basic cards. Hints were intentionally not added to every card:
+direct symptom-pattern cards were left without hints when a hint would mostly
+repeat the answer. Cloze cards were not changed.
+
+The OpenAPlus Basic TSV schema now includes a Hint field between Front and Back.
+The prior manual Anki smoke test predates this optional field; future imports
+should use the updated OpenAPlus Basic note type field order shown in the TSV
+headers.
 
 ## Manual Anki smoke test
 

@@ -22,6 +22,8 @@ For each TSV type:
 2. Use separate OpenAPlus Basic, Cloze, and Image note types. The Cloze note
    type must be Cloze-derived, and its template must apply the cloze filter to
    the Text field.
+   OpenAPlus Basic includes a stable learner-facing Hint field between Front
+   and Back. See [HINTS.md](HINTS.md) for authoring guidance.
 3. Confirm the separator is Tab, HTML is enabled, and the final field maps to
    Anki's special Tags metadata row. Tags should not be imported as a normal
    learner-facing note field. The file headers normally set these options
@@ -44,6 +46,44 @@ Example:
 
 If an Anki client does not recognize the headers, configure those four settings
 manually. The `#columns` line is a comment, not a data row.
+
+## Basic note type
+
+OpenAPlus Basic fields must be in this order:
+
+1. Card ID
+2. Front
+3. Hint
+4. Back
+5. Instructor Notes
+6. Difficulty
+7. Card Type
+8. Objective
+9. Source
+
+The final TSV `Tags` column maps to Anki's special Tags import row, not a normal
+note field. The Hint field is optional in card source, but the TSV column is
+always present. Empty Hint fields are normal.
+
+Suggested Basic front template:
+
+```html
+<div class="front">
+  {{Front}}
+</div>
+
+{{#Hint}}
+<details class="hint">
+<summary>Hint</summary>
+{{Hint}}
+</details>
+{{/Hint}}
+```
+
+OpenAPlus Image cards do not currently support a Hint field. Image TSV fields
+remain `Card ID`, `Prompt`, `Question Image`, `Answer`, `Answer Image`,
+`Instructor Notes`, `Difficulty`, `Card Type`, `Objective`, and `Source`, with
+the final TSV `Tags` column mapped to Anki's special Tags import row.
 
 ## Image cards
 

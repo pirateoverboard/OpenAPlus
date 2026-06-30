@@ -1,0 +1,109 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.2-B001	"<p>A user reports ""Cannot read from the source disk"" while copying critical files
+from a laptop drive. What should you prioritize before attempting repair steps?</p>"	<p>Protect the user's data before attempting risky repair.</p>	"<p><strong>Preserve the data by getting a backup or verified copy if the drive is still
+readable.</strong></p>"	"<h3>Why</h3>
+<p>Read/write failures may get worse during troubleshooting. A repair command or
+heavy diagnostic can stress a failing drive, so the support decision is to
+protect recoverable data before taking riskier action.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield Storage Backup Scenario Source::Messer-v170
+5.2-B002	"<p>A desktop is extremely slow and its storage activity light stays on almost
+constantly. What theory should you test before replacing memory or the CPU?</p>"	<p>Look for evidence that the storage device is struggling before blaming other components.</p>	"<p><strong>Test whether the storage device is retrying reads/writes or has unusually slow
+disk I/O.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Constant storage activity can point to repeated access attempts or a storage
+bottleneck. Measure the storage path first so the repair plan is based on
+evidence instead of guessing at unrelated components.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic Performance Storage Scenario Source::Messer-v170
+5.2-B003	"<p>A laptop hard drive makes a loud grinding noise and the user says files open
+slowly. What should you avoid doing first?</p>"	<p>Noisy storage plus slow access raises the data-risk level.</p>	"<p><strong>Avoid running write-heavy repair attempts before protecting the data or
+escalating for recovery.</strong></p>"	"<h3>Reasoning</h3>
+<p>Grinding or clicking from a mechanical drive is a serious failure clue. The
+interview-friendly answer is to stop treating it like a routine software issue,
+preserve data if possible, and avoid actions that could make recovery harder.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield HDD Backup Scenario Source::Messer-v170
+5.2-B004	"<p>A workstation displays a ""Boot Device Not Found"" style message. What should a
+technician verify before assuming Windows is corrupted?</p>"	<p>First decide whether the system can see the storage device at all.</p>	"<p><strong>Verify whether the drive is detected and check physical indicators, cables,
+power, firmware settings, and the exact boot error.</strong></p>"	"<h3>Narrowing</h3>
+<p>This symptom can happen before the operating system is involved. The first split
+is drive detection versus bootability: if the system cannot see the device,
+Windows repair is premature.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield Boot Storage Scenario Source::Messer-v170
+5.2-B005	"<p>Firmware detects the internal drive, but startup stops with an ""Operating system
+not found"" style message. What does that evidence suggest?</p>"		"<p><strong>The storage device may be present, but the operating system or boot data is
+not usable.</strong></p>"	"<h3>Why</h3>
+<p>Drive detection changes the theory. A missing OS message is not the same as a
+missing drive, so the next work should focus on boot configuration, boot files,
+or OS state after data risk is considered.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic Boot OS Scenario Source::Messer-v170
+5.2-B006	"<p>After a desktop was moved to a new desk, it no longer detects its internal SATA
+drive. What is the best first physical check?</p>"	<p>Recent movement makes a simple physical cause more likely.</p>	<p><strong>Check the drive data and power cable connections for looseness or damage.</strong></p>	"<h3>Help Desk Logic</h3>
+<p>The timing points to a physical connection problem. Cable checks are fast,
+reversible, and less disruptive than reinstalling the OS or replacing the drive.</p>"	easy	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield Cables Boot Scenario Source::Messer-v170
+5.2-B007	"<p>A PC keeps trying to boot from a USB recovery drive instead of the internal
+disk. What is the best first fix?</p>"	<p>Rule out the simplest boot-source mistake before changing hardware.</p>	"<p><strong>Remove the unintended bootable USB media and confirm the BIOS or UEFI boot
+sequence if needed.</strong></p>"	"<h3>Exam Trap</h3>
+<p>Wrong boot media can look like a storage failure. Start with the simple cause,
+then verify boot order if the symptom repeats.</p>"	easy	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield Boot Firmware Scenario Source::Messer-v170
+5.2-B008	"<p>A newly installed internal drive does not appear during OS setup. Cables are
+seated. What should you check next?</p>"	<p>For a new install, verify configuration and detection before declaring the drive bad.</p>	"<p><strong>Check the hardware configuration, including whether the storage interface is
+enabled and whether another compatible interface or port detects the drive.</strong></p>"	"<h3>Why</h3>
+<p>New-installation failures can come from configuration, interface, or port
+problems. This tests the detection path before deciding the drive itself is bad.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic Installation Firmware Scenario Source::Messer-v170
+5.2-B009	"<p>An internal drive is not detected after cable and firmware checks. What known-good
+test can help separate a bad drive from a bad system connection?</p>"	<p>A known-good path helps show whether the problem follows the drive.</p>	<p><strong>Try the drive in another compatible computer or known-good storage connection.</strong></p>	"<h3>What It Rules Out</h3>
+<p>Testing through a different path helps isolate whether the failure follows the
+drive or stays with the original computer, cable, port, or power path.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic KnownGood Storage Scenario Source::Messer-v170
+5.2-B010	"<p>An SSD can still read some files but fails whenever users save changes. What
+should the technician do before trying aggressive repairs?</p>"	<p>Do not rely on the absence of mechanical noise when judging SSD risk.</p>	<p><strong>Back up readable data and treat the drive as potentially failing.</strong></p>	"<h3>Why</h3>
+<p>SSD failure may not include noise. Read-only behavior or sudden write failure is
+enough reason to protect data and plan replacement or escalation before trying
+steps that could reduce access further.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield SSD Backup Scenario Source::Messer-v170
+5.2-B011	"<p>A server storage array is beeping and reports a RAID warning. What should you do
+before pulling any drives?</p>"	<p>Use array evidence before taking physical action.</p>	"<p><strong>Check the RAID management console to identify the affected array, volume, and
+drive status.</strong></p>"	"<h3>Safety</h3>
+<p>RAID arrays vary. Pulling the wrong drive can turn a degraded array into an
+outage or data-loss event. Console evidence comes before physical action.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield RAID Scenario Source::Messer-v170
+5.2-B012	"<p>You must escalate a RAID failure to the infrastructure team. What information
+should your ticket include?</p>"	<p>Escalation should capture the array state and data-risk context.</p>	"<p><strong>Include the exact alert, array or volume affected, console status, failed disk
+identifier if known, recent power or communication issues, backup status, and
+steps already taken.</strong></p>"	"<h3>Professional Practice</h3>
+<p>Escalation should let the next technician continue without repeating discovery.
+For RAID, the console details and backup status are especially important because
+the wrong recovery action can affect multiple drives or volumes.</p>"	hard	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic RAID Escalation Documentation Source::Messer-v170
+5.2-B013	"<p>Monitoring software shows worsening S.M.A.R.T. warning values for a storage
+drive. What is the best next step?</p>"	<p>Treat health warnings as a chance to act before users lose access.</p>	<p><strong>Verify a good backup and plan to replace the drive before it fails completely.</strong></p>	"<h3>Reasoning</h3>
+<p>S.M.A.R.T. is useful because it can show warning signs before total failure.
+Treat an increasing warning trend as evidence to act early, not as trivia to
+memorize by attribute number.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield SMART Backup Scenario Source::Messer-v170
+5.2-B014	"<p>A NAS sends repeated storage health notifications over email. Why should those
+alerts be handled before users lose access to files?</p>"	<p>Repeated warnings are an opportunity for planned action instead of emergency recovery.</p>	"<p><strong>They may indicate a drive problem that can be backed up and replaced before it
+becomes a data-loss outage.</strong></p>"	"<h3>Interview Angle</h3>
+<p>Good support responds to warning signs while there is still time to protect
+data. Waiting until the share is unavailable turns planned maintenance into an
+incident.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic SMART Monitoring Scenario Source::Messer-v170
+5.2-B015	"<p>A user says a database app is slow, and you suspect storage latency. What kind
+of evidence helps test the storage-performance theory?</p>"	<p>Measure the suspected bottleneck before trusting a vague performance complaint.</p>	"<p><strong>Measure storage access performance, such as I/O operations per second, instead
+of relying only on the user's description.</strong></p>"	"<h3>Why</h3>
+<p>Read/write delays can occur in many parts of the path. A storage metric helps
+separate a drive or storage bottleneck from an application, CPU, or memory
+theory.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic IOPS Performance Scenario Source::Messer-v170
+5.2-B016	"<p>Windows boots normally, but a secondary internal drive no longer appears in the
+OS. What should you check first?</p>"	<p>Because the OS still boots, focus on whether the missing drive is detected.</p>	"<p><strong>Check whether firmware detects the drive, then inspect the drive's data and
+power connections.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Because the OS boots, the missing item is the secondary storage device. Firmware
+detection and internal cabling narrow the issue before file-system or OS repair
+is attempted.</p>"	easy	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield MissingDrive Cables Scenario Source::Messer-v170
+5.2-B017	"<p>A user's external drive disappeared from the OS after they moved their laptop.
+What should you check before assuming the drive failed?</p>"	<p>Rule out simple external power and connection issues first.</p>	<p><strong>Check external drive power, the cable connection, and the port or adapter path.</strong></p>	"<h3>Why</h3>
+<p>External storage depends on power and a removable connection. Movement makes a
+loose cable or missing power path more likely than sudden media failure.</p>"	easy	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic ExternalDrive Cables Scenario Source::Messer-v170
+5.2-B018	"<p>A user logs in and their mapped network drive is missing, but local disks are
+present. What should you verify first?</p>"	<p>Decide whether this is local storage or a mapped network resource.</p>	"<p><strong>Verify network availability and whether the share is set to reconnect at
+sign-in or through a login script.</strong></p>"	"<h3>Distinction</h3>
+<p>A missing network share is not the same as a failed local disk. The correct
+starting point is the mapping and sign-in behavior, not opening the computer to
+replace storage.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic NetworkShares Scenario Source::Messer-v170
+5.2-B019	"<p>You cannot resolve a storage issue and must escalate it. What storage-specific
+details should you document?</p>"	<p>Include what proves the issue is storage-related and how much data is at risk.</p>	"<p><strong>Document the exact error, drive detection status, noises or lights, cable and
+power checks, S.M.A.R.T. or diagnostic results, backup status, and data-risk
+concerns.</strong></p>"	"<h3>Interview Angle</h3>
+<p>This is the difference between ""the drive is broken"" and a useful escalation.
+Storage tickets should make the risk to data clear and show what evidence was
+already gathered.</p>"	medium	basic	220-1201 5.2 - Troubleshooting Storage Devices	Professor Messer 220-1201 v1.70 p.50; Professor Messer 220-1201 v1.70 p.51; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.2	A+::220-1201::5.2 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingStorageDevices Basic HighYield Escalation Documentation Interview Source::Messer-v170

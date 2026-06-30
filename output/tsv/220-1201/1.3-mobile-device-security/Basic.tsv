@@ -1,12 +1,12 @@
 #separator:Tab
 #html:true
-#tags column:9
-#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
-1.3-B009	<p>An employee owns the phone but uses it for company email and apps. Why is this harder to secure than a fully company-owned device?</p>	<p>It mixes <strong>personal ownership/use</strong> with <strong>company data and requirements</strong>, so protecting and removing corporate data is more complicated.</p>	"<h3>Why</h3>
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.3-B009	<p>An employee owns the phone but uses it for company email and apps. Why is this harder to secure than a fully company-owned device?</p>		<p>It mixes <strong>personal ownership/use</strong> with <strong>company data and requirements</strong>, so protecting and removing corporate data is more complicated.</p>	"<h3>Why</h3>
 <p>BYOD devices are both personal and work devices. That creates policy, privacy, and data-protection challenges.</p>
 <h3>Exam Trap</h3>
 <p>The ownership model matters. Do not treat BYOD as if the company has the same control it has over a corporate laptop.</p>"	medium	basic	220-1201 1.3 - Mobile Device Networks	Professor Messer 220-1201 v1.70 p.5; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.3	A+::220-1201::1.3 A+::220-1201::Domain1-Security A+::220-1201::MobileDeviceNetworks Basic HighYield Scenario BYOD Security Source::Messer-v170
-1.3-B010	<p>A company buys and controls a phone, but allows the employee to use it personally. Which ownership model best matches this?</p>	<p><strong>COPE</strong>.</p>	"<h3>Why</h3>
+1.3-B010	<p>A company buys and controls a phone, but allows the employee to use it personally. Which ownership model best matches this?</p>		<p><strong>COPE</strong>.</p>	"<h3>Why</h3>
 <p>COPE means the device is corporate-owned but personally enabled. The organization keeps strong control while permitting personal use.</p>
 <h3>Related Cards</h3>
 <p>BYOD starts with employee ownership. CYOD is similar to COPE but gives the user a choice from approved devices.</p>"	medium	basic	220-1201 1.3 - Mobile Device Networks	Professor Messer 220-1201 v1.70 p.5; CompTIA 220-1201 Exam Objectives v2.0, Objective 1.3	A+::220-1201::1.3 A+::220-1201::Domain1-Security A+::220-1201::MobileDeviceNetworks Basic Comparison COPE CYOD Source::Messer-v170

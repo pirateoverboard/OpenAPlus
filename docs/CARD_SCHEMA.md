@@ -85,6 +85,9 @@ ID contains the objective; retire it and create a new card instead.
 - Basic requires `## Question` and `## Answer`.
 - Cloze requires `## Text` with one or more valid `{{c1::answer}}` expressions.
 - Image requires `## Prompt` and `## Answer`.
+- Basic cards may include an optional `## Hint` section. Hints are learner-facing
+  pre-reveal guidance and should steer the troubleshooting thought process
+  without giving away the answer; see [HINTS.md](HINTS.md).
 - `## Instructor Notes` is required for accepted production cards unless the
   objective checklist or changelog documents why notes add no value. The
   validator warns when it is absent. Notes must add value rather than repeat the

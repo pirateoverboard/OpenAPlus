@@ -1,26 +1,26 @@
 #separator:Tab
 #html:true
-#tags column:9
-#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
-2.6-B001	<p>A SOHO workstation uses <code>192.168.50.20</code> internally and reaches the internet through its router. Is the workstation address public or private?</p>	<p>It is a <strong>private IPv4 address</strong>.</p>	"<h3>Why</h3>
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.6-B001	<p>A SOHO workstation uses <code>192.168.50.20</code> internally and reaches the internet through its router. Is the workstation address public or private?</p>		<p>It is a <strong>private IPv4 address</strong>.</p>	"<h3>Why</h3>
 <p>The <code>192.168.0.0/16</code> block is reserved for private networks and is not routed directly across the public internet.</p>
 <h3>Exam Trap</h3>
 <p>Internet access does not make the workstation's local address public. A SOHO router commonly uses NAT so private IPv4 hosts can share its public-facing connection when accessing public networks.</p>"	easy	basic	220-1201 2.6 - Basic SOHO Network Configuration	Professor Messer 220-1201 v1.70 p.17; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.6	A+::220-1201::2.6 A+::220-1201::Domain2-Networking A+::220-1201::BasicSOHONetworkConfiguration Basic HighYield IPv4 PrivateAddressing Scenario Source::Messer-v170
-2.6-B002	<p>An IP address is written as hexadecimal groups separated by colons. Which IP version uses this format?</p>	<p><strong>IPv6</strong>.</p>	"<h3>Exam Trap</h3>
+2.6-B002	<p>An IP address is written as hexadecimal groups separated by colons. Which IP version uses this format?</p>		<p><strong>IPv6</strong>.</p>	"<h3>Exam Trap</h3>
 <p>IPv4 normally appears as four decimal octets separated by periods; IPv6 uses hexadecimal and colons.</p>"	easy	basic	220-1201 2.6 - Basic SOHO Network Configuration	Professor Messer 220-1201 v1.70 p.17; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.6	A+::220-1201::2.6 A+::220-1201::Domain2-Networking A+::220-1201::BasicSOHONetworkConfiguration Basic IPv6 AddressFormat Source::Messer-v170
-2.6-B003	<p>A policy requires a technician to enter a device's IP settings directly and keep them unchanged until an administrator edits them. Is this static or dynamic addressing?</p>	<p><strong>Static addressing</strong>.</p>	"<h3>Why</h3>
+2.6-B003	<p>A policy requires a technician to enter a device's IP settings directly and keep them unchanged until an administrator edits them. Is this static or dynamic addressing?</p>		<p><strong>Static addressing</strong>.</p>	"<h3>Why</h3>
 <p>Manually entered settings remain fixed until they are changed. Dynamic settings are supplied automatically and may change.</p>
 <h3>Real Help Desk</h3>
 <p>Manual static settings require careful maintenance because later network changes must also be entered on the device.</p>"	medium	basic	220-1201 2.6 - Basic SOHO Network Configuration	Professor Messer 220-1201 v1.70 p.18; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.6	A+::220-1201::2.6 A+::220-1201::Domain2-Networking A+::220-1201::BasicSOHONetworkConfiguration Basic StaticAddressing DynamicAddressing Scenario Source::Messer-v170
-2.6-B004	<p>A host has the correct IPv4 address but incorrectly decides whether destinations are local or require routing. Which IP setting should be checked first?</p>	<p>The <strong>subnet mask</strong>.</p>	"<h3>Why</h3>
+2.6-B004	<p>A host has the correct IPv4 address but incorrectly decides whether destinations are local or require routing. Which IP setting should be checked first?</p>		<p>The <strong>subnet mask</strong>.</p>	"<h3>Why</h3>
 <p>The subnet mask tells the host which addresses belong to its local subnet.</p>
 <h3>Exam Trap</h3>
 <p>The default gateway handles off-subnet forwarding, but the mask determines whether the host considers a destination off-subnet in the first place.</p>"	medium	basic	220-1201 2.6 - Basic SOHO Network Configuration	Professor Messer 220-1201 v1.70 p.18; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.6	A+::220-1201::2.6 A+::220-1201::Domain2-Networking A+::220-1201::BasicSOHONetworkConfiguration Basic HighYield SubnetMask Troubleshooting Scenario Source::Messer-v170
-2.6-B005	<p>A workstation can reach devices on its local subnet but cannot reach any off-subnet destination. Its IP address and subnet mask are correct. Which setting should be checked first?</p>	<p>The <strong>default gateway</strong>.</p>	"<h3>Why</h3>
+2.6-B005	<p>A workstation can reach devices on its local subnet but cannot reach any off-subnet destination. Its IP address and subnet mask are correct. Which setting should be checked first?</p>		<p>The <strong>default gateway</strong>.</p>	"<h3>Why</h3>
 <p>The default gateway is the local router address used to send traffic beyond the host's subnet.</p>
 <h3>Exam Trap</h3>
 <p>The gateway must be reachable on the local subnet; an unrelated or mistyped address cannot provide the off-subnet path.</p>"	medium	basic	220-1201 2.6 - Basic SOHO Network Configuration	Professor Messer 220-1201 v1.70 p.18; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.6	A+::220-1201::2.6 A+::220-1201::Domain2-Networking A+::220-1201::BasicSOHONetworkConfiguration Basic HighYield Gateway Troubleshooting Scenario Source::Messer-v170
-2.6-B006	<p>A workstation configured for automatic addressing assigns itself a <code>169.254.x.x</code> address and cannot reach routed networks. What does this address indicate?</p>	<p>The workstation <strong>could not obtain an address from DHCP</strong> and used APIPA.</p>	"<h3>Why</h3>
+2.6-B006	<p>A workstation configured for automatic addressing assigns itself a <code>169.254.x.x</code> address and cannot reach routed networks. What does this address indicate?</p>		<p>The workstation <strong>could not obtain an address from DHCP</strong> and used APIPA.</p>	"<h3>Why</h3>
 <p>APIPA provides local link communication when automatic DHCP configuration is unavailable.</p>
 <h3>Exam Trap</h3>
 <p>An APIPA address is a symptom to investigate DHCP reachability; it is not a normal routed address for internet access.</p>"	medium	basic	220-1201 2.6 - Basic SOHO Network Configuration	Professor Messer 220-1201 v1.70 p.18; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.6	A+::220-1201::2.6 A+::220-1201::Domain2-Networking A+::220-1201::BasicSOHONetworkConfiguration Basic HighYield APIPA DHCP Troubleshooting Source::Messer-v170

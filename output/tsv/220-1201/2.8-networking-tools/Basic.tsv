@@ -1,26 +1,26 @@
 #separator:Tab
 #html:true
-#tags column:9
-#columns:Card ID	Front	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
-2.8-B001	<p>A technician has arranged the conductors in a twisted-pair cable and inserted them into a compatible modular plug. Which tool completes the termination?</p>	<p><strong>A crimper.</strong></p>	"<h3>Why</h3>
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.8-B001	<p>A technician has arranged the conductors in a twisted-pair cable and inserted them into a compatible modular plug. Which tool completes the termination?</p>		<p><strong>A crimper.</strong></p>	"<h3>Why</h3>
 <p>The crimper presses the plug contacts into the conductors and secures the plug to the cable jacket.</p>
 <h3>Exam Trap</h3>
 <p>A punchdown tool seats individual wires into a wiring block; it does not attach a modular plug.</p>"	easy	basic	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Basic HighYield Crimper CableTermination Source::Messer-v170
-2.8-B002	<p>Users report unreliable Wi-Fi in one area. Which tool should a technician use for 802.11 analysis to identify wireless errors or interference?</p>	<p><strong>A Wi-Fi analyzer.</strong></p>	"<h3>Why</h3>
+2.8-B002	<p>Users report unreliable Wi-Fi in one area. Which tool should a technician use for 802.11 analysis to identify wireless errors or interference?</p>		<p><strong>A Wi-Fi analyzer.</strong></p>	"<h3>Why</h3>
 <p>A Wi-Fi analyzer examines 802.11 activity, errors, and interference; a cable tester cannot reveal the wireless environment.</p>"	easy	basic	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Basic HighYield WiFiAnalyzer WirelessTroubleshooting Source::Messer-v170
-2.8-B003	<p>An unlabeled wall cable enters a bundle of many cables in a wiring room. Which tool pair should a technician use to identify the matching cable?</p>	<p><strong>A tone generator and probe.</strong></p>	"<h3>Why</h3>
+2.8-B003	<p>An unlabeled wall cable enters a bundle of many cables in a wiring room. Which tool pair should a technician use to identify the matching cable?</p>		<p><strong>A tone generator and probe.</strong></p>	"<h3>Why</h3>
 <p>The generator places a tone on the cable, and the probe detects that tone at the matching run or termination.</p>
 <h3>Exam Trap</h3>
 <p>A cable tester checks wiring continuity after both ends are known; it is not the primary tool for locating an unknown run.</p>"	easy	basic	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Basic HighYield TonerProbe CableTracing Source::Messer-v170
-2.8-B004	<p>Which tool should a technician use to seat individual wires into a 66 or 110 wiring block?</p>	<p><strong>A punchdown tool.</strong></p>	"<h3>Why</h3>
+2.8-B004	<p>Which tool should a technician use to seat individual wires into a 66 or 110 wiring block?</p>		<p><strong>A punchdown tool.</strong></p>	"<h3>Why</h3>
 <p>The tool punches each wire into the wiring block and commonly trims the excess wire during the punch.</p>
 <h3>Exam Trap</h3>
 <p>A crimper attaches a plug to a cable; a punchdown tool is used on wiring blocks.</p>"	easy	basic	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Basic HighYield PunchdownTool StructuredCabling Source::Messer-v170
-2.8-B005	<p>A newly terminated network cable may have an open conductor or crossed conductors. Which tool should the technician use first?</p>	<p><strong>A cable tester.</strong></p>	"<h3>Why</h3>
+2.8-B005	<p>A newly terminated network cable may have an open conductor or crossed conductors. Which tool should the technician use first?</p>		<p><strong>A cable tester.</strong></p>	"<h3>Why</h3>
 <p>A basic cable tester checks continuity and conductor order, making it appropriate for these wiring faults.</p>
 <h3>Tech Wisdom</h3>
 <p>Basic continuity testing does not certify the cable's full signal performance.</p>"	easy	basic	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Basic HighYield CableTester Continuity Source::Messer-v170
-2.8-B006	<p>A technician needs to send a copy of traffic from a live network link to packet-capture equipment. Which physical tool is designed for this purpose?</p>	<p><strong>A network tap.</strong></p>	"<h3>Why</h3>
+2.8-B006	<p>A technician needs to send a copy of traffic from a live network link to packet-capture equipment. Which physical tool is designed for this purpose?</p>		<p><strong>A network tap.</strong></p>	"<h3>Why</h3>
 <p>A physical tap sits in the traffic path and exposes a copy of the traffic to monitoring equipment.</p>
 <h3>Exam Trap</h3>
 <p>A loopback plug tests one port's local transmit/receive path; it does not copy traffic from a live link.</p>"	easy	basic	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Basic NetworkTap TrafficCapture Source::Messer-v170

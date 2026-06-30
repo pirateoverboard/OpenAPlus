@@ -10,6 +10,7 @@ Start with [CONTENT_CREATION_RULES.md](CONTENT_CREATION_RULES.md), then use:
 - [CARD_AUTHORING_GUIDE.md](CARD_AUTHORING_GUIDE.md) for card selection;
 - [CLOZE_GUIDE.md](CLOZE_GUIDE.md) and
   [IMAGE_CARD_GUIDE.md](IMAGE_CARD_GUIDE.md) for type-specific rules;
+- [HINTS.md](HINTS.md) for optional pre-reveal Basic card hints;
 - [INSTRUCTOR_NOTES_GUIDE.md](INSTRUCTOR_NOTES_GUIDE.md) for useful notes;
 - [SOURCE_AND_CITATION_RULES.md](SOURCE_AND_CITATION_RULES.md) for evidence;
 - [OBJECTIVE_COMPLETION_CHECKLIST.md](OBJECTIVE_COMPLETION_CHECKLIST.md) for

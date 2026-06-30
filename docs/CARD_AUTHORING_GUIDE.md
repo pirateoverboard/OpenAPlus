@@ -17,6 +17,9 @@ first.
 **Bad:** “List everything about `[topic]`.” The scope and expected answer are
 undefined.
 
+Basic cards may include an optional `## Hint` section when a pre-reveal nudge
+improves reasoning without giving away the answer. See [HINTS.md](HINTS.md).
+
 ### Cloze
 
 Use Cloze cards for compact recall: a definition, acronym, command, port,
@@ -62,6 +65,8 @@ A scenario should contain only details needed to choose the answer:
 4. Put the reasoning—not extra ambiguity—in Instructor Notes.
 
 Do not add irrelevant narrative merely to make a recall question look applied.
+Use hints sparingly for scenario cards: they should guide the learner toward the
+right troubleshooting process, not name the tool, cause, or fix.
 
 ## Calibrated decision wording
 

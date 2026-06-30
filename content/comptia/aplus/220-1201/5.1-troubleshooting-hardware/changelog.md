@@ -1,5 +1,18 @@
 # Objective 5.1 changelog
 
+## 2026-06-30 - Optional Basic hints
+
+- Added optional learner-facing `## Hint` sections to selected scenario-heavy
+  Basic troubleshooting cards.
+- Hints guide pre-reveal reasoning, such as checking safety, recent changes,
+  simple external causes, and evidence quality, without duplicating answers.
+- Left direct cards without hints where a hint would mostly reveal the answer.
+- Did not modify Cloze cards.
+- Regenerated TSV output with the updated OpenAPlus Basic Hint field.
+- No Objective 3.2 through 4.x content was created.
+- No Objective 5.2 or later objective content was created by this 5.1 hint
+  update.
+
 ## 2026-06-30 - Initial Objective 5.1 draft
 
 - Created Objective 5.1 directory using slug `5.1-troubleshooting-hardware`.
