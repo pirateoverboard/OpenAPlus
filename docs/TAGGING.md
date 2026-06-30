@@ -30,10 +30,10 @@ characters. For example, `Mobile Device Networks` becomes
 `MobileDeviceNetworks`. Duplicate tags are removed without changing the order
 of their first occurrence.
 
-## Objective 1.3 domain/source-validation tags
+## Domain/source-validation tags
 
-Objective 1.3 is split into domain folders. The generator adds the domain and
-source-validation tags below during TSV export; authors do not write them in
+Some objectives use path-derived domain tags and Messer validation tags. The
+generator adds the tags below during TSV export; authors do not write them in
 card front matter.
 
 | Folder | Generated domain tag | Generated source-validation tag |
@@ -42,6 +42,7 @@ card front matter.
 | `1.3-mobile-device-management` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |
 | `2.1-ip-addressing-and-common-ports` | `A+::220-1201::Domain2-Networking` | `Source::Messer-v170` |
+| `3.1-display-types-and-attributes` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
 
 Author-provided tags in these folders are Layer 3 topic tags, such as
 `Bluetooth`, `WiFi`, `MDM`, `BYOD`, or `Synchronization`.

@@ -16,6 +16,7 @@ work must consult:
 - [docs/SOURCE_AND_CITATION_RULES.md](docs/SOURCE_AND_CITATION_RULES.md)
 - [docs/OBJECTIVE_COMPLETION_CHECKLIST.md](docs/OBJECTIVE_COMPLETION_CHECKLIST.md)
 - [docs/ANKI_IMPORT.md](docs/ANKI_IMPORT.md)
+- [docs/IMAGE_WORKFLOW.md](docs/IMAGE_WORKFLOW.md)
 - [docs/OpenAPlus_Review_Prompt_Pack.md](docs/OpenAPlus_Review_Prompt_Pack.md)
 
 ## Documentation index
@@ -36,6 +37,9 @@ All files currently under `docs/`:
   content philosophy, source-backed authoring rules, and objective workflow.
 - [docs/IMAGE_CARD_GUIDE.md](docs/IMAGE_CARD_GUIDE.md) — Occlusion-style image
   card behavior and original-diagram requirements.
+- [docs/IMAGE_WORKFLOW.md](docs/IMAGE_WORKFLOW.md) — Future workflow for
+  safely adding real photos, especially Wikimedia Commons images, with license
+  review and attribution tracking.
 - [docs/INSTRUCTOR_NOTES_GUIDE.md](docs/INSTRUCTOR_NOTES_GUIDE.md) —
   Instructor Notes policy and acceptable note sections.
 - [docs/LICENSE](docs/LICENSE) — Documentation/content license file.

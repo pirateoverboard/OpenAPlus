@@ -376,6 +376,37 @@ def test_objective_21_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_31_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("3.1-B001")
+    card_metadata.update(
+        {
+            "objective": "3.1",
+            "objective_name": "Display Types and Attributes",
+            "tags": ["DisplayPanels", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.21"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="3.1-display-types-and-attributes",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::3.1",
+        "A+::220-1201::Domain3-Hardware",
+        "A+::220-1201::DisplayTypesandAttributes",
+        "Basic",
+        "HighYield",
+        "DisplayPanels",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_multiple_valid_clozes_are_allowed(tmp_path: Path) -> None:
     body = CLOZE_BODY.replace(
         "The answer is {{c1::here}}.",
