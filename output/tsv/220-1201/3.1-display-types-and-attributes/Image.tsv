@@ -1,0 +1,6 @@
+#separator:Tab
+#html:true
+#tags column:11
+#columns:Card ID	Prompt	Question Image	Answer	Answer Image	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+3.1-I001	<p>In the simplified diagram, which panel design does not require a separate backlight?</p>	"<img src=""3.1-I001-question.svg"">"	<p><strong>Panel B, the OLED-style self-emissive panel.</strong></p>	"<img src=""3.1-I001-answer.svg"">"	"<h3>Visual Cue</h3>
+<p>Panel A shows a separate light layer behind the display stack. Panel B shows each picture element producing its own light, which is the key OLED distinction.</p>"	medium	image	220-1201 3.1 - Display Types and Attributes	Professor Messer 220-1201 v1.70 p.21; CompTIA 220-1201 Exam Objectives v2.0, Objective 3.1	A+::220-1201::3.1 A+::220-1201::Domain3-Hardware A+::220-1201::DisplayTypesandAttributes Image HighYield OLED LCD VisualIdentification Source::Messer-v170
