@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Unlabeled two-part cable tracing tool</title>
+  <desc id="desc">Simplified drawing of a two-piece cable tracing kit.</desc>
+  <rect width="720" height="360" fill="#f7fafc"/>
+  <rect x="105" y="110" width="205" height="150" rx="22" fill="#2563eb" stroke="#1e3a8a" stroke-width="8"/>
+  <circle cx="160" cy="165" r="18" fill="#86efac"/>
+  <circle cx="220" cy="165" r="18" fill="#fca5a5"/>
+  <path d="M145 260 v40 h-55" stroke="#334155" stroke-width="9" fill="none"/>
+  <path d="M270 260 v40 h55" stroke="#334155" stroke-width="9" fill="none"/>
+  <path d="M485 75 l-24 92" stroke="#475569" stroke-width="20" stroke-linecap="round"/>
+  <rect x="405" y="155" width="112" height="155" rx="42" fill="#f59e0b" stroke="#92400e" stroke-width="8" transform="rotate(15 461 232)"/>
+  <path d="M350 120 q55 -45 105 0 M340 90 q70 -65 135 0" stroke="#0f766e" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <rect x="190" y="18" width="340" height="34" rx="8" fill="#e2e8f0"/>
+</svg>

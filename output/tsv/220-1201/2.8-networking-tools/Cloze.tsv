@@ -1,0 +1,8 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.8-C001	<p>A {{c1::cable stripper}} removes a cable's outer jacket before termination.</p>	<p>The goal is to expose the conductors without damaging them.</p>	"<h3>Exam Trap</h3>
+<p>The stripper prepares the cable; a crimper or punchdown tool performs the termination.</p>"	easy	cloze	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Cloze CableStripper CablePreparation Source::Messer-v170
+2.8-C002	<p>A {{c1::loopback plug}} returns a port's transmitted signal to its receive side for local physical-port testing.</p>	<p>Loopback plugs can be made for different physical interfaces and are not crossover cables.</p>	"<h3>Why</h3>
+<p>Returning the signal lets a technician test the local port path without a remote endpoint.</p>"	easy	cloze	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Cloze LoopbackPlug PortTesting Source::Messer-v170

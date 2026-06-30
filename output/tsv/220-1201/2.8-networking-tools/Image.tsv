@@ -1,0 +1,10 @@
+#separator:Tab
+#html:true
+#tags column:11
+#columns:Card ID	Prompt	Question Image	Answer	Answer Image	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.8-I001	<p>Which networking tool is represented by this simplified diagram?</p>	"<img src=""2.8-I001-question.svg"">"	<p><strong>Cable crimper.</strong></p>	"<img src=""2.8-I001-answer.svg"">"	"<h3>Visual Cue</h3>
+<p>The hinged handles close jaws around a compatible connector; actual tools vary in shape and supported connector type.</p>"	easy	image	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Image Crimper VisualIdentification Source::Messer-v170
+2.8-I002	<p>Which networking tool is represented by this simplified diagram?</p>	"<img src=""2.8-I002-question.svg"">"	<p><strong>Punchdown tool.</strong></p>	"<img src=""2.8-I002-answer.svg"">"	"<h3>Visual Cue</h3>
+<p>The narrow blade seats one wire at a time into a wiring block; tool handles and blade cartridges vary.</p>"	easy	image	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Image PunchdownTool VisualIdentification Source::Messer-v170
+2.8-I003	<p>Which networking tool pair is represented by this simplified diagram?</p>	"<img src=""2.8-I003-question.svg"">"	<p><strong>A tone generator and probe.</strong></p>	"<img src=""2.8-I003-answer.svg"">"	"<h3>Visual Cue</h3>
+<p>The generator connects to the cable, while the pointed handheld probe detects the tone near the matching run.</p>"	easy	image	220-1201 2.8 - Networking Tools	Professor Messer 220-1201 v1.70 p.20; CompTIA 220-1201 Exam Objectives v2.0, Objective 2.8	A+::220-1201::2.8 A+::220-1201::Domain2-Networking A+::220-1201::NetworkingTools Image TonerProbe VisualIdentification Source::Messer-v170

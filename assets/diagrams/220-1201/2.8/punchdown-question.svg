@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Unlabeled narrow networking hand tool</title>
+  <desc id="desc">Question-side illustration for a networking tool identification card.</desc>
+  <rect width="720" height="360" fill="#f7fafc"/>
+  <rect x="205" y="132" width="315" height="96" rx="42" fill="#f59e0b" stroke="#92400e" stroke-width="8"/>
+  <rect x="150" y="158" width="72" height="44" rx="8" fill="#64748b"/>
+  <path d="M102 180 h55" stroke="#334155" stroke-width="18" stroke-linecap="square"/>
+  <path d="M80 163 v34 M102 163 v34" stroke="#334155" stroke-width="8"/>
+  <rect x="505" y="154" width="65" height="52" rx="10" fill="#475569"/>
+  <rect x="190" y="24" width="340" height="34" rx="8" fill="#e2e8f0"/>
+</svg>
