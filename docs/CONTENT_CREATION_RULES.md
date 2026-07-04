@@ -53,6 +53,11 @@ Follow [CARD_SCHEMA.md](CARD_SCHEMA.md) for metadata and stable IDs,
 [CARD_AUTHORING_GUIDE.md](CARD_AUTHORING_GUIDE.md) for card design, and
 [TAGGING.md](TAGGING.md) for custom tags.
 
+For troubleshooting-heavy objectives, longer spoken-answer practice belongs in
+objective-local `interview/` files rather than regular Anki cards. See
+[INTERVIEW_TROUBLESHOOTING.md](INTERVIEW_TROUBLESHOOTING.md) for the boundary
+between broad interview prompts and atomic review cards.
+
 ## Definition of complete
 
 An objective is not complete until all of the following are reviewed together:

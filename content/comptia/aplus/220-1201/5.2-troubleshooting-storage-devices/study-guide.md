@@ -73,6 +73,11 @@ availability; a missing share is not the same as a failed local disk.
 
 ## Interview-ready troubleshooting language
 
+For longer spoken-answer practice, see
+`interview/interview-scenarios.md` and `interview/interview-answer-bank.md`.
+Those files hold broad troubleshooting talk tracks that are intentionally not
+exported as regular Anki cards.
+
 - "I would first verify the exact boot error and whether the drive is detected
   before assuming the drive failed."
 - "If the drive is making grinding or clicking noises, I would protect the

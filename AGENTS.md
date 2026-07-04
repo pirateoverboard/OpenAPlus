@@ -19,6 +19,7 @@ work must consult:
 - [docs/ANKI_IMPORT.md](docs/ANKI_IMPORT.md)
 - [docs/IMAGE_WORKFLOW.md](docs/IMAGE_WORKFLOW.md)
 - [docs/OpenAPlus_Review_Prompt_Pack.md](docs/OpenAPlus_Review_Prompt_Pack.md)
+- [docs/INTERVIEW_TROUBLESHOOTING.md](docs/INTERVIEW_TROUBLESHOOTING.md)
 
 ## Documentation index
 
@@ -43,6 +44,9 @@ All files currently under `docs/`:
   review and attribution tracking.
 - [docs/HINTS.md](docs/HINTS.md) — Optional `## Hint` section policy,
   pre-reveal usage, and bad/okay/great hint examples.
+- [docs/INTERVIEW_TROUBLESHOOTING.md](docs/INTERVIEW_TROUBLESHOOTING.md) —
+  Guidance for objective-local troubleshooting interview-practice files and
+  the boundary between broad spoken answers and regular Anki cards.
 - [docs/INSTRUCTOR_NOTES_GUIDE.md](docs/INSTRUCTOR_NOTES_GUIDE.md) —
   Instructor Notes policy and acceptable note sections.
 - [docs/LICENSE](docs/LICENSE) — Documentation/content license file.

@@ -1,0 +1,169 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.3-B001	"<p>A user moved a desktop to a new desk. The computer powers on, but the monitor
+shows ""No signal."" What should you check first before replacing the monitor?</p>"	<p>Start with the simplest external display cause.</p>	<p><strong>Confirm that the monitor has power.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>This scenario changed the physical display path, but power is still the first
+simple external check. A powered-off monitor can make a working computer look
+like a display failure.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Display InputSource Scenario Source::Messer-v170
+5.3-B002	"<p>A monitor remains blank after you confirm power, input selection, brightness,
+and cable seating. What is a useful next test to narrow the fault?</p>"	<p>Use a test that shows whether the problem follows the display path.</p>	<p><strong>Try the monitor with another known-good computer.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Testing the monitor on a known-good computer checks whether the monitor can
+display an image outside the original system. That is stronger evidence than
+guessing which display-path component failed.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display KnownGood Scenario Source::Messer-v170
+5.3-B003	"<p>A PC displays firmware startup screens, but the monitor goes blank when Windows
+loads. What startup mode should you try before replacing the monitor?</p>"	<p>Separate pre-OS video from operating-system display configuration.</p>	<p><strong>Use a low-resolution or recovery display mode.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The monitor has already shown it can display video before the OS loads. That
+points away from immediate monitor replacement and toward a Windows display
+configuration or driver path that can be isolated with a basic startup mode.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Display Drivers Scenario Source::Messer-v170
+5.3-B004	"<p>A conference-room projector runs for a few minutes, becomes very hot, then shuts
+down. What projector-specific condition should you inspect before blaming the
+laptop?</p>"	<p>Projectors add heat variables that normal monitors do not.</p>	<p><strong>Inspect projector airflow.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The symptom follows projector operation time and heat, not the laptop signal.
+Airflow is a specific, noninvasive check before replacing or troubleshooting
+the computer.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Projector Cooling Scenario Source::Messer-v170
+5.3-B005	"<p>A user's external LCD monitor works, but text looks fuzzy after the resolution
+was changed. What is the best first setting to verify?</p>"	<p>Match the system output to what the fixed-pixel display is designed to show.</p>	"<p><strong>Verify the computer is using the monitor's native resolution, or a compatible
+same-aspect setting if native resolution is not available.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>LCDs have a fixed pixel grid. A mismatched resolution can make a working
+display look poor, so settings should be checked before replacing hardware.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Resolution Display Scenario Source::Messer-v170
+5.3-B006	"<p>A lobby display shows a faint outline of the same menu even after the input
+changes. What should you tell the user and try first if the panel is an LCD?</p>"	<p>Distinguish temporary image retention from a cable or input-source problem.</p>	"<p><strong>Explain that it may be image sticking and try displaying a plain white screen
+for an extended period before deciding the panel must be replaced.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>The symptom remains after the content changes, so the input source is less
+likely. Some LCD image retention can improve, but permanent burn-in or panel
+damage may still require replacement or escalation.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic BurnIn Display Scenario Source::Messer-v170
+5.3-B007	"<p>A monitor has one tiny spot that is always black, regardless of the app, cable,
+or computer used. What is the most likely category of issue?</p>"		<p><strong>A dead pixel or panel defect, not a cable, power, or operating-system issue.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The spot stays fixed across inputs and systems. That makes the panel itself the
+evidence target, while cable and OS theories become less likely.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic DeadPixels Display Scenario Source::Messer-v170
+5.3-B008	"<p>A user's screen flashes off and on when the desk is bumped. What should you
+check first?</p>"	<p>Look for the simplest signal-path problem suggested by movement.</p>	"<p><strong>Check and reseat the video cable connections, then try a known-good cable if
+the symptom continues.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Movement-sensitive flicker strongly suggests an intermittent signal path. Cable
+checks are faster and less disruptive than driver changes or hardware
+replacement.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Display Cables Scenario Source::Messer-v170
+5.3-B009	"<p>A user says the monitor suddenly looks very blue after working normally
+yesterday. What monitor setting should you check before replacing the display?</p>"	<p>Start with the display's own color controls.</p>	<p><strong>Check the monitor's color preset or tint setting.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>An overall color cast can come from the display's own controls. This card tests
+that one local setting before broader display-path troubleshooting.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Color Display Scenario Source::Messer-v170
+5.3-B010	"<p>A monitor displays video over HDMI, but the user hears no sound from its built-in
+speakers. What operating-system setting should you verify before replacing the
+monitor?</p>"	<p>The working video path does not guarantee that audio is routed there.</p>	<p><strong>Confirm that the OS audio output is set to the display connection.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>HDMI, DisplayPort, or Thunderbolt can carry audio, but the operating system may
+still send sound to a different output device.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Audio HDMI Scenario Source::Messer-v170
+5.3-B011	"<p>A laptop display is visible only faintly, but an external monitor works
+normally. What simple setting should you check before escalating for display
+repair?</p>"	<p>Rule out an intentional dim setting before suspecting repair.</p>	<p><strong>Check the laptop brightness setting.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The external monitor confirms the computer can generate video. Brightness is a
+specific, reversible check before escalating for panel lighting repair.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield DimDisplay Backlight Scenario Source::Messer-v170
+5.3-B012	"<p>An older monitor connection shows a missing color channel after the cable was
+unplugged and reconnected. What should you inspect?</p>"	<p>A physical connector problem can change image quality without changing the app.</p>	"<p><strong>Inspect the video cable and connector pins, then reseat or replace the cable
+if damage is found.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Missing or damaged pins can affect color or signal quality. The recent cable
+handling makes connector inspection a better first step than reinstalling
+drivers.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Cables Color Scenario Source::Messer-v170
+5.3-B013	"<p>A display shows distorted geometry and intermittent image problems after a new
+monitor was installed. What OS settings should you verify first?</p>"	<p>Make sure the computer output matches what the display supports.</p>	"<p><strong>Verify the resolution and refresh rate match the monitor's supported
+specifications.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>A new monitor changes the supported display modes. Checking resolution and
+refresh rate is a targeted, reversible test before replacing hardware.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Resolution RefreshRate Scenario Source::Messer-v170
+5.3-B014	"<p>Only one graphics-heavy application shows display corruption. The desktop and
+other apps look normal. What reversible test can help separate a driver path
+from display hardware?</p>"	<p>Use a software isolation step before treating the monitor as failed.</p>	"<p><strong>Disable hardware acceleration for the affected app or test with a basic video
+driver path, then observe whether the corruption stops.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>If corruption is limited to a hardware-accelerated app, the display panel is
+less likely than a software or driver path. The test is reversible and gives
+evidence before replacement.</p>"	hard	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Drivers Display Scenario Source::Messer-v170
+5.3-B015	"<p>A projector shows the full desktop, but the image is stretched and does not fit
+the screen correctly. What should you check?</p>"	<p>The display may be resizing the computer output.</p>	"<p><strong>Check the display or projector scaling/aspect setting and the computer's
+display resolution.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Sizing problems can come from how the output is scaled, not from a broken
+projector. Match the output and scaling behavior before swapping hardware.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Scaling Display Scenario Source::Messer-v170
+5.3-B016	"<p>A user sees lines, flashing colors, and blocks before the operating system
+loads. What does that test result suggest?</p>"	"<p>Use the timing of the symptom to decide whether an application is likely to be
+the cause.</p>"	"<p><strong>The issue is less likely to be limited to one application or OS display
+setting; continue isolating the hardware display path.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Artifacts that appear before the OS loads point away from an app-only problem.
+That does not prove which component failed, but it supports hardware-path
+isolation with cable, display, port, adapter, or graphics hardware tests.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Artifacts Display Scenario Source::Messer-v170
+5.3-B017	"<p>A monitor issue disappears when the same monitor is moved to another desk. What
+does that result help you narrow?</p>"	<p>Use where the symptom follows to narrow the failing path.</p>	"<p><strong>The original desk's cable, port, adapter, dock, power, or computer path is
+more likely than the monitor panel itself.</strong></p>"	"<h3>Troubleshooting Logic</h3>
+<p>Known-good movement changes the scope. This Anki card tests one result and what
+it rules in or out.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic KnownGood Scenario Source::Messer-v170
+5.3-B018	"<p>You need to escalate a display issue after testing with a known-good cable and a
+second monitor. What tested-path evidence should your ticket include?</p>"	<p>Preserve what you already isolated.</p>	<p><strong>Document which cable, port, and display were tested and the result.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The next technician needs to know what was already isolated so they do not
+repeat the same known-good tests.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield Escalation Documentation Source::Messer-v170
+5.3-B019	"<p>A desktop was moved, the monitor has power, and the monitor reports ""No
+signal."" What physical display-path check should you make next?</p>"	<p>Movement makes a simple signal-path issue more likely.</p>	<p><strong>Check that the video cable is seated securely.</strong></p>	"<h3>Why</h3>
+<p>A moved desktop can leave the monitor powered but disconnected from video. Cable
+seating is a specific check before replacing the display.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display Cables Source::Messer-v170
+5.3-B020	"<p>A monitor has power and the video cable is seated, but it still reports no
+signal. What monitor setting should you verify?</p>"		<p><strong>Verify that the selected input matches the connected cable.</strong></p>	"<h3>Why</h3>
+<p>A display can be connected correctly but listening on another input. This check
+is fast, reversible, and specific to display troubleshooting.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display Input Source::Messer-v170
+5.3-B021	"<p>A projector overheats during meetings. What maintenance item can restrict
+airflow and should be checked?</p>"	<p>Consider what can restrict cooling.</p>	<p><strong>The projector filter.</strong></p>	"<h3>Why</h3>
+<p>Projector filters and vents can restrict airflow. That makes cleaning or service
+checks more targeted than blaming the laptop video output.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Projector Cooling Source::Messer-v170
+5.3-B022	"<p>A projector shuts down after several minutes and its fan continues running after
+the image turns off. What behavior should you allow before restarting it?</p>"		<p><strong>Allow the projector to complete its cooldown period.</strong></p>	"<h3>Why</h3>
+<p>Projectors may need cooldown time to protect the bulb and internal components.
+Repeated immediate restarts can work against the cooling process.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Projector Cooling Source::Messer-v170
+5.3-B023	"<p>A monitor's colors look unusually warm or dim late in the day, but the same
+display looks normal in firmware screens. What OS feature should you check?</p>"	<p>Look for a software setting that intentionally changes color output.</p>	<p><strong>Check the operating system's night-light or color mode setting.</strong></p>	"<h3>Why</h3>
+<p>OS color modes can change the display output without a hardware failure. The
+firmware-screen comparison helps separate software configuration from panel
+damage.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Color DisplaySettings Source::Messer-v170
+5.3-B024	"<p>A display is selected as the OS audio output, but the monitor speakers are still
+silent. What local monitor control should you check?</p>"		<p><strong>Check the monitor volume or mute setting.</strong></p>	"<h3>Why</h3>
+<p>The operating system can route audio correctly while the monitor itself is muted
+or turned down. This keeps the card focused on one local control.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Audio DisplaySettings Source::Messer-v170
+5.3-B025	"<p>A monitor has built-in speakers, but its manual says audio requires a separate
+input for the current connection. What should you verify?</p>"	<p>Not every display path carries audio in the same way.</p>	<p><strong>Verify that the required separate audio cable or input is connected.</strong></p>	"<h3>Why</h3>
+<p>Some display setups do not use the video cable for audio. Checking the expected
+audio path avoids replacing a working monitor.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Audio Cables Source::Messer-v170
+5.3-B026	"<p>A laptop's built-in display is dim only when running on battery. What setting
+category should you check?</p>"	<p>Compare what changes when the power source changes.</p>	<p><strong>Check battery or auto-dimming power settings.</strong></p>	"<h3>Why</h3>
+<p>A symptom tied to battery operation points to power-management settings before
+panel repair. This is separate from a display that remains faint on all power
+sources.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic DimDisplay PowerManagement Source::Messer-v170
+5.3-B027	"<p>A laptop image remains very faint after brightness and power settings are
+verified, and an external monitor works normally. What failure path becomes more
+likely?</p>"		<p><strong>A built-in display backlight or panel lighting failure.</strong></p>	"<h3>Why</h3>
+<p>The external monitor shows video output works. A persistent faint image points
+toward the display lighting path rather than the whole graphics subsystem.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic HighYield DimDisplay Backlight Source::Messer-v170
+5.3-B028	"<p>A display shows blocks and flashing colors. What known-good test can help decide
+whether the symptom follows the cable?</p>"	<p>Change one part of the signal path at a time.</p>	<p><strong>Test with a known-good video cable.</strong></p>	"<h3>Why</h3>
+<p>A known-good cable is a targeted way to test the signal path without replacing
+the monitor or graphics adapter first.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Artifacts KnownGood Source::Messer-v170
+5.3-B029	"<p>Display artifacts remain after a known-good cable is used. What next known-good
+test can help decide whether the problem follows the monitor?</p>"		<p><strong>Test with a known-good display.</strong></p>	"<h3>Why</h3>
+<p>Changing the display after the cable test helps isolate whether the symptom
+follows the monitor or remains with the computer, adapter, port, or driver path.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Artifacts KnownGood Source::Messer-v170
+5.3-B030	"<p>Before escalating a display issue, what recent-change detail should you include
+if the symptom began after a docking or monitor change?</p>"		<p><strong>Document the docking or monitor change and when the symptom started.</strong></p>	"<h3>Why</h3>
+<p>Recent changes help the next technician focus on the affected display path. This
+card keeps the retrieval target to one documentation detail.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Escalation Documentation Source::Messer-v170
+5.3-B031	"<p>A known-good monitor remains blank when connected to the user's computer with a
+known-good cable. What does that test result suggest?</p>"	<p>Follow the failed test result back to the remaining side of the path.</p>	<p><strong>The problem is more likely on the computer's display output path.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>A known-good monitor and cable reduce suspicion on the display and cable. The
+remaining likely area is the computer-side output, such as its port,
+configuration, adapter, or video subsystem.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display KnownGood Scenario Source::Messer-v170
+5.3-B032	"<p>A user's monitor is blank on their desktop, but the same monitor displays
+normally on another computer. What does that result rule out first?</p>"		<p><strong>It rules out the monitor itself as the most likely fault.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The symptom did not follow the monitor to another computer. The next theory
+should focus on the original computer, cable path, input selection, port, or
+configuration instead of replacing the monitor.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display KnownGood Scenario Source::Messer-v170
+5.3-B033	"<p>Windows loads, but the display is using an unsupported or incorrect mode. What
+configuration area should you check?</p>"		<p><strong>Check the operating-system display settings.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Display settings can create a symptom after the OS loads even when firmware
+screens display correctly. This is a configuration check, not proof that the
+monitor has failed.</p>"	easy	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display Settings Scenario Source::Messer-v170
+5.3-B034	"<p>A display issue started immediately after a video driver update. What driver
+action is more evidence-based than replacing the monitor?</p>"	<p>Use the recent change to choose the next theory.</p>	<p><strong>Roll back or correct the video driver.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The timing links the symptom to the driver change. That makes the driver path a
+better next target than replacing a monitor that worked before the update.</p>"	medium	basic	220-1201 5.3 - Troubleshooting Display Issues	Professor Messer 220-1201 v1.70 p.52; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.3	A+::220-1201::5.3 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingDisplayIssues Basic Display Drivers Scenario Source::Messer-v170

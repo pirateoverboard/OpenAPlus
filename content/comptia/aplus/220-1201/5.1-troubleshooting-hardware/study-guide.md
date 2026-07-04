@@ -77,6 +77,11 @@ confirm with inspection and diagnostics.
 
 ## Interview-ready troubleshooting language
 
+For longer spoken-answer practice, see
+`interview/interview-scenarios.md` and `interview/interview-answer-bank.md`.
+Those files hold broad troubleshooting talk tracks that are intentionally not
+exported as regular Anki cards.
+
 - "I would first gather when the symptom started, what changed recently, and
   whether it affects one device or many devices."
 - "I would check simple external causes first, such as power, cables, input

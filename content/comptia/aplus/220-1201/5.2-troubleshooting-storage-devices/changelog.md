@@ -1,5 +1,74 @@
 # Objective 5.2 changelog
 
+## 2026-07-04 - Final cleanup acceptance
+
+- Accepted Objective 5.2 after post-cleanup manual Anki smoke testing passed.
+- Verified Basic and Cloze imports in the `OpenAPlus Import Test` deck/profile.
+- Verified Basic.tsv used the stable Hint column and Hint fields imported
+  correctly.
+- Verified headers were not imported as notes.
+- Verified Card ID was the first field and drove duplicate/update behavior.
+- Verified HTML rendered correctly and Cloze cards generated correctly.
+- Verified custom OpenAPlus Basic and Cloze note types worked.
+- Verified Instructor Notes displayed correctly after answer reveal.
+- Verified tags imported as Anki metadata, not learner-facing fields.
+- Verified re-importing updated existing notes instead of duplicating them.
+- Verified interview directory text was not exported to TSV.
+- No Objective 5.4 content was created.
+
+## 2026-07-04 - Card-bloat cleanup
+
+- Deleted `5.2-B014` as a duplicate of `5.2-B013`.
+- Deleted `5.2-C003` as a duplicate of `5.2-B011`.
+- Regenerated TSV output.
+- Card-bloat cleanup completed.
+- No interview-practice material was exported into TSV.
+- No Objective 5.2 scope was expanded.
+- No objectives outside 5.1, 5.2, and 5.3 were modified.
+- Objective 5.4 was not created.
+
+## 2026-06-30 - Remaining bundled Basic-card fixes
+
+- Narrowed `5.2-B017` to checking whether the external drive is receiving
+  power.
+- Added `5.2-B023` for trying a known-good external-drive data cable.
+- Added `5.2-B024` for trying another compatible computer port.
+- Added `5.2-B025` for interpreting a dock or adapter path failure.
+- Removed no cards.
+- Reviewed hints after the split; retained only short non-revealing hints where
+  they help reasoning before reveal.
+- Updated `checklist.md` with the narrowed ID, new split IDs, updated counts,
+  and non-export behavior for interview-practice files.
+- Regenerated TSV output.
+- Did not expand Objective 5.2 scope, modify unrelated objectives, create
+  Objective 5.4, or add APKG/PDF/website/native-occlusion output.
+
+## 2026-06-30 - Two-layer troubleshooting refactor
+
+- Created `interview/` with `interview-scenarios.md` and
+  `interview-answer-bank.md` for longer spoken troubleshooting practice.
+- Moved broad storage interview and escalation talk tracks out of regular Anki
+  Basic answers and into the interview-practice files.
+- Rewrote regular Basic cards to favor one specific storage symptom, evidence
+  item, or documentation decision per card.
+- Rewrote `5.2-B004`, `5.2-B012`, and `5.2-B019` for narrower drive-detection,
+  RAID-console-status, and backup/data-risk documentation targets.
+- Added `5.2-B020` through `5.2-B022` for exact boot-error, failed-disk
+  identifier, and drive-detection documentation targets.
+- Removed no cards.
+- Reviewed hints during the split; retained only short non-revealing hints
+  where they help pre-reveal reasoning.
+- Updated `study-guide.md` to point longer interview practice to the
+  `interview/` directory.
+- Updated `checklist.md` to record the two-layer refactor, new counts, rewritten
+  card IDs, and that prior manual Anki smoke testing was superseded by this
+  content change.
+- Regenerated TSV output.
+- Did not expand Objective 5.2 scope.
+- Did not create content outside the requested Objective 5.1, 5.2, and 5.3
+  refactor scope; did not create Objectives 3.2 through 4.x, Objective 5.4
+  content, or any APKG/PDF/website/native-occlusion output.
+
 ## 2026-06-30 - Final acceptance
 
 - Accepted Objective 5.2 after omitted-concepts review, independent content

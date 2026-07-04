@@ -65,6 +65,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "3.1-display-types-and-attributes": "A+::220-1201::Domain3-Hardware",
     "5.1-troubleshooting-hardware": "A+::220-1201::Domain5-Troubleshooting",
     "5.2-troubleshooting-storage-devices": "A+::220-1201::Domain5-Troubleshooting",
+    "5.3-troubleshooting-display-issues": "A+::220-1201::Domain5-Troubleshooting",
 }
 _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
 _MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"

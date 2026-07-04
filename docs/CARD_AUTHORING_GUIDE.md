@@ -68,6 +68,13 @@ Do not add irrelevant narrative merely to make a recall question look applied.
 Use hints sparingly for scenario cards: they should guide the learner toward the
 right troubleshooting process, not name the tool, cause, or fix.
 
+Longer "how would you troubleshoot this ticket?" prompts are interview-practice
+material, not regular Anki cards. Put those broader spoken-answer exercises in
+the objective's `interview/` directory and follow
+[INTERVIEW_TROUBLESHOOTING.md](INTERVIEW_TROUBLESHOOTING.md). Then split the
+regular Anki coverage into atomic cards with one symptom, check, decision, or
+troubleshooting clue.
+
 ## Calibrated decision wording
 
 Use **MOST likely**, **BEST next step**, and **FIRST thing to check** only when

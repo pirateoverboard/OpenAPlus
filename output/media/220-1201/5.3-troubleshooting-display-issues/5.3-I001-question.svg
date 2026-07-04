@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#f6f7f9"/>
+  <rect x="70" y="42" width="500" height="278" rx="12" fill="#1f2937"/>
+  <rect x="90" y="62" width="460" height="238" fill="#d9e2ec"/>
+  <rect x="90" y="62" width="460" height="238" fill="url(#scan)" opacity="0.35"/>
+  <rect x="128" y="92" width="164" height="18" fill="#58a6ff"/>
+  <rect x="318" y="132" width="186" height="16" fill="#e5534b"/>
+  <rect x="158" y="178" width="304" height="22" fill="#38a169"/>
+  <rect x="112" y="224" width="214" height="16" fill="#f6c343"/>
+  <path d="M95 110 L545 116 M95 166 L545 160 M95 252 L545 258" stroke="#2d3748" stroke-width="4" opacity="0.6"/>
+  <rect x="235" y="320" width="170" height="18" rx="4" fill="#4b5563"/>
+  <rect x="280" y="300" width="80" height="22" fill="#374151"/>
+  <defs>
+    <pattern id="scan" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="5" fill="#ffffff"/>
+      <rect y="5" width="10" height="5" fill="#c7d2de"/>
+    </pattern>
+  </defs>
+</svg>

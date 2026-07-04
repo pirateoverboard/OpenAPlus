@@ -1,8 +1,9 @@
 # Objective 5.2 completion checklist
 
-**Objective status: ACCEPTED.** Objective 5.2 has source-backed content,
-generated output, omitted-concepts review, independent content review, stable
-Basic Hint-field output, and a passing manual Anki smoke test.
+**Objective status: ACCEPTED AFTER CLEANUP.** Objective 5.2 previously passed
+review and manual Anki smoke testing, was refactored into regular Anki cards
+plus interview-practice material, and then passed post-cleanup manual Anki smoke
+testing.
 
 ## Domain mapping
 
@@ -27,21 +28,21 @@ from Objective 5.1 are not repeated unless they apply directly to storage.
 | Loud clicking, grinding, or scraping noises | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Storage failure symptoms | 5.2-B003 | Basic | N/A | Self-reviewed |
 | Mechanical hard drive failure risk | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Storage failure symptoms | 5.2-C001 | Cloze | N/A; compact recall supports scenario reasoning | Self-reviewed |
 | Backup before risky disk work | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Data loss and corruption | 5.2-B001, 5.2-B003, 5.2-B010, 5.2-C002 | Basic, Cloze | N/A; decision cards and recall target are distinct | Self-reviewed |
-| Boot device not found or drive not recognized | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B004 | Basic | N/A | Self-reviewed |
+| Boot device not found or drive not recognized | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B004, 5.2-B020 | Basic | N/A; refactored into drive-detection and exact-error documentation targets | Self-reviewed |
 | Operating system not found while drive is present | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B005 | Basic | N/A | Self-reviewed |
 | Boot failure physical checks | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B006 | Basic | N/A | Self-reviewed |
 | Boot sequence and removable media | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B007 | Basic | N/A | Self-reviewed |
 | Disabled storage interface or new installation configuration | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B008 | Basic | N/A | Self-reviewed |
 | Testing a drive in another computer or known-good path | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Boot failure symptoms | 5.2-B009 | Basic | N/A | Self-reviewed |
 | SSD read-only or sudden access failure | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | Data loss and corruption | 5.2-B010 | Basic | N/A | Self-reviewed |
-| RAID failure alerts and console-first response | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | RAID symptoms and recovery | 5.2-B011, 5.2-C003 | Basic, Cloze | N/A; scenario and compact warning are distinct | Self-reviewed |
-| RAID escalation details | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | RAID symptoms and recovery | 5.2-B012 | Basic | N/A | Self-reviewed |
-| S.M.A.R.T. purpose and trend monitoring | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | S.M.A.R.T. and read/write performance | 5.2-B013, 5.2-B014, 5.2-C004 | Basic, Cloze | N/A; action decisions and acronym recall are distinct | Self-reviewed |
+| RAID failure alerts and console-first response | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | RAID symptoms and recovery | 5.2-B011 | Basic | N/A; duplicate Cloze card removed during card-bloat cleanup | Self-reviewed |
+| RAID escalation details | Messer v1.70 p.50; CompTIA 5.2 | Present, p.50 | RAID symptoms and recovery; interview-practice files | 5.2-B012, 5.2-B021 | Basic | N/A; broad RAID escalation practice moved to `interview/` | Self-reviewed |
+| S.M.A.R.T. purpose and trend monitoring | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | S.M.A.R.T. and read/write performance | 5.2-B013, 5.2-C004 | Basic, Cloze | N/A; action decision and acronym recall are distinct; duplicate NAS warning card removed | Self-reviewed |
 | Extended read/write times and IOPS | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | S.M.A.R.T. and read/write performance | 5.2-B015 | Basic | N/A | Self-reviewed |
 | Missing internal drive after OS boots | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | Missing drives in the operating system | 5.2-B016 | Basic | N/A | Self-reviewed |
-| Missing external drive | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | Missing drives in the operating system | 5.2-B017 | Basic | N/A | Self-reviewed |
+| Missing external drive | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | Missing drives in the operating system | 5.2-B017, 5.2-B023, 5.2-B024, 5.2-B025 | Basic | N/A; power, cable, port, and dock/adapter-path checks are separate retrieval targets | Self-reviewed |
 | Missing network share | Messer v1.70 p.51; CompTIA 5.2 | Present, p.51 | Missing drives in the operating system | 5.2-B018 | Basic | N/A | Self-reviewed |
-| Escalation and documentation for storage issues | Messer v1.70 p.50-51; CompTIA 5.2 | Supported by symptom, diagnostic, and RAID details | Interview-ready troubleshooting language | 5.2-B012, 5.2-B019 | Basic | N/A | Self-reviewed |
+| Escalation and documentation for storage issues | Messer v1.70 p.50-51; CompTIA 5.2 | Supported by symptom, diagnostic, and RAID details | Interview-ready troubleshooting language; interview-practice files | 5.2-B012, 5.2-B019, 5.2-B020, 5.2-B021, 5.2-B022 | Basic | N/A; broad spoken escalation practice moved to `interview/` | Self-reviewed |
 | Exact S.M.A.R.T. attribute IDs and thresholds | Messer v1.70 p.51 | General metric trend only | S.M.A.R.T. and read/write performance | None | None | Intentionally omitted; source supports trends and warnings, not memorizing attribute tables | Self-reviewed |
 | Vendor-specific disk utilities | Messer v1.70 p.50-51 | General diagnostics and utilities only | None | None | None | Intentionally omitted; tool names vary by vendor and support policy | Self-reviewed |
 | Deep data-recovery clean-room procedures | Messer v1.70 p.50 | Recovery described as difficult and expensive | Data loss and corruption | None | None | Study-guide only; entry-level support should escalate rather than perform deep recovery | Self-reviewed |
@@ -77,14 +78,50 @@ from Objective 5.1 are not repeated unless they apply directly to storage.
 ## Authoring
 
 - [x] Study guide written with a References section.
-- [x] Basic cards emphasize troubleshooting decisions and interview-style scenarios.
+- [x] Basic cards emphasize specific troubleshooting decisions rather than broad interview answers.
 - [x] Cloze cards cover only compact recall targets.
 - [x] Image cards were considered and intentionally omitted because visual recognition did not add enough value for the selected learning targets.
 - [x] Instructor Notes add troubleshooting logic on every card.
 - [x] HighYield decisions follow the rubric and are documented for review.
 - [x] No intentionally redundant learning targets retained.
-- [x] Current draft card counts: 19 Basic, 4 Cloze, 0 Image.
+- [x] Current draft card counts after card-bloat cleanup: 24 Basic, 3 Cloze, 0 Image.
 - [x] Optional learner-facing hints added to selected troubleshooting Basic cards; hints guide reasoning without revealing answers.
+- [x] Interview-practice directory created with longer spoken-answer scenarios and answer-bank material.
+- [x] Broad interview-style cards moved or rewritten into smaller Anki retrieval targets.
+- [x] Hint review completed during the refactor; hints remain optional and non-revealing.
+- [x] No objective scope was expanded.
+- [x] No unrelated objectives were modified.
+- [x] Cards added: 5.2-B020 through 5.2-B022.
+- [x] Cards rewritten for specificity: 5.2-B004, 5.2-B012, 5.2-B019.
+- [x] Cards removed during card-bloat cleanup: 5.2-B014 and 5.2-C003.
+- [x] Interview material is not exported to Anki TSV by the existing pipeline.
+- [x] Remaining bundled Basic card fixed: 5.2-B017 was narrowed.
+- [x] Split cards added: 5.2-B023 through 5.2-B025.
+- [x] Hints reviewed after the bundled-card fix.
+- [x] No Objective 5.2 scope was expanded.
+- [x] No unrelated objectives were modified.
+- [x] Objective 5.4 was not created.
+
+## Card-bloat cleanup verification
+
+Verification run on 2026-07-04 after the approved card-bloat cleanup:
+
+- Deleted 5.2-B014 as a duplicate of 5.2-B013.
+- Deleted 5.2-C003 as a duplicate of 5.2-B011.
+- Card-bloat cleanup completed.
+- Interview-practice material remains outside TSV export.
+- No Objective 5.2 scope was expanded.
+- No objectives outside 5.1, 5.2, and 5.3 were modified.
+- Objective 5.4 was not created.
+- TSV output was regenerated.
+- Basic.tsv keeps the stable Hint column.
+- Manual Anki smoke test passed after cleanup.
+- Basic and Cloze imports passed.
+- Hint field import passed.
+- Re-import/update behavior passed.
+- Tags imported as Anki metadata, not learner-facing fields.
+- Interview directory text was not exported to TSV.
+- Objective accepted after cleanup.
 
 ## Review and build
 
@@ -94,8 +131,39 @@ from Objective 5.1 are not repeated unless they apply directly to storage.
 - [x] `python scripts/validate.py` passes.
 - [x] `python scripts/build.py` passes and TSV output is regenerated.
 - [x] `pytest` and Ruff checks pass.
-- [x] Manual Anki smoke test passed, if required.
-- [x] Objective accepted by maintainer.
+- [x] Manual Anki smoke test passed for the post-cleanup refactored output.
+- [x] Objective accepted after cleanup.
+
+## Two-layer refactor verification
+
+Verification run on 2026-06-30 after the two-layer refactor:
+
+- `.venv/bin/python scripts/validate.py` passed with 310 cards checked.
+- `.venv/bin/python scripts/build.py` passed and regenerated TSV output.
+- `.venv/bin/python -m pytest` passed with 68 tests.
+- `.venv/bin/ruff check .` passed.
+- `.venv/bin/ruff format --check .` passed.
+- Basic.tsv uses the stable Hint column.
+- TSV output does not include the interview-practice Markdown prompt text.
+- Objectives 3.2 through 4.x and Objective 5.4 were not created.
+
+## Bundled-card fix verification
+
+Verification run on 2026-06-30 after splitting the remaining bundled Basic
+card:
+
+- 5.2-B017 narrowed to external-drive power verification.
+- 5.2-B023 added for trying a known-good external-drive data cable.
+- 5.2-B024 added for trying another compatible computer port.
+- 5.2-B025 added for interpreting a dock or adapter path failure.
+- Interview-practice material remains outside TSV export.
+- Objective 5.4 was not created.
+- `.venv/bin/python scripts/validate.py` passed with 323 cards checked.
+- `.venv/bin/python scripts/build.py` passed and regenerated TSV output.
+- `.venv/bin/python -m pytest` passed with 68 tests.
+- `.venv/bin/ruff check .` passed.
+- `.venv/bin/ruff format --check .` passed.
+- Basic.tsv contains 25 data rows and the stable Hint column.
 
 ## Hint update
 
@@ -108,7 +176,37 @@ The OpenAPlus Basic TSV schema now includes a Hint field between Front and Back.
 Manual Anki smoke testing verified the updated OpenAPlus Basic note type with
 the Hint field.
 
+## Post-cleanup manual Anki smoke test
+
+Manual Anki smoke test recorded on 2026-07-04 after card-bloat cleanup.
+
+No image cards were created for Objective 5.2, so image-media smoke testing was
+not applicable.
+
+| Item | Result |
+| --- | --- |
+| Test deck/profile | OpenAPlus Import Test |
+| Basic.tsv import | Passed |
+| Cloze.tsv import | Passed |
+| Image.tsv import | Not applicable |
+| Basic Hint column | Passed; Basic.tsv used the stable Hint column |
+| Hint field import | Passed |
+| Headers imported as notes | Passed; headers were not imported as notes |
+| Card ID duplicate/update behavior | Passed; Card ID was first field and drove updates |
+| HTML rendering | Passed |
+| Cloze generation | Passed |
+| Custom note types | Passed; OpenAPlus Basic and Cloze note types worked |
+| Instructor Notes display | Passed; displayed correctly after answer reveal |
+| Tags | Passed; imported as Anki metadata, not learner-facing fields |
+| Re-import/update behavior | Passed; existing notes updated without duplicates |
+| Interview directory text exported | Passed; interview directory text was not exported to TSV |
+| Final result | Pass |
+
 ## Manual Anki smoke test
+
+This smoke test records the pre-refactor accepted output and is superseded by
+the 2026-06-30 two-layer refactor. The refactored TSV output requires a new
+manual Anki smoke test before re-acceptance.
 
 No image cards were created, so image-media smoke testing was not applicable.
 
@@ -139,4 +237,6 @@ No image cards were created, so image-media smoke testing was not applicable.
 | Self-review | 2026-06-30 | Initial Objective 5.2 draft and coverage decisions completed | Omitted-concepts review, independent content review, automated checks, and manual Anki smoke-test decision | Needs independent review |
 | Omitted-concepts review | 2026-06-30 | GO; intentionally not-carded concepts were correctly omitted, left study-guide-only, or deferred pending source support | None | Approved for independent content review |
 | Independent content review | 2026-06-30 | GO; source fidelity, copyright safety, objective coverage, card quality, generated output, and scope boundaries passed review | Manual Anki smoke test before acceptance | Ready for manual Anki smoke test |
-| Maintainer manual Anki smoke test | 2026-06-30 | Basic and Cloze imports passed; Image import not applicable; Hint field, custom note types, Instructor Notes, tags-as-metadata, and re-import update behavior passed | None | Approved; Objective 5.2 accepted |
+| Maintainer manual Anki smoke test | 2026-06-30 | Basic and Cloze imports passed; Image import not applicable; Hint field, custom note types, Instructor Notes, tags-as-metadata, and re-import update behavior passed | None | Superseded by later two-layer refactor |
+| Self-review | 2026-06-30 | Two-layer refactor created interview-practice material and rewrote broad Basic cards into specific retrieval targets | Regenerate TSV and rerun automated verification | Needs independent review and manual Anki smoke test |
+| Maintainer manual Anki smoke test | 2026-07-04 | Post-cleanup Basic and Cloze imports passed; Hint field, custom note types, Instructor Notes, tags-as-metadata, interview non-export, and re-import update behavior passed | None | Accepted after cleanup |
