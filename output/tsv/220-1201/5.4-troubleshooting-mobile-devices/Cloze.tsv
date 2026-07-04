@@ -1,0 +1,17 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.4-C001	<p>In mobile liquid-damage triage, LCI stands for {{c1::Liquid Contact Indicator}}.</p>	"<p>An LCI can support the damage history, but it does not make the device safe to
+power on.</p>"	"<h3>Why</h3>
+<p>This compact acronym recall supports escalation notes and liquid-damage
+inspection without turning the card into a broad procedure.</p>"	easy	cloze	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Cloze HighYield LiquidDamage Memory Source::Messer-v170
+5.4-C002	<p>The mobile touchscreen input layer is commonly called the {{c1::digitizer}}.</p>	"<p>Digitizer symptoms are input symptoms, not automatically display-output
+symptoms.</p>"	"<h3>Memory Trick</h3>
+<p>The digitizer turns physical touch into digital input. Keep that separate from
+display brightness or image-quality problems.</p>"	easy	cloze	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Cloze Touchscreen Memory Source::Messer-v170
+5.4-C003	"<p>Random mobile cursor or touch movement without user input is called
+{{c1::cursor drift}}.</p>"	"<p>If the device supports it, touch calibration can be a targeted troubleshooting
+step.</p>"	"<h3>Why</h3>
+<p>The term helps connect the symptom to the calibration decision card without
+requiring a broad repair answer.</p>"	easy	cloze	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Cloze Touchscreen Calibration Memory Source::Messer-v170

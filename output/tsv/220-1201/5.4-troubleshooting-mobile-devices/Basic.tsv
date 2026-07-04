@@ -1,0 +1,151 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.4-B001	"<p>A phone shows poor battery health after years of normal use. What repair
+direction is most appropriate?</p>"		"<p><strong>Plan for battery replacement rather than treating it as an app or charging
+cable problem.</strong></p>"	"<h3>Why</h3>
+<p>Poor health after many charge cycles points to battery aging. App usage and
+signal checks matter for sudden drain, but the stated evidence is long-term
+battery wear.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Battery Mobile Scenario Source::Messer-v170
+5.4-B002	"<p>A phone battery drains quickly only when the user works in a basement with weak
+cellular reception. What likely cause should you investigate before replacing
+the battery?</p>"	<p>Look for a condition that makes the device keep searching.</p>	<p><strong>Poor reception causing the phone to spend extra power searching for signal.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The location pattern matters. A weak signal area can create battery drain even
+when the battery itself is not the root problem.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Battery Cellular Scenario Source::Messer-v170
+5.4-B003	"<p>A user's phone started losing battery rapidly after a new app was installed.
+What evidence source should you check first?</p>"	<p>Measure which software is using the battery before blaming the battery itself.</p>	<p><strong>Check the phone's app battery-usage information.</strong></p>	"<h3>Why</h3>
+<p>Sudden drain after an app change should be tested with usage evidence. This is
+more targeted than replacing the battery or charger first.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Battery Apps Scenario Source::Messer-v170
+5.4-B004	"<p>A phone case is bulging and the battery appears swollen. What is the safest
+first action?</p>"	<p>Treat physical battery deformation as a safety issue.</p>	<p><strong>Stop using the device immediately and do not open or puncture the battery.</strong></p>	"<h3>Real Help Desk</h3>
+<p>A swollen battery can be a fire risk. Normal troubleshooting stops until the
+device is handled through the proper replacement and disposal process.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Battery Safety Scenario Source::Messer-v170
+5.4-B005	"<p>A mobile phone has a broken screen but still responds to touch. What should you
+do before sending it for screen replacement?</p>"	<p>Protect what the user cannot easily replace.</p>	<p><strong>Back up the user's data first if the device is still usable.</strong></p>	"<h3>Why</h3>
+<p>Screen repair can fail or require device replacement. A backup reduces the risk
+that a repair task becomes a data-loss incident.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Screen Backup Scenario Source::Messer-v170
+5.4-B006	"<p>A user wants to keep using a phone with cracked glass until a replacement part
+arrives. What safety concern should you address?</p>"		"<p><strong>The broken glass can be sharp, so protect the surface temporarily and arrange
+repair.</strong></p>"	"<h3>Why</h3>
+<p>This card is not testing cosmetic damage. It tests the safety angle that a help
+desk technician should communicate when a screen is physically broken.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Screen Safety Scenario Source::Messer-v170
+5.4-B007	"<p>A phone will not charge after being carried in a pocket all day. What should you
+inspect first?</p>"	<p>Start where the cable physically meets the device.</p>	<p><strong>Inspect the charging port for debris, obstruction, or visible damage.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The charging path starts at the device interface. A simple obstruction can look
+like a failed battery or charger.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Charging Ports Scenario Source::Messer-v170
+5.4-B008	"<p>A phone will not charge, and the user's cable is frayed near the connector. What
+is the best next test?</p>"	<p>Use a safe replacement for the suspect part of the charging path.</p>	<p><strong>Try a known-good charging cable.</strong></p>	"<h3>Why</h3>
+<p>A damaged cable should not be trusted or reused. A known-good cable isolates the
+cable before replacing the phone.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Charging Cables Scenario Source::Messer-v170
+5.4-B009	"<p>A phone still does not charge after you inspect the port and try a known-good
+cable. What part of the charging path should you verify next?</p>"	<p>Follow the power path away from the phone.</p>	<p><strong>Verify the power adapter or charging power source.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The adapter is a separate part of the charging chain. Checking it keeps the
+diagnosis evidence-based before concluding the device has failed.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Charging Power Scenario Source::Messer-v170
+5.4-B010	"<p>A user's phone has poor cellular service only inside one concrete building.
+What should you test before replacing the phone?</p>"	<p>Use location as a troubleshooting variable.</p>	"<p><strong>Test cellular connectivity in another location, such as outdoors or away from
+the building.</strong></p>"	"<h3>Why</h3>
+<p>Mobile signal is location-dependent. A location-only symptom should be tested
+as coverage or signal strength before it becomes a device-failure conclusion.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Cellular Connectivity Scenario Source::Messer-v170
+5.4-B011	"<p>A tablet has slow Wi-Fi only in one corner of the office. What network condition
+should you consider before blaming the tablet hardware?</p>"	<p>Think about what changes as the user moves around.</p>	<p><strong>Limited Wi-Fi range or local interference.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The one-location pattern points to the wireless environment. Tablet hardware is
+less likely when the symptom follows a physical area.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic WiFi Connectivity Scenario Source::Messer-v170
+5.4-B012	"<p>A user spilled water on a phone that is still powered on. What should you do
+first?</p>"	<p>Prevent additional electrical damage before testing.</p>	<p><strong>Power down the phone and do not charge it.</strong></p>	"<h3>Real Help Desk</h3>
+<p>Testing a wet device by charging or powering it can make the damage worse. Stop
+normal troubleshooting until the device is safe to handle.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield LiquidDamage Safety Scenario Source::Messer-v170
+5.4-B013	"<p>After a liquid spill, what removable items should you take off only if the phone
+design allows it?</p>"	<p>Remove external pieces without forcing the device open.</p>	"<p><strong>Remove the case, cards, back cover, or battery if they are designed to be
+removed.</strong></p>"	"<h3>Why</h3>
+<p>The goal is to reduce trapped liquid and power risk without creating more
+damage. Do not pry apart a sealed device as part of entry-level support.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic LiquidDamage Mobile Scenario Source::Messer-v170
+5.4-B014	"<p>A wet phone appears dry on the outside after a few hours. What should you avoid
+doing too soon?</p>"	<p>Outside dryness does not prove the inside is safe.</p>	<p><strong>Avoid powering it on or connecting it to power too soon.</strong></p>	"<h3>Exam Trap</h3>
+<p>The safe decision is patience, not a quick power-on test. Moisture inside the
+device can still cause damage after the exterior looks dry.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic LiquidDamage Safety Scenario Source::Messer-v170
+5.4-B015	"<p>A phone overheats whenever one navigation app is running. What should you check
+before assuming the battery is bad?</p>"	<p>Look for the workload that appears with the heat.</p>	<p><strong>Check whether the app is using excessive CPU or battery.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Overheating can be caused by workload. App usage evidence helps separate a
+software/resource issue from a battery or hardware failure.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Overheating Apps Scenario Source::Messer-v170
+5.4-B016	"<p>A phone overheats while sitting on a dashboard in direct sunlight. What should
+you do before hardware troubleshooting?</p>"	<p>Remove the obvious heat source first.</p>	<p><strong>Move the device out of direct sunlight and let it cool.</strong></p>	"<h3>Why</h3>
+<p>Environmental heat can trigger shutdowns or overheating symptoms. Correct the
+environment before treating the phone as failed.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Overheating Environment Scenario Source::Messer-v170
+5.4-B017	"<p>A mobile device screen is on, but touch input is not responding. What simple
+first isolation step should you try?</p>"	<p>Start with a reversible step that resets the device state.</p>	<p><strong>Restart the mobile device.</strong></p>	"<h3>Why</h3>
+<p>A restart can clear a frozen mobile interface before repair or replacement is
+considered. Exact key combinations vary by device, so the card tests the support
+decision rather than model-specific buttons.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Touchscreen Mobile Scenario Source::Messer-v170
+5.4-B018	"<p>A phone charging port is visibly bent and known-good charging parts do not
+help. What should you do next?</p>"	<p>Visible physical damage changes the support path.</p>	"<p><strong>Escalate for hardware repair or replacement instead of continuing cable
+swaps.</strong></p>"	"<h3>Real Help Desk</h3>
+<p>Mobile ports are often not simple modular field repairs. Document the visible
+damage and test results before handoff.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Ports Charging Escalation Source::Messer-v170
+5.4-B019	"<p>A user's phone shows unexpected pop-ups and unfamiliar apps. What should you
+run to test the malware theory?</p>"	<p>Use the suspicious symptoms to choose a way to test the theory.</p>	<p><strong>Run an approved mobile security app or scanner.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Unusual apps and pop-ups are malware clues. The card tests the evidence-based
+next step without naming a vendor-specific tool.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Malware Mobile Scenario Source::Messer-v170
+5.4-B020	"<p>A mobile device has high CPU use, overheating, and excessive battery drain with
+no obvious user activity. What threat category should you consider?</p>"	<p>The symptoms are not limited to battery hardware.</p>	<p><strong>Possible mobile malware.</strong></p>	"<h3>Why</h3>
+<p>Malware can show up as resource, heat, data, or battery symptoms. The answer is
+a theory to test, not a final diagnosis.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Malware Battery Scenario Source::Messer-v170
+5.4-B021	"<p>A tablet registers touches slightly away from where the user taps. What
+software-based fix should you try if the device supports it?</p>"	<p>Align the input system with where the user actually touches.</p>	<p><strong>Run touch calibration.</strong></p>	"<h3>Why</h3>
+<p>Cursor drift is an input-alignment symptom. Calibration is a targeted software
+step before assuming the screen assembly is failed.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Touchscreen Calibration Scenario Source::Messer-v170
+5.4-B022	"<p>A phone cannot install a new app and reports there is not enough space. What
+should you check first?</p>"		<p><strong>Check available storage and remove unnecessary data if needed.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>The error already points to storage. Do not troubleshoot the app store or
+network first when the device says space is the blocker.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Apps Storage Scenario Source::Messer-v170
+5.4-B023	"<p>A mobile app download never starts, but the device has plenty of free storage.
+What should you verify next?</p>"	<p>The app still has to come from somewhere.</p>	<p><strong>Verify network connectivity.</strong></p>	"<h3>Why</h3>
+<p>App installation requires access to an external service. After storage is ruled
+out, connectivity becomes a focused next check.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Apps Connectivity Scenario Source::Messer-v170
+5.4-B024	"<p>A required app says it is not compatible with the current mobile OS version.
+What should you check?</p>"	<p>Compare the app requirement with the device software level.</p>	<p><strong>Check for an OS update or an updated app version that supports the device.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Compatibility is a different problem from storage or network access. The next
+step is to verify whether supported software versions exist.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Apps Compatibility Scenario Source::Messer-v170
+5.4-B025	"<p>A mobile app store keeps failing after storage and connectivity check out. What
+account or store-state check should you try?</p>"	<p>Look at the service state rather than the app being installed.</p>	"<p><strong>Check store cache where applicable, or account sign-in state, then sign out
+and back in if appropriate.</strong></p>"	"<h3>Why</h3>
+<p>Store cache on supported platforms or credentials can block installation even
+when storage and network are fine. This card keeps the target to one
+account/store-state decision.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Apps Credentials Scenario Source::Messer-v170
+5.4-B026	<p>A powered tablet stylus suddenly stops responding. What should you check first?</p>	<p>Start with the simplest accessory condition.</p>	<p><strong>Check the stylus battery or charge level.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Powered accessories fail when they are discharged. This comes before re-pairing
+or replacing the stylus tip.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Stylus Power Scenario Source::Messer-v170
+5.4-B027	"<p>A stylus is charged, but the tablet no longer sees it as connected. What should
+you check next?</p>"	<p>Confirm the wireless relationship between the accessory and tablet.</p>	<p><strong>Check the Bluetooth connection and try re-pairing the stylus.</strong></p>	"<h3>Why</h3>
+<p>Once power is ruled out, pairing is the next likely path for a wireless stylus.
+The card tests the accessory connection decision.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Stylus Bluetooth Scenario Source::Messer-v170
+5.4-B028	"<p>A charged and paired stylus skips or scratches on the screen. What physical
+part should you inspect?</p>"		<p><strong>Inspect the stylus tip for wear or damage.</strong></p>	"<h3>Why</h3>
+<p>If power and pairing are fine, the stylus itself may have a worn contact point.
+This is a targeted accessory check, not a full tablet replacement decision.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Stylus Hardware Scenario Source::Messer-v170
+5.4-B029	"<p>A phone is slow and has not been updated or restarted in months. What
+least-invasive action should you try first?</p>"	<p>Start with reversible software maintenance.</p>	<p><strong>Update the OS and apps as appropriate, then restart the device.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Outdated software and long uptime can degrade behavior. Updating and restarting
+are safer first steps than replacing hardware.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Performance Updates Scenario Source::Messer-v170
+5.4-B030	"<p>A phone is slow and frequently warns that storage is almost full. What should
+you address first?</p>"		<p><strong>Free up storage by removing unnecessary data or apps.</strong></p>	"<h3>Why</h3>
+<p>Low storage can contribute to slowdowns and crashes. The symptom gives a
+specific target before broader performance troubleshooting.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield Performance Storage Scenario Source::Messer-v170
+5.4-B031	"<p>A tablet slows down after many apps have been left open in the background. What
+should you try before replacing the tablet?</p>"	<p>Reduce active resource pressure first.</p>	<p><strong>Close unnecessary background apps.</strong></p>	"<h3>Troubleshooting Logic</h3>
+<p>Background apps can consume memory and processing resources. Closing them is a
+low-risk test before hardware escalation.</p>"	easy	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Performance Apps Scenario Source::Messer-v170
+5.4-B032	"<p>An older phone becomes slow only when running a newly released app. What should
+you consider before diagnosing a device fault?</p>"	<p>Compare the app's expectations with the device's age.</p>	<p><strong>The app may not support the older hardware well.</strong></p>	"<h3>Why</h3>
+<p>Newer apps may assume newer hardware capabilities. That is different from a
+random hardware failure and should be documented as a compatibility concern.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Performance Compatibility Scenario Source::Messer-v170
+5.4-B033	"<p>You must escalate a liquid-damaged phone. What liquid-exposure evidence should
+you include in the ticket?</p>"	<p>Capture evidence the next technician cannot infer later.</p>	<p><strong>Document the liquid exposure details and any Liquid Contact Indicator status.</strong></p>	"<h3>Real Help Desk</h3>
+<p>Good handoff records what happened, what was powered or charged, and whether an
+indicator showed exposure. This helps the next technician avoid unsafe retests.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.53; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic HighYield LiquidDamage Documentation Escalation Source::Messer-v170
+5.4-B034	"<p>Before escalating a suspected damaged mobile charging port, what tested-path
+details should you document?</p>"	<p>Preserve which parts of the charging path were already ruled out.</p>	"<p><strong>Document the visible port condition and the results of known-good cable and
+power-adapter tests.</strong></p>"	"<h3>Why</h3>
+<p>Escalation is more useful when it includes both physical evidence and isolation
+results. The next technician should not need to repeat basic charging-path
+tests.</p>"	medium	basic	220-1201 5.4 - Troubleshooting Mobile Devices	Professor Messer 220-1201 v1.70 p.54; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.4	A+::220-1201::5.4 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingMobileDevices Basic Ports Documentation Escalation Source::Messer-v170
