@@ -46,6 +46,7 @@ card front matter.
 | `5.1-troubleshooting-hardware` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 | `5.2-troubleshooting-storage-devices` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 | `5.3-troubleshooting-display-issues` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
+| `5.4-troubleshooting-mobile-devices` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 
 Author-provided tags in these folders are Layer 3 topic tags, such as
 `Bluetooth`, `WiFi`, `MDM`, `BYOD`, or `Synchronization`.
