@@ -1,0 +1,211 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.5-B001	"<p>A wired workstation has no network connectivity, and the Ethernet port has no
+link light. What should you check first?</p>"	<p>Start with the evidence closest to the device.</p>	"<p><strong>Check the physical connection: cable seating, cable condition, and the switch
+port or wall jack.</strong></p>"	"<h3>Why</h3>
+<p>No link light points to a physical-layer problem before it points to IP,
+gateway, DNS, or application settings. Reseating or swapping the cable and
+checking the connected port can quickly confirm whether the device has an
+actual network link.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Network PhysicalLayer Scenario Source::Messer-v170
+5.5-B002	"<p>A user moved a desktop, and now the wired network connection is down. The link
+light is off. What is the most useful next test?</p>"	<p>Use a simple substitution test before changing software settings.</p>	"<p><strong>Try a known-good Ethernet cable and, if needed, a known-good jack or switch
+port.</strong></p>"	"<h3>Why</h3>
+<p>After a move, the most likely change is physical: a loose patch cable, damaged
+cable, bad wall jack, or wrong switch port. A known-good substitution narrows
+the fault without introducing unnecessary configuration changes.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network PhysicalLayer Scenario Source::Messer-v170
+5.5-B003	"<p>A technician pings 127.0.0.1 while troubleshooting no connectivity. What does a
+successful reply show?</p>"		<p><strong>The local TCP/IP stack is responding on the computer.</strong></p>	"<h3>Why</h3>
+<p>The loopback test stays inside the host. A successful reply does not prove the
+network cable, wireless link, gateway, DNS, or Internet path works; it only
+supports that the local protocol stack can respond.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Network Ping Scenario Source::Messer-v170
+5.5-B004	"<p>A loopback ping succeeds. What should pinging the computer's own assigned IP
+address help verify next?</p>"		"<p><strong>Whether the host can respond through its configured network interface and IP
+configuration.</strong></p>"	"<h3>Why</h3>
+<p>Pinging the local assigned address moves one step beyond loopback. It helps
+confirm the host's network stack, local address, and adapter configuration
+before testing the gateway or remote destinations.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network Ping Scenario Source::Messer-v170
+5.5-B005	"<p>What does a successful ping to the default gateway prove during a no-network
+troubleshooting path?</p>"		<p><strong>The computer can reach the local network's router or gateway.</strong></p>	"<h3>Why</h3>
+<p>The default gateway is the boundary between the local subnet and other networks.
+If it responds, the local link, local IP settings, and path to the router are
+more likely working, so the next question is whether traffic can go beyond that
+router.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Gateway Network Ping Source::Messer-v170
+5.5-B006	"<p>A workstation can ping its default gateway, but it cannot ping a known remote
+IP address. What does that result suggest?</p>"	<p>The local boundary responds, but the farther destination does not.</p>	<p><strong>The failure is likely beyond the local gateway or on the upstream path.</strong></p>	"<h3>Why</h3>
+<p>Gateway success makes a bad local cable or local IP configuration less likely.
+The failed remote IP test shifts the investigation past the local router instead
+of keeping the focus on the workstation alone.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Gateway Network Ping Scenario Source::Messer-v170
+5.5-B007	"<p>A Windows laptop reports limited connectivity and has a 169.254.x.x address.
+What is the likely network issue?</p>"		"<p><strong>The device did not receive a usable DHCP address and assigned itself a local
+automatic address.</strong></p>"	"<h3>Why</h3>
+<p>An APIPA-style address is useful troubleshooting evidence. It usually means the
+device is not successfully receiving DHCP configuration, so the technician
+should investigate DHCP reachability, wireless association, VLAN, cabling, or
+local network access instead of treating the Internet as the first suspect.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield APIPA DHCP Network Scenario Source::Messer-v170
+5.5-B008	"<p>A computer has a normal-looking DHCP address but still cannot reach websites.
+What is the best next network test?</p>"	<p>Do not stop at the address; test the path.</p>	"<p><strong>Ping the default gateway, then a known remote IP address, to isolate whether
+the failure is local or beyond the router.</strong></p>"	"<h3>Why</h3>
+<p>A valid address only proves the host received configuration. Gateway and remote
+IP tests show where connectivity stops, which is more useful than immediately
+changing DNS, browser, or application settings.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic DHCP Gateway Network Scenario Source::Messer-v170
+5.5-B009	"<p>Wi-Fi drops mainly in a break room when appliances are in use. What likely
+wireless cause should you investigate first?</p>"		<p><strong>Radio interference affecting the wireless signal.</strong></p>	"<h3>Why</h3>
+<p>Intermittent wireless problems that correlate with a location or equipment use
+often point to interference. The technician should gather timing and location
+details before replacing client hardware or assuming the access point has
+failed.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Interference Network Wireless Source::Messer-v170
+5.5-B010	"<p>A user's Wi-Fi works near the access point but drops at the far end of the
+office. What should you check first?</p>"		<p><strong>Check wireless signal strength and coverage in that area.</strong></p>	"<h3>Why</h3>
+<p>Distance and obstacles can weaken a Wi-Fi signal enough to cause roaming,
+disconnects, or slow speeds. Measuring or comparing signal strength in the
+problem area is a focused test before changing unrelated client settings.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network Signal Wireless Scenario Source::Messer-v170
+5.5-B011	"<p>Wi-Fi became unreliable after a manual access point channel change. What should
+the technician verify?</p>"	<p>Review the most recent wireless configuration change.</p>	"<p><strong>Verify that the wireless channel or frequency configuration is appropriate
+for the environment.</strong></p>"	"<h3>Why</h3>
+<p>Incorrect or congested channel selection can create wireless instability even
+when the access point is functioning. This card tests the configuration clue,
+not a full wireless design exercise.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Channel Network Wireless Scenario Source::Messer-v170
+5.5-B012	"<p>Wi-Fi is inconsistent in a room with many reflective surfaces, even though the
+access point is nearby. What wireless effect should be considered?</p>"		<p><strong>Signal bounce or multipath interference.</strong></p>	"<h3>Why</h3>
+<p>Wireless signals can reflect and arrive out of phase, causing unstable service
+in specific locations. The important troubleshooting clue is that the symptom
+is location-specific despite apparent proximity to the access point.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Multipath Network Wireless Scenario Source::Messer-v170
+5.5-B013	"<p>Several users in the same corner of a building report weak Wi-Fi, while nearby
+areas work normally. What likely infrastructure issue should you investigate?</p>"		<p><strong>Access point placement or coverage for that area.</strong></p>	"<h3>Why</h3>
+<p>Multiple users affected in the same physical area points away from one bad
+laptop. It is more useful to check coverage and AP placement before replacing
+client adapters.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network Wireless Scenario Source::Messer-v170
+5.5-B014	"<p>A user says, ""The network is slow."" What should the technician do before
+changing network equipment?</p>"	<p>Turn the complaint into measurable evidence.</p>	"<p><strong>Confirm the symptom with a specific application, destination, time, or network
+test.</strong></p>"	"<h3>Why</h3>
+<p>""Slow network"" can mean an application issue, wireless issue, local device
+problem, server problem, or provider issue. Gathering measurable evidence keeps
+the troubleshooting path systematic and avoids guessing.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Network Performance Scenario Source::Messer-v170
+5.5-B015	"<p>Users report poor Internet performance, and you need a quick throughput
+comparison against expected service. What test is useful?</p>"		<p><strong>Run a speed test from an appropriate client or network location.</strong></p>	"<h3>Why</h3>
+<p>A speed test gives a measurable data point for download, upload, and sometimes
+latency. It does not diagnose every cause by itself, but it helps compare the
+observed performance with expected service or historical baselines.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network Performance Scenario Source::Messer-v170
+5.5-B016	"<p>Performance is good on the local LAN but becomes slow after one network hop.
+What does that test result suggest?</p>"		"<p><strong>Focus on that hop or the path beyond it, such as congestion, errors,
+filtering, or an upstream link problem.</strong></p>"	"<h3>Why</h3>
+<p>Comparing performance across segments helps isolate where the slowdown begins.
+The answer is not to replace the user's workstation; the evidence points to a
+specific boundary in the network path.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network Performance Scenario Source::Messer-v170
+5.5-B017	"<p>Simple ping and speed tests do not explain an ongoing slow-network complaint.
+What evidence-gathering method can show what traffic is actually occurring?</p>"	<p>Move from summary tests to traffic evidence.</p>	<p><strong>Use a packet capture at an appropriate point in the path.</strong></p>	"<h3>Why</h3>
+<p>Packet captures can reveal retransmissions, failed sessions, excessive chatter,
+or unexpected traffic. For A+ scope, the learning target is when capture
+evidence becomes useful, not exact capture syntax.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network PacketCapture Performance Source::Messer-v170
+5.5-B018	"<p>Voice and video calls are choppy even when the connection does not fully drop.
+What network condition is a likely cause?</p>"		<p><strong>Jitter, or inconsistent delay between packets.</strong></p>	"<h3>Why</h3>
+<p>Real-time traffic is sensitive to uneven packet arrival. A connection can have
+enough bandwidth for a speed test and still sound bad if delay varies
+significantly during the call.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Jitter Network VoIP Source::Messer-v170
+5.5-B019	"<p>Several users report poor VoIP call quality. What broad network condition
+should you verify early?</p>"	<p>Start with the path real-time media depends on.</p>	<p><strong>Verify Internet connection performance, especially speed and latency.</strong></p>	"<h3>Why</h3>
+<p>VoIP problems often surface when the WAN or Internet path cannot support
+real-time traffic consistently. Checking speed and latency early helps separate
+a provider/path problem from one bad phone or headset.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Network Performance VoIP Source::Messer-v170
+5.5-B020	"<p>Internet speed looks normal, but multiple VoIP phones at one site still have
+poor call quality. What local network area should you check next?</p>"		"<p><strong>Check the local network equipment and path used by the phones, such as the
+router, switch, cabling, and configuration.</strong></p>"	"<h3>Why</h3>
+<p>Once the broad Internet path looks healthy, the investigation should move to
+the local path shared by the affected phones. Multiple devices at one site make
+one bad handset less likely.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network Router VoIP Source::Messer-v170
+5.5-B021	"<p>VoIP quality problems persist, and basic speed and ping tests do not explain
+them. What can provide more detailed evidence?</p>"		<p><strong>A packet capture or network performance analysis at the affected path.</strong></p>	"<h3>Why</h3>
+<p>Voice problems can depend on timing, loss, retransmissions, or traffic handling
+that simple tests miss. Capture or performance evidence helps escalation teams
+avoid guessing.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network PacketCapture VoIP Source::Messer-v170
+5.5-B022	"<p>A switch port repeatedly goes up and down for the same workstation. What should
+you check first?</p>"	<p>Start with the simplest part of the physical path.</p>	<p><strong>Check or replace the cable and verify the wiring path.</strong></p>	"<h3>Why</h3>
+<p>Port flapping often starts with a physical link problem. Cable and wiring checks
+are low-risk and help avoid replacing switch hardware before proving the link
+path is stable.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Network PhysicalLayer PortFlapping Source::Messer-v170
+5.5-B023	"<p>A workstation's switch port is flapping, and a known-good cable did not fix it.
+What is a useful next isolation test?</p>"		<p><strong>Move the connection to another known-good switch port and compare the result.</strong></p>	"<h3>Why</h3>
+<p>Changing one variable at a time helps isolate whether the issue follows the
+device/cable path or stays with the switch interface. This is more useful than
+guessing which component to replace.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network PortFlapping Switch Source::Messer-v170
+5.5-B024	"<p>A port-flapping problem follows the same workstation and patch cable to a
+different switch port. What does that suggest?</p>"		"<p><strong>The issue likely follows the endpoint or its cable path, not the original
+switch port.</strong></p>"	"<h3>Why</h3>
+<p>When the symptom moves with the device or cable, the original switch interface
+is less likely to be the root cause. The next checks should focus on the
+endpoint NIC, patch cable, dock, wall run, or local connection path.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network PortFlapping Scenario Source::Messer-v170
+5.5-B025	"<p>A port-flapping problem stops when the workstation is moved to another switch
+port. What does that result suggest?</p>"		<p><strong>The original switch interface or its configuration is more likely involved.</strong></p>	"<h3>Why</h3>
+<p>If the endpoint and cable path work on a different port, the evidence shifts
+back to the original switch interface. The technician should document the test
+and escalate or repair according to local network procedures.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Network PortFlapping Switch Source::Messer-v170
+5.5-B026	"<p>A user reports that cloud apps respond slowly, but local file shares are fast.
+What should you measure next?</p>"		"<p><strong>Measure latency along the path to the remote service or beyond the local
+network.</strong></p>"	"<h3>Why</h3>
+<p>Fast local resources make a general workstation problem less likely. Latency
+tests help identify whether delay begins after traffic leaves the local
+network.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Latency Network Performance Source::Messer-v170
+5.5-B027	"<p>An escalation team needs precise timing evidence for a latency complaint. What
+method can provide high-detail packet timing?</p>"		"<p><strong>Collect packet captures from the relevant sides of the path for timing
+comparison.</strong></p>"	"<h3>Why</h3>
+<p>Packet captures can show when packets leave and arrive at different points.
+That timing evidence is useful when ordinary user reports or single ping tests
+are not precise enough for escalation.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Latency Network PacketCapture Source::Messer-v170
+5.5-B029	"<p>A wireless survey shows low signal-to-noise ratio in the area where users drop
+connections. What does that suggest?</p>"		"<p><strong>The useful wireless signal is not sufficiently stronger than the surrounding
+noise.</strong></p>"	"<h3>Why</h3>
+<p>Signal strength alone is not the whole story. A client can be close to an
+access point and still perform poorly if the noise level is high enough to make
+the signal difficult to distinguish.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Network SNR Wireless Source::Messer-v170
+5.5-B030	"<p>A user can reach the network, but one service repeatedly reports authentication
+failures after a long session. What simple step should you try first?</p>"	<p>Start with a low-risk account/session check.</p>	"<p><strong>Have the user sign out and sign back in, or otherwise refresh the session
+according to the service's normal process.</strong></p>"	"<h3>Why</h3>
+<p>Authentication symptoms can come from expired sessions, cached credentials, or
+account state rather than a broken network path. A session refresh is a low-risk
+first step when the symptom is limited to authentication.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Authentication Network Scenario Source::Messer-v170
+5.5-B031	"<p>An authentication problem happens in the background, and the user never sees a
+clear error message. What can help reveal the failed communication?</p>"		<p><strong>A packet capture or network trace from the affected system.</strong></p>	"<h3>Why</h3>
+<p>Some authentication failures are hidden inside background service traffic. A
+capture can show whether the system reaches the authentication service and
+whether communication fails before, during, or after the authentication attempt.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Authentication Network PacketCapture Source::Messer-v170
+5.5-B032	"<p>Several users report Internet drops at the same time, but local network
+resources stay available. What should you determine first?</p>"	<p>Separate local impact from external impact.</p>	"<p><strong>Determine the scope by testing internal resources and external destinations
+from more than one affected client.</strong></p>"	"<h3>Why</h3>
+<p>If local resources remain reachable while external destinations fail, the
+problem may be on the Internet edge or provider path. Scope evidence is stronger
+than a single user's report.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield ISP Network Scenario Source::Messer-v170
+5.5-B033	"<p>Internet connectivity is intermittent, and pings show occasional loss to a
+remote destination. What path test can show where traffic stops or slows?</p>"		<p><strong>Run a traceroute or equivalent route-tracing test to the remote destination.</strong></p>	"<h3>Why</h3>
+<p>Route tracing helps identify whether loss or delay appears near the local
+network, at the provider edge, or farther away. It is evidence for escalation,
+not a guarantee that the failing hop is the root cause by itself.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic ISP Network Traceroute Source::Messer-v170
+5.5-B034	"<p>Internal tests are normal, but external pings and route tests show Internet
+path failures. What is the appropriate escalation?</p>"		"<p><strong>Contact the ISP or provider with the gathered test evidence and account
+information.</strong></p>"	"<h3>Why</h3>
+<p>Provider escalation is stronger when the technician can show internal resources
+work and external paths fail. Account details, timestamps, affected scope, and
+test output help the provider act on the ticket.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic HighYield Escalation ISP Network Source::Messer-v170
+5.5-B035	"<p>An ISP outage is confirmed. What document helps set expectations for provider
+response or uptime commitments?</p>"		<p><strong>The service level agreement.</strong></p>	"<h3>Why</h3>
+<p>An SLA defines service expectations such as availability, response, or support
+terms. It helps the technician communicate realistic next steps instead of
+promising a repair time without a contractual basis.</p>"	easy	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic ISP Network SLA Source::Messer-v170
+5.5-B036	"<p>Internet drops are intermittent, and the provider asks for evidence. What
+performance data should you collect over time?</p>"		"<p><strong>Document timestamps with ping results, traceroute results, and speed test
+results when symptoms occur.</strong></p>"	"<h3>Why</h3>
+<p>Intermittent problems are difficult to prove with one clean test. Time-stamped
+evidence helps correlate user impact with measurable loss, latency, route
+changes, or throughput drops.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic ISP Network Performance Source::Messer-v170
+5.5-B037	"<p>You are opening an ISP ticket for intermittent Internet connectivity. What
+should you document before escalation?</p>"		"<p><strong>Affected scope, timestamps, internal versus external test results, ping or
+traceroute evidence, speed test results, and account/contact information.</strong></p>"	"<h3>Why</h3>
+<p>Clear documentation helps the provider reproduce and triage the issue. It also
+shows that local checks were performed before escalation.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Documentation ISP Network Source::Messer-v170
+5.5-B038	"<p>You are escalating a no-connectivity issue to the network team. What concise
+evidence should you include?</p>"		"<p><strong>Link-light status, cable or port tests, IP configuration, gateway test result,
+remote test result, affected scope, and recent changes.</strong></p>"	"<h3>Why</h3>
+<p>Escalation is more useful when it describes what has already been isolated.
+This prevents the next technician from repeating basic checks and helps them
+focus on the unresolved part of the path.</p>"	medium	basic	220-1201 5.5 - Troubleshooting Networks	Professor Messer 220-1201 v1.70 p.55; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.5	A+::220-1201::5.5 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingNetworks Basic Documentation Escalation Network Source::Messer-v170
