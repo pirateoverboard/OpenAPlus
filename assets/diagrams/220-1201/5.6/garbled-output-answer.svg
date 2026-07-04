@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <rect width="640" height="420" fill="#f1f5f9"/>
+  <rect x="172" y="36" width="296" height="348" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="210" y="78" width="220" height="14" rx="2" fill="#cbd5e1"/>
+  <text x="210" y="130" font-family="Courier New, monospace" font-size="20" fill="#111827">%%!@PJL ^@ ^@</text>
+  <text x="210" y="166" font-family="Courier New, monospace" font-size="20" fill="#111827">xQ7# ? ? ?</text>
+  <text x="210" y="202" font-family="Courier New, monospace" font-size="20" fill="#111827">PS-ERR 13</text>
+  <text x="210" y="238" font-family="Courier New, monospace" font-size="20" fill="#111827">{"{"}a1b2{"}"} --&gt;</text>
+  <text x="210" y="274" font-family="Courier New, monospace" font-size="20" fill="#111827">@@@ 0101</text>
+  <rect x="210" y="320" width="190" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="210" y="344" width="156" height="10" rx="2" fill="#e2e8f0"/>
+  <path d="M410 182 L526 140" stroke="#111827" stroke-width="3"/>
+  <rect x="462" y="102" width="146" height="70" rx="6" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+  <text x="535" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#111827">garbled output</text>
+  <text x="535" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">check driver/PDL</text>
+</svg>

@@ -1,0 +1,13 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.6-C001	"<p>For garbled printer output, {{c1::PCL and PostScript}} are examples of page
+description language choices to check.</p>"	"<p>The point is not to memorize every printer language. The troubleshooting clue
+is that the driver and printer must agree on how the page is described.</p>"	"<h3>Why</h3>
+<p>This compact recall supports the driver mismatch troubleshooting path without
+turning the card into a vendor-specific driver procedure.</p>"	easy	cloze	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Cloze Driver Memory Printer Source::Messer-v170
+5.6-C003	<p>Pickup rollers are commonly part of a laser printer {{c1::maintenance kit}}.</p>	"<p>Repeated feed problems can point to the pickup mechanism after tray loading is
+confirmed.</p>"	"<h3>Why</h3>
+<p>The compact recall supports printer-feed troubleshooting without requiring a
+model-specific roller replacement procedure.</p>"	easy	cloze	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Cloze Laser Memory Printer Source::Messer-v170

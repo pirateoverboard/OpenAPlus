@@ -566,6 +566,37 @@ def test_objective_55_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_56_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("5.6-B001")
+    card_metadata.update(
+        {
+            "objective": "5.6",
+            "objective_name": "Troubleshooting Printers",
+            "tags": ["Printer", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.56"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="5.6-troubleshooting-printers",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::5.6",
+        "A+::220-1201::Domain5-Troubleshooting",
+        "A+::220-1201::TroubleshootingPrinters",
+        "Basic",
+        "HighYield",
+        "Printer",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_multiple_valid_clozes_are_allowed(tmp_path: Path) -> None:
     body = CLOZE_BODY.replace(
         "The answer is {{c1::here}}.",

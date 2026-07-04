@@ -1,0 +1,166 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+5.6-B001	"<p>A user says one application prints incorrectly. What should you print first to
+help isolate the problem?</p>"	<p>Use output that does not depend on the user's application.</p>	<p><strong>Print a printer or operating-system test page.</strong></p>	"<h3>Why</h3>
+<p>A test page helps separate an application or document problem from the printer,
+driver, and print path. If the test page prints normally, the printer hardware
+is less likely to be the only issue.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Printer Scenario TestPage Source::Messer-v170
+5.6-B002	"<p>A network printer has a built-in web utility. What is the support value of
+using it during troubleshooting?</p>"		"<p><strong>It can provide printer-side diagnostic information without relying only on the
+user's application.</strong></p>"	"<h3>Why</h3>
+<p>Printer diagnostics can show device state, configuration, or errors from the
+printer's perspective. The exact utility varies by vendor, so the card tests
+the decision to use diagnostics, not a model-specific menu path.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Diagnostics Printer Source::Messer-v170
+5.6-B003	"<p>An inkjet printer produces lines down the printed page. What maintenance action
+should you try?</p>"		<p><strong>Clean the print heads.</strong></p>	"<h3>Why</h3>
+<p>For inkjet printers, line defects commonly point to the print head or ink flow.
+Cleaning the print heads is the relevant first maintenance action before
+assuming the whole printer needs replacement.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Inkjet OutputQuality Printer Source::Messer-v170
+5.6-B004	"<p>A laser printer produces a consistent line down the printed page. What printer
+component should you suspect?</p>"		<p><strong>A scratched or damaged photosensitive drum.</strong></p>	"<h3>Why</h3>
+<p>Laser printers use a drum in the imaging process. A repeated line defect on
+laser output is a clue to inspect or escalate the drum path rather than using
+inkjet maintenance logic.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Laser OutputQuality Printer Source::Messer-v170
+5.6-B005	"<p>A printer produces faded prints or blank pages. What simple condition should
+you check first?</p>"		<p><strong>Low toner or low ink.</strong></p>	"<h3>Why</h3>
+<p>Faded output and blank pages often start with consumables. Checking toner or
+ink is faster and less invasive than replacing printer hardware or changing
+drivers.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Consumables OutputQuality Printer Source::Messer-v170
+5.6-B006	"<p>A laser printer leaves a faint repeated copy of earlier page content on the
+same sheet. What does that symptom suggest?</p>"		<p><strong>The drum is not being cleaned properly during the laser printing process.</strong></p>	"<h3>Why</h3>
+<p>Ghost or echo images are repeated remnants from earlier drum rotation. The
+important troubleshooting target is the laser imaging or cleaning process, not
+an application formatting issue.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Ghosting Laser Printer Source::Messer-v170
+5.6-B007	"<p>A printer outputs unreadable symbols instead of the expected document. What is
+a likely software-side cause?</p>"		"<p><strong>A bad or incorrect printer driver, including the wrong printer model or page
+description language.</strong></p>"	"<h3>Why</h3>
+<p>Garbled output can happen when the printer receives data it does not interpret
+correctly. Driver and page-description-language checks are more targeted than
+assuming the paper path or toner is at fault.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Driver GarbledPrint Printer Source::Messer-v170
+5.6-B008	"<p>A printer test page is normal, but one application still prints incorrectly.
+What does that result suggest?</p>"		"<p><strong>Focus on the application, document output, or driver path rather than the
+printer engine alone.</strong></p>"	"<h3>Why</h3>
+<p>A normal test page proves the printer can produce clean output outside the
+application. The next theory should be closer to the application or driver
+interaction that creates the bad job.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Application Printer TestPage Source::Messer-v170
+5.6-B009	<p>When clearing a printer paper jam, what should you avoid doing?</p>	<p>Protect the printer mechanism while removing the paper.</p>	<p><strong>Avoid tearing the paper or damaging internal printer components.</strong></p>	"<h3>Why</h3>
+<p>Forced removal can leave scraps inside the paper path or damage rollers and
+sensors. Careful removal preserves the evidence and prevents a simple jam from
+becoming a hardware repair.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield PaperJam Printer Safety Source::Messer-v170
+5.6-B010	"<p>Paper is stuck deep inside a printer and does not come out easily. What is the
+safest next step?</p>"		"<p><strong>Stop forcing it and follow the printer's approved jam-removal process or
+escalate for service.</strong></p>"	"<h3>Why</h3>
+<p>Printer paper paths vary by model. If paper does not release normally, forcing
+it can damage internal components or leave torn pieces behind.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic PaperJam Printer Safety Source::Messer-v170
+5.6-B011	"<p>A printer does not feed paper or pulls multiple sheets at once. What should you
+check first?</p>"		<p><strong>Check the paper tray and paper loading.</strong></p>	"<h3>Why</h3>
+<p>Misfeeds can come from the tray, paper stack, or paper placement. Checking the
+tray is a simple first step before assuming the printer needs major service.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic PaperFeed Printer Tray Source::Messer-v170
+5.6-B012	"<p>A laser printer repeatedly fails to pick up paper even when the tray is loaded
+correctly. What maintenance item may be involved?</p>"		"<p><strong>Pickup rollers, which are commonly handled as part of laser printer
+maintenance.</strong></p>"	"<h3>Why</h3>
+<p>When tray loading is correct but feed problems repeat, the pickup mechanism
+becomes a stronger theory. The card tests the maintenance clue, not a
+model-specific roller replacement process.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Laser PaperFeed Printer Source::Messer-v170
+5.6-B013	<p>Printed pages come out creased. What should the technician check?</p>		<p><strong>Check the paper path and verify the paper weight is appropriate.</strong></p>	"<h3>Why</h3>
+<p>Creases point to a physical handling problem as paper moves through the
+printer. The paper itself can also be part of the issue if its weight does not
+match what the printer expects.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic PaperPath Printer Source::Messer-v170
+5.6-B014	<p>Many jobs are pending for the same printer. What should you inspect first?</p>	<p>Look where jobs wait before they print.</p>	<p><strong>Inspect the print queue for a stuck or corrupt job.</strong></p>	"<h3>Why</h3>
+<p>One bad job can block later jobs and make the printer look offline or broken.
+Queue inspection is a low-risk first check before repeatedly sending new jobs
+or replacing hardware.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield PrintQueue Printer Spooler Source::Messer-v170
+5.6-B015	"<p>A Windows print spooler repeatedly crashes. What evidence source can help
+confirm the print-service problem?</p>"		"<p><strong>Windows print-service logs, such as Event Viewer or Windows-PrintService
+entries.</strong></p>"	"<h3>Why</h3>
+<p>Repeated spooler failures should be documented with logs when available. Logs
+help show whether a service, job, driver, or queue issue is recurring instead
+of relying only on user reports.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Logs Printer Spooler Source::Messer-v170
+5.6-B016	"<p>After one specific print job is removed, the remaining queued jobs print
+normally. What did that result identify?</p>"		<p><strong>That job was likely the blocking or corrupt job in the queue.</strong></p>	"<h3>Why</h3>
+<p>The result isolates the queue problem to one job rather than the printer as a
+whole. Document the job, user, and file or application involved before closing
+or escalating the ticket.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic PrintQueue Printer Scenario Source::Messer-v170
+5.6-B017	"<p>A printer starts making grinding noises. What category of problem should you
+suspect first?</p>"		<p><strong>A mechanical problem, such as a jammed paper path or stalled carriage.</strong></p>	"<h3>Why</h3>
+<p>Grinding is not a normal output-quality symptom. It points to something moving
+incorrectly inside the printer, so the technician should avoid sending more
+jobs until the mechanical path is checked.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Mechanical Printer Scenario Source::Messer-v170
+5.6-B018	"<p>A printer has a jam and the manual describes a specific clearing sequence. What
+should the technician follow?</p>"		<p><strong>Follow the printer's documented jam-removal procedure for that model.</strong></p>	"<h3>Why</h3>
+<p>Printers have different paper paths and access panels. The objective supports
+using the approved process; it does not require memorizing model-specific
+disassembly steps.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Mechanical Printer Safety Source::Messer-v170
+5.6-B019	"<p>Grinding continues after visible paper is cleared from the printer. What is an
+appropriate next decision?</p>"		<p><strong>Escalate for maintenance or replacement according to support policy.</strong></p>	"<h3>Why</h3>
+<p>Persistent grinding suggests a mechanical issue beyond a simple visible jam.
+Continuing to run jobs can cause more damage, so the technician should document
+the symptom and escalate.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Escalation Mechanical Printer Source::Messer-v170
+5.6-B020	"<p>In printer troubleshooting, when do finishing problems occur in the print
+process?</p>"		<p><strong>After the printer has applied ink or toner to the page.</strong></p>	"<h3>Why</h3>
+<p>Finishing includes post-print handling such as collating, stapling, binding, or
+hole punching. That means the image may print correctly while the finishing
+step fails.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Finishing Printer Source::Messer-v170
+5.6-B021	<p>A large office printer has a staple jam. What should the technician avoid?</p>	<p>Finishing hardware varies by model.</p>	"<p><strong>Avoid forcing the finisher open or clearing it without the approved removal
+process.</strong></p>"	"<h3>Why</h3>
+<p>Finishing units differ by manufacturer. Following the approved process reduces
+the risk of damaging the stapling or collating mechanism.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Finishing Printer Safety Source::Messer-v170
+5.6-B022	"<p>Printed documents are hole-punched in the wrong location. What should you
+verify first?</p>"		<p><strong>Verify the printer driver settings for the finishing option.</strong></p>	"<h3>Why</h3>
+<p>Hole-punch placement is tied to finishing configuration. Driver settings are a
+focused first check before assuming the physical finisher is broken.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Driver Finishing Printer Source::Messer-v170
+5.6-B023	"<p>A user prints a portrait document, but it comes out landscape. What should you
+check first?</p>"		<p><strong>Check the print settings and printer driver orientation settings.</strong></p>	"<h3>Why</h3>
+<p>Orientation is commonly controlled in the print dialog and driver. Checking
+those settings is faster and safer than replacing printer hardware.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Orientation Printer Source::Messer-v170
+5.6-B024	"<p>Orientation is wrong for jobs from multiple users even after they choose the
+correct orientation while printing. What setting should be checked next?</p>"		"<p><strong>Check the printer's default orientation setting at the printer console or
+device configuration.</strong></p>"	"<h3>Why</h3>
+<p>If several users see the same orientation behavior, the printer's default
+setting becomes a stronger theory than one user's print dialog.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Orientation Printer Source::Messer-v170
+5.6-B025	"<p>An office printer has multiple trays, but a user's computer does not show one
+of them. What should you compare?</p>"		"<p><strong>Compare the user's printer driver configuration with the trays actually
+installed in the printer.</strong></p>"	"<h3>Why</h3>
+<p>Tray definitions are part of printer configuration. The tray may physically
+exist, but the user's driver may not know it is installed or what paper it
+contains.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Driver Printer Tray Source::Messer-v170
+5.6-B026	"<p>A legal-size document is sent to a tray loaded with letter-size paper. What
+configuration mismatch should you identify?</p>"		<p><strong>The job's page size does not match the paper size in the selected tray.</strong></p>	"<h3>Why</h3>
+<p>Tray selection must match the requested page size and loaded paper. This card
+tests the size mismatch, not a deep printer repair process.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic PaperSize Printer Tray Source::Messer-v170
+5.6-B027	"<p>A printer is unavailable on the network. What should you confirm before
+changing IP settings?</p>"	<p>Start by identifying how the device is supposed to connect.</p>	"<p><strong>Confirm the printer's connection type, such as wired, wireless, or another
+configured path.</strong></p>"	"<h3>Why</h3>
+<p>Printer connectivity follows the same basic path-isolation logic as other
+network devices. You need to know the intended connection before deciding which
+network settings or links to test.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic HighYield Connectivity Printer Scenario Source::Messer-v170
+5.6-B028	"<p>A network printer is connected, but users cannot print to it. What IP
+configuration should you verify?</p>"		"<p><strong>Verify the printer's IP address, subnet mask, default gateway, and DNS
+settings where applicable.</strong></p>"	"<h3>Why</h3>
+<p>A network printer is still a network device. Incorrect addressing or gateway
+information can prevent clients or print servers from reaching it.</p>"	easy	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Connectivity Network Printer Source::Messer-v170
+5.6-B029	"<p>Jobs leave the user's computer but never reach the printer, and the environment
+uses a shared print server. What should you check?</p>"		<p><strong>Check the print server or print server queue in the path.</strong></p>	"<h3>Why</h3>
+<p>The print server can be part of the printer path. If jobs leave the client but
+do not arrive at the printer, the server or shared queue is a logical boundary
+to test.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic PrintServer Printer Scenario Source::Messer-v170
+5.6-B030	"<p>Users can open the printer's web interface, but print jobs remain stuck on a
+server queue. What does that result suggest?</p>"		"<p><strong>The printer is reachable, so focus next on the print server, queue, or job
+path.</strong></p>"	"<h3>Why</h3>
+<p>Reaching the printer interface makes a total network outage less likely. The
+remaining symptom points back toward the queue or server layer that handles the
+jobs.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.57; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Connectivity Printer Scenario Source::Messer-v170
+5.6-B031	"<p>You are escalating a repeated bad-output issue. What evidence should you
+include?</p>"		"<p><strong>Test-page result, printer type, visible defect, affected users or
+applications, consumable status, and recent maintenance.</strong></p>"	"<h3>Why</h3>
+<p>Escalation is more useful when it separates printer output from application
+output and describes the exact defect. This prevents the next technician from
+repeating the same isolation steps.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Documentation OutputQuality Printer Source::Messer-v170
+5.6-B032	"<p>You are escalating a shared print queue or printer connectivity issue. What
+should you document?</p>"		"<p><strong>Affected scope, queue state, printer connection type, IP configuration, print
+server status, and any relevant log entries.</strong></p>"	"<h3>Why</h3>
+<p>Queue and connectivity problems often involve multiple layers. Clear
+documentation helps the next support tier see whether the issue is client-side,
+server-side, printer-side, or network-related.</p>"	medium	basic	220-1201 5.6 - Troubleshooting Printers	Professor Messer 220-1201 v1.70 p.56; CompTIA 220-1201 Exam Objectives v2.0, Objective 5.6	A+::220-1201::5.6 A+::220-1201::Domain5-Troubleshooting A+::220-1201::TroubleshootingPrinters Basic Documentation PrintQueue Printer Source::Messer-v170

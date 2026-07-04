@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <rect width="640" height="420" fill="#eef2f7"/>
+  <rect x="176" y="36" width="288" height="348" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="212" y="80" width="178" height="14" rx="2" fill="#cbd5e1"/>
+  <rect x="212" y="110" width="214" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="212" y="132" width="198" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="212" y="170" width="128" height="74" fill="#dbeafe"/>
+  <circle cx="368" cy="207" r="38" fill="#fde68a"/>
+  <rect x="212" y="278" width="214" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="212" y="300" width="170" height="10" rx="2" fill="#e2e8f0"/>
+  <path d="M290 50 C282 98 294 150 286 205 C278 258 292 314 284 370" fill="none" stroke="#334155" stroke-width="10" opacity="0.82"/>
+  <path d="M294 50 C286 98 298 150 290 205 C282 258 296 314 288 370" fill="none" stroke="#0f172a" stroke-width="3" opacity="0.9"/>
+  <path d="M306 196 L462 132" stroke="#111827" stroke-width="3"/>
+  <rect x="420" y="94" width="170" height="58" rx="6" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+  <text x="505" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#111827">vertical line</text>
+  <text x="505" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">check drum on laser</text>
+</svg>
