@@ -1,8 +1,9 @@
 # Educational content
 
-This directory contains the content-pipeline authoring and import rules. Only a
-minimal certification pipeline sample exists; full educational content has not
-been added.
+This directory contains the content-pipeline authoring and import rules.
+OpenAPlus now includes real objective content and generated output, so docs
+must keep source hierarchy, authoring, review, image, and import guidance
+aligned with the current repository contract.
 
 Start with [CONTENT_CREATION_RULES.md](CONTENT_CREATION_RULES.md), then use:
 

@@ -6,9 +6,17 @@ was reviewed, not merely created.
 ## Research and extraction
 
 - [ ] The matching exam version and objective scope are confirmed.
+- [ ] Official CompTIA objective PDF scope was confirmed as the primary scope
+      authority.
+- [ ] Professor Messer PDF validation/page references were confirmed as the
+      approved secondary source after official scope was established.
+- [ ] No new secondary source was used without explicit user approval.
 - [ ] Sources were reviewed according to their defined scope and authoring roles.
 - [ ] Concepts were extracted without copying source language.
-- [ ] Ambiguities were recorded in `changelog.md` and resolved.
+- [ ] Source ambiguity was documented in the objective `checklist.md` and
+      resolved or deferred without guessing.
+- [ ] Ambiguity was mentioned in `changelog.md` only if it affected review,
+      acceptance, or a material coverage decision.
 
 ## Coverage map
 
@@ -24,6 +32,9 @@ does not mean every concept must become a card.
 Use `None` only with a specific no-card reason, such as study-guide coverage
 being sufficient or the detail being out of scope. Do not create filler cards
 to eliminate `None` entries.
+
+Concepts intentionally not carded or marked study-guide-only must be documented
+in the objective's `checklist.md` under this coverage/omitted-concepts map.
 
 ## Authoring
 

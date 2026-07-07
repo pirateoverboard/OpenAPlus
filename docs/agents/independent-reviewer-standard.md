@@ -41,16 +41,18 @@ State expected import counts and any media-copy instructions.
 
 Check:
 
-1. Official CompTIA objective scope
-2. Source fidelity against the private Professor Messer notes
-3. Copyright safety
-4. Card quality
-5. Redundancy
-6. Hint quality
-7. TSV/schema correctness
-8. Media correctness if image cards exist
-9. Scope boundaries
-10. Private source safety
+1. The official CompTIA objective PDF was used as the primary scope source
+2. The Professor Messer PDF was used only as the secondary validation/page-reference source
+3. Cards and study-guide claims stay inside the official objective scope
+4. No unapproved sources were used
+5. Copyright safety
+6. Card quality
+7. Redundancy
+8. Hint quality
+9. TSV/schema correctness
+10. Media correctness if image cards exist
+11. Scope boundaries
+12. Private source safety
 
 ## Card style standard
 
@@ -94,6 +96,9 @@ Flag:
 - unsupported claims
 - copied source wording or structure
 - objective-scope drift
+- use of Professor Messer as the scope authority instead of the official
+  CompTIA objective PDF
+- unapproved source use
 - duplicate learning targets
 - Basic/Cloze/Image duplicates that test the same fact
 - answer-revealing hints

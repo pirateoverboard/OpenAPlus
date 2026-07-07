@@ -7,8 +7,11 @@ into every card type.
 
 ### Basic
 
-Use Basic cards for application and judgment: scenarios, troubleshooting,
-comparisons, causes, consequences, “why,” and ordered decisions.
+Use Basic cards when a question-and-answer format best matches the learner's
+task. For standard objectives, Basic cards may test direct concept questions,
+comparisons, practical recognition, short “why” questions, short scenarios,
+first check / best next step when appropriate, most likely cause when
+appropriate, causes, consequences, and ordered decisions.
 
 **Good:** “A system shows `[symptom]` after `[change]`. What is the FIRST thing
 to check?” The answer gives one sourced initial check and explains why it comes
@@ -68,12 +71,13 @@ Do not add irrelevant narrative merely to make a recall question look applied.
 Use hints sparingly for scenario cards: they should guide the learner toward the
 right troubleshooting process, not name the tool, cause, or fix.
 
-Longer "how would you troubleshoot this ticket?" prompts are interview-practice
-material, not regular Anki cards. Put those broader spoken-answer exercises in
-the objective's `interview/` directory and follow
-[INTERVIEW_TROUBLESHOOTING.md](INTERVIEW_TROUBLESHOOTING.md). Then split the
-regular Anki coverage into atomic cards with one symptom, check, decision, or
-troubleshooting clue.
+Longer "how would you troubleshoot this ticket?" prompts are optional
+interview-practice material, not regular Anki cards. Put those broader
+spoken-answer exercises in the objective's `interview/` directory only when the
+objective is troubleshooting-heavy or the user explicitly requests it, and
+follow [INTERVIEW_TROUBLESHOOTING.md](INTERVIEW_TROUBLESHOOTING.md). Then split
+the regular Anki coverage into atomic cards with one symptom, check, decision,
+or troubleshooting clue.
 
 ## Calibrated decision wording
 

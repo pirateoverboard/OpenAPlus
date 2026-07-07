@@ -50,9 +50,11 @@ This display field does not change card IDs, source citations, or derived tags.
 For domain-split objectives, generated Anki tags may also include
 path-derived domain tags and source-validation tags. For example, Objective 1.3
 cards receive a domain tag such as `A+::220-1201::Domain1-MobileDevices` or
-`A+::220-1201::Domain1-Security`, plus `Source::Messer-v170` when the domain
-uses the Messer v1.70 validation layer. These tags are generated output; do not
-add them to YAML front matter.
+`A+::220-1201::Domain1-Security`, plus `Source::Messer-v170` when the objective
+was validated against the Professor Messer PDF v1.70. This tag does not mean
+Professor Messer defines objective scope; the official CompTIA objective PDF
+remains the scope authority. These tags are generated output; do not add them to
+YAML front matter.
 
 ## Difficulty rubric
 

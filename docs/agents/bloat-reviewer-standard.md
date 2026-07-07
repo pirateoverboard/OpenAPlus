@@ -17,6 +17,15 @@ Do not recommend deletion merely because a card is easy, direct, or specific.
 
 Recommend deletion only when a card is genuinely low-value.
 
+Judge bloat and redundancy in this order:
+
+1. Official CompTIA objective scope first.
+2. Professor Messer PDF validation/page references second.
+3. OpenAPlus card usefulness third.
+
+Do not treat Professor Messer as the scope authority when the official CompTIA
+objective PDF sets a narrower or different boundary.
+
 ## Flag possible delete candidates if they are
 
 - redundant with another card
@@ -81,4 +90,3 @@ List easy/direct cards worth keeping.
 ## Final Recommendation
 
 Give a concrete action plan.
-

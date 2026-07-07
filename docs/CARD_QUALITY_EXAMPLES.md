@@ -58,6 +58,13 @@ a bounded list. Instructor Notes should explain rather than repeat.
 
 ## Image cards — 10 example sets
 
+Original diagrams are preferred for conceptual diagrams. Reviewed Wikimedia
+Commons photos are allowed when real hardware recognition matters and complete
+license/attribution metadata is recorded in `docs/image-sources/<objective-slug>.md`.
+All external images require source, author, license, attribution, reuse,
+modification, local filename, review date, selection reason, and modification
+metadata.
+
 | # | Bad example | Why it is bad | Okay example | Why it is only okay | Great example | Why it is great |
 | --- | --- | --- | --- | --- | --- | --- |
 | I1 | A copied laptop photo with every label visible on both sides. | It is copyrighted and reveals the answer. | An original SO-DIMM drawing with a box around the module on both images. | Original, but the question image still exposes the target. | `question_image` masks the SO-DIMM label; `answer_image` reveals and highlights it without moving the diagram. | One original visual target is revealed cleanly. |
@@ -154,8 +161,9 @@ Before submitting a card, confirm:
 - [ ] The card contains no low-value trivia or out-of-scope completeness filler.
 - [ ] HighYield and difficulty follow their documented rubrics.
 - [ ] Cloze deletions hide meaningful facts and are not excessive.
-- [ ] Image cards use original `question_image` and `answer_image` files for a
-      single occlusion-style reveal.
+- [ ] Image cards use reviewed `question_image` and `answer_image` files for a
+      single occlusion-style reveal, with external-image metadata recorded when
+      the image is not original OpenAPlus work.
 - [ ] Instructor Notes add concise reasoning, contrast, or practical value and
       do not repeat the answer.
 - [ ] Stable ID, metadata, custom tags, citations, and objective mapping are valid.

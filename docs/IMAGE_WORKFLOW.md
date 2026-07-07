@@ -1,17 +1,22 @@
 # OpenAPlus Wikimedia Commons Image Workflow
 
-Use this as a future-reference guide and Codex prompt source for safely adding real photos from Wikimedia Commons to OpenAPlus.
+Use this as the guide for safely adding real photos from Wikimedia Commons to
+OpenAPlus.
 
 ## Purpose
 
-OpenAPlus currently uses original SVG diagrams for image cards. Real photos may be added later for tool-recognition cards, especially for Objective 2.8 networking tools. The preferred source is still your own original photos. Wikimedia Commons can be used when the license, attribution, and technical accuracy are reviewed and recorded.
+OpenAPlus prefers original SVG diagrams/icons for conceptual diagrams. Real
+photos are allowed when visual recognition needs realistic hardware. The
+preferred photo source is a user-created original photo. Wikimedia Commons
+photos may be used when license, attribution, technical accuracy, and
+modification rights are reviewed and recorded.
 
 ## Preferred Image Source Order
 
 1. User-created original photos
 2. Original SVG diagrams/icons
 3. Wikimedia Commons images with recorded license and attribution
-4. Other stock image sources only after explicit review
+4. Other stock image sources only after explicit user approval
 
 ## Do Not Use
 
@@ -20,6 +25,7 @@ Do not use images that include:
 - Vendor product photos
 - Screenshots from PDFs, websites, apps, or manuals
 - Copied diagrams or source layouts
+- Random web images
 - Visible logos, brand marks, serial numbers, asset tags, or personal data
 - Recognizable people
 - Product-specific layouts where the card depends on one model
@@ -38,52 +44,51 @@ Only use a Wikimedia Commons image if all of these are true:
 - The image is not a screenshot, manual diagram, vendor promo image, or copied layout.
 - Source URL, creator, license, license URL, and attribution text are recorded.
 - A technical review confirms the photo matches the intended learning target.
+- Question-side images do not reveal the answer in visible text, title, desc,
+  aria-label, comments, metadata, or learner-visible filenames.
 
-## Metadata Sidecar Template
+## Metadata Convention
 
-For every Wikimedia Commons image added, create a YAML metadata file next to the source image or in a dedicated metadata directory.
+For every reviewed external image, create or update one Markdown metadata record
+for the objective:
 
-Example:
-
-```yaml
-source: Wikimedia Commons
-source_url:
-commons_file_page:
-original_file_url:
-creator:
-license:
-license_url:
-download_date:
-attribution_required: true
-attribution_text:
-modifications:
-technical_review:
-  reviewed_by:
-  reviewed_date:
-  notes:
-openaplus_card_ids:
-  -
+```text
+docs/image-sources/<objective-slug>.md
 ```
+
+Record these fields for each image:
+
+- card ID
+- topic/connector/object
+- source URL
+- Wikimedia Commons file title
+- author/creator
+- license
+- license URL if available
+- attribution text
+- commercial reuse allowed: yes/no/unclear
+- modification allowed: yes/no/unclear
+- local filename
+- date reviewed
+- reason selected
+- modifications made
 
 ## Attribution Guidance
 
 Attribution should be preserved in:
 
-- The sidecar metadata YAML file
-- A project-level attribution document, such as `docs/image-attribution.md`
+- The objective metadata document under `docs/image-sources/`
 - Card Instructor Notes only if useful and concise
 
 Do not put long attribution text on the front of cards.
 
 ## Suggested Project Structure
 
-Possible structure:
+Use the current project structure:
 
 ```text
-assets/photos/220-1201/
-assets/photos/metadata/
-docs/image-source-policy.md
-docs/image-attribution.md
+assets/diagrams/<exam>/<objective>/
+docs/image-sources/<objective-slug>.md
 ```
 
 Keep existing SVG assets unless a photo replacement has been approved and tested.
@@ -94,8 +99,8 @@ Keep existing SVG assets unless a photo replacement has been approved and tested
 2. Find candidate Wikimedia Commons images.
 3. Review each candidate for license, attribution, technical accuracy, and visual clarity.
 4. Reject images with brands, people, screenshots, or vendor-specific details.
-5. Record metadata in a YAML sidecar file.
-6. Add attribution to the project attribution document.
+5. Record metadata in `docs/image-sources/<objective-slug>.md`.
+6. Add attribution text to the objective metadata document.
 7. Replace the card image reference only after approval.
 8. Regenerate TSV and media output.
 9. Run validation, build, tests, and lint.
@@ -106,7 +111,7 @@ Keep existing SVG assets unless a photo replacement has been approved and tested
 ```text
 Add a Wikimedia Commons image-source workflow for OpenAPlus.
 
-Do not replace existing Objective 2.8 SVG image cards yet unless explicitly instructed.
+Do not replace existing SVG image cards unless explicitly instructed.
 Do not download or commit images automatically unless the image license and attribution metadata are recorded.
 Do not use vendor product photos, copied diagrams, screenshots, or images with visible logos/brands.
 Do not add APKG generation, PDF generation, website rendering, or native image occlusion.
@@ -115,7 +120,7 @@ Goal:
 Create a safe workflow for using Wikimedia Commons photos as optional real-photo replacements for OpenAPlus image cards.
 
 Context:
-OpenAPlus currently uses original SVG diagrams for image cards. Eventually, we may replace some tool-recognition images with real photos, preferably user-created photos first, and Wikimedia Commons photos second when the license is compatible and attribution is tracked.
+OpenAPlus prefers original SVG diagrams/icons for conceptual diagrams. Real photos may be used when visual recognition needs realistic hardware, preferably user-created photos first and Wikimedia Commons photos second when the license is compatible and attribution is tracked.
 
 Create documentation and optional metadata structure for Wikimedia Commons image usage.
 
@@ -126,7 +131,7 @@ Required policy:
 - User-created original photos
 - Original SVG diagrams/icons
 - Wikimedia Commons images with recorded license and attribution
-- Other stock image sources only when explicitly reviewed later
+- Other stock image sources only after explicit user approval
 
 2. Wikimedia Commons requirements:
 
@@ -142,43 +147,38 @@ Only use an image if:
 
 3. Metadata requirement:
 
-For every Wikimedia image added, create a sidecar metadata file near the image source asset.
+For every reviewed external image, create or update
+`docs/image-sources/<objective-slug>.md` and record:
 
-Use YAML like:
-
-source: Wikimedia Commons
-source_url:
-commons_file_page:
-original_file_url:
-creator:
-license:
-license_url:
-download_date:
-attribution_required: true
-attribution_text:
-modifications:
-technical_review:
-  reviewed_by:
-  reviewed_date:
-  notes:
-openaplus_card_ids:
-  -
+- card ID
+- topic/connector/object
+- source URL
+- Wikimedia Commons file title
+- author/creator
+- license
+- license URL if available
+- attribution text
+- commercial reuse allowed: yes/no/unclear
+- modification allowed: yes/no/unclear
+- local filename
+- date reviewed
+- reason selected
+- modifications made
 
 4. Attribution handling:
 
 Add a documentation note explaining that attribution should be preserved in:
 
-- the sidecar metadata file
-- a project-level image attribution document
+- `docs/image-sources/<objective-slug>.md`
 - optionally the card Instructor Notes only if needed
 
 Do not put long attribution text on the front of cards.
 
 5. Create or update docs.
 
-Create a document such as:
+Create or update a document such as:
 
-docs/image-source-policy.md
+docs/image-sources/<objective-slug>.md
 
 Include:
 
@@ -190,24 +190,21 @@ Include:
 - replacement workflow for SVG-to-photo migration
 - warning that Wikimedia license terms vary by file
 
-6. Optional helper structure.
+6. Metadata structure.
 
-If appropriate, create directories such as:
+Use:
 
-assets/photos/220-1201/
-assets/photos/metadata/
-
-or another structure consistent with the current project.
+docs/image-sources/<objective-slug>.md
 
 Do not move existing SVG assets unless necessary.
 
 7. Optional validation idea.
 
-If practical without overengineering, add a lightweight validation rule or TODO documentation that every non-original/non-SVG photo must have a metadata YAML file.
+If practical without overengineering, add a lightweight validation rule or TODO documentation that every non-original/non-SVG photo must have an entry in `docs/image-sources/<objective-slug>.md`.
 
 Do not break the current build.
 
-8. Do not add actual Wikimedia images yet unless explicitly instructed.
+8. Do not add Wikimedia images unless explicitly instructed and metadata is recorded.
 
 This task is only to prepare the policy and workflow.
 
@@ -222,11 +219,11 @@ Run:
 Acceptance criteria:
 
 - A clear Wikimedia Commons image-use policy exists
-- A metadata YAML template exists
+- A metadata convention exists under `docs/image-sources/<objective-slug>.md`
 - The policy warns against logos, brands, people, screenshots, vendor photos, and copied diagrams
 - The policy explains attribution handling
 - Existing SVG image cards still build
-- No actual Wikimedia image is added yet
+- No Wikimedia image is added unless explicitly instructed and metadata is recorded
 - No existing Objective content is changed unless documentation links require it
 - Validation/build/tests/lint pass
 ```
@@ -234,7 +231,7 @@ Acceptance criteria:
 ## Codex Prompt: Propose Wikimedia Commons Candidates
 
 ```text
-Find and propose Wikimedia Commons candidate photos for the Objective 2.8 image card <CARD_ID>.
+Find and propose Wikimedia Commons candidate photos for the Objective <OBJECTIVE_NUMBER> image card <CARD_ID>.
 
 Do not commit images yet.
 Do not replace the existing SVG yet.
@@ -286,8 +283,8 @@ Required work:
 
 1. Download or add the approved image source only.
 2. Store it in the project’s approved photo asset location.
-3. Create the required YAML metadata sidecar.
-4. Add or update project-level image attribution documentation.
+3. Create or update the required objective metadata document.
+4. Add or update attribution documentation.
 5. Update the card image reference if needed.
 6. Regenerate TSV and media output.
 7. Verify Anki-safe filename-only media references.
@@ -305,8 +302,8 @@ Run:
 Acceptance criteria:
 
 - Only the approved card/image assets are changed
-- Wikimedia metadata sidecar exists
-- Attribution document is updated
+- Wikimedia metadata entry exists in `docs/image-sources/<objective-slug>.md`
+- Attribution metadata is updated
 - No visible logo/brand/person appears
 - TSV/media output is regenerated
 - Image renders in Anki smoke test

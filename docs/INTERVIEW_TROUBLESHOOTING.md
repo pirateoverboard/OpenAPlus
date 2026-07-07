@@ -1,16 +1,26 @@
-# Interview troubleshooting practice
+# Troubleshooting practice inside objective scope
 
-OpenAPlus can include interview-practice material for troubleshooting-heavy
-objectives. This material helps learners explain a support process out loud,
-but it is not a substitute for regular Anki cards.
+OpenAPlus can include optional troubleshooting practice for troubleshooting-heavy
+objectives. This material helps learners explain a sourced support process out
+loud, but it is not a separate objective, separate source mode, or substitute
+for regular Anki cards.
 
-Use interview practice for broad, multi-step questions that would make poor
-flashcards. Keep regular Anki cards atomic: one symptom, cause, check, decision,
-next step, or troubleshooting clue.
+Troubleshooting practice must stay inside the official CompTIA objective scope.
+Professor Messer PDFs remain the approved secondary validation/page-reference
+source after the official CompTIA objective establishes scope. Do not create
+generic job-interview coaching, resume advice, workplace advice, or broad help
+desk material outside the A+ objective being authored or reviewed.
+
+Use interview-style practice only for broad, multi-step questions that would
+make poor flashcards. Keep regular Anki cards atomic: one symptom, cause, check,
+decision, next step, or troubleshooting clue. Regular Anki cards remain Basic,
+Cloze, or Image cards.
 
 ## Where it belongs
 
-Put interview-practice material in an objective-local `interview/` directory:
+Put interview-practice material in an objective-local `interview/` directory
+only when explicitly requested or when the objective is clearly
+troubleshooting-heavy:
 
 ```text
 content/comptia/aplus/<exam>/<objective-slug>/interview/
@@ -23,15 +33,15 @@ interview-scenarios.md
 interview-answer-bank.md
 ```
 
-Interview files are Markdown study material. They are not exported to normal
-Basic, Cloze, or Image TSV output unless the pipeline is intentionally changed
-to support that later.
+Interview files are Markdown study material. They are objective-local and are
+not exported to normal Basic, Cloze, or Image TSV output unless the pipeline is
+intentionally changed to support that later.
 
 ## What interview practice is for
 
 Use interview material for:
 
-- common help desk interview questions;
+- objective-scoped troubleshooting explanation prompts;
 - structured answer examples;
 - troubleshooting talk tracks;
 - what to say first;
@@ -41,8 +51,9 @@ Use interview material for:
 - when to escalate; and
 - mistakes to avoid.
 
-Keep every scenario tied to the objective. Do not turn objective content into a
-general resume, job-search, or workplace advice document.
+Keep every scenario tied to the official CompTIA objective and validated against
+approved references. Do not turn objective content into a general resume,
+job-search, or workplace advice document.
 
 ## Interview versus Anki
 
@@ -51,11 +62,13 @@ general resume, job-search, or workplace advice document.
 | Regular Anki Basic card | One specific check, cause, decision, or clue | Short answer, usually under 15-20 seconds |
 | Cloze card | One compact fact worth memorizing | One hidden term, acronym, value, or phrase |
 | Image card | One visual recognition task | One visible target or symptom |
-| Interview practice | Explaining a full troubleshooting approach | Multi-step spoken answer |
+| Interview practice | Explaining a full troubleshooting approach inside the current objective scope | Multi-step spoken answer |
 
 If a prompt asks "How would you troubleshoot this ticket?", it probably belongs
-in interview practice. If it asks "What is the first thing to check?", it may be
-a good Basic card if the answer is specific and source-backed.
+in optional interview practice when the user requested it or the objective is
+clearly troubleshooting-heavy. If it asks "What is the first thing to check?",
+it may be a good Basic card if the answer is specific, source-backed, and inside
+the objective scope.
 
 ## Recommended structure
 
@@ -156,8 +169,9 @@ as:
 
 Interview material must follow the same source rules as cards and study guides:
 
-- use the CompTIA objective as the scope authority;
-- validate against approved references;
+- use the official CompTIA objective PDF as the scope authority;
+- validate against the matching Professor Messer PDF when available;
+- use other secondary sources only with explicit user approval;
 - cite source pages or objective references where useful;
 - paraphrase heavily;
 - do not copy source wording, tables, diagrams, screenshots, or layouts; and
@@ -172,6 +186,10 @@ Before accepting interview-practice material, confirm:
 
 - [ ] It is stored under the objective's `interview/` directory.
 - [ ] It is tied to the current objective.
+- [ ] It stays inside the official CompTIA objective scope.
+- [ ] Professor Messer PDF validation/page references were used where
+      applicable.
+- [ ] No unapproved sources or generic job-interview coaching were added.
 - [ ] It does not duplicate long answer blocks in `study-guide.md`.
 - [ ] It does not appear in generated TSV output.
 - [ ] It contains realistic support-language practice.

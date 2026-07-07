@@ -23,6 +23,11 @@ where learners need to reason through symptoms, risk, scope, and next steps.
 They are less useful for direct recall cards where any meaningful hint would
 name the answer.
 
+Empty Basic hint fields are expected and normal. Standard objectives often do
+not need hints. Direct recall, acronym, standard, connector, and compact fact
+cards usually should omit hints unless a non-revealing hint genuinely improves
+learning.
+
 ## Hint rules
 
 - Keep hints short, usually one sentence.

@@ -16,27 +16,46 @@ Do not force troubleshooting-interview style unless the requested objective is e
 
 Use the current OpenAPlus pipeline, schema, validator, media pipeline, docs, note-type assumptions, tagging rules, AGENTS.md, and authoring rules.
 
-## Private reference source
+## Private reference sources
 
-Use this private reference source when available:
+Use these private reference sources when available:
 
-`~/openaplus-private-sources/professor-messer-comptia-220-1201-a-plus-course-notes-v170.pdf`
+- Core 1 official objectives:
+  `~/openaplus-private-sources/comptia-a-plus-220-1201-exam-objectives-v4.0.pdf`
+- Core 2 official objectives:
+  `~/openaplus-private-sources/comptia-a-plus-220-1202-exam-objectives-v4.0.pdf`
+- Professor Messer Core 1 notes:
+  `~/openaplus-private-sources/professor-messer-comptia-220-1201-a-plus-course-notes-v170.pdf`
+
+Source hierarchy:
+
+1. Official CompTIA exam objectives PDF determines objective scope.
+2. Professor Messer PDFs validate concepts and page references.
+3. OpenAPlus content must be original, paraphrased, objective-scoped, and
+   learner-focused.
 
 ## Source handling rules
 
-- Use the PDF as a private reference only.
-- Do not copy the PDF into the repository.
+- Use private PDFs as private references only.
+- Do not copy private PDFs into the repository.
 - Do not quote long passages.
 - Do not reproduce tables, diagrams, layouts, screenshots, photos, or source wording.
 - Paraphrase heavily.
 - Create original explanations, scenarios, and diagrams.
 - Cite source pages in card metadata and study-guide references.
-- Use CompTIA exam scope as the source of truth for what belongs in the objective.
-- Use Professor Messer notes as a validation/reference source, not copied content.
+- Use the official CompTIA objective PDF as the primary scope authority for what
+  belongs in the objective.
+- Use Professor Messer PDFs as approved secondary validation/page-reference
+  sources after the official CompTIA objective establishes scope.
+- Do not use Messer videos, vendor docs, or other secondary sources unless the
+  user explicitly approves them for the objective.
 
 ## Objective setup
 
-First, determine the correct objective title and slug from the approved source and current repository naming conventions.
+First, extract the official CompTIA objective scope before consulting Messer.
+Use the official objective number, title, domain, and bullet list as the
+objective boundary. Then determine the correct objective title and slug from the
+official scope and current repository naming conventions.
 
 Create a directory like:
 
@@ -184,7 +203,7 @@ The study guide should:
 Before writing cards:
 
 1. Extract the objective concepts from official CompTIA scope.
-2. Validate concepts against the Professor Messer private notes.
+2. Validate concepts and page references against the Professor Messer PDF.
 3. Create a coverage map in `checklist.md`.
 4. Identify which concepts deserve cards.
 5. Identify which concepts belong only in the study guide.
@@ -207,14 +226,20 @@ Examples:
 
 If image cards are used:
 
-- Use original SVG diagrams/icons only.
+- Prefer original SVG diagrams/icons for conceptual diagrams.
+- Use user-created original photos or reviewed Wikimedia Commons photos only
+  when realistic hardware recognition improves learning and complete
+  license/attribution metadata is recorded.
 - Store original SVGs in the correct assets/media source location used by the project.
 - Use deterministic filenames.
 - Ensure generated TSV references Anki-safe filename-only media references.
 - Ensure generated media output is created under `output/media/220-1201/<objective-slug>/`.
 - Validate that media referenced in TSV exists in generated media output.
-- Do not use copied source diagrams, product photos, screenshots, vendor-specific designs, or source layouts.
-- Question-side SVG metadata must not reveal the answer through title, desc, aria-label, visible text, comments, or metadata.
+- Do not use copied source diagrams, screenshots, vendor-specific designs,
+  source layouts, random web images, product photos without clear licensing, or
+  images with unclear licensing.
+- Question-side media must not reveal the answer through title, desc,
+  aria-label, visible text, comments, metadata, or learner-visible filenames.
 
 ## After writing content
 

@@ -42,9 +42,12 @@ Review these areas:
 - Is the omitted concept actually in CompTIA A+ 220-1201 Objective <OBJECTIVE_NUMBER> scope?
 - Is it an explicit objective item, an example, or supporting explanation?
 - Would excluding it create a coverage gap?
+- Was the official CompTIA objectives PDF used as the primary scope source?
 
 2. Source support
 - Is the omitted concept supported by approved source material?
+- Was the Professor Messer PDF used only as a secondary validation/page-reference source?
+- Were any Messer videos, vendor docs, or other secondary sources used without explicit approval?
 - Does the approved source support enough detail to write a reliable card?
 - Are there any unsupported assumptions?
 
@@ -116,7 +119,10 @@ Determine whether Objective <OBJECTIVE_NUMBER> is ready for acceptance, except f
 Evaluate:
 
 1. Source fidelity
+- Was the official CompTIA objectives PDF used as the primary scope source?
+- Was the Professor Messer PDF used only as the secondary validation/page-reference source?
 - Are all cards and study-guide claims supported by approved sources?
+- Were any Messer videos, vendor docs, or other secondary sources used without explicit approval?
 - Are any claims unsupported, overstated, or too vendor/model-specific?
 - Are volatile details avoided unless clearly source-backed and justified?
 - Are source references sufficient for cards and study-guide sections?
@@ -128,6 +134,7 @@ Evaluate:
 
 3. Objective coverage
 - Does the study guide cover the objective concept set?
+- Do cards stay inside the official CompTIA objective scope?
 - Does checklist.md accurately map concepts to study-guide sections and card IDs?
 - Are intentionally not-carded concepts justified?
 - Are any objective items missing or under-covered?
@@ -177,6 +184,8 @@ Evaluate:
 - Were previous objectives left unchanged?
 - Was the next objective not created?
 - Were no private PDFs or copyrighted source files committed?
+- Was no separate troubleshooting/interview content created unless explicitly requested and source-scoped?
+- If interview material exists, is it objective-local and excluded from TSV output?
 
 Return:
 
@@ -228,6 +237,7 @@ Evaluate:
 - Are Card IDs stable?
 - Were previous objectives left unchanged?
 - Was the next objective not created?
+- Was no separate troubleshooting/interview content created unless explicitly requested and source-scoped?
 
 Return:
 
@@ -325,6 +335,7 @@ Acceptance criteria:
 - Previous objectives are unchanged
 - No new A+ content is created
 - Next objective is not created
+- No separate troubleshooting/interview content is created unless explicitly requested and source-scoped
 ```
 
 ---
@@ -336,5 +347,6 @@ Replace:
 - `<OBJECTIVE_NUMBER>` with `2.1`, `2.2`, etc.
 - `<OBJECTIVE_NAME>` with the objective title.
 - `<OBJECTIVE_SLUG>` with the folder slug, for example:
-  - `2.1-compare-and-contrast-tcp-and-udp-ports-protocols-and-their-purposes`
+  - `2.1-ip-addressing-and-common-ports`
+  - `3.2-cable-types-connectors-features-and-purposes`
   - or whatever OpenAPlus uses for that objective.

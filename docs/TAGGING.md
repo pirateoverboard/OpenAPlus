@@ -34,7 +34,10 @@ of their first occurrence.
 
 Some objectives use path-derived domain tags and Messer validation tags. The
 generator adds the tags below during TSV export; authors do not write them in
-card front matter.
+card front matter. A tag such as `Source::Messer-v170` means the objective was
+validated against the Professor Messer PDF v1.70. It does not mean Professor
+Messer defines objective scope; the official CompTIA objective PDF remains the
+scope authority.
 
 | Folder | Generated domain tag | Generated source-validation tag |
 | --- | --- | --- |
@@ -43,6 +46,7 @@ card front matter.
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |
 | `2.1-ip-addressing-and-common-ports` | `A+::220-1201::Domain2-Networking` | `Source::Messer-v170` |
 | `3.1-display-types-and-attributes` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
+| `3.2-cable-types-connectors-features-and-purposes` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
 | `5.1-troubleshooting-hardware` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 | `5.2-troubleshooting-storage-devices` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 | `5.3-troubleshooting-display-issues` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
