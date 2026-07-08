@@ -411,6 +411,37 @@ def test_objective_31_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_32_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("3.2-B001")
+    card_metadata.update(
+        {
+            "objective": "3.2",
+            "objective_name": "Cable Types, Connectors, Features, and Purposes",
+            "tags": ["CableTypes", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.23"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="3.2-cable-types-connectors-features-and-purposes",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::3.2",
+        "A+::220-1201::Domain3-Hardware",
+        "A+::220-1201::CableTypesConnectorsFeaturesandPurposes",
+        "Basic",
+        "HighYield",
+        "CableTypes",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_objective_51_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
