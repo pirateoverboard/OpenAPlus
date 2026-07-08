@@ -47,6 +47,7 @@ scope authority.
 | `2.1-ip-addressing-and-common-ports` | `A+::220-1201::Domain2-Networking` | `Source::Messer-v170` |
 | `3.1-display-types-and-attributes` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
 | `3.2-cable-types-connectors-features-and-purposes` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
+| `3.3-ram-characteristics` | `A+::220-1201::Domain3-Hardware` | `Source::Messer-v170` |
 | `5.1-troubleshooting-hardware` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 | `5.2-troubleshooting-storage-devices` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
 | `5.3-troubleshooting-display-issues` | `A+::220-1201::Domain5-Troubleshooting` | `Source::Messer-v170` |
