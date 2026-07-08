@@ -148,6 +148,14 @@ Evaluate:
 
 5. Redundant learning targets
 - Are any Basic, Cloze, or Image cards testing the same fact without testing a materially different skill?
+- Compare every Basic card against every Cloze card. Does any Basic/Cloze pair test the same recall target in different note types?
+- Are Basic cards reserved for understanding, comparison, purpose, practical recognition, short scenarios, or small decisions?
+- Are Cloze cards reserved for compact facts, acronym expansions, short definitions, term recall, or one-line associations?
+- If a Basic card and a Cloze card overlap, does each test a materially different skill, or should one be deleted?
+- Prefer keeping the Basic card when the concept needs explanation, comparison, purpose, common-confusion handling, or useful Instructor Notes.
+- Prefer keeping the Cloze card when the Basic card adds no value beyond the same compact fact.
+- Do not preserve duplicate Basic/Cloze pairs merely to keep card count high.
+- Image cards may overlap with text cards only when they test a distinct visual-recognition skill.
 - Are similar concepts separated cleanly?
 - Should any card be deleted instead of rewritten?
 
@@ -195,6 +203,8 @@ Return:
 - Recommended improvements, if any
 - Cards to delete, if any
 - Cards to rewrite, if any
+- Basic/Cloze duplicate pairs found, if any
+- Confirmation that Basic and Cloze roles are separated
 - HighYield changes, if any
 - Difficulty changes, if any
 - Whether the objective can be accepted after the manual Anki smoke test
@@ -232,6 +242,11 @@ Evaluate:
 - Were the required fixes completed?
 - Did the fixes introduce new unsupported claims?
 - Did the fixes create duplicate learning targets?
+- If Basic/Cloze redundancy was a blocker, were all Basic cards compared against all Cloze cards?
+- Were exact Basic/Cloze duplicate learning targets deleted instead of retained for card count?
+- Do remaining Basic cards test understanding, comparison, purpose, practical recognition, scenarios, or decisions?
+- Do remaining Cloze cards test compact facts, acronym expansions, short definitions, term recall, or one-line associations?
+- Do any remaining Image cards overlap only because they test distinct visual recognition?
 - Were checklist.md and changelog.md updated?
 - Was generated TSV/media output regenerated?
 - Are Card IDs stable?
@@ -244,6 +259,7 @@ Return:
 - GO or NO-GO
 - Remaining blockers
 - Any new issues caused by fixes
+- Basic/Cloze redundancy status
 - Whether the objective can proceed to manual Anki smoke test
 
 Do not edit files.
