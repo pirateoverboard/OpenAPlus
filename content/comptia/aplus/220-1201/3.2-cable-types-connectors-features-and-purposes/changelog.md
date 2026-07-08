@@ -78,3 +78,19 @@
 - Regenerated TSV/media output after the cleanup.
 - New final card counts after TSV regeneration: 14 Basic, 7 Cloze, 7 Image,
   28 total.
+
+## 2026-07-08 - Manual Anki smoke test pass
+
+- Recorded the post-cleanup manual Anki smoke test pass in `checklist.md`.
+- Verified expected import counts in the smoke test: 14 Basic, 7 Cloze, 7 Image,
+  28 total notes.
+- Verified `Basic.tsv` used the stable Hint column and Hint fields imported
+  correctly.
+- Verified Basic, Cloze, and Image imports; staged Image media rendered after
+  copying media into Anki `collection.media`.
+- Verified TSV headers were not imported as notes, Card ID was the first field,
+  re-import updated existing notes instead of duplicating, HTML rendered
+  correctly, Cloze cards generated correctly, and tags imported as Anki
+  metadata rather than learner-facing fields.
+- Did not modify objectives outside 3.2, did not create Objective 3.3, and did
+  not modify Objectives 5.1 through 5.6.

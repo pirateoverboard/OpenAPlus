@@ -1,8 +1,9 @@
 # Objective 3.2 completion checklist
 
-**Objective status: DRAFT.** Objective 3.2 has source-backed draft content and
-generated output after build, but still needs independent review and any manual
-Anki smoke test required for Image cards before acceptance.
+**Objective status: DRAFT.** Objective 3.2 has source-backed draft content,
+generated output after build, and a passing manual Anki smoke test after the
+Basic/Cloze redundancy cleanup, but still needs final independent-review and
+acceptance records before acceptance.
 
 ## Domain mapping
 
@@ -117,7 +118,7 @@ official CompTIA v4.0 scope source.
 - [x] `python scripts/validate.py` passes.
 - [x] `python scripts/build.py` passes and TSV/media output is regenerated.
 - [x] `pytest` and Ruff checks pass.
-- [ ] Manual Anki smoke test passed, if required.
+- [x] Manual Anki smoke test passed, if required.
 - [ ] Objective accepted by maintainer.
 
 ## Manual Anki smoke test
@@ -126,17 +127,25 @@ Required before acceptance because Objective 3.2 contains Image cards.
 
 | Item | Result |
 | --- | --- |
-| Test deck/profile | Pending |
+| Test deck/profile | OpenAPlus Import Test |
 | Expected note count | 28 after redundancy cleanup |
-| Actual note count | Smoke test failed before cleanup due to Basic/Cloze redundancy; retest pending |
-| Basic.tsv import | Pending |
-| Cloze.tsv import | Pending |
-| Image.tsv import | Pending |
-| Media rendering | Pending |
-| Final result | Failed before cleanup; retest pending after regenerated TSV/media |
+| Actual note count | 28 total notes: 14 Basic, 7 Cloze, 7 Image |
+| Basic.tsv import | Passed |
+| Cloze.tsv import | Passed |
+| Image.tsv import | Passed |
+| Media rendering | Passed after copying staged media into Anki `collection.media` |
+| Basic Hint column | Passed; stable Hint field imported correctly |
+| Headers | Passed; TSV headers were not imported as notes |
+| Card ID behavior | Passed; Card ID was first field and drove update behavior |
+| HTML rendering | Passed |
+| Cloze rendering | Passed |
+| Tags | Passed; imported as Anki metadata, not learner-facing fields |
+| Re-import behavior | Passed; existing notes updated instead of duplicating |
+| Final result | Passed on 2026-07-08 after Basic/Cloze redundancy cleanup |
 
 ## Peer review record
 
 | Reviewer | Date | Result | Required Changes | Approval Status |
 | --- | --- | --- | --- | --- |
 | Self-review | 2026-07-06 | Initial Objective 3.2 draft and coverage decisions completed | Independent review and Anki smoke test | Needs independent review |
+| Manual Anki smoke test | 2026-07-08 | Basic, Cloze, and Image imports passed with expected counts; media, hints, tags, HTML, note types, and duplicate/update behavior verified | None from smoke test after redundancy cleanup | Passed |
