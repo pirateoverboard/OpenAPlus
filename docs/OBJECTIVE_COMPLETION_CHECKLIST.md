@@ -12,6 +12,8 @@ was reviewed, not merely created.
       approved secondary source after official scope was established.
 - [ ] Professor Messer practice exam PDFs, if used, were used only as private
       secondary gap-check sources after official scope was established.
+- [ ] When a matching practice exam was available, a practice-exam gap check was
+      completed before acceptance.
 - [ ] No new secondary source was used without explicit user approval.
 - [ ] Sources were reviewed according to their defined scope and authoring roles.
 - [ ] Concepts were extracted without copying source language.
@@ -37,6 +39,10 @@ to eliminate `None` entries.
 
 Concepts intentionally not carded or marked study-guide-only must be documented
 in the objective's `checklist.md` under this coverage/omitted-concepts map.
+If a matching practice exam surfaces an official-scope, source-supported,
+stable concept that is useful for active recall or application, the default is
+to create a card. Keeping it study-guide-only requires a specific no-card reason
+in this table.
 
 ## Authoring
 
@@ -49,6 +55,9 @@ in the objective's `checklist.md` under this coverage/omitted-concepts map.
 - [ ] Instructor Notes add concise value rather than repeat answers.
 - [ ] Any omitted Instructor Notes have a reviewed justification in this
       checklist or `changelog.md`.
+- [ ] Practice-test-relevant concepts were converted to cards by default when
+      official-scope, source-supported, stable, and useful for recall or
+      application; any exceptions have explicit checklist reasons.
 - [ ] Every HighYield card has reviewer agreement or a documented justification.
 - [ ] Custom tags and stable IDs follow repository rules.
 - [ ] `changelog.md` records the objective's authoring and review changes.

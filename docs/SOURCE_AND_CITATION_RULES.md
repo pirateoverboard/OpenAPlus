@@ -60,6 +60,11 @@ Practice exam PDFs are private gap-check sources only.
 - Use practice exams to identify possible coverage gaps, ambiguity, or weak
   distractor distinctions, then resolve those items against the official
   objectives and approved notes.
+- When a matching practice exam is available, perform this gap check before
+  objective acceptance. If it surfaces an official-scope, source-supported,
+  stable concept that is useful for active recall or application, create an
+  Anki card by default. Leaving that concept study-guide-only requires a
+  specific no-card reason in the objective checklist.
 - Do not cite practice exams in card metadata or study-guide references. When
   useful for review provenance, record practice-exam use only in checklist or
   changelog notes without enough detail to reconstruct a question.

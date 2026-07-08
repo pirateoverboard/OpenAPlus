@@ -29,6 +29,10 @@ Do not treat Professor Messer as the scope authority when the official CompTIA
 objective PDF sets a narrower or different boundary.
 Do not preserve a card solely because a practice exam covers the concept; the
 concept must still be official-scope and source-supported.
+However, when a practice exam exposes an official-scope, source-supported,
+stable concept that is useful for active recall or application, do not dismiss
+it as bloat merely because it was previously study-guide-only. It should become
+a card by default unless the checklist gives a specific no-card reason.
 
 ## Flag possible delete candidates if they are
 

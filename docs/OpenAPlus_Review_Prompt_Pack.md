@@ -49,6 +49,8 @@ Review these areas:
 - Was the Professor Messer PDF used only as a secondary validation/page-reference source?
 - Were Professor Messer practice exam PDFs, if used, used only as private
   secondary gap-check sources?
+- If a matching practice exam was available, was a practice-exam gap check
+  completed before acceptance?
 - Were any Messer videos, vendor docs, or other secondary sources used without explicit approval?
 - Does the approved source support enough detail to write a reliable card?
 - Are there any unsupported assumptions?
@@ -61,6 +63,8 @@ Review these areas:
 - Is the concept worth memorizing or applying in flashcard form?
 - Is it better handled in the study guide only?
 - Is it too obvious, too broad, too narrow, or too trivia-like?
+- If practice-exam gap checking showed the concept is likely to matter, is
+  there a specific checklist reason for leaving it study-guide-only?
 
 5. Card type recommendation
 For each omitted concept, recommend exactly one:
@@ -70,6 +74,11 @@ For each omitted concept, recommend exactly one:
 - Add Cloze card
 - Add Image card
 - Defer pending approved source
+
+Default to adding a card when a concept is official-scope, source-supported,
+stable, useful for recall/application, and practice-test-relevant. Recommend
+study-guide-only only when the checklist gives a specific no-card reason or the
+concept is better learned as context.
 
 6. Redundancy
 - Is the omitted concept already covered by another card?
@@ -87,6 +96,7 @@ Then provide:
 - Required additions, if any
 - Concepts correctly left study-guide-only
 - Concepts correctly omitted entirely
+- Practice-test-relevant concepts that must become cards
 - Concepts that need better documentation in checklist.md
 - Any source ambiguity
 - Any risk of card bloat
@@ -125,6 +135,8 @@ Evaluate:
 - Was the Professor Messer PDF used only as the secondary validation/page-reference source?
 - Were Professor Messer practice exam PDFs, if used, used only as private
   secondary gap-check sources and not as scope authority?
+- If a matching practice exam was available, was a practice-exam gap check
+  completed before acceptance?
 - Are all cards and study-guide claims supported by approved sources?
 - Were any Messer videos, vendor docs, or other secondary sources used without explicit approval?
 - Are any claims unsupported, overstated, or too vendor/model-specific?
@@ -144,6 +156,10 @@ Evaluate:
 - Does checklist.md accurately map concepts to study-guide sections and card IDs?
 - Are intentionally not-carded concepts justified?
 - Are any objective items missing or under-covered?
+- Are official-scope, source-supported, stable, practice-test-relevant concepts
+  useful for recall/application carded by default?
+- If any such concept remains study-guide-only, does checklist.md give a
+  specific no-card reason?
 
 4. Card quality
 - Are Basic cards scenario-based where useful?
@@ -215,6 +231,7 @@ Return:
 - Difficulty changes, if any
 - Whether the objective can be accepted after the manual Anki smoke test
 - Whether omitted-concept decisions are acceptable
+- Whether practice-test gap-check decisions are acceptable
 
 Do not edit files.
 ```

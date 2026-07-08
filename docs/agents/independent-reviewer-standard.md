@@ -24,6 +24,9 @@ GO or NO-GO
 ## Omitted Concepts Review
 
 List omitted concepts and whether each should remain omitted, study-guide-only, or become a card.
+Treat an official-scope, source-supported, stable, practice-test-relevant
+concept left study-guide-only as a blocker unless the checklist gives a
+specific no-card reason.
 
 ## Required Fixes
 
@@ -47,14 +50,19 @@ Check:
    secondary gap-check source
 3. Cards and study-guide claims stay inside the official objective scope
 4. No unapproved sources were used
-5. Copyright safety
-6. Card quality
-7. Redundancy
-8. Hint quality
-9. TSV/schema correctness
-10. Media correctness if image cards exist
-11. Scope boundaries
-12. Private source safety
+5. Matching practice exams were used as private gap checks before acceptance
+   when available
+6. Official-scope, source-supported, stable, practice-test-relevant concepts
+   useful for recall/application were carded by default or explicitly justified
+   as study-guide-only
+7. Copyright safety
+8. Card quality
+9. Redundancy
+10. Hint quality
+11. TSV/schema correctness
+12. Media correctness if image cards exist
+13. Scope boundaries
+14. Private source safety
 
 ## Card style standard
 
@@ -102,6 +110,10 @@ Flag:
   CompTIA objective PDF
 - use of Professor Messer practice exams as scope authority or copied/closely
   paraphrased practice-question content
+- missing practice-exam gap check before acceptance when a matching practice
+  exam is available
+- official-scope, source-supported, stable, practice-test-relevant concepts left
+  study-guide-only without a specific no-card reason
 - unapproved source use
 - duplicate learning targets
 - Basic/Cloze/Image duplicates that test the same fact

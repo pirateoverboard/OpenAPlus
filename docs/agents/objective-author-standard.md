@@ -58,6 +58,11 @@ Source hierarchy:
   objective scope and an approved validation/reference source. Do not cite
   practice exams in card metadata or study-guide references; record their use
   only in checklist or changelog review notes when useful.
+- When a matching practice exam is available, perform the gap check before
+  objective acceptance. If the gap check surfaces an official-scope,
+  source-supported, stable concept that is useful for active recall or
+  application, add an Anki card by default. Leaving it study-guide-only requires
+  a specific reason in `checklist.md`.
 - Do not use Messer videos, vendor docs, or other secondary sources unless the
   user explicitly approves them for the objective.
 
@@ -219,8 +224,13 @@ Before writing cards:
 4. Identify which concepts deserve cards.
 5. Identify which concepts belong only in the study guide.
 6. Record intentionally not-carded concepts with reasons.
-7. Record source ambiguity instead of guessing.
-8. Avoid redundant Basic/Cloze/Image cards.
+7. Run the matching practice-exam gap check when available, without copying or
+   reconstructing practice-test content.
+8. Convert practice-test-relevant concepts to cards by default when they are
+   official-scope, source-supported, stable, and useful for recall or
+   application; document any study-guide-only exceptions.
+9. Record source ambiguity instead of guessing.
+10. Avoid redundant Basic/Cloze/Image cards.
 
 ## Objective-specific cautions
 

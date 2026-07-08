@@ -151,6 +151,11 @@ When writing cards:
   objective scope and note validation. Do not create flashcards from
   practice-test-only concepts, exact practice questions, answer choices, or
   explanation wording.
+- When a matching practice exam is available, perform the practice-exam
+  gap-check before objective acceptance. If that gap-check surfaces an
+  official-scope, source-supported, stable concept that is useful for active
+  recall or application, add an Anki card by default. Leaving it
+  study-guide-only requires a specific reason in `checklist.md`.
 - If the official objectives and Professor Messer notes differ, prefer the
   official objectives for scope and document the ambiguity.
 - Do not copy official objective wording into cards except for short unavoidable technology names, acronyms, protocol names, or objective labels.
@@ -162,6 +167,10 @@ Concepts intentionally not carded or marked study-guide-only must be recorded in
 the objective's `checklist.md` under the coverage/omitted-concepts section.
 Major omitted-concept decisions may also be mentioned in `changelog.md` when
 they affect review or acceptance.
+Reviewers should treat unjustified study-guide-only omissions as blockers when
+the concept is official-scope, source-supported, stable, and useful for active
+recall or application, especially when practice-test gap-checking shows the
+concept is likely to matter.
 
 Source ambiguity must be documented in the objective `checklist.md`. If the
 ambiguity affects a card, also mention it in the card Instructor Notes or source

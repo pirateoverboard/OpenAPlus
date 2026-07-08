@@ -35,6 +35,12 @@ requires a distinct decision.
 Coverage does not require a card for every extracted concept. Record concepts
 that remain study-guide-only in the objective coverage map. See
 [CARD_QUALITY_EXAMPLES.md](CARD_QUALITY_EXAMPLES.md) for comparisons.
+When an approved matching practice exam is available, use it as a private
+gap-check before objective acceptance. Practice-test-relevant concepts still
+must be official-scope and independently source-supported, but if they are
+stable and useful for recall or application, the default is to add an Anki card
+rather than leave them study-guide-only. A study-guide-only decision for such a
+concept needs a specific checklist reason.
 
 ## Authoring workflow
 
