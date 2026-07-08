@@ -1,0 +1,19 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+3.4-C001	<p>Hard-drive spindle speed is measured in {{c1::revolutions per minute (RPM)}}.</p>	<p>Spindle speed is one comparison point, not a complete performance guarantee.</p>	"<h3>Why</h3>
+<p>Objective 3.4 includes spindle speeds as a hard-drive comparison characteristic.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.33; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze HDD Storage Source::Messer-v170
+3.4-C002	<p>SSD stands for {{c1::Solid-State Drive}}.</p>	<p>An SSD uses non-volatile memory and has no spinning platters.</p>	"<h3>Why</h3>
+<p>The acronym is common in storage-device comparisons and appears throughout the storage objective.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.32; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze SSD Storage Source::Messer-v170
+3.4-C003	<p>NVMe stands for {{c1::Non-Volatile Memory Express}}.</p>	<p>NVMe is designed for SSD-speed storage and commonly uses PCIe.</p>	"<h3>Why</h3>
+<p>Knowing the expansion helps connect NVMe to non-volatile SSD storage rather than treating it as just a connector shape.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.32; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze HighYield NVMe SSD Source::Messer-v170
+3.4-C004	<p>SATA stands for {{c1::Serial Advanced Technology Attachment}}.</p>	"<p>SATA is a common storage interface for hard drives and SATA SSDs. It is also
+commonly shortened as Serial ATA.</p>"	"<h3>Why</h3>
+<p>Objective 3.4 compares SATA with other storage interfaces such as NVMe, PCIe, SAS, and mSATA.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.32; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze SATA Storage Source::Messer-v170
+3.4-C005	<p>SAS stands for {{c1::Serial Attached SCSI}}.</p>	<p>SAS is associated with higher-end storage systems and storage arrays.</p>	"<h3>Why</h3>
+<p>The acronym distinguishes SAS from SATA, which is a common source of storage-interface confusion.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.32; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze SAS Storage Source::Messer-v170
+3.4-C006	<p>mSATA stands for {{c1::Mini-serial Advanced Technology Attachment}}.</p>	<p>mSATA is a smaller SATA-based storage form factor that was largely replaced by M.2.</p>	"<h3>Why</h3>
+<p>Objective 3.4 includes mSATA under SSD form factors, so the compact acronym recall is useful.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.32; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze mSATA Storage Source::Messer-v170
+3.4-C007	<p>RAID stands for {{c1::Redundant Array of Independent Disks}}.</p>	<p>RAID can provide performance, redundancy, or both depending on the level.</p>	"<h3>Why</h3>
+<p>The acronym anchors the drive-configuration portion of Objective 3.4, but remember that RAID 0 is not redundant.</p>"	easy	cloze	220-1201 3.4 - Storage Devices	Professor Messer 220-1201 v1.70 p.33; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.4	A+::220-1201::3.4 A+::220-1201::Domain3-Hardware A+::220-1201::StorageDevices Cloze HighYield RAID Storage Source::Messer-v170

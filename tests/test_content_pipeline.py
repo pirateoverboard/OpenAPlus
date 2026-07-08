@@ -473,6 +473,37 @@ def test_objective_33_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_34_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("3.4-B001")
+    card_metadata.update(
+        {
+            "objective": "3.4",
+            "objective_name": "Storage Devices",
+            "tags": ["Storage", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.32"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="3.4-storage-devices",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::3.4",
+        "A+::220-1201::Domain3-Hardware",
+        "A+::220-1201::StorageDevices",
+        "Basic",
+        "HighYield",
+        "Storage",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_objective_51_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
