@@ -10,6 +10,8 @@ was reviewed, not merely created.
       authority.
 - [ ] Professor Messer PDF validation/page references were confirmed as the
       approved secondary source after official scope was established.
+- [ ] Professor Messer practice exam PDFs, if used, were used only as private
+      secondary gap-check sources after official scope was established.
 - [ ] No new secondary source was used without explicit user approval.
 - [ ] Sources were reviewed according to their defined scope and authoring roles.
 - [ ] Concepts were extracted without copying source language.

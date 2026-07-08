@@ -21,10 +21,14 @@ Judge bloat and redundancy in this order:
 
 1. Official CompTIA objective scope first.
 2. Professor Messer PDF validation/page references second.
-3. OpenAPlus card usefulness third.
+3. Professor Messer practice exam PDFs, if used, only as private secondary
+   gap-check context.
+4. OpenAPlus card usefulness third.
 
 Do not treat Professor Messer as the scope authority when the official CompTIA
 objective PDF sets a narrower or different boundary.
+Do not preserve a card solely because a practice exam covers the concept; the
+concept must still be official-scope and source-supported.
 
 ## Flag possible delete candidates if they are
 

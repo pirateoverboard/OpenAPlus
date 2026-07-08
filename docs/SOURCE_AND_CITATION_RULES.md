@@ -10,6 +10,10 @@ publish it.
   covered.
 - Professor Messer PDFs are the approved secondary validation/page-reference
   source after the official CompTIA objective establishes scope.
+- Professor Messer practice exam PDFs are approved private secondary gap-check
+  sources after official scope is established. They must not define objective
+  scope and must not be used as the source for copied or lightly rewritten
+  practice questions, answer choices, or explanations.
 - Professor Messer videos, vendor documentation, and any other secondary source
   require explicit user approval unless that source has already been approved
   for the objective being authored or reviewed.
@@ -23,7 +27,10 @@ Authoring source hierarchy:
 
 1. Official CompTIA exam objectives PDF determines objective scope.
 2. Professor Messer PDFs validate concepts and page references.
-3. OpenAPlus content must be original, paraphrased, objective-scoped, and
+3. Professor Messer practice exam PDFs may be used only as private secondary
+   gap-check sources for concepts already supported by the official objective
+   scope and approved validation sources.
+4. OpenAPlus content must be original, paraphrased, objective-scoped, and
    learner-focused.
 
 Private local paths:
@@ -34,6 +41,28 @@ Private local paths:
   `~/openaplus-private-sources/comptia-a-plus-220-1202-exam-objectives-v4.0.pdf`
 - Professor Messer Core 1 notes:
   `~/openaplus-private-sources/professor-messer-comptia-220-1201-a-plus-course-notes-v170.pdf`
+- Professor Messer Core 2 notes:
+  `~/openaplus-private-sources/professor-messer-comptia-220-1202-a-plus-course-notes-v140.pdf`
+- Professor Messer Core 1 practice exams:
+  `~/openaplus-private-sources/professor-messer-a-plus-220-1201-core-1-practice-exams-v112.pdf`
+- Professor Messer Core 2 practice exams:
+  `~/openaplus-private-sources/professor-messer-a-plus-220-1202-core-2-practice-exams-v111.pdf`
+
+## Practice exam handling
+
+Practice exam PDFs are private gap-check sources only.
+
+- Do not copy, paraphrase closely, or reconstruct practice-test questions,
+  answer choices, rationales, or scenarios.
+- Do not create a card solely because a concept appears in a practice exam; the
+  concept must also be inside official objective scope and supported by an
+  approved validation/reference source.
+- Use practice exams to identify possible coverage gaps, ambiguity, or weak
+  distractor distinctions, then resolve those items against the official
+  objectives and approved notes.
+- Do not cite practice exams in card metadata or study-guide references. When
+  useful for review provenance, record practice-exam use only in checklist or
+  changelog notes without enough detail to reconstruct a question.
 
 ## Card citations
 
@@ -70,8 +99,9 @@ source-specific organization.
 - Create original diagrams or use only reviewed external images allowed by the
   image-source policy. Do not copy, trace, screenshot, or adapt copyrighted
   diagrams.
-- Do not commit official CompTIA PDFs, Professor Messer PDFs, screenshots, OCR
-  exports, copied tables, copied diagrams, copied source layouts, or long copied
+- Do not commit official CompTIA PDFs, Professor Messer PDFs, practice exam
+  PDFs, screenshots, OCR exports, copied tables, copied diagrams, copied source
+  layouts, practice questions, answer choices, explanations, or long copied
   passages.
 - Never contribute exam dumps, recalled exam questions, or proprietary study
   material.

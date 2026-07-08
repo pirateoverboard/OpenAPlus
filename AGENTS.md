@@ -96,10 +96,15 @@ Private reference sources may be used only as private references. Do not commit
 PDFs, screenshots, OCR exports, copied tables, copied diagrams, or long copied
 passages. OpenAPlus content must use original wording, original explanations,
 original examples, and original diagrams. Cite sources by concise page or
-objective reference.
+objective reference. Practice exam use is an exception: record it only as
+private gap-check context in checklist/changelog notes when useful, not as a
+card or study-guide citation.
 
 Official CompTIA exam objectives PDFs are approved primary scope sources.
 Professor Messer notes are an approved secondary validation/reference source.
+Professor Messer practice exams are approved private secondary gap-check
+sources only; they must not define objective scope or supply copied question or
+explanation wording.
 New secondary sources require explicit user approval before use.
 
 ## Official exam objective sources
@@ -121,11 +126,19 @@ Private local paths:
 - Professor Messer Core 2 notes:
   `~/openaplus-private-sources/professor-messer-comptia-220-1202-a-plus-course-notes-v140.pdf`
 
+- Professor Messer Core 1 practice exams:
+  `~/openaplus-private-sources/professor-messer-a-plus-220-1201-core-1-practice-exams-v112.pdf`
+
+- Professor Messer Core 2 practice exams:
+  `~/openaplus-private-sources/professor-messer-a-plus-220-1202-core-2-practice-exams-v111.pdf`
+
 Authoring source hierarchy:
 
 1. Official CompTIA exam objectives PDF determines objective scope.
 2. Professor Messer notes validate concepts and page references.
-3. OpenAPlus content must be original and paraphrased.
+3. Professor Messer practice exams may be used only as a private secondary
+   gap-check after official scope is established.
+4. OpenAPlus content must be original and paraphrased.
 
 When writing cards:
 
@@ -134,10 +147,16 @@ When writing cards:
 - Do not add cards for concepts outside the official objective unless the concept
   is necessary context and is documented as study-guide-only.
 - Use Professor Messer notes only as a private supporting reference, not as the scope authority.
+- Use Professor Messer practice exams only as a private gap-check after official
+  objective scope and note validation. Do not create flashcards from
+  practice-test-only concepts, exact practice questions, answer choices, or
+  explanation wording.
 - If the official objectives and Professor Messer notes differ, prefer the
   official objectives for scope and document the ambiguity.
 - Do not copy official objective wording into cards except for short unavoidable technology names, acronyms, protocol names, or objective labels.
-- Do not commit official objectives PDFs, copied objective tables, screenshots, OCR exports, or long copied passages.
+- Do not commit official objectives PDFs, practice exam PDFs, copied objective
+  tables, practice questions, answer choices, explanations, screenshots, OCR
+  exports, or long copied passages.
 
 Concepts intentionally not carded or marked study-guide-only must be recorded in
 the objective's `checklist.md` under the coverage/omitted-concepts section.

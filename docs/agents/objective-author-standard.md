@@ -26,12 +26,16 @@ Use these private reference sources when available:
   `~/openaplus-private-sources/comptia-a-plus-220-1202-exam-objectives-v4.0.pdf`
 - Professor Messer Core 1 notes:
   `~/openaplus-private-sources/professor-messer-comptia-220-1201-a-plus-course-notes-v170.pdf`
+- Professor Messer Core 1 practice exams:
+  `~/openaplus-private-sources/professor-messer-a-plus-220-1201-core-1-practice-exams-v112.pdf`
 
 Source hierarchy:
 
 1. Official CompTIA exam objectives PDF determines objective scope.
 2. Professor Messer PDFs validate concepts and page references.
-3. OpenAPlus content must be original, paraphrased, objective-scoped, and
+3. Professor Messer practice exam PDFs may be used only as private secondary
+   gap-check sources after official scope is established.
+4. OpenAPlus content must be original, paraphrased, objective-scoped, and
    learner-focused.
 
 ## Source handling rules
@@ -47,6 +51,13 @@ Source hierarchy:
   belongs in the objective.
 - Use Professor Messer PDFs as approved secondary validation/page-reference
   sources after the official CompTIA objective establishes scope.
+- Use Professor Messer practice exam PDFs only as private secondary gap-check
+  sources. Do not copy, closely paraphrase, or reconstruct practice questions,
+  answer choices, explanations, or scenarios. Do not create cards from
+  practice-test-only concepts unless the concept is also supported by official
+  objective scope and an approved validation/reference source. Do not cite
+  practice exams in card metadata or study-guide references; record their use
+  only in checklist or changelog review notes when useful.
 - Do not use Messer videos, vendor docs, or other secondary sources unless the
   user explicitly approves them for the objective.
 

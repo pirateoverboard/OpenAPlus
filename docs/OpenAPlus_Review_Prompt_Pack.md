@@ -47,6 +47,8 @@ Review these areas:
 2. Source support
 - Is the omitted concept supported by approved source material?
 - Was the Professor Messer PDF used only as a secondary validation/page-reference source?
+- Were Professor Messer practice exam PDFs, if used, used only as private
+  secondary gap-check sources?
 - Were any Messer videos, vendor docs, or other secondary sources used without explicit approval?
 - Does the approved source support enough detail to write a reliable card?
 - Are there any unsupported assumptions?
@@ -121,6 +123,8 @@ Evaluate:
 1. Source fidelity
 - Was the official CompTIA objectives PDF used as the primary scope source?
 - Was the Professor Messer PDF used only as the secondary validation/page-reference source?
+- Were Professor Messer practice exam PDFs, if used, used only as private
+  secondary gap-check sources and not as scope authority?
 - Are all cards and study-guide claims supported by approved sources?
 - Were any Messer videos, vendor docs, or other secondary sources used without explicit approval?
 - Are any claims unsupported, overstated, or too vendor/model-specific?
@@ -129,7 +133,9 @@ Evaluate:
 
 2. Copyright safety
 - Is wording substantially paraphrased?
-- Are there copied passages, copied tables, copied diagrams, screenshots, or source-layout reproductions?
+- Are there copied passages, copied tables, copied diagrams, screenshots,
+  source-layout reproductions, practice questions, answer choices, or practice
+  exam explanations?
 - Are all diagrams original?
 
 3. Objective coverage

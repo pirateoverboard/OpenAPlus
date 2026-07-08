@@ -43,6 +43,8 @@ Check:
 
 1. The official CompTIA objective PDF was used as the primary scope source
 2. The Professor Messer PDF was used only as the secondary validation/page-reference source
+   and any Professor Messer practice exam PDF was used only as a private
+   secondary gap-check source
 3. Cards and study-guide claims stay inside the official objective scope
 4. No unapproved sources were used
 5. Copyright safety
@@ -98,6 +100,8 @@ Flag:
 - objective-scope drift
 - use of Professor Messer as the scope authority instead of the official
   CompTIA objective PDF
+- use of Professor Messer practice exams as scope authority or copied/closely
+  paraphrased practice-question content
 - unapproved source use
 - duplicate learning targets
 - Basic/Cloze/Image duplicates that test the same fact
