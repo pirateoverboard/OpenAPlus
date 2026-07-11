@@ -597,6 +597,37 @@ def test_objective_37_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_38_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("3.8-B001")
+    card_metadata.update(
+        {
+            "objective": "3.8",
+            "objective_name": "Printer Maintenance",
+            "tags": ["Printer", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.43"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="3.8-printer-maintenance",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::3.8",
+        "A+::220-1201::Domain3-Hardware",
+        "A+::220-1201::PrinterMaintenance",
+        "Basic",
+        "HighYield",
+        "Printer",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_objective_51_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
