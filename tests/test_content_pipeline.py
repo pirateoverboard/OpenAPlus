@@ -535,6 +535,37 @@ def test_objective_35_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_36_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("3.6-B001")
+    card_metadata.update(
+        {
+            "objective": "3.6",
+            "objective_name": "Power Supplies",
+            "tags": ["Power", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.40"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="3.6-power-supplies",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::3.6",
+        "A+::220-1201::Domain3-Hardware",
+        "A+::220-1201::PowerSupplies",
+        "Basic",
+        "HighYield",
+        "Power",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_objective_51_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:

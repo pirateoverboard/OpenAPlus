@@ -1,0 +1,12 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+3.6-C001	<p>VAC means {{c1::volts alternating current}}.</p>	<p>Objective 3.6 compares 110-120 VAC and 220-240 VAC input ranges.</p>	"<h3>Distinction</h3>
+<p>VAC describes the input side of the power supply, not the DC output rails inside the computer.</p>"	easy	cloze	220-1201 3.6 - Power Supplies	Professor Messer 220-1201 v1.70 p.40; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.6	A+::220-1201::3.6 A+::220-1201::Domain3-Hardware A+::220-1201::PowerSupplies Cloze Power Voltage Source::Messer-v170
+3.6-C003	<p>The main DC output voltages listed for Objective 3.6 are {{c1::3.3 V, 5 V, and 12 V}}.</p>	<p>Different components use different PSU output rails.</p>	"<h3>Distinction</h3>
+<p>This card tests the official objective's voltage set. Use Basic cards for deciding why the rails matter.</p>"	easy	cloze	220-1201 3.6 - Power Supplies	Professor Messer 220-1201 v1.70 p.40; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.6	A+::220-1201::3.6 A+::220-1201::Domain3-Hardware A+::220-1201::PowerSupplies Cloze HighYield Power Voltage Source::Messer-v170
+3.6-C004	<p>A {{c1::20+4-pin}} connector can support either a 20-pin or 24-pin ATX motherboard power socket.</p>	<p>The detachable four-pin section is attached when the motherboard expects 24 pins.</p>	"<h3>Distinction</h3>
+<p>This is the main motherboard power connector, not a PCIe auxiliary power connector.</p>"	easy	cloze	220-1201 3.6 - Power Supplies	Professor Messer 220-1201 v1.70 p.40; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.6	A+::220-1201::3.6 A+::220-1201::Domain3-Hardware A+::220-1201::PowerSupplies Cloze Power Connector Source::Messer-v170
+3.6-C005	<p>Watts can be calculated as {{c1::volts times amps}}.</p>	<p>Wattage is the power rating used when sizing a PSU for a system.</p>	"<h3>Why</h3>
+<p>This supports wattage-rating questions without requiring memorization of a specific build's total wattage.</p>"	easy	cloze	220-1201 3.6 - Power Supplies	Professor Messer 220-1201 v1.70 p.40; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.6	A+::220-1201::3.6 A+::220-1201::Domain3-Hardware A+::220-1201::PowerSupplies Cloze Power Wattage Source::Messer-v170

@@ -69,6 +69,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "3.3-ram-characteristics": "A+::220-1201::Domain3-Hardware",
     "3.4-storage-devices": "A+::220-1201::Domain3-Hardware",
     "3.5-motherboards-cpus-and-add-on-cards": "A+::220-1201::Domain3-Hardware",
+    "3.6-power-supplies": "A+::220-1201::Domain3-Hardware",
     "5.1-troubleshooting-hardware": "A+::220-1201::Domain5-Troubleshooting",
     "5.2-troubleshooting-storage-devices": "A+::220-1201::Domain5-Troubleshooting",
     "5.3-troubleshooting-display-issues": "A+::220-1201::Domain5-Troubleshooting",
