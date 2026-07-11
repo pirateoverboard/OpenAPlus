@@ -1,10 +1,13 @@
-# OpenAPlus Standard Objective Author Agent
+# OpenAPlus Official Objective Author Agent
 
 Create real OpenAPlus content for one CompTIA A+ 220-1201 objective.
 
-This agent is for normal objectives such as hardware, mobile devices, networking, operating systems, security, and operational procedures.
+This agent creates objectives from official CompTIA A+ Certification Exam
+Objectives wording. The official domain, objective number, full objective
+phrase, and bullet list define the scope and the intended learner task.
 
-Do not force troubleshooting-interview style unless the requested objective is explicitly a troubleshooting objective.
+Do not force troubleshooting-interview style unless the official objective
+wording or the user request supports broad troubleshooting practice.
 
 ## Boundaries
 
@@ -69,9 +72,17 @@ Source hierarchy:
 ## Objective setup
 
 First, extract the official CompTIA objective scope before consulting Messer.
-Use the official objective number, title, domain, and bullet list as the
-objective boundary. Then determine the correct objective title and slug from the
-official scope and current repository naming conventions.
+Use the official objective domain, number, full objective phrase, title, and
+bullet list as the objective boundary. Record that official context in
+`checklist.md`, for example:
+
+```text
+Domain 1.0 Mobile Devices, Objective 1.1: Given a scenario, monitor mobile
+device hardware and use appropriate replacement techniques.
+```
+
+Then determine the correct objective title and slug from the official scope and
+current repository naming conventions.
 
 Create a directory like:
 
@@ -90,7 +101,9 @@ Required deliverables:
 - Generated TSV output
 - Generated media output if image cards are used
 
-Do not create an `interview/` directory unless the objective is explicitly troubleshooting-heavy or the user asks for interview material.
+Do not create an `interview/` directory unless the official objective wording
+supports broad troubleshooting practice or the user asks for interview
+material.
 
 ## Required tagging behavior
 
@@ -121,7 +134,16 @@ Do not create cards just to increase card count.
 
 Avoid redundant learning targets.
 
-Regular Anki cards should feel like Objectives 1.x and 2.x:
+Choose card patterns from the official objective wording:
+
+- `Given a scenario` objectives should include applied scenario, selection,
+  first-check, or best-next-step cards where useful.
+- `Compare and contrast` objectives should emphasize distinctions, tradeoffs,
+  and recognition of similar technologies.
+- `Explain` objectives should emphasize concepts, purposes, and consequences.
+- `Identify` objectives should emphasize recognition and direct recall.
+
+Regular Anki cards should generally be:
 
 - direct
 - clear
@@ -130,7 +152,8 @@ Regular Anki cards should feel like Objectives 1.x and 2.x:
 - concept-first
 - easy to review repeatedly
 
-Do not make every card a troubleshooting ticket.
+Do not make every card a troubleshooting ticket unless the official objective
+wording supports that level of troubleshooting practice.
 
 Use Basic cards for:
 
@@ -166,7 +189,8 @@ Do not create Basic, Cloze, and Image versions of the same fact unless each card
 
 Basic cards may include optional `## Hint`, but hints are not required.
 
-For standard objectives, use hints sparingly.
+Use hints sparingly unless the official objective wording calls for scenario or
+troubleshooting decisions where a non-revealing hint improves reasoning.
 
 Add a hint only when it improves reasoning before reveal.
 
@@ -219,18 +243,21 @@ The study guide should:
 Before writing cards:
 
 1. Extract the objective concepts from official CompTIA scope.
-2. Validate concepts and page references against the Professor Messer PDF.
-3. Create a coverage map in `checklist.md`.
-4. Identify which concepts deserve cards.
-5. Identify which concepts belong only in the study guide.
-6. Record intentionally not-carded concepts with reasons.
-7. Run the matching practice-exam gap check when available, without copying or
+2. Record the official domain, objective number, full objective phrase, and
+   bullet scope in `checklist.md`.
+3. Choose card patterns from the official objective wording.
+4. Validate concepts and page references against the Professor Messer PDF.
+5. Create a coverage map in `checklist.md`.
+6. Identify which concepts deserve cards.
+7. Identify which concepts belong only in the study guide.
+8. Record intentionally not-carded concepts with reasons.
+9. Run the matching practice-exam gap check when available, without copying or
    reconstructing practice-test content.
-8. Convert practice-test-relevant concepts to cards by default when they are
+10. Convert practice-test-relevant concepts to cards by default when they are
    official-scope, source-supported, stable, and useful for recall or
    application; document any study-guide-only exceptions.
-9. Record source ambiguity instead of guessing.
-10. Avoid redundant Basic/Cloze/Image cards.
+11. Record source ambiguity instead of guessing.
+12. Avoid redundant Basic/Cloze/Image cards.
 
 ## Objective-specific cautions
 

@@ -1,9 +1,9 @@
 # Troubleshooting practice inside objective scope
 
-OpenAPlus can include optional troubleshooting practice for troubleshooting-heavy
-objectives. This material helps learners explain a sourced support process out
-loud, but it is not a separate objective, separate source mode, or substitute
-for regular Anki cards.
+OpenAPlus can include optional troubleshooting practice when the official
+CompTIA objective wording supports broad troubleshooting practice. This material
+helps learners explain a sourced support process out loud, but it is not a
+separate objective, separate source mode, or substitute for regular Anki cards.
 
 Troubleshooting practice must stay inside the official CompTIA objective scope.
 Professor Messer PDFs remain the approved secondary validation/page-reference
@@ -19,8 +19,8 @@ Cloze, or Image cards.
 ## Where it belongs
 
 Put interview-practice material in an objective-local `interview/` directory
-only when explicitly requested or when the objective is clearly
-troubleshooting-heavy:
+only when explicitly requested or when the official objective wording supports
+broad troubleshooting practice:
 
 ```text
 content/comptia/aplus/<exam>/<objective-slug>/interview/
@@ -65,10 +65,10 @@ job-search, or workplace advice document.
 | Interview practice | Explaining a full troubleshooting approach inside the current objective scope | Multi-step spoken answer |
 
 If a prompt asks "How would you troubleshoot this ticket?", it probably belongs
-in optional interview practice when the user requested it or the objective is
-clearly troubleshooting-heavy. If it asks "What is the first thing to check?",
-it may be a good Basic card if the answer is specific, source-backed, and inside
-the objective scope.
+in optional interview practice when the user requested it or the official
+objective wording supports broad troubleshooting practice. If it asks "What is
+the first thing to check?", it may be a good Basic card if the answer is
+specific, source-backed, and inside the objective scope.
 
 ## Recommended structure
 

@@ -8,10 +8,10 @@ into every card type.
 ### Basic
 
 Use Basic cards when a question-and-answer format best matches the learner's
-task. For standard objectives, Basic cards may test direct concept questions,
-comparisons, practical recognition, short “why” questions, short scenarios,
-first check / best next step when appropriate, most likely cause when
-appropriate, causes, consequences, and ordered decisions.
+task. Choose the task from the official CompTIA objective wording. For example,
+`Given a scenario` supports applied cards, first checks, or best next steps
+where useful; `Compare and contrast` supports comparison cards; `Explain`
+supports purpose and consequence cards; `Identify` supports recognition cards.
 
 **Good:** “A system shows `[symptom]` after `[change]`. What is the FIRST thing
 to check?” The answer gives one sourced initial check and explains why it comes
@@ -74,10 +74,11 @@ right troubleshooting process, not name the tool, cause, or fix.
 Longer "how would you troubleshoot this ticket?" prompts are optional
 interview-practice material, not regular Anki cards. Put those broader
 spoken-answer exercises in the objective's `interview/` directory only when the
-objective is troubleshooting-heavy or the user explicitly requests it, and
-follow [INTERVIEW_TROUBLESHOOTING.md](INTERVIEW_TROUBLESHOOTING.md). Then split
-the regular Anki coverage into atomic cards with one symptom, check, decision,
-or troubleshooting clue.
+official objective wording supports broad troubleshooting practice or the user
+explicitly requests it, and follow
+[INTERVIEW_TROUBLESHOOTING.md](INTERVIEW_TROUBLESHOOTING.md). Then split the
+regular Anki coverage into atomic cards with one symptom, check, decision, or
+troubleshooting clue.
 
 ## Calibrated decision wording
 

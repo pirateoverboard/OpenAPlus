@@ -1,10 +1,12 @@
-# OpenAPlus Standard Card Bloat Reviewer Agent
+# OpenAPlus Official Objective Bloat Reviewer Agent
 
-Analyze whether a standard objective has low-value, redundant, or unnecessary cards.
+Analyze whether one official CompTIA objective has low-value, redundant, or
+unnecessary cards.
 
 Do not modify files.
 
-This reviewer should preserve the Objective 1.x–2.x card style:
+This reviewer should preserve concise cards when they match the official
+objective wording:
 
 - direct concept cards are good
 - concise definition cards are good
@@ -19,7 +21,7 @@ Recommend deletion only when a card is genuinely low-value.
 
 Judge bloat and redundancy in this order:
 
-1. Official CompTIA objective scope first.
+1. Official CompTIA objective wording and scope first.
 2. Professor Messer PDF validation/page references second.
 3. Professor Messer practice exam PDFs, if used, only as private secondary
    gap-check context.

@@ -51,11 +51,11 @@ All files currently under `docs/`:
 - [docs/ANKI_IMPORT.md](docs/ANKI_IMPORT.md) — Anki TSV import settings,
   media installation, smoke-test procedure, and note-type expectations.
 - [docs/agents/bloat-reviewer-standard.md](docs/agents/bloat-reviewer-standard.md)
-  — Specialist prompt for standard-objective bloat and redundancy review.
+  — Specialist prompt for official-objective bloat and redundancy review.
 - [docs/agents/independent-reviewer-standard.md](docs/agents/independent-reviewer-standard.md)
-  — Specialist prompt for independent review of standard objectives.
+  — Specialist prompt for independent review against official objective wording.
 - [docs/agents/objective-author-standard.md](docs/agents/objective-author-standard.md)
-  — Specialist prompt for authoring standard objectives.
+  — Specialist prompt for authoring from official objective wording.
 - [docs/CARD_AUTHORING_GUIDE.md](docs/CARD_AUTHORING_GUIDE.md) — When to use
   Basic, Cloze, and Image cards; atomicity and scenario-card guidance.
 - [docs/CARD_QUALITY_EXAMPLES.md](docs/CARD_QUALITY_EXAMPLES.md) — Bad,
@@ -177,32 +177,39 @@ ambiguity affects a card, also mention it in the card Instructor Notes or source
 note only when useful to the learner. If the ambiguity affects review or
 acceptance, record it in `changelog.md`.
 
-## Objective authoring modes
+## Official objective-driven card creation
 
-OpenAPlus uses two objective-authoring modes:
+OpenAPlus card creation starts with the official CompTIA A+ Certification Exam
+Objectives. The official domain, objective number, full objective phrase, and
+objective bullet list define both scope and the intended learner task.
 
-1. Standard objective mode
-2. Troubleshooting objective mode
+Record the official objective context in the objective checklist before
+authoring. Use this format when possible:
 
-Use the correct mode before creating or reviewing cards.
+```text
+Domain 1.0 Mobile Devices, Objective 1.1: Given a scenario, monitor mobile
+device hardware and use appropriate replacement techniques.
+```
 
-### Standard objective mode
+Then choose card patterns from the official objective wording:
 
-Use standard objective mode for normal CompTIA A+ objectives, including:
+- `Given a scenario` objectives should include applied scenario, selection,
+  first-check, or best-next-step cards where useful.
+- `Compare and contrast` objectives should emphasize distinctions, tradeoffs,
+  and recognition of similar technologies.
+- `Explain` objectives should emphasize concepts, purposes, and consequences.
+- `Identify` objectives should emphasize recognition and direct recall.
 
-- mobile devices
-- hardware
-- networking concepts
-- operating systems
-- security
-- operational procedures
-- printer concepts
-- display concepts
-- device configuration concepts
+Do not choose card style from an internal "mode" before reading the official
+objective. "Standard" and "troubleshooting" are only style descriptions derived
+from the official objective wording; they are not separate source modes and do
+not override the official CompTIA scope.
 
-Standard objective cards should be direct, concept-first, concise,
-exam-scope focused, less ticket-style, and not interview-heavy unless the
-objective requires it.
+### General card style
+
+Most objectives should produce direct, concept-first, concise, exam-scope
+cards. Do not make cards ticket-style or interview-heavy unless the official
+objective wording or the user request supports that approach.
 
 Card style:
 
@@ -244,13 +251,17 @@ Use Image cards only when:
 
 Avoid creating Basic, Cloze, and Image versions of the same fact unless each card tests a materially different skill.
 
-### Troubleshooting objective mode
+### Troubleshooting-style cards
 
-Use troubleshooting objective mode only for troubleshooting-heavy objectives, especially Domain 5.
+Troubleshooting-style cards are appropriate when the official objective wording
+requires troubleshooting, symptoms, causes, decisions, or scenario-based support
+work. Domain 5 commonly does this, but the official objective text still
+controls the scope.
 
-Troubleshooting cards may use more scenario-based prompts, but regular Anki cards must still be atomic.
+Troubleshooting-style cards may use more scenario-based prompts, but regular
+Anki cards must still be atomic.
 
-Troubleshooting card style:
+Troubleshooting-style card guidance:
 
 - One card = one specific symptom, cause, check, decision, next step, test-result interpretation, escalation decision, documentation decision, or troubleshooting clue.
 - Avoid broad “diagnose the whole ticket” cards.
@@ -260,14 +271,15 @@ Troubleshooting card style:
 
 Use troubleshooting interview directories only when:
 
-- the objective is explicitly troubleshooting-heavy, or
+- the official objective wording supports broad troubleshooting practice, or
 - the user asks for interview-practice material.
 
 ### Default rule
 
-If the objective is not clearly troubleshooting-heavy, use standard objective mode.
-
-Do not apply the Domain 5 interview-heavy style to standard objectives.
+When the official objective wording does not require broad troubleshooting,
+prefer concise concept, comparison, recognition, and short application cards.
+Do not apply Domain 5-style interview-heavy material to objectives whose
+official wording does not support it.
 
 ## Specialist agent prompts
 
@@ -277,17 +289,18 @@ When available, use them instead of inventing new review criteria.
 
 Available files:
 
-- `docs/agents/objective-author-standard.md` — create normal objectives in the standard objective style.
-- `docs/agents/independent-reviewer-standard.md` — review normal objectives.
-- `docs/agents/bloat-reviewer-standard.md` — check normal objectives for redundancy without punishing direct/easy cards.
+- `docs/agents/objective-author-standard.md` — create objectives from official CompTIA objective wording.
+- `docs/agents/independent-reviewer-standard.md` — review objectives against official CompTIA objective wording.
+- `docs/agents/bloat-reviewer-standard.md` — check objectives for redundancy without punishing direct/easy cards.
 
 When asked to review, do not modify files unless explicitly instructed.
 
 When asked to author, modify only the requested objective.
 
-## Standard objective card guidance
+## Concise objective card guidance
 
-For standard objectives, cards should be:
+Unless the official objective wording calls for heavier scenario or
+troubleshooting practice, cards should be:
 
 - clear
 - concise

@@ -43,6 +43,14 @@ Review these areas:
 - Is it an explicit objective item, an example, or supporting explanation?
 - Would excluding it create a coverage gap?
 - Was the official CompTIA objectives PDF used as the primary scope source?
+- Does checklist.md record the official CompTIA domain, objective number, full
+  objective phrase, and bullet scope?
+- Were card/no-card decisions evaluated against the official objective wording,
+  not an internal standard/troubleshooting mode?
+- Does the official objective wording affect the active-recall value? For
+  example, `Given a scenario` favors applied decisions when useful, `Compare
+  and contrast` favors distinctions and tradeoffs, `Explain` favors purpose and
+  consequence, and `Identify` favors recognition.
 
 2. Source support
 - Is the omitted concept supported by approved source material?
@@ -132,6 +140,10 @@ Evaluate:
 
 1. Source fidelity
 - Was the official CompTIA objectives PDF used as the primary scope source?
+- Does checklist.md record the official CompTIA domain, objective number, full
+  objective phrase, and bullet scope?
+- Was the official objective wording used to drive the card approach rather
+  than an internal standard/troubleshooting mode?
 - Was the Professor Messer PDF used only as the secondary validation/page-reference source?
 - Were Professor Messer practice exam PDFs, if used, used only as private
   secondary gap-check sources and not as scope authority?
@@ -153,6 +165,12 @@ Evaluate:
 3. Objective coverage
 - Does the study guide cover the objective concept set?
 - Do cards stay inside the official CompTIA objective scope?
+- Do cards reflect the official objective verb and learner task? For example:
+  - `Given a scenario` should include applied scenario, selection, first-check,
+    or best-next-step cards where useful.
+  - `Compare and contrast` should emphasize distinctions and tradeoffs.
+  - `Explain` should emphasize concepts, purposes, and consequences.
+  - `Identify` should emphasize recognition and direct recall.
 - Does checklist.md accurately map concepts to study-guide sections and card IDs?
 - Are intentionally not-carded concepts justified?
 - Are any objective items missing or under-covered?
@@ -162,7 +180,8 @@ Evaluate:
   specific no-card reason?
 
 4. Card quality
-- Are Basic cards scenario-based where useful?
+- Are Basic cards scenario-based where the official objective wording supports
+  scenario-based application?
 - Are Cloze cards limited to compact factual recall?
 - Are Image cards useful and not answer-leaking?
 - Are any cards too broad, too vague, redundant, or trivia-like?
@@ -214,7 +233,8 @@ Evaluate:
 - Were previous objectives left unchanged?
 - Was the next objective not created?
 - Were no private PDFs or copyrighted source files committed?
-- Was no separate troubleshooting/interview content created unless explicitly requested and source-scoped?
+- Was no separate troubleshooting/interview content created unless explicitly
+  requested or supported by the official objective wording, and source-scoped?
 - If interview material exists, is it objective-local and excluded from TSV output?
 
 Return:
@@ -232,6 +252,7 @@ Return:
 - Whether the objective can be accepted after the manual Anki smoke test
 - Whether omitted-concept decisions are acceptable
 - Whether practice-test gap-check decisions are acceptable
+- Whether the card approach matches the official objective wording
 
 Do not edit files.
 ```
@@ -265,6 +286,10 @@ Evaluate:
 - Were the required fixes completed?
 - Did the fixes introduce new unsupported claims?
 - Did the fixes create duplicate learning targets?
+- Did the fixes preserve alignment with the official objective domain,
+  objective number, full objective phrase, and bullet scope?
+- Did the fixes use the official objective wording to drive card approach
+  rather than an internal standard/troubleshooting mode?
 - If Basic/Cloze redundancy was a blocker, were all Basic cards compared against all Cloze cards?
 - Were exact Basic/Cloze duplicate learning targets deleted instead of retained for card count?
 - Do remaining Basic cards test understanding, comparison, purpose, practical recognition, scenarios, or decisions?
@@ -275,7 +300,8 @@ Evaluate:
 - Are Card IDs stable?
 - Were previous objectives left unchanged?
 - Was the next objective not created?
-- Was no separate troubleshooting/interview content created unless explicitly requested and source-scoped?
+- Was no separate troubleshooting/interview content created unless explicitly
+  requested or supported by the official objective wording, and source-scoped?
 
 Return:
 
@@ -284,6 +310,7 @@ Return:
 - Any new issues caused by fixes
 - Basic/Cloze redundancy status
 - Whether the objective can proceed to manual Anki smoke test
+- Whether the card approach remains aligned to the official objective wording
 
 Do not edit files.
 ```
@@ -374,7 +401,8 @@ Acceptance criteria:
 - Previous objectives are unchanged
 - No new A+ content is created
 - Next objective is not created
-- No separate troubleshooting/interview content is created unless explicitly requested and source-scoped
+- No separate troubleshooting/interview content is created unless explicitly
+  requested or supported by the official objective wording, and source-scoped
 ```
 
 ---

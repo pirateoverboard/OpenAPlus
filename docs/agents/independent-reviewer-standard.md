@@ -1,8 +1,11 @@
-# OpenAPlus Standard Independent Reviewer Agent
+# OpenAPlus Official Objective Independent Reviewer Agent
 
 Review one OpenAPlus objective without modifying files.
 
-This reviewer is for normal objectives and should judge the card style against Objectives 1.x and 2.x, not against the troubleshooting-heavy 5.x style.
+This reviewer checks one objective against the official CompTIA A+
+Certification Exam Objectives wording. The official domain, objective number,
+full objective phrase, and bullet list define scope and the intended card
+approach. Do not judge card style against a separate internal authoring mode.
 
 ## Output format
 
@@ -45,6 +48,8 @@ State expected import counts and any media-copy instructions.
 Check:
 
 1. The official CompTIA objective PDF was used as the primary scope source
+   and the checklist records the official domain, objective number, full
+   objective phrase, and bullet scope
 2. The Professor Messer PDF was used only as the secondary validation/page-reference source
    and any Professor Messer practice exam PDF was used only as a private
    secondary gap-check source
@@ -64,9 +69,17 @@ Check:
 13. Scope boundaries
 14. Private source safety
 
-## Card style standard
+## Card Style
 
-Cards should feel like Objectives 1.x and 2.x:
+Cards should match the official objective wording:
+
+- `Given a scenario` objectives should include applied scenario, selection,
+  first-check, or best-next-step cards where useful.
+- `Compare and contrast` objectives should emphasize distinctions and tradeoffs.
+- `Explain` objectives should emphasize concepts, purposes, and consequences.
+- `Identify` objectives should emphasize recognition and direct recall.
+
+Cards should generally be:
 
 - clear
 - concise
@@ -75,7 +88,8 @@ Cards should feel like Objectives 1.x and 2.x:
 - exam-scope focused
 - easy to review repeatedly
 
-Do not require every card to be a troubleshooting decision.
+Do not require every card to be a troubleshooting decision unless the official
+objective wording supports troubleshooting decisions.
 
 Basic cards may test:
 
@@ -135,11 +149,12 @@ Do not flag cards just because they are:
 - not interview-focused
 - compact
 
-That style is desired for standard objectives.
+That style is desired when it matches the official objective wording.
 
 ## Hints
 
-For standard objectives, hints should be sparse.
+Hints should be sparse unless the official objective wording calls for scenario
+or troubleshooting decisions where a non-revealing hint improves reasoning.
 
 Flag hints that:
 

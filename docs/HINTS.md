@@ -18,15 +18,14 @@ Hints appear before reveal. Instructor Notes appear after reveal. This means a
 Hint should nudge the learner toward a decision process, while Instructor Notes
 should explain why the answer is correct after the learner commits.
 
-Hints are especially useful for troubleshooting objectives 5.1 through 5.6,
-where learners need to reason through symptoms, risk, scope, and next steps.
-They are less useful for direct recall cards where any meaningful hint would
-name the answer.
+Hints are especially useful when the official objective wording calls for
+scenario or troubleshooting decisions, where learners need to reason through
+symptoms, risk, scope, and next steps. They are less useful for direct recall
+cards where any meaningful hint would name the answer.
 
-Empty Basic hint fields are expected and normal. Standard objectives often do
-not need hints. Direct recall, acronym, standard, connector, and compact fact
-cards usually should omit hints unless a non-revealing hint genuinely improves
-learning.
+Empty Basic hint fields are expected and normal. Direct recall, acronym,
+standard, connector, and compact fact cards usually should omit hints unless a
+non-revealing hint genuinely improves learning.
 
 ## Hint rules
 
