@@ -72,6 +72,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "3.6-power-supplies": "A+::220-1201::Domain3-Hardware",
     "3.7-multifunction-devices-and-printers": "A+::220-1201::Domain3-Hardware",
     "3.8-printer-maintenance": "A+::220-1201::Domain3-Hardware",
+    "4.1-virtualization-concepts": "A+::220-1201::Domain4-VirtualizationCloud",
     "5.1-troubleshooting-hardware": "A+::220-1201::Domain5-Troubleshooting",
     "5.2-troubleshooting-storage-devices": "A+::220-1201::Domain5-Troubleshooting",
     "5.3-troubleshooting-display-issues": "A+::220-1201::Domain5-Troubleshooting",

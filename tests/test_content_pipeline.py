@@ -628,6 +628,37 @@ def test_objective_38_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_41_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("4.1-B001")
+    card_metadata.update(
+        {
+            "objective": "4.1",
+            "objective_name": "Virtualization Concepts",
+            "tags": ["Virtualization", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.46"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="4.1-virtualization-concepts",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::4.1",
+        "A+::220-1201::Domain4-VirtualizationCloud",
+        "A+::220-1201::VirtualizationConcepts",
+        "Basic",
+        "HighYield",
+        "Virtualization",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_objective_51_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
