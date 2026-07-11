@@ -504,6 +504,37 @@ def test_objective_34_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_objective_35_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("3.5-B001")
+    card_metadata.update(
+        {
+            "objective": "3.5",
+            "objective_name": "Motherboards, CPUs, and Add-on Cards",
+            "tags": ["Motherboard", "Scenario"],
+            "source": ["Professor Messer 220-1201 v1.70 p.34"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        objective_directory="3.5-motherboards-cpus-and-add-on-cards",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1201::3.5",
+        "A+::220-1201::Domain3-Hardware",
+        "A+::220-1201::MotherboardsCPUsandAddonCards",
+        "Basic",
+        "HighYield",
+        "Motherboard",
+        "Scenario",
+        "Source::Messer-v170",
+    ]
+
+
 def test_objective_51_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
