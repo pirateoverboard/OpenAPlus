@@ -17,5 +17,7 @@
 - Recorded user-reported manual Anki smoke test pass for 19 Basic notes and 5
   Cloze notes. Objective 3.8 has no Image cards, so image/media smoke testing
   was not applicable.
-- Status: drafted with smoke test passed; omitted-concepts review and
-  independent content review are pending.
+- Applied required independent-review fix to `3.8-B018` so impact printhead
+  coverage tests an action-oriented replacement maintenance decision.
+- Status: drafted with smoke test passed; required independent-review fix
+  completed; omitted-concepts review is pending.

@@ -93,7 +93,11 @@ printer symptom triage.
 
 ## Independent content review
 
-Independent content review is pending.
+Independent content review found one required fix: `3.8-B018` needed to test
+the official impact printhead replacement maintenance action instead of only
+explaining why the printhead is a wear item. The card was rewritten to cover
+replacement caution, release mechanism use, heat safety, and replacing the
+ribbon with the printhead for best output.
 
 ## Source ambiguity
 
@@ -127,7 +131,7 @@ official CompTIA v4.0 scope source.
 ## Review and build
 
 - [ ] Omitted-concepts review completed.
-- [ ] Independent content review completed.
+- [x] Independent content review completed; required `3.8-B018` fix applied.
 - [x] `python scripts/validate.py` passes without unexplained warnings.
 - [x] `python scripts/build.py` passes and generated output is regenerated.
 - [x] `pytest` and Ruff checks pass.
@@ -162,4 +166,5 @@ no Image cards, so Image.tsv/media smoke testing was not applicable.
 | Reviewer | Date | Result | Required Changes | Approval Status |
 | --- | --- | --- | --- | --- |
 | Self-review | 2026-07-11 | Initial Objective 3.8 draft and coverage decisions completed | Validation, build, omitted-concepts review, independent review, verification, and any required Anki smoke test | Needs independent review |
+| Codex independent review | 2026-07-11 | One required content fix found for impact printhead replacement coverage | Rewrite `3.8-B018` as an action-oriented replacement maintenance card; completed | Changes completed |
 | Manual Anki smoke test | 2026-07-11 | Basic and Cloze imports reported passed with expected counts; hints, tags, HTML, Cloze rendering, and duplicate/update behavior verified | None | Passed |
