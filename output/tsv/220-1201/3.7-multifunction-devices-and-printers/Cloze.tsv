@@ -1,0 +1,14 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+3.7-C001	<p>MFD stands for {{c1::multifunction device}}.</p>	<p>An MFD can combine printing, scanning, faxing, network, phone-line, and web-printing functions.</p>	"<h3>Why</h3>
+<p>The acronym appears often in deployment discussions for all-in-one office devices.</p>"	easy	cloze	220-1201 3.7 - Multifunction Devices and Printers	Professor Messer 220-1201 v1.70 p.41; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.7	A+::220-1201::3.7 A+::220-1201::Domain3-Hardware A+::220-1201::MultifunctionDevicesandPrinters Cloze Printer MFD Source::Messer-v170
+3.7-C002	<p>PCL stands for {{c1::Printer Control Language}}.</p>	<p>PCL is one of the page description languages listed for Objective 3.7.</p>	"<h3>Distinction</h3>
+<p>Driver-language matching is tested with Basic cards; this Cloze card is only acronym recall.</p>"	easy	cloze	220-1201 3.7 - Multifunction Devices and Printers	Professor Messer 220-1201 v1.70 p.41; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.7	A+::220-1201::3.7 A+::220-1201::Domain3-Hardware A+::220-1201::MultifunctionDevicesandPrinters Cloze HighYield Printer PCL Source::Messer-v170
+3.7-C003	<p>Duplex printing means printing on {{c1::both sides of the page}}.</p>	<p>The printer must support duplexing for the setting to work automatically.</p>	"<h3>Distinction</h3>
+<p>Duplex is different from orientation, tray selection, and quality settings.</p>"	easy	cloze	220-1201 3.7 - Multifunction Devices and Printers	Professor Messer 220-1201 v1.70 p.42; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.7	A+::220-1201::3.7 A+::220-1201::Domain3-Hardware A+::220-1201::MultifunctionDevicesandPrinters Cloze Printer Duplex Source::Messer-v170
+3.7-C004	<p>SMB stands for {{c1::Server Message Block}}.</p>	<p>In Objective 3.7, SMB appears as a destination option for scan-to-folder workflows.</p>	"<h3>Why</h3>
+<p>SMB is the file-sharing protocol commonly associated with Microsoft network shares.</p>"	easy	cloze	220-1201 3.7 - Multifunction Devices and Printers	Professor Messer 220-1201 v1.70 p.42; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.7	A+::220-1201::3.7 A+::220-1201::Domain3-Hardware A+::220-1201::MultifunctionDevicesandPrinters Cloze Printer SMB Source::Messer-v170
+3.7-C005	<p>ADF stands for {{c1::automatic document feeder}}.</p>	<p>An ADF feeds multiple pages through a scanner.</p>	"<h3>Distinction</h3>
+<p>Use a flatbed scanner when the original should lie flat instead of being fed through the device.</p>"	easy	cloze	220-1201 3.7 - Multifunction Devices and Printers	Professor Messer 220-1201 v1.70 p.42; CompTIA 220-1201 Exam Objectives v4.0, Objective 3.7	A+::220-1201::3.7 A+::220-1201::Domain3-Hardware A+::220-1201::MultifunctionDevicesandPrinters Cloze HighYield Printer Scanner ADF Source::Messer-v170
