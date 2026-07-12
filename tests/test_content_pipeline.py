@@ -396,6 +396,70 @@ def test_core2_objective_11_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_12_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.2-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "1.2",
+            "objective_name": "OS Installations and Upgrades",
+            "tags": ["Installation"],
+            "source": ["Professor Messer 220-1202 v1.40 p.3"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.2-os-installations-and-upgrades",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.2",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::OSInstallationsandUpgrades",
+        "Basic",
+        "HighYield",
+        "Installation",
+        "Source::Messer-v140",
+    ]
+
+
+def test_core2_objective_13_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.3-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "1.3",
+            "objective_name": "Microsoft Windows Editions",
+            "tags": ["Windows"],
+            "source": ["Professor Messer 220-1202 v1.40 p.5"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.3-microsoft-windows-editions",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.3",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::MicrosoftWindowsEditions",
+        "Basic",
+        "HighYield",
+        "Windows",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:

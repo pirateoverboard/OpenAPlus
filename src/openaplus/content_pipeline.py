@@ -54,6 +54,8 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "1.1-operating-system-types-and-purposes": (
         "A+::220-1202::Domain1-OperatingSystems"
     ),
+    "1.2-os-installations-and-upgrades": "A+::220-1202::Domain1-OperatingSystems",
+    "1.3-microsoft-windows-editions": "A+::220-1202::Domain1-OperatingSystems",
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -90,6 +92,12 @@ _OBJECTIVE_SOURCE_VALIDATION_TAGS = {
     if domain_tag.startswith("A+::220-1201::")
 }
 _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.1-operating-system-types-and-purposes"] = (
+    "Source::Messer-v140"
+)
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["1.2-os-installations-and-upgrades"] = (
+    "Source::Messer-v140"
+)
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["1.3-microsoft-windows-editions"] = (
     "Source::Messer-v140"
 )
 _SECTION_REQUIREMENTS = {
