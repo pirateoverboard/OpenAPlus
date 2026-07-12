@@ -1,0 +1,63 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.3-B001	"<p>A small business needs Windows systems that can join Active Directory, use
+BitLocker, and host Remote Desktop sessions. Which Windows edition tier is the
+better fit: Home or Pro?</p>"		<p>Pro.</p>	"<p>Home editions are consumer-focused. Pro adds the business management and
+security features named in the scenario.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, pp. 5-6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Editions Source::Messer-v140
+1.3-B002	"<p>Which Windows 10 edition is aimed at high-end desktops that need enhanced
+performance, high RAM support, more physical CPUs, and ReFS support?</p>"		<p>Windows 10 Pro for Workstations.</p>	"<p>Do not confuse this with Enterprise. Pro for Workstations is the
+workstation-class Windows 10 edition, while Enterprise is aimed at large
+organization deployment and management.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 5	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows Editions Source::Messer-v140
+1.3-B003	"<p>Which Windows edition tier is designed for large company deployments with
+volume licensing and advanced centralized management?</p>"		<p>Enterprise.</p>	"<p>Enterprise is the large-organization tier. Messer's examples include volume
+licensing and advanced management capabilities rather than home-user
+customization.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, pp. 5-6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Editions Enterprise Source::Messer-v140
+1.3-B004	"<p>A European Windows system is missing Windows Media Player and other multimedia
+utilities by design. Which Windows edition variant does this describe?</p>"		<p>A Windows N edition.</p>	"<p>N editions are not a separate management tier. They are Windows editions with
+media components removed; the Media Feature Pack can add the missing media
+features later.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows Editions Media Source::Messer-v140
+1.3-B005	<p>What is the key difference between a Windows workgroup and a Windows domain?</p>		"<p>A workgroup is a peer-style set of standalone computers, while a domain uses
+centralized authentication and device access for a business network.</p>"	"<p>The exam distinction is management scope. Workgroups keep control local to each
+device; domains centralize identity and access for many devices.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Domains Source::Messer-v140
+1.3-B006	"<p>A user has Windows Home, but the business needs the computer joined to an
+Active Directory domain. What edition issue should the technician recognize?</p>"		"<p>Windows Home is not the right edition for domain joining; the system needs Pro
+or a higher business edition.</p>"	"<p>This is a common edition trap. Domain support is a business feature associated
+with Pro and Enterprise, not Home.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, pp. 5-6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Domains Editions Source::Messer-v140
+1.3-B007	<p>How does a managed work desktop usually differ from a home Windows desktop?</p>		"<p>A managed work desktop is usually standardized with limited customization,
+while a home desktop allows broader personal customization.</p>"	"<p>The objective's ""desktop styles/user interface"" item is about recognizing the
+support and management difference, not memorizing a theme or wallpaper setting.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows UI Source::Messer-v140
+1.3-B008	"<p>A technician needs a Windows 11 computer to accept inbound Remote Desktop
+connections. Which edition limitation matters?</p>"		"<p>The Remote Desktop service is available in Pro and Enterprise editions, not
+Home.</p>"	"<p>RDP clients are broadly available, but hosting an inbound Remote Desktop
+session is the edition-dependent feature.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows RDP Source::Messer-v140
+1.3-B009	"<p>Which Windows feature provides full-disk encryption for the operating system
+drive?</p>"		<p>BitLocker.</p>	"<p>BitLocker protects the whole drive. EFS is different because it protects
+individual files and folders on NTFS.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, pp. 5-6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Encryption Source::Messer-v140
+1.3-B010	<p>What is <code>gpedit.msc</code> used for on a Windows computer?</p>		"<p>It opens the Local Group Policy Editor to manage local system and user policy
+settings.</p>"	"<p>Local Group Policy applies to one device. In Active Directory environments,
+Group Policy can also be centrally managed through domain tooling.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows GroupPolicy Source::Messer-v140
+1.3-B011	"<p>Before deploying Windows 11, which two hardware capabilities from Objective
+1.3 should a technician verify?</p>"		<p>TPM support and UEFI support.</p>	"<p>Messer specifically notes TPM 2.0 compatibility and hardware capable of Secure
+Boot through UEFI. The official objective calls out TPM and UEFI as the
+hardware-requirement comparison points.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 5	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Upgrade Hardware Source::Messer-v140
+1.3-B012	"<p>Which upgrade path should be chosen when the goal is to keep supported
+applications, documents, and settings in place?</p>"		<p>An in-place upgrade.</p>	"<p>A clean install starts over and requires backup and application reinstall
+planning. In-place upgrade is the preservation-focused path when compatibility
+allows it.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic HighYield Windows Upgrade Source::Messer-v140
+1.3-B013	<p>Why is a 32-bit-only CPU a blocker for a Windows 11 deployment?</p>		<p>Windows 11 does not support 32-bit CPUs.</p>	"<p>This is a hardware-compatibility distinction between older systems and Windows
+11 deployment planning.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows Hardware Source::Messer-v140
+1.3-B014	"<p>How does Windows 11 Home's Device Encryption differ from BitLocker availability
+in Windows 11 Pro?</p>"		"<p>Windows 11 Home includes consumer-oriented Device Encryption, while Windows 11
+Pro provides BitLocker full-disk encryption.</p>"	"<p>This card is about edition comparison. The official objective names BitLocker,
+and Messer distinguishes Windows 11 Home Device Encryption from Pro's
+BitLocker feature.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows Encryption Editions Source::Messer-v140
+1.3-B015	"<p>What should a technician remember about RAM support when comparing Windows
+editions?</p>"		<p>RAM support varies by edition; more advanced editions can support more RAM.</p>	"<p>For example, Messer identifies Windows 10 Pro for Workstations as a
+high-maximum-RAM edition. Avoid assuming every edition supports the same memory
+ceiling.</p>"	easy	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, pp. 5-6	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows Hardware Editions Source::Messer-v140
+1.3-B016	<p>When is a clean install the better upgrade path than an in-place upgrade?</p>		"<p>Use a clean install when the goal is to start fresh instead of preserving the
+existing applications, files, and settings.</p>"	"<p>This is the opposite side of the in-place upgrade decision. Clean installs
+require data backup and application reinstall planning because the old
+environment is not preserved.</p>"	medium	basic	220-1202 1.3 - Microsoft Windows Editions	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.3; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.3 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsEditions Basic Windows Upgrade Source::Messer-v140
