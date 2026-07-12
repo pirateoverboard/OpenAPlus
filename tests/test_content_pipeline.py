@@ -67,6 +67,23 @@ The item.
 
 Minimal test note.
 """
+COMMAND_BODY = """\
+## Prompt
+
+Which command launches the tool?
+
+## Typed Answer
+
+tool.exe
+
+## Back
+
+The command launches the tool.
+
+## Instructor Notes
+
+Minimal test note.
+"""
 
 
 def metadata(card_id: str = "1.1-B001", card_type: str = "basic") -> dict[str, object]:
@@ -158,15 +175,16 @@ def generated_outputs(repository: Path) -> tuple[dict[str, Path], list[Path]]:
     return {path.name: path for path in tsv_paths}, media_paths
 
 
-def test_valid_basic_cloze_and_image_cards(tmp_path: Path) -> None:
+def test_valid_basic_cloze_image_and_command_cards(tmp_path: Path) -> None:
     write_card(tmp_path, metadata(), BASIC_BODY)
     write_card(tmp_path, metadata("1.1-C001", "cloze"), CLOZE_BODY)
     write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+    write_card(tmp_path, metadata("1.1-T001", "command"), COMMAND_BODY)
 
     result = validate(tmp_path)
 
     assert result.valid
-    assert len(result.cards) == 3
+    assert len(result.cards) == 4
 
 
 def test_duplicate_id_detection(tmp_path: Path) -> None:
@@ -453,6 +471,38 @@ def test_core2_objective_13_domain_and_source_validation_tags_are_generated(
         "A+::220-1202::1.3",
         "A+::220-1202::Domain1-OperatingSystems",
         "A+::220-1202::MicrosoftWindowsEditions",
+        "Basic",
+        "HighYield",
+        "Windows",
+        "Source::Messer-v140",
+    ]
+
+
+def test_core2_objective_14_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.4-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "1.4",
+            "objective_name": "Microsoft Windows Features and Tools",
+            "tags": ["Windows"],
+            "source": ["Professor Messer 220-1202 v1.40 p.7"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.4-microsoft-windows-features-and-tools",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.4",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::MicrosoftWindowsFeaturesandTools",
         "Basic",
         "HighYield",
         "Windows",
@@ -1091,13 +1141,21 @@ def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
     write_card(tmp_path, metadata(), BASIC_BODY_WITH_HINT)
     write_card(tmp_path, metadata("1.1-C001", "cloze"), CLOZE_BODY)
     write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+    write_card(tmp_path, metadata("1.1-T001", "command"), COMMAND_BODY)
 
     files = generated_files(tmp_path)
     basic_columns, basic_rows, basic_comments = read_tsv(files["Basic.tsv"])
     cloze_columns, cloze_rows, _ = read_tsv(files["Cloze.tsv"])
     image_columns, image_rows, _ = read_tsv(files["Image.tsv"])
+    command_columns, command_rows, command_comments = read_tsv(files["Command.tsv"])
 
-    assert basic_columns[0] == cloze_columns[0] == image_columns[0] == "Card ID"
+    assert (
+        basic_columns[0]
+        == cloze_columns[0]
+        == image_columns[0]
+        == command_columns[0]
+        == "Card ID"
+    )
     assert basic_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:10"]
     assert basic_rows[0] == [
         "1.1-B001",
@@ -1128,6 +1186,33 @@ def test_exact_tsv_mapping_for_all_card_types(tmp_path: Path) -> None:
         "<p>Minimal test note.</p>",
     ]
     assert image_rows[0][8] == "220-1201 1.1 - Laptop Hardware"
+    assert command_comments[:3] == [
+        "#separator:Tab",
+        "#html:true",
+        "#tags column:10",
+    ]
+    assert command_columns == [
+        "Card ID",
+        "Prompt",
+        "Typed Answer",
+        "Back",
+        "Instructor Notes",
+        "Difficulty",
+        "Card Type",
+        "Objective",
+        "Source",
+        "Tags",
+    ]
+    assert command_rows[0][0:8] == [
+        "1.1-T001",
+        "<p>Which command launches the tool?</p>",
+        "tool.exe",
+        "<p>The command launches the tool.</p>",
+        "<p>Minimal test note.</p>",
+        "easy",
+        "command",
+        "220-1201 1.1 - Laptop Hardware",
+    ]
 
 
 def test_basic_tsv_always_includes_empty_hint_column(tmp_path: Path) -> None:
@@ -1152,18 +1237,24 @@ def test_basic_tsv_always_includes_empty_hint_column(tmp_path: Path) -> None:
     assert rows[0][3] == "<p>The <strong>answer</strong>.</p>"
 
 
-def test_cloze_and_image_tsv_schemas_do_not_include_hint(tmp_path: Path) -> None:
+def test_cloze_image_and_command_tsv_schemas_do_not_include_hint(
+    tmp_path: Path,
+) -> None:
     write_card(tmp_path, metadata("1.1-C001", "cloze"), CLOZE_BODY)
     write_card(tmp_path, image_metadata(tmp_path), IMAGE_BODY)
+    write_card(tmp_path, metadata("1.1-T001", "command"), COMMAND_BODY)
 
     files = generated_files(tmp_path)
     cloze_columns, _, cloze_comments = read_tsv(files["Cloze.tsv"])
     image_columns, _, image_comments = read_tsv(files["Image.tsv"])
+    command_columns, _, command_comments = read_tsv(files["Command.tsv"])
 
     assert "Hint" not in cloze_columns
     assert "Hint" not in image_columns
+    assert "Hint" not in command_columns
     assert cloze_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:9"]
     assert image_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:11"]
+    assert command_comments[:3] == ["#separator:Tab", "#html:true", "#tags column:10"]
 
 
 def test_media_folder_is_created_and_tsv_references_filenames_only(

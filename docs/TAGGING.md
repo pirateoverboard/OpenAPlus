@@ -9,9 +9,9 @@ tags:
 ```
 
 Custom tags must be non-empty and cannot contain whitespace, tabs, or commas.
-The `A+::` namespace, `Basic`, `Cloze`, `Image`, `HighYield`, and generated
-source-validation tags such as `Source::Messer-v170` are reserved. Adding a
-derived tag manually fails validation with `OA013_MANUAL_DERIVED_TAG`.
+The `A+::` namespace, `Basic`, `Cloze`, `Image`, `Command`, `HighYield`, and
+generated source-validation tags such as `Source::Messer-v170` are reserved.
+Adding a derived tag manually fails validation with `OA013_MANUAL_DERIVED_TAG`.
 
 The generator emits tags in this order:
 
@@ -19,7 +19,7 @@ The generator emits tags in this order:
 2. Domain tags when a domain mapping exists, such as
    `A+::220-1201::Domain1-MobileDevices`
 3. `A+::<exam>::<normalized-objective-name>`
-4. `Basic`, `Cloze`, or `Image`
+4. `Basic`, `Cloze`, `Image`, or `Command`
 5. `HighYield` when `high_yield: true`
 6. Custom topic tags in source order
 7. Source-validation tags when a validation layer exists, such as
@@ -44,6 +44,7 @@ scope authority.
 | `1.1-operating-system-types-and-purposes` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.2-os-installations-and-upgrades` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.3-microsoft-windows-editions` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
+| `1.4-microsoft-windows-features-and-tools` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.3-mobile-device-networks` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-management` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |

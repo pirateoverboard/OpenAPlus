@@ -19,6 +19,7 @@ GO or NO-GO
 
 - Basic count
 - Cloze count
+- Command count
 - Image count
 - HighYield count
 - Generated TSV status
@@ -65,9 +66,10 @@ Check:
 9. Redundancy
 10. Hint quality
 11. TSV/schema correctness
-12. Media correctness if image cards exist
-13. Scope boundaries
-14. Private source safety
+12. Command typed-answer correctness if command cards exist
+13. Media correctness if image cards exist
+14. Scope boundaries
+15. Private source safety
 
 ## Card Style
 
@@ -111,6 +113,13 @@ Cloze cards should test:
 - port/protocol facts
 - short definitions
 
+Command cards should test:
+
+- exact typed command recall
+- executable names
+- tool launch names
+- command forms where the accepted answer boundary is explicit
+
 Image cards should exist only when visual recognition helps.
 
 ## Flag as blockers
@@ -130,11 +139,12 @@ Flag:
   study-guide-only without a specific no-card reason
 - unapproved source use
 - duplicate learning targets
-- Basic/Cloze/Image duplicates that test the same fact
+- Basic/Cloze/Image/Command duplicates that test the same fact
 - answer-revealing hints
 - image question-side answer leakage
 - unstable/vendor-specific facts carded as if universal
 - generated TSV/schema problems
+- broken Command typed-answer rows
 - missing media referenced by Image.tsv
 - unrelated objective modifications
 

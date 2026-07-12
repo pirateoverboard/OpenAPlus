@@ -17,7 +17,7 @@ The validator rejects malformed YAML and duplicate YAML keys.
 | `exam` | string | Must match the exam directory |
 | `objective` | string | Must match the ID and objective directory |
 | `objective_name` | string | Must agree across the objective |
-| `type` | string | `basic`, `cloze`, or `image` |
+| `type` | string | `basic`, `cloze`, `image`, or `command` |
 | `difficulty` | string | `easy`, `medium`, or `hard` |
 | `high_yield` | boolean | YAML `true` or `false` |
 | `tags` | list of strings | Custom tags only; see [TAGGING.md](TAGGING.md) |
@@ -77,6 +77,7 @@ within the exam:
 - `1.1-B001` for Basic
 - `1.1-C001` for Cloze
 - `1.1-I001` for Image
+- `1.1-T001` for Command
 
 The ID is the first Anki field and is used to update an existing note. Never
 reuse, renumber, or change a published ID when wording, tags, or difficulty
@@ -88,6 +89,9 @@ ID contains the objective; retire it and create a new card instead.
 - Basic requires `## Question` and `## Answer`.
 - Cloze requires `## Text` with one or more valid `{{c1::answer}}` expressions.
 - Image requires `## Prompt` and `## Answer`.
+- Command requires `## Prompt` and `## Typed Answer`, with optional `## Back`.
+  Command cards generate typed-answer TSV rows for Basic-style Anki note types
+  that use `{{type:Typed Answer}}`.
 - Basic cards may include an optional `## Hint` section. Hints are learner-facing
   pre-reveal guidance and should steer the troubleshooting thought process
   without giving away the answer; see [HINTS.md](HINTS.md).

@@ -26,11 +26,11 @@ quality.
 
 ## Avoid redundant cards
 
-Do not create Basic, Cloze, and Image versions of the same fact unless each card
-tests a materially different skill. A direct-recall Basic card and a Cloze card
-with the same retrieval target are duplicates; delete one rather than keeping
-both. A recall card and an applied scenario may coexist when the scenario
-requires a distinct decision.
+Do not create Basic, Cloze, Image, and Command versions of the same fact unless
+each card tests a materially different skill. A direct-recall Basic card and a
+Cloze card with the same retrieval target are duplicates; delete one rather
+than keeping both. A recall card and an applied scenario may coexist when the
+scenario requires a distinct decision.
 
 Coverage does not require a card for every extracted concept. Record concepts
 that remain study-guide-only in the objective coverage map. See
@@ -49,8 +49,9 @@ concept needs a specific checklist reason.
    [SOURCE_AND_CITATION_RULES.md](SOURCE_AND_CITATION_RULES.md).
 3. Extract concepts without copying source wording.
 4. Draft the study guide and objective checklist.
-5. Create only the Basic, Cloze, and Image cards justified by the concepts,
-   using [CARD_QUALITY_EXAMPLES.md](CARD_QUALITY_EXAMPLES.md) as the quality bar.
+5. Create only the Basic, Cloze, Image, and Command cards justified by the
+   concepts, using [CARD_QUALITY_EXAMPLES.md](CARD_QUALITY_EXAMPLES.md) as the
+   quality bar.
 6. Add concise, useful Instructor Notes and custom tags.
 7. Peer review facts, wording, citations, and diagrams.
 8. Run `python scripts/validate.py`, `python scripts/build.py`, and `pytest`.

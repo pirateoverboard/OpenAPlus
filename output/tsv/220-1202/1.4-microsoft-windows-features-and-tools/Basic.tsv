@@ -1,0 +1,72 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.4-B001	"<p>A Windows user says the computer is slow right now. Which built-in tool should
+you open first to quickly view current CPU, memory, disk, and network activity?</p>"		<p>Task Manager.</p>	"<p>Task Manager is the fast local view for current resource pressure. Event Viewer
+is better for historical logs, and Performance Monitor is better for longer-term
+collection.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 7	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Performance Source::Messer-v140
+1.4-B002	"<p>In Task Manager, which area lets a technician quickly start, stop, or restart
+background services?</p>"		<p>The Services tab.</p>	"<p>This is a quick service-control view inside Task Manager. Dedicated service
+management may offer more detail, but the objective specifically includes
+services under Task Manager.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 7	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Services Source::Messer-v140
+1.4-B003	"<p>A user complains that many applications open automatically after sign-in. Which
+Task Manager area should you use to disable unnecessary sign-in startup apps?</p>"		<p>The Startup tab.</p>	"<p>Startup focuses on programs that launch when the user logs in. Processes shows
+what is running now, but Startup controls future sign-in behavior.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 7	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Startup Source::Messer-v140
+1.4-B004	"<p>Which Task Manager area should you use to sort running applications and
+background processes by resource usage?</p>"		<p>The Processes tab.</p>	"<p>Processes is the quick view for what is running now. It can combine apps,
+background processes, and services into a sortable view.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 7	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Processes Source::Messer-v140
+1.4-B005	"<p>Which Task Manager area shows connected users and can provide options such as
+disconnecting a user?</p>"		<p>The Users tab.</p>	"<p>Use this when the scenario is about logged-in users or user sessions, not
+hardware drivers, event logs, or disk layout.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 7	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Users Source::Messer-v140
+1.4-B006	"<p>A technician needs to review yesterday's application crash and related Windows
+log entries. Which MMC snap-in should they use?</p>"		<p>Event Viewer.</p>	"<p>Event Viewer is for consolidated historical logs such as application, security,
+setup, and system events. It is not the best tool for live performance
+measurement.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Logs Source::Messer-v140
+1.4-B007	"<p>Which Windows tool should you use to view a graphical disk and volume layout
+before creating, deleting, or changing partitions?</p>"		<p>Disk Management.</p>	"<p>Disk Management can change disk structures and erase data. Verify the selected
+disk and backup status before making destructive storage changes.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Storage Source::Messer-v140
+1.4-B008	"<p>A maintenance script needs to run automatically every Friday evening. Which
+Windows tool should you use?</p>"		<p>Task Scheduler.</p>	"<p>Task Scheduler is the built-in tool for scheduled or triggered applications and
+scripts. Task Manager shows running work; it does not create recurring jobs.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Automation Source::Messer-v140
+1.4-B009	"<p>A Windows device has a driver problem after a hardware change. Which tool is
+the best place to inspect the device status and manage the driver?</p>"		<p>Device Manager.</p>	"<p>Device Manager is the Windows hardware and driver management tool. It is the
+right match when the support task points to hardware recognition or
+hardware-specific driver compatibility.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Drivers Source::Messer-v140
+1.4-B010	<p>Which Windows tool is used to view and manage user and trusted certificates?</p>		<p>Certificate Manager.</p>	"<p>Certificate Manager is the objective-listed tool for certificate stores. Do not
+confuse it with Device Manager, which manages hardware devices and drivers.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Certificates Source::Messer-v140
+1.4-B011	"<p>Which Windows MMC snap-in should you use to manage local user accounts and
+local group membership?</p>"		<p>Local Users and Groups.</p>	"<p>Use Local Users and Groups for local accounts and group membership. Domain user
+management belongs to directory services tools outside this objective's local
+tool focus.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Users Source::Messer-v140
+1.4-B012	"<p>Which Windows tool is the better choice for collecting long-term CPU, memory,
+and disk statistics with alerts and reports: Task Manager or Performance
+Monitor?</p>"		<p>Performance Monitor.</p>	"<p>Task Manager is quick and immediate. Performance Monitor is built for longer
+collection, stored statistics, alerts, automated actions, and reports.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Performance Source::Messer-v140
+1.4-B013	"<p>Which Windows tool should you use to configure local policy settings on a
+standalone Windows system?</p>"		<p>Group Policy Editor.</p>	"<p><code>gpedit.msc</code> manages local policy on a single device. In Active Directory
+environments, Group Policy can also be managed centrally with domain tools.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Policy Source::Messer-v140
+1.4-B014	"<p>Which Windows tool provides a broad system overview of hardware resources,
+components, and the software environment?</p>"		<p>System Information.</p>	"<p>System Information is useful for inventory and configuration review. It is not
+primarily a live performance troubleshooting view.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Inventory Source::Messer-v140
+1.4-B015	"<p>Task Manager shows high disk activity, but you need a more detailed live view
+by CPU, memory, disk, and network categories. Which tool should you open?</p>"		<p>Resource Monitor.</p>	"<p>Resource Monitor provides a deeper real-time breakdown than Task Manager. It is
+not the same as Performance Monitor, which is better for longer-term collection
+and reports.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Performance Source::Messer-v140
+1.4-B016	"<p>Which Windows tool centralizes boot, startup, and service configuration for
+controlled startup troubleshooting?</p>"		<p>System Configuration.</p>	"<p>System Configuration can change how Windows boots and which startup items or
+services are active. That makes it useful but also potentially disruptive.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Startup Source::Messer-v140
+1.4-B017	"<p>A Windows computer is low on space and you want a built-in tool to remove
+unused or unnecessary files. Which tool should you use?</p>"		<p>Disk Cleanup.</p>	"<p>Disk Cleanup is for freeing space by selecting categories of unneeded files. It
+does not reorganize file fragments or manage partitions.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Storage Source::Messer-v140
+1.4-B018	"<p>Which Windows tool is used to defragment a traditional hard drive, and why is
+it not a routine SSD maintenance task?</p>"		<p>Disk Defragment. SSDs do not need traditional file-fragment defragmentation.</p>	"<p>The objective lists Disk Defragment as a Windows tool. Messer notes the SSD
+distinction, which helps prevent applying hard-drive maintenance habits to SSDs.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows Storage Source::Messer-v140
+1.4-B019	"<p>A support procedure requires changing a Windows Registry value. Which tool is
+used, and what precaution should you take first?</p>"		"<p>Use Registry Editor and back up the registry or the relevant keys before
+editing.</p>"	"<p>The registry is a central configuration database. Registry edits can affect
+Windows, services, drivers, applications, and user interface behavior.</p>"	medium	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic HighYield Windows Registry Source::Messer-v140
+1.4-B020	"<p>What is the purpose of the Microsoft Management Console in Windows
+administration?</p>"		"<p>It provides a framework for loading administrative snap-ins such as Event
+Viewer, Disk Management, Task Scheduler, and Local Users and Groups.</p>"	"<p>The console itself is a container. In support scenarios, the specific snap-in is
+usually the important tool selection.</p>"	easy	basic	220-1202 1.4 - Microsoft Windows Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.4; Professor Messer 220-1202 v1.40, p. 8	A+::220-1202::1.4 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsFeaturesandTools Basic Windows MMC Source::Messer-v140

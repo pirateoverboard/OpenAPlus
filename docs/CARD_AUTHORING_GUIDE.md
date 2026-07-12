@@ -43,6 +43,19 @@ question image and reveals it on the answer image.
 
 **Bad:** A decorative image that contributes nothing to answering the prompt.
 
+### Command
+
+Use Command cards when the learner should type an exact command, executable, or
+tool launch name. Command cards are Basic-style typed-answer cards in Anki, not
+Cloze cards. Prefer them when exact command recall matters more than recognizing
+the command in a sentence.
+
+**Good:** “Which command launches Resource Monitor?” with typed answer
+`resmon.exe`.
+
+**Bad:** A broad prompt with several acceptable commands or optional arguments
+unless the expected answer boundary is made explicit.
+
 ## Atomic cards
 
 An atomic card has one retrieval target. A learner should know what a complete

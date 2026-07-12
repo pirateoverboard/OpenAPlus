@@ -183,7 +183,7 @@ Use Image cards only when:
 - a diagram makes a concept clearer
 - hardware shape, connector recognition, topology, signal path, or screen/output recognition matters
 
-Do not create Basic, Cloze, and Image versions of the same fact unless each card tests a materially different skill.
+Do not create Basic, Cloze, Image, and Command versions of the same fact unless each card tests a materially different skill.
 
 ## Hint behavior
 
@@ -257,7 +257,7 @@ Before writing cards:
    official-scope, source-supported, stable, and useful for recall or
    application; document any study-guide-only exceptions.
 11. Record source ambiguity instead of guessing.
-12. Avoid redundant Basic/Cloze/Image cards.
+12. Avoid redundant Basic/Cloze/Image/Command cards.
 
 ## Objective-specific cautions
 

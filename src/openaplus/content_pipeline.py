@@ -18,7 +18,7 @@ import yaml
 from yaml.constructor import ConstructorError
 from yaml.nodes import MappingNode
 
-CARD_TYPES = frozenset({"basic", "cloze", "image"})
+CARD_TYPES = frozenset({"basic", "cloze", "image", "command"})
 DIFFICULTIES = frozenset({"easy", "medium", "hard"})
 SUPPORTED_IMAGE_EXTENSIONS = frozenset({".svg", ".png", ".jpg", ".jpeg", ".webp"})
 REQUIRED_METADATA = (
@@ -41,21 +41,29 @@ _HEADING = re.compile(r"^##[ \t]+(?P<name>.+?)[ \t]*$")
 _FENCE_OPEN = re.compile(r"^[ ]{0,3}(?P<fence>`{3,}|~{3,})[^\r\n]*$")
 _VALID_CLOZE = re.compile(r"\{\{c[1-9]\d*::[^{}\r\n]+\}\}")
 _IMAGE_SOURCE = re.compile(r'<img\s+src="(?P<src>[^"]+)">')
-_ID = re.compile(r"^(?P<objective>\d+(?:\.\d+)+)-(?P<kind>[BCI])(?P<number>\d{3})$")
+_ID = re.compile(r"^(?P<objective>\d+(?:\.\d+)+)-(?P<kind>[BCIT])(?P<number>\d{3})$")
 _OBJECTIVE_DIRECTORY = re.compile(
     r"^(?P<objective>\d+(?:\.\d+)+)-[a-z0-9]+(?:-[a-z0-9]+)*$"
 )
 _INVALID_TAG_CHARACTERS = re.compile(r"[\s,]")
 _RESERVED_TAG = re.compile(r"^A\+::")
 
-_TYPE_LETTERS = {"basic": "B", "cloze": "C", "image": "I"}
-_TYPE_TAGS = {"basic": "Basic", "cloze": "Cloze", "image": "Image"}
+_TYPE_LETTERS = {"basic": "B", "cloze": "C", "image": "I", "command": "T"}
+_TYPE_TAGS = {
+    "basic": "Basic",
+    "cloze": "Cloze",
+    "image": "Image",
+    "command": "Command",
+}
 _OBJECTIVE_DOMAIN_TAGS = {
     "1.1-operating-system-types-and-purposes": (
         "A+::220-1202::Domain1-OperatingSystems"
     ),
     "1.2-os-installations-and-upgrades": "A+::220-1202::Domain1-OperatingSystems",
     "1.3-microsoft-windows-editions": "A+::220-1202::Domain1-OperatingSystems",
+    "1.4-microsoft-windows-features-and-tools": (
+        "A+::220-1202::Domain1-OperatingSystems"
+    ),
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -100,10 +108,14 @@ _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.2-os-installations-and-upgrades"] = (
 _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.3-microsoft-windows-editions"] = (
     "Source::Messer-v140"
 )
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["1.4-microsoft-windows-features-and-tools"] = (
+    "Source::Messer-v140"
+)
 _SECTION_REQUIREMENTS = {
     "basic": ("Question", "Answer"),
     "cloze": ("Text",),
     "image": ("Prompt", "Answer"),
+    "command": ("Prompt", "Typed Answer"),
 }
 _TSV_HEADERS = {
     "basic": (
@@ -142,8 +154,25 @@ _TSV_HEADERS = {
         "Source",
         "Tags",
     ),
+    "command": (
+        "Card ID",
+        "Prompt",
+        "Typed Answer",
+        "Back",
+        "Instructor Notes",
+        "Difficulty",
+        "Card Type",
+        "Objective",
+        "Source",
+        "Tags",
+    ),
 }
-_OUTPUT_NAMES = {"basic": "Basic.tsv", "cloze": "Cloze.tsv", "image": "Image.tsv"}
+_OUTPUT_NAMES = {
+    "basic": "Basic.tsv",
+    "cloze": "Cloze.tsv",
+    "image": "Image.tsv",
+    "command": "Command.tsv",
+}
 
 
 class ErrorCode(StrEnum):
@@ -489,7 +518,7 @@ def _validate_identity_and_path(
             ValidationIssue(
                 ErrorCode.PATH_METADATA_MISMATCH,
                 card.path,
-                "card id must match '<objective>-[B|C|I]<three digits>'",
+                "card id must match '<objective>-[B|C|I|T]<three digits>'",
             )
         )
         return
@@ -916,6 +945,15 @@ def _tsv_row(card: Card, card_type: str) -> tuple[str, ...]:
             card_id,
             markdown_to_html(card.sections["Text"]),
             markdown_to_html(card.sections.get("Extra", "")),
+            notes,
+            *common,
+        )
+    if card_type == "command":
+        return (
+            card_id,
+            markdown_to_html(card.sections["Prompt"]),
+            card.sections["Typed Answer"],
+            markdown_to_html(card.sections.get("Back", "")),
             notes,
             *common,
         )

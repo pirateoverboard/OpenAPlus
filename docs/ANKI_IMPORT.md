@@ -19,9 +19,10 @@ For each TSV type:
 
 1. Select or create a custom OpenAPlus note type whose fields match the
    `#columns` line, in the same order. Card ID must be its first field.
-2. Use separate OpenAPlus Basic, Cloze, and Image note types. The Cloze note
-   type must be Cloze-derived, and its template must apply the cloze filter to
-   the Text field.
+2. Use separate OpenAPlus Basic, Cloze, Image, and Command note types. The Cloze
+   note type must be Cloze-derived, and its template must apply the cloze filter
+   to the Text field. The Command note type should be Basic-derived and use
+   Anki's typed-answer template syntax for the `Typed Answer` field.
    OpenAPlus Basic includes a stable learner-facing Hint field between Front
    and Back. See [HINTS.md](HINTS.md) for authoring guidance.
 3. Confirm the separator is Tab, HTML is enabled, and the final field maps to
@@ -84,6 +85,58 @@ OpenAPlus Image cards do not currently support a Hint field. Image TSV fields
 remain `Card ID`, `Prompt`, `Question Image`, `Answer`, `Answer Image`,
 `Instructor Notes`, `Difficulty`, `Card Type`, `Objective`, and `Source`, with
 the final TSV `Tags` column mapped to Anki's special Tags import row.
+
+## Command note type
+
+OpenAPlus Command fields must be in this order:
+
+1. Card ID
+2. Prompt
+3. Typed Answer
+4. Back
+5. Instructor Notes
+6. Difficulty
+7. Card Type
+8. Objective
+9. Source
+
+The final TSV `Tags` column maps to Anki's special Tags import row, not a
+normal learner-facing note field. Command cards are intended for exact typed
+recall of commands or launch names.
+
+Suggested Command front template:
+
+```html
+<div class="front">
+  {{Prompt}}
+</div>
+
+{{type:Typed Answer}}
+```
+
+Suggested Command back template:
+
+```html
+{{FrontSide}}
+
+<hr id="answer">
+
+<div class="answer">
+  <code>{{Typed Answer}}</code>
+</div>
+
+{{#Back}}
+<div class="back">
+  {{Back}}
+</div>
+{{/Back}}
+
+{{#Instructor Notes}}
+<div class="instructor-notes">
+  {{Instructor Notes}}
+</div>
+{{/Instructor Notes}}
+```
 
 ## Image cards
 
@@ -157,21 +210,25 @@ Record the result in the objective's `checklist.md` or `changelog.md`.
 1. Create a disposable Anki profile or test deck.
 2. Import `Basic.tsv`.
 3. Import `Cloze.tsv`.
-4. Import `Image.tsv` when it exists, after copying its staged media files from
+4. Import `Command.tsv` when it exists.
+5. Import `Image.tsv` when it exists, after copying its staged media files from
    `output/media/<exam>/<objective>/`.
-5. Verify comment and import headers were not imported as notes.
-6. Verify Card ID is the first field.
-7. Verify the first field is used for duplicate and update detection.
-8. Verify HTML renders rather than appearing as markup.
-9. Verify every expected Cloze card is generated correctly.
-10. Verify generated and custom tags are assigned correctly.
-11. Verify tags are Anki metadata, not visible learner-facing fields.
-12. Verify the OpenAPlus Basic, Cloze, and Image note types render as expected.
-13. Verify `question_image` appears on the front.
-14. Verify `answer_image` appears on the back.
-15. Re-import the same files and confirm notes update rather than duplicate.
-16. Confirm note counts match the data rows in the TSV files.
-17. Record the date, Anki version, tester, files tested, note counts, and result.
+6. Verify comment and import headers were not imported as notes.
+7. Verify Card ID is the first field.
+8. Verify the first field is used for duplicate and update detection.
+9. Verify HTML renders rather than appearing as markup.
+10. Verify every expected Cloze card is generated correctly.
+11. Verify Command cards show a typed-answer input and compare the entered text
+    with the `Typed Answer` field after reveal.
+12. Verify generated and custom tags are assigned correctly.
+13. Verify tags are Anki metadata, not visible learner-facing fields.
+14. Verify the OpenAPlus Basic, Cloze, Image, and Command note types render as
+    expected.
+15. Verify `question_image` appears on the front.
+16. Verify `answer_image` appears on the back.
+17. Re-import the same files and confirm notes update rather than duplicate.
+18. Confirm note counts match the data rows in the TSV files.
+19. Record the date, Anki version, tester, files tested, note counts, and result.
 
 ### Pass/fail criteria
 
@@ -180,6 +237,7 @@ import creates no duplicate notes, and observed counts equal expected data rows.
 An image check is not applicable when the objective has no Image TSV.
 
 Any unexpected note, missing or duplicate note, literal HTML, incorrect tag,
-tag imported as a normal learner-facing field, broken Cloze, missing image, or
-update failure is a failed test. Record the failure and do not accept the
-objective until it is resolved and the complete smoke test passes.
+tag imported as a normal learner-facing field, broken Cloze, broken typed-answer
+comparison, missing image, or update failure is a failed test. Record the
+failure and do not accept the objective until it is resolved and the complete
+smoke test passes.

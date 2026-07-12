@@ -183,15 +183,18 @@ Evaluate:
 - Are Basic cards scenario-based where the official objective wording supports
   scenario-based application?
 - Are Cloze cards limited to compact factual recall?
+- Are Command cards limited to exact typed command, executable, or launch-name
+  recall where the accepted answer boundary is explicit?
 - Are Image cards useful and not answer-leaking?
 - Are any cards too broad, too vague, redundant, or trivia-like?
 - Are any cards likely to take longer than 15–20 seconds to answer?
 
 5. Redundant learning targets
-- Are any Basic, Cloze, or Image cards testing the same fact without testing a materially different skill?
-- Compare every Basic card against every Cloze card. Does any Basic/Cloze pair test the same recall target in different note types?
+- Are any Basic, Cloze, Image, or Command cards testing the same fact without testing a materially different skill?
+- Compare every Basic card against every Cloze and Command card. Does any pair test the same recall target in different note types?
 - Are Basic cards reserved for understanding, comparison, purpose, practical recognition, short scenarios, or small decisions?
 - Are Cloze cards reserved for compact facts, acronym expansions, short definitions, term recall, or one-line associations?
+- Are Command cards reserved for typed exact command or launch-name recall?
 - If a Basic card and a Cloze card overlap, does each test a materially different skill, or should one be deleted?
 - Prefer keeping the Basic card when the concept needs explanation, comparison, purpose, common-confusion handling, or useful Instructor Notes.
 - Prefer keeping the Cloze card when the Basic card adds no value beyond the same compact fact.
@@ -226,6 +229,8 @@ Evaluate:
 - Is Card ID first in all TSVs?
 - Are Objective fields rendered in the expected display format?
 - Are tags generated as Anki metadata and not learner-facing fields?
+- Does `Command.tsv`, if present, include `Prompt`, `Typed Answer`, `Back`, and
+  `Instructor Notes` fields in the documented order?
 - Are image references filename-only?
 - Is generated media present and consistent with Image.tsv?
 
@@ -246,7 +251,8 @@ Return:
 - Cards to delete, if any
 - Cards to rewrite, if any
 - Basic/Cloze duplicate pairs found, if any
-- Confirmation that Basic and Cloze roles are separated
+- Basic/Cloze/Command duplicate pairs found, if any
+- Confirmation that Basic, Cloze, and Command roles are separated
 - HighYield changes, if any
 - Difficulty changes, if any
 - Whether the objective can be accepted after the manual Anki smoke test
@@ -338,12 +344,14 @@ Manual Anki smoke test result:
 - Test deck/profile: OpenAPlus Import Test
 - Basic.tsv imported successfully
 - Cloze.tsv imported successfully
+- Command.tsv imported successfully if present
 - Image.tsv imported successfully if present
 - Headers were not imported as notes
 - Card ID was first field and used for duplicate/update behavior
 - HTML rendered correctly
 - Cloze cards generated correctly
-- Custom OpenAPlus Basic, Cloze, and Image note types worked
+- Command typed-answer comparison worked if Command.tsv is present
+- Custom OpenAPlus Basic, Cloze, Command, and Image note types worked
 - Instructor Notes displayed correctly after answer reveal
 - Tags imported correctly as Anki metadata, not learner-facing fields
 - Generated media was installed into Anki collection.media if image cards exist
@@ -359,7 +367,7 @@ content/comptia/aplus/220-1201/<OBJECTIVE_SLUG>/checklist.md
 
 Record:
 - Manual Anki smoke test passed
-- Basic/Cloze/Image imports passed as applicable
+- Basic/Cloze/Command/Image imports passed as applicable
 - Media rendering passed if applicable
 - Re-import/update behavior passed
 - Tags imported as Anki metadata
