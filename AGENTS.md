@@ -85,6 +85,8 @@ All files currently under `docs/`:
 - [docs/OpenAPlus_Review_Prompt_Pack.md](docs/OpenAPlus_Review_Prompt_Pack.md)
   — Review prompt templates and maintainer review workflow guidance.
 - [docs/README.md](docs/README.md) — Documentation directory overview.
+- [docs/SMOKE_TEST_COMMIT_POLICY.md](docs/SMOKE_TEST_COMMIT_POLICY.md) —
+  Required git commit workflow after a passing manual Anki smoke test.
 - [docs/SOURCE_AND_CITATION_RULES.md](docs/SOURCE_AND_CITATION_RULES.md) —
   Source priority, paraphrasing, ambiguity handling, and citation rules.
 - [docs/TAGGING.md](docs/TAGGING.md) — Derived tag policy, custom tag rules,
@@ -330,6 +332,13 @@ record:
 - final card counts
 - generated TSV/media verified as applicable
 - acceptance decision recorded
+
+When the user says "smoke test passes" or "smoke tests pass" for the current
+objective, complete the acceptance record updates and then follow
+[docs/SMOKE_TEST_COMMIT_POLICY.md](docs/SMOKE_TEST_COMMIT_POLICY.md): regenerate
+output, run verification, stage only the accepted objective plus required
+supporting changes, and commit those changes to git before starting the next
+objective.
 
 ## Verification
 

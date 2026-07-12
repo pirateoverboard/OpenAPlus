@@ -18,6 +18,8 @@ Start with [CONTENT_CREATION_RULES.md](CONTENT_CREATION_RULES.md), then use:
 - [SOURCE_AND_CITATION_RULES.md](SOURCE_AND_CITATION_RULES.md) for evidence;
 - [OBJECTIVE_COMPLETION_CHECKLIST.md](OBJECTIVE_COMPLETION_CHECKLIST.md) for
   acceptance;
+- [SMOKE_TEST_COMMIT_POLICY.md](SMOKE_TEST_COMMIT_POLICY.md) for committing
+  accepted objective changes after a passing smoke test;
 - [CARD_QUALITY_EXAMPLES.md](CARD_QUALITY_EXAMPLES.md) for comparative examples;
   and
 - [ANKI_IMPORT.md](ANKI_IMPORT.md) when importing generated TSV files.
