@@ -1,0 +1,58 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.5-B005	"<p>A Windows volume has logical file-system errors, but there is no evidence of
+bad sectors. Which Check Disk option is the better first repair choice?</p>"		<p><code>chkdsk /f</code>.</p>	"<p>The <code>/f</code> option targets logical file-system repair. Use <code>/r</code> when the task also
+requires bad-sector checking and readable-data recovery.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Disk Source::Messer-v140
+1.5-B006	"<p>A technician suspects a Windows drive has bad sectors, not just logical
+file-system errors. Which Check Disk option fits that scenario?</p>"		<p><code>chkdsk /r</code>.</p>	"<p><code>/r</code> includes the <code>/f</code> behavior and adds bad-sector checking and readable-data
+recovery, so it is broader than a logical repair-only check.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Disk Source::Messer-v140
+1.5-B007	"<p>A technician is preparing a partition for reuse and is warned that the action
+can remove access to existing data. Which command category fits this task?</p>"		<p>A format command.</p>	"<p>Formatting prepares the target for use with Windows. It is not a general repair
+command, and the technician must confirm the target and data requirements first.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Disk Source::Messer-v140
+1.5-B008	"<p>A technician needs command-line access to disk, partition, and volume
+configuration. What risk should they keep in mind before using DiskPart?</p>"		<p>DiskPart can destroy data if the wrong disk, partition, or volume is selected.</p>	"<p>DiskPart is appropriate for disk configuration work, but the safety issue is
+the main distinction from informational commands.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Disk Source::Messer-v140
+1.5-B009	"<p>A technician needs a more capable command-line copy tool for a structured file
+copy between folders or systems. Why is Robust Copy the better fit than older
+copy utilities?</p>"		<p>It is designed as a robust Windows file-copy tool for more capable copy jobs.</p>	"<p>The typed Command card tests the exact command. This card tests when the robust
+copy tool is the right file-management choice.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic CLI Files Source::Messer-v140
+1.5-B012	"<p>A technician is troubleshooting a permissions difference between two Windows
+sessions. Why is the detailed <code>whoami</code> output useful?</p>"		"<p>It shows the current user context plus detailed group and privilege
+information.</p>"	"<p>Plain <code>whoami</code> identifies the current user. The detailed form is better when
+the problem may depend on group membership or privileges.</p>"	easy	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic CLI Identity Source::Messer-v140
+1.5-B014	"<p>A technician needs a Windows client to process Group Policy updates now instead
+of waiting for normal refresh timing. Which Group Policy command role fits this
+task: update or results reporting?</p>"		<p>Update: use <code>gpupdate</code>.</p>	"<p><code>gpupdate</code> applies policy updates. Use <code>gpresult</code> when the task is to report
+which policies applied.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI GroupPolicy Source::Messer-v140
+1.5-B015	"<p>A technician needs to verify which Group Policy settings apply to a computer
+or user. Which Group Policy command role fits this task: update or results
+reporting?</p>"		<p>Results reporting: use <code>gpresult</code>.</p>	"<p><code>gpresult</code> reports policy results. It does not force a new policy refresh; that
+is the job of <code>gpupdate</code>.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI GroupPolicy Source::Messer-v140
+1.5-B016	"<p>After malware cleanup, a technician wants to check whether protected Windows
+system files still have integrity. What command-line tool category fits this?</p>"		<p>System File Checker, using <code>sfc /scannow</code>.</p>	"<p>System File Checker is for protected system-file integrity. It is not for disk
+partitioning, network-share mapping, or DNS lookup.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 9	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Repair Source::Messer-v140
+1.5-B018	"<p>A Windows client has an IP address, but the technician also needs DNS and DHCP
+server details. Why use the expanded <code>ipconfig</code> output instead of the basic
+output?</p>"		"<p>It includes additional adapter configuration details such as DNS and DHCP server
+information.</p>"	"<p>The typed Command card tests the exact command form. This card tests why the
+expanded output is selected during network troubleshooting.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 10	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic CLI Network Source::Messer-v140
+1.5-B020	"<p>A technician wants active connection information from a Windows client, but
+does not need DNS name lookups or route tracing. Which network command category
+fits best?</p>"		<p>Network statistics with <code>netstat</code>.</p>	"<p><code>netstat</code> focuses on local network statistics and active connections. Use
+<code>tracert</code> or <code>pathping</code> for route-path questions, and <code>nslookup</code> for DNS.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 10	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic CLI Network Source::Messer-v140
+1.5-B022	"<p>A technician needs to assign a drive letter to a Windows share, while another
+technician needs account information. Which <code>net</code> command role fits the drive
+mapping task?</p>"		<p>Share mapping: use <code>net use</code>.</p>	"<p>This card tests the <code>net use</code> versus <code>net user</code> distinction. The typed Command
+card tests exact command recall.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 10	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Network Source::Messer-v140
+1.5-B023	"<p>A technician needs user account information, while another technician needs to
+map a network share. Which <code>net</code> command role fits the account-information
+task?</p>"		<p>Account information: use <code>net user</code>.</p>	"<p>This card tests the <code>net user</code> versus <code>net use</code> distinction. The typed Command
+card tests exact command recall.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 10	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic CLI Accounts Source::Messer-v140
+1.5-B024	"<p>A technician can reach a host, but wants to see the network path by hop. Which
+type of command is more appropriate than a basic reachability test?</p>"		<p>A route-tracing command such as <code>tracert</code>.</p>	"<p>This distinction matters because <code>ping</code> tests basic reachability, while
+<code>tracert</code> shows the path by hop.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 10	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Network Source::Messer-v140
+1.5-B025	"<p>A route trace shows the path, but the technician also needs round-trip and
+packet-loss statistics at each hop. Which route-analysis approach fits?</p>"		<p>A path analysis command such as <code>pathping</code>.</p>	"<p><code>pathping</code> is useful when <code>tracert</code> alone is not enough because the technician
+also needs loss and timing data along the route.</p>"	medium	basic	220-1202 1.5 - Microsoft Command-line Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.5; Professor Messer 220-1202 v1.40, p. 10	A+::220-1202::1.5 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftCommandlineTools Basic HighYield CLI Network Source::Messer-v140

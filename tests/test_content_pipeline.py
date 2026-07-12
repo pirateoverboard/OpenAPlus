@@ -510,6 +510,38 @@ def test_core2_objective_14_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_15_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.5-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "1.5",
+            "objective_name": "Microsoft Command-line Tools",
+            "tags": ["CLI"],
+            "source": ["Professor Messer 220-1202 v1.40 p.9"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.5-microsoft-command-line-tools",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.5",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::MicrosoftCommandlineTools",
+        "Basic",
+        "HighYield",
+        "CLI",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
