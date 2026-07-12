@@ -1,0 +1,68 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.2-B001	<p>What two conditions must be true to install an OS from a USB drive?</p>		<p>The USB drive must be bootable, and the computer must support booting from USB.</p>	"<p>A USB installer is local boot media. If either the media is not bootable or the
+system cannot boot from USB, the installation cannot start that way.</p>"	easy	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Installation Boot Source::Messer-v140
+1.2-B002	"<p>A technician wants a computer to boot from the network and start an OS
+installation from a remote source. Which boot method fits?</p>"		<p>PXE network boot.</p>	"<p>PXE is the network-boot path for remote installation. The target computer must
+support PXE booting.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Installation Network Source::Messer-v140
+1.2-B003	"<p>A user needs Windows and Linux available on the same computer and wants to
+choose between them at startup. What installation approach supports this?</p>"		"<p>Configure a multiboot system with separate bootable operating-system
+installations.</p>"	"<p>Multiboot presents a boot menu for selecting among installed operating systems.
+It is different from replacing the old OS with a clean install.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Installation Multiboot Source::Messer-v140
+1.2-B004	"<p>Which installation type should be chosen when the goal is to start over with a
+fresh OS environment and the existing data does not need to remain in place?</p>"		<p>A clean install.</p>	"<p>A clean install wipes or replaces the existing environment. Backups and
+application reinstall plans matter before choosing it on a user system.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, pp. 3-4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Installation Backup Source::Messer-v140
+1.2-B005	"<p>Which upgrade method keeps existing applications, documents, and settings when
+the upgrade path supports it?</p>"		<p>An in-place upgrade.</p>	"<p>An in-place upgrade starts from inside the existing OS. It is the preservation
+choice, but it still depends on supported upgrade paths and compatibility.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Upgrade Installation Source::Messer-v140
+1.2-B006	"<p>Which installation method deploys a prepared clone or standardized build to
+systems quickly?</p>"		<p>Image deployment.</p>	"<p>Image deployment is useful when many devices should receive the same baseline
+configuration. It is not the same as preserving each user's existing local
+applications and files.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Deployment Installation Source::Messer-v140
+1.2-B007	"<p>A company ships laptops directly to remote users and wants the installation and
+company-specific configuration to complete with minimal user input. Which
+deployment approach fits?</p>"		<p>Zero-touch deployment.</p>	"<p>Zero-touch deployment automates the installation and configuration workflow so a
+remote user can receive a system that sets itself up.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Deployment Automation Source::Messer-v140
+1.2-B008	<p>What is the purpose of a recovery partition during OS installation or recovery?</p>		<p>It is a hidden partition that stores installation or recovery files.</p>	"<p>A recovery partition must already exist to be useful. Do not assume it is
+available on every system or that it performs every kind of upgrade.</p>"	easy	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Recovery Installation Source::Messer-v140
+1.2-B009	<p>What is a repair installation used for during Windows installation work?</p>		"<p>It is used to fix problems with the existing Windows OS without modifying user
+files.</p>"	"<p>A repair installation targets the current Windows installation. It is different
+from a clean install, which starts over, and from an in-place upgrade, which
+moves an existing OS to a newer supported version.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Repair Windows Source::Messer-v140
+1.2-B010	"<p>During an OS install, the installer cannot see the target storage controller.
+What should the technician consider loading?</p>"		<p>The appropriate third-party storage or disk-controller driver.</p>	"<p>Some installers need additional drivers before they can access the storage
+hardware. This is different from choosing a different installation type.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Drivers Installation Source::Messer-v140
+1.2-B011	"<p>Which partition style is the better fit for a modern UEFI system that needs
+many partitions or very large partitions?</p>"		<p>GPT.</p>	"<p>GPT is the newer partition style and removes the old MBR limits around primary
+partition count and 2 TB partition size.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, pp. 3-4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Partitioning UEFI Source::Messer-v140
+1.2-B012	<p>What are the major limitations of MBR partitioning compared with GPT?</p>		"<p>MBR is limited to 2 TB partitions and up to four primary partitions per hard
+disk.</p>"	"<p>One primary partition can be marked active. Extra logical partitions require an
+extended partition, but that does not remove MBR's older design limits.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, pp. 3-4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Partitioning Source::Messer-v140
+1.2-B013	<p>How does a full format differ from a quick format during installation?</p>		"<p>A quick format creates a new file table, while a full format writes zeros
+across the disk and checks for bad sectors.</p>"	"<p>Quick format can make data appear erased without overwriting all of it. Full
+format is slower and destructive, so the choice matters when data recovery or
+disk checking is a concern.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Format Storage Source::Messer-v140
+1.2-B014	"<p>Before repartitioning or performing a clean install on a user's drive, what
+data-protection step should be completed?</p>"		<p>Back up existing data and user preferences that may be needed later.</p>	"<p>Partitioning, formatting, and clean installs can cause serious data loss.
+Protect user data before making destructive storage changes.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Backup Upgrade Source::Messer-v140
+1.2-B015	<p>What compatibility checks should be performed before relying on an OS upgrade?</p>		<p>Check hardware requirements and verify application and driver compatibility.</p>	"<p>Compatibility checks reduce the risk of a failed upgrade or a working OS with
+broken devices and applications.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic HighYield Compatibility Upgrade Source::Messer-v140
+1.2-B016	"<p>Why should product lifecycle be considered before choosing a Windows upgrade
+target?</p>"		"<p>Support windows and update availability affect whether the OS version will
+continue receiving security fixes, bug fixes, and feature updates.</p>"	"<p>Do not choose an upgrade target only because it installs successfully. The
+target should remain supportable after deployment.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 4	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Lifecycle Updates Source::Messer-v140
+1.2-B017	"<p>A technician has OS installation files stored on a removable SSD or external
+drive that can boot through USB. Which boot-source category fits?</p>"		<p>Solid-state/flash drive or external/hot-swappable drive boot media.</p>	"<p>The exam lists these as separate boot-method examples, but both are local
+storage-based installation sources. The device still has to be bootable and
+supported by the target computer.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Installation Boot Source::Messer-v140
+1.2-B018	"<p>A technician starts an OS installation that downloads the installer from an
+online source instead of using local USB media or a local network server. Which
+boot method category fits?</p>"		<p>Internet-based installation.</p>	"<p>Internet-based installation uses an online source for the installation workflow.
+Messer lists examples such as Linux distribution installers, macOS Recovery
+installation, and Windows updates.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Installation Boot Source::Messer-v140
+1.2-B019	"<p>Which installation type uses a local server, shared drive, or Internet source
+to install the operating system across the network?</p>"		<p>Remote network installation.</p>	"<p>PXE describes booting from the network. Remote network installation describes
+where the installation source is located and how the OS installation is
+delivered.</p>"	medium	basic	220-1202 1.2 - OS Installations and Upgrades	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.2; Professor Messer 220-1202 v1.40, p. 3	A+::220-1202::1.2 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OSInstallationsandUpgrades Basic Installation Network Source::Messer-v140
