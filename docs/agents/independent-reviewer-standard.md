@@ -140,6 +140,10 @@ Flag:
 - unapproved source use
 - duplicate learning targets
 - Basic/Cloze/Image/Command duplicates that test the same fact
+- Cloze cards that hide the same exact command string already tested by a
+  Command card
+- Command cards with ambiguous accepted answers, multiple answer forms, or
+  prompts that do not specify the expected command syntax
 - answer-revealing hints
 - image question-side answer leakage
 - unstable/vendor-specific facts carded as if universal

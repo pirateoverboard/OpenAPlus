@@ -1,8 +1,8 @@
 # Cloze guide
 
 Cloze cards test precise, compact recall. Use them for definitions, acronyms,
-ports, commands, protocols, standards, short facts, and other memorization where
-the surrounding sentence provides useful context.
+ports, protocols, standards, short facts, and other memorization where the
+surrounding sentence provides useful context.
 
 ## Construction rules
 
@@ -16,7 +16,11 @@ the surrounding sentence provides useful context.
 
 **Good:** “`[acronym]` expands to {{c1::[full name]}}.”
 
-**Good:** “The command for `[single operation]` is {{c1::[command]}}.”
+**Good:** “HTTPS commonly uses {{c1::TCP port 443}}.”
+
+Use a Command card instead of Cloze when the learning task is typing an exact
+command, executable, or tool launch name. Do not create a Cloze deletion that
+hides the same command string already tested by a Command card.
 
 **Bad:** “The {{c1::system}} {{c2::is}} {{c3::used}} for
 {{c4::many unrelated purposes}}.” Most deletions are filler or overly broad.

@@ -96,6 +96,7 @@ Required deliverables:
 - Markdown card files under `cards/`
 - Basic cards
 - Cloze cards
+- Command cards where exact typed command recall is useful
 - Image cards only where useful
 - Original SVG diagrams only if useful
 - Generated TSV output
@@ -176,6 +177,13 @@ Use Cloze cards for:
 - port/protocol facts
 - compact recall
 - brief definitions
+
+Use Command cards for:
+
+- exact typed command recall
+- executable names
+- tool launch names
+- command forms where the accepted answer boundary is explicit
 
 Use Image cards only when:
 

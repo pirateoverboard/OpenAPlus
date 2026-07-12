@@ -56,6 +56,26 @@ a bounded list. Instructor Notes should explain rather than repeat.
 | C14 | “SO-DIMM means {{c1::small RAM}}.” | The expansion is inaccurate and colloquial. | “SO-DIMM stands for {{c1::Small Outline Dual In-line Memory Module}}.” | Strong acronym recall. | “Laptop memory commonly uses the {{c1::SO-DIMM}} form factor.” | Better when the learning target is recognition rather than spelling the expansion. |
 | C15 | “{{c1::TCP}} is {{c2::connection-oriented}}, while {{c3::UDP}} is {{c4::connectionless}}, {{c5::faster}}, and {{c6::better}}.” | Too many deletions plus unsupported absolutes. | “TCP is {{c1::connection-oriented}}.” | Atomic but tests only one side. | “TCP is {{c1::connection-oriented}}; UDP is {{c2::connectionless}}.” | Two parallel facts create two clear reviews. |
 
+## Command cards — 10 example sets
+
+Command cards test exact typed answers. Use them when the learner should be
+able to enter a command, executable, or tool launch name from memory. Do not use
+them for broad tool selection, multi-step procedures, or syntax with several
+equally valid forms unless the prompt defines the accepted form.
+
+| # | Bad example | Why it is bad | Okay example | Why it is only okay | Great example | Why it is great |
+| --- | --- | --- | --- | --- | --- | --- |
+| CMD1 | Prompt: “Open Windows tools.” Typed Answer: `eventvwr.msc, devmgmt.msc, diskmgmt.msc` | It asks for several independent commands in one typed field. | Prompt: “Which command opens Event Viewer?” Typed Answer: `eventvwr.msc` | Atomic, but the prompt could state the expected launch-name form. | Prompt: “Type the MMC launch name for Event Viewer.” Typed Answer: `eventvwr.msc` | One exact answer and one explicit command form. |
+| CMD2 | Prompt: “Launch Resource Monitor somehow.” Typed Answer: `resmon.exe` | “Somehow” allows GUI paths and other methods. | Prompt: “Which executable launches Resource Monitor?” Typed Answer: `resmon.exe` | Clear enough, but no learner context after reveal. | Prompt: “Type the executable name for Resource Monitor.” Typed Answer: `resmon.exe`; Back explains it is the live per-resource performance tool. | Typed recall and concept reinforcement are separated. |
+| CMD3 | Prompt: “What do you use for disk partitions?” Typed Answer: `diskmgmt.msc` | The prompt asks tool selection, not typed command recall. | Prompt: “Which command opens Disk Management?” Typed Answer: `diskmgmt.msc` | Valid, but “command” could include other launch paths. | Prompt: “Type the MMC snap-in launch name for Disk Management.” Typed Answer: `diskmgmt.msc` | The expected `.msc` answer boundary is explicit. |
+| CMD4 | Prompt: “Clean temporary files.” Typed Answer: `cleanmgr.exe /sageset:1` | It includes optional arguments without defining why that exact form is required. | Prompt: “Which executable launches Disk Cleanup?” Typed Answer: `cleanmgr.exe` | Atomic, but it does not state that switches are not expected. | Prompt: “Type only the executable name for Disk Cleanup, with no switches.” Typed Answer: `cleanmgr.exe` | It prevents alternate valid command forms. |
+| CMD5 | Prompt: “How do you edit the registry?” Typed Answer: `regedit.exe` | The wording invites procedure and safety details, not just a typed answer. | Prompt: “Which executable opens Registry Editor?” Typed Answer: `regedit.exe` | Correct but could miss the safety boundary. | Prompt: “Type the executable name for Registry Editor.” Typed Answer: `regedit.exe`; Back notes backup/authorization caution. | Exact recall stays atomic while the Back field adds safe context. |
+| CMD6 | Prompt: “Which command shows system info?” Typed Answer: `msinfo32.exe` | “Shows system info” could describe multiple commands or tools. | Prompt: “Which Windows tool executable opens System Information?” Typed Answer: `msinfo32.exe` | Better, but still slightly tool-selection-like. | Prompt: “Type the executable name for the Windows System Information tool.” Typed Answer: `msinfo32.exe` | The target tool and expected form are both named. |
+| CMD7 | Prompt: “Run performance monitoring.” Typed Answer: `perfmon.msc` | It is vague and may also suggest Task Manager or Resource Monitor. | Prompt: “Which launch name opens Performance Monitor?” Typed Answer: `perfmon.msc` | Atomic, but not explicit about MMC snap-in form. | Prompt: “Type the MMC launch name for Performance Monitor.” Typed Answer: `perfmon.msc` | It distinguishes command recall from choosing a monitoring tool. |
+| CMD8 | Prompt: “Create a scheduled task from the command line.” Typed Answer: `taskschd.msc` | The prompt implies creating a task, not launching Task Scheduler. | Prompt: “Which command launches Task Scheduler?” Typed Answer: `taskschd.msc` | Good direct recall but can be tightened. | Prompt: “Type the MMC launch name for Task Scheduler.” Typed Answer: `taskschd.msc` | It tests the exact launch name without implying task syntax. |
+| CMD9 | Prompt: “Open Local Users and Groups.” Typed Answer: `lusrmgr.msc or Computer Management` | A typed answer field should not contain alternatives. | Prompt: “Which `.msc` opens Local Users and Groups?” Typed Answer: `lusrmgr.msc` | The expected form is mostly clear. | Prompt: “Type the standalone `.msc` launch name for Local Users and Groups.” Typed Answer: `lusrmgr.msc` | It excludes alternate GUI paths and focuses the accepted answer. |
+| CMD10 | A Cloze card and Command card both test `dfrgui.exe` with identical prompts. | It duplicates the same learning target in two note types. | Keep the Cloze card because it already exists. | It may work, but typed command recall is the stronger match. | Keep only the Command card when the intended skill is entering `dfrgui.exe`; use Basic separately for what Disk Defragment does. | Each note type tests a distinct skill. |
+
 ## Image cards — 10 example sets
 
 Original diagrams are preferred for conceptual diagrams. Reviewed Wikimedia
@@ -153,6 +173,8 @@ Before submitting a card, confirm:
 - [ ] Every factual claim, including Instructor Notes, is source-backed.
 - [ ] Wording is original and paraphrased rather than copied or lightly edited.
 - [ ] The card type matches the skill: recall, application, or visual recognition.
+- [ ] Command cards require one exact typed answer and do not duplicate Cloze
+      command-string recall.
 - [ ] Scenario details are necessary and support a unique answer.
 - [ ] MOST, BEST, and FIRST are used only when evidence establishes the ranking.
 - [ ] The front contains no vague wording, hidden assumptions, or multiple questions.

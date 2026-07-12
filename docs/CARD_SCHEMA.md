@@ -91,7 +91,8 @@ ID contains the objective; retire it and create a new card instead.
 - Image requires `## Prompt` and `## Answer`.
 - Command requires `## Prompt` and `## Typed Answer`, with optional `## Back`.
   Command cards generate typed-answer TSV rows for Basic-style Anki note types
-  that use `{{type:Typed Answer}}`.
+  that use `{{type:Typed Answer}}`. The typed answer should contain the exact
+  accepted command, executable, or launch name, not a list of alternatives.
 - Basic cards may include an optional `## Hint` section. Hints are learner-facing
   pre-reveal guidance and should steer the troubleshooting thought process
   without giving away the answer; see [HINTS.md](HINTS.md).

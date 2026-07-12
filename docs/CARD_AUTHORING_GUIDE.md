@@ -25,8 +25,9 @@ improves reasoning without giving away the answer. See [HINTS.md](HINTS.md).
 
 ### Cloze
 
-Use Cloze cards for compact recall: a definition, acronym, command, port,
-standard, or other short fact. See [CLOZE_GUIDE.md](CLOZE_GUIDE.md).
+Use Cloze cards for compact recall: a definition, acronym, port, standard, or
+other short fact where recognizing the fact inside a sentence is the right
+review task. See [CLOZE_GUIDE.md](CLOZE_GUIDE.md).
 
 **Good:** “`[acronym]` stands for {{c1::[expansion]}}.”
 
@@ -55,6 +56,16 @@ the command in a sentence.
 
 **Bad:** A broad prompt with several acceptable commands or optional arguments
 unless the expected answer boundary is made explicit.
+
+Command prompts must make the accepted answer boundary explicit. If aliases,
+optional switches, paths, elevated shells, PowerShell/cmd differences, or
+version-specific syntax would create multiple valid answers, either specify the
+expected form or use a Basic card that asks for the tool or action instead.
+
+Do not duplicate a Command card with a Cloze card that hides the same command
+string. Keep the Command card when the learner should be able to type the exact
+value; keep a Cloze card only when the command appears as one compact fact in a
+larger sourced association and typed entry is not the intended skill.
 
 ## Atomic cards
 

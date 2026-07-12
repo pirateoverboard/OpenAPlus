@@ -71,6 +71,8 @@ Review these areas:
 - Is the concept worth memorizing or applying in flashcard form?
 - Is it better handled in the study guide only?
 - Is it too obvious, too broad, too narrow, or too trivia-like?
+- If it is an exact command, executable, or tool launch name, would a Command
+  card test the intended skill better than a Cloze card?
 - If practice-exam gap checking showed the concept is likely to matter, is
   there a specific checklist reason for leaving it study-guide-only?
 
@@ -80,6 +82,7 @@ For each omitted concept, recommend exactly one:
 - Study guide only
 - Add Basic card
 - Add Cloze card
+- Add Command card
 - Add Image card
 - Defer pending approved source
 
@@ -195,10 +198,13 @@ Evaluate:
 - Are Basic cards reserved for understanding, comparison, purpose, practical recognition, short scenarios, or small decisions?
 - Are Cloze cards reserved for compact facts, acronym expansions, short definitions, term recall, or one-line associations?
 - Are Command cards reserved for typed exact command or launch-name recall?
-- If a Basic card and a Cloze card overlap, does each test a materially different skill, or should one be deleted?
+- If a Basic, Cloze, or Command card overlaps with another text card, does each
+  test a materially different skill, or should one be deleted?
 - Prefer keeping the Basic card when the concept needs explanation, comparison, purpose, common-confusion handling, or useful Instructor Notes.
 - Prefer keeping the Cloze card when the Basic card adds no value beyond the same compact fact.
-- Do not preserve duplicate Basic/Cloze pairs merely to keep card count high.
+- Prefer keeping the Command card when the intended skill is entering the exact
+  command, executable, or launch name.
+- Do not preserve duplicate Basic/Cloze/Command pairs merely to keep card count high.
 - Image cards may overlap with text cards only when they test a distinct visual-recognition skill.
 - Are similar concepts separated cleanly?
 - Should any card be deleted instead of rewritten?
@@ -250,7 +256,6 @@ Return:
 - Recommended improvements, if any
 - Cards to delete, if any
 - Cards to rewrite, if any
-- Basic/Cloze duplicate pairs found, if any
 - Basic/Cloze/Command duplicate pairs found, if any
 - Confirmation that Basic, Cloze, and Command roles are separated
 - HighYield changes, if any
@@ -296,10 +301,11 @@ Evaluate:
   objective number, full objective phrase, and bullet scope?
 - Did the fixes use the official objective wording to drive card approach
   rather than an internal standard/troubleshooting mode?
-- If Basic/Cloze redundancy was a blocker, were all Basic cards compared against all Cloze cards?
-- Were exact Basic/Cloze duplicate learning targets deleted instead of retained for card count?
+- If Basic/Cloze/Command redundancy was a blocker, were all relevant card pairs compared?
+- Were exact Basic/Cloze/Command duplicate learning targets deleted instead of retained for card count?
 - Do remaining Basic cards test understanding, comparison, purpose, practical recognition, scenarios, or decisions?
 - Do remaining Cloze cards test compact facts, acronym expansions, short definitions, term recall, or one-line associations?
+- Do remaining Command cards test exact typed command, executable, or launch-name recall with one explicit accepted answer?
 - Do any remaining Image cards overlap only because they test distinct visual recognition?
 - Were checklist.md and changelog.md updated?
 - Was generated TSV/media output regenerated?
@@ -314,7 +320,7 @@ Return:
 - GO or NO-GO
 - Remaining blockers
 - Any new issues caused by fixes
-- Basic/Cloze redundancy status
+- Basic/Cloze/Command redundancy status
 - Whether the objective can proceed to manual Anki smoke test
 - Whether the card approach remains aligned to the official objective wording
 
