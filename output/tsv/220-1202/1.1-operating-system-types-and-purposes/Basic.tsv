@@ -1,0 +1,58 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.1-B001	<p>What is the primary purpose of an operating system?</p>		"<p>An operating system coordinates hardware resources, applications, and user
+interaction so the computer can run usable workloads.</p>"	"<p>The exam is not asking for one narrow feature such as a desktop or file
+manager. The OS is the control layer between hardware, software, and the user.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 1	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield OS Source::Messer-v140
+1.1-B002	"<p>A business needs broad desktop software support and common industry hardware
+compatibility. Which workstation OS family is the most likely fit?</p>"		<p>Windows.</p>	"<p>Windows has a large software and hardware ecosystem. The tradeoff is that its
+large install base and wide hardware coverage can also increase security and
+integration complexity.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 1	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic Windows OS Source::Messer-v140
+1.1-B003	"<p>Which workstation OS family is Unix-like, has many distributions, and is often
+chosen for low cost and hardware flexibility?</p>"		<p>Linux.</p>	"<p>Linux is not one single desktop product. Support, drivers, and administration
+experience can vary by distribution and hardware platform.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 1	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic Linux OS Source::Messer-v140
+1.1-B004	"<p>Which workstation OS is tied to Apple hardware and is commonly selected for an
+Apple-managed desktop environment?</p>"		<p>macOS.</p>	"<p>The key distinction is platform coupling. macOS can be a strong fit inside an
+Apple environment, but it is not a general-purpose OS for arbitrary PC hardware.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 1	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic macOS OS Source::Messer-v140
+1.1-B005	"<p>Which workstation OS is centered on the Chrome browser and is best matched to a
+cloud-heavy, web-application workflow?</p>"		<p>Chrome OS.</p>	"<p>Chrome OS is based on the Linux kernel, but the exam distinction is its
+browser-centered and cloud-dependent workflow.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 1	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic ChromeOS Cloud Source::Messer-v140
+1.1-B006	<p>How do iOS, iPadOS, and Android differ by supported device platform?</p>		"<p>iOS runs on Apple iPhones, iPadOS runs on Apple iPad tablets, and Android runs
+on many manufacturers' mobile devices.</p>"	"<p>The point is platform recognition, not app development. iOS and iPadOS are
+Apple-specific, while Android is the non-Apple mobile OS family with broad
+manufacturer support.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, pp. 1-2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic MobileOS Apple Source::Messer-v140
+1.1-B007	"<p>Why must a partition be formatted with a filesystem before it stores normal
+files?</p>"		"<p>Formatting creates the filesystem structure the operating system uses to
+organize files and metadata on that partition.</p>"	"<p>The filesystem is not just a label. It defines how data is arranged and which
+OS features and compatibility limits apply to the storage device.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic Filesystems Source::Messer-v140
+1.1-B008	"<p>Why is NTFS a poor first choice for a removable drive that must be written by
+Windows, macOS, and Linux systems?</p>"		"<p>NTFS is a Windows-focused filesystem, and non-Windows systems may have limited
+or read-only NTFS support.</p>"	"<p>NTFS is common and capable on Windows, but cross-platform write compatibility is
+the trap. A scenario about easy file movement across operating systems points
+away from NTFS.</p>"	medium	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield Filesystems Windows Compatibility Source::Messer-v140
+1.1-B009	"<p>Which Windows filesystem is most associated with large storage requirements and
+ongoing data integrity checks?</p>"		<p>ReFS.</p>	"<p>ReFS is not the general cross-platform answer. It is the Windows-side choice
+when the requirement points to large storage and resilience rather than broad OS
+compatibility.</p>"	medium	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield Filesystems Windows Source::Messer-v140
+1.1-B010	"<p>A user needs a USB flash drive for files larger than 4 GB and wants to move the
+drive between Windows, Linux, and macOS. Which filesystem is the best fit?</p>"		<p>exFAT.</p>	"<p>FAT32 is broadly recognized but has a 4 GB maximum file size. exFAT is the
+better removable-media fit when both large files and cross-OS compatibility
+matter.</p>"	medium	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield Filesystems Compatibility Source::Messer-v140
+1.1-B011	<p>Which filesystem is commonly associated with Linux and Android systems?</p>		<p>ext4.</p>	"<p>ext4 stands for fourth extended filesystem. It is the Linux/Android association
+to recognize, not the Apple or Windows storage answer.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic Filesystems Linux Android Source::Messer-v140
+1.1-B012	"<p>Which Linux filesystem is designed for high performance and scalability on
+large filesystems?</p>"		<p>XFS.</p>	"<p>XFS is a Linux-oriented answer for large, high-performance storage. Do not mix
+it up with ReFS, which is the Windows large-storage resilience option in this
+objective.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic Filesystems Linux Source::Messer-v140
+1.1-B013	"<p>Which filesystem is the Apple platform choice for modern macOS, iOS, and iPadOS
+storage?</p>"		<p>APFS.</p>	"<p>APFS is the Apple filesystem association. It is optimized for modern Apple
+storage features, including solid-state storage and data integrity capabilities.</p>"	easy	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield Filesystems Apple macOS Source::Messer-v140
+1.1-B014	<p>Why is an end-of-life operating system a support risk?</p>		"<p>The vendor may stop providing normal updates, leaving security and
+compatibility problems that cannot be fixed through routine patching.</p>"	"<p>End-of-life is a vendor lifecycle state, not a local setting. A technician may
+need to recommend an upgrade or replacement instead of expecting future patches.</p>"	medium	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield Lifecycle Security Source::Messer-v140
+1.1-B015	"<p>Why does moving a native application from one operating system to another often
+fail even when the user files can be copied?</p>"		"<p>Native applications are usually built for a specific OS platform, while many
+data files or web-based services are more portable across systems.</p>"	"<p>The exam distinction is application compatibility versus data portability. A
+file may move successfully even when the application that created it cannot run
+on the destination OS.</p>"	medium	basic	220-1202 1.1 - Operating System Types and Purposes	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.1; Professor Messer 220-1202 v1.40, p. 2	A+::220-1202::1.1 A+::220-1202::Domain1-OperatingSystems A+::220-1202::OperatingSystemTypesandPurposes Basic HighYield Compatibility OS Source::Messer-v140

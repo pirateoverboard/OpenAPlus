@@ -13,7 +13,7 @@ The validator rejects malformed YAML and duplicate YAML keys.
 
 | Field | Type | Rule |
 | --- | --- | --- |
-| `id` | string | Globally unique, filename-matching, and immutable |
+| `id` | string | Unique within its exam, filename-matching, and immutable |
 | `exam` | string | Must match the exam directory |
 | `objective` | string | Must match the ID and objective directory |
 | `objective_name` | string | Must agree across the objective |
@@ -71,7 +71,8 @@ not make a fact hard.
 
 ## Stable IDs
 
-IDs have the form `<objective>-<type-letter><three digits>`:
+IDs have the form `<objective>-<type-letter><three digits>` and must be unique
+within the exam:
 
 - `1.1-B001` for Basic
 - `1.1-C001` for Cloze

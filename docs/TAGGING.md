@@ -41,6 +41,7 @@ scope authority.
 
 | Folder | Generated domain tag | Generated source-validation tag |
 | --- | --- | --- |
+| `1.1-operating-system-types-and-purposes` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.3-mobile-device-networks` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-management` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |

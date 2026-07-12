@@ -51,6 +51,9 @@ _RESERVED_TAG = re.compile(r"^A\+::")
 _TYPE_LETTERS = {"basic": "B", "cloze": "C", "image": "I"}
 _TYPE_TAGS = {"basic": "Basic", "cloze": "Cloze", "image": "Image"}
 _OBJECTIVE_DOMAIN_TAGS = {
+    "1.1-operating-system-types-and-purposes": (
+        "A+::220-1202::Domain1-OperatingSystems"
+    ),
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -81,8 +84,14 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "5.5-troubleshooting-networks": "A+::220-1201::Domain5-Troubleshooting",
     "5.6-troubleshooting-printers": "A+::220-1201::Domain5-Troubleshooting",
 }
-_MESSER_VALIDATED_OBJECTIVE_DIRECTORIES = frozenset(_OBJECTIVE_DOMAIN_TAGS)
-_MESSER_SOURCE_VALIDATION_TAG = "Source::Messer-v170"
+_OBJECTIVE_SOURCE_VALIDATION_TAGS = {
+    directory: "Source::Messer-v170"
+    for directory, domain_tag in _OBJECTIVE_DOMAIN_TAGS.items()
+    if domain_tag.startswith("A+::220-1201::")
+}
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["1.1-operating-system-types-and-purposes"] = (
+    "Source::Messer-v140"
+)
 _SECTION_REQUIREMENTS = {
     "basic": ("Question", "Answer"),
     "cloze": ("Text",),
@@ -330,7 +339,7 @@ def validate_cards(content_root: Path, repository_root: Path) -> ValidationResul
     cards: list[Card] = []
     errors: list[ValidationIssue] = []
     warnings: list[ValidationIssue] = []
-    ids: dict[str, Path] = {}
+    ids: dict[tuple[str, str], Path] = {}
     objective_names: dict[Path, tuple[str, Path]] = {}
     media_names: dict[str, Path] = {}
     repository_root = repository_root.resolve()
@@ -437,7 +446,7 @@ def _validate_required_metadata(card: Card, errors: list[ValidationIssue]) -> No
 def _validate_identity_and_path(
     card: Card,
     content_root: Path,
-    ids: dict[str, Path],
+    ids: dict[tuple[str, str], Path],
     errors: list[ValidationIssue],
 ) -> None:
     metadata = card.metadata
@@ -452,16 +461,19 @@ def _validate_identity_and_path(
                 f"card id '{card_id}' does not match filename '{card.path.stem}'",
             )
         )
-    if card_id in ids:
+    exam = metadata.get("exam")
+    id_key = (exam if isinstance(exam, str) else "", card_id)
+    if id_key in ids:
         errors.append(
             ValidationIssue(
                 ErrorCode.DUPLICATE_ID,
                 card.path,
-                f"duplicate card id '{card_id}' (first in {ids[card_id]})",
+                f"duplicate card id '{card_id}' for exam '{id_key[0]}' "
+                f"(first in {ids[id_key]})",
             )
         )
     else:
-        ids[card_id] = card.path
+        ids[id_key] = card.path
 
     id_match = _ID.fullmatch(card_id)
     if id_match is None:
@@ -638,11 +650,7 @@ def final_tags_for_card(card: Card) -> list[str]:
     normalized_objective_name = normalize_objective_name(metadata["objective_name"])
     objective_name_tag = f"A+::{metadata['exam']}::{normalized_objective_name}"
     domain_tag = _OBJECTIVE_DOMAIN_TAGS.get(objective_directory)
-    source_validation_tag = (
-        _MESSER_SOURCE_VALIDATION_TAG
-        if objective_directory in _MESSER_VALIDATED_OBJECTIVE_DIRECTORIES
-        else None
-    )
+    source_validation_tag = _OBJECTIVE_SOURCE_VALIDATION_TAGS.get(objective_directory)
     ordered_candidates: list[str | None] = [
         objective_tag,
         domain_tag,
@@ -686,7 +694,7 @@ def _validate_tags(card: Card, errors: list[ValidationIssue]) -> None:
         if _RESERVED_TAG.match(tag) or tag in {
             *_TYPE_TAGS.values(),
             "HighYield",
-            _MESSER_SOURCE_VALIDATION_TAG,
+            *_OBJECTIVE_SOURCE_VALIDATION_TAGS.values(),
         }:
             errors.append(
                 ValidationIssue(

@@ -182,6 +182,22 @@ def test_duplicate_id_detection(tmp_path: Path) -> None:
     assert ErrorCode.DUPLICATE_ID in error_codes(tmp_path)
 
 
+def test_same_objective_card_id_can_repeat_across_exams(tmp_path: Path) -> None:
+    write_card(tmp_path, metadata(), BASIC_BODY)
+    core2_metadata = metadata()
+    core2_metadata["exam"] = "220-1202"
+    core2_metadata["objective_name"] = "Operating System Types and Purposes"
+    write_card(
+        tmp_path,
+        core2_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.1-operating-system-types-and-purposes",
+    )
+
+    assert validate(tmp_path).valid
+
+
 def test_missing_required_metadata(tmp_path: Path) -> None:
     card_metadata = metadata()
     del card_metadata["source"]
@@ -346,6 +362,37 @@ def test_objective_13_domain_and_source_validation_tags_are_generated(
         "Bluetooth",
         "Pairing",
         "Source::Messer-v170",
+    ]
+
+
+def test_core2_objective_11_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata()
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective_name": "Operating System Types and Purposes",
+            "tags": ["OS"],
+            "source": ["Professor Messer 220-1202 v1.40 p.1"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.1-operating-system-types-and-purposes",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.1",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::OperatingSystemTypesandPurposes",
+        "Basic",
+        "HighYield",
+        "OS",
+        "Source::Messer-v140",
     ]
 
 
