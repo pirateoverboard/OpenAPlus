@@ -574,6 +574,38 @@ def test_core2_objective_16_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_17_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.7-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "1.7",
+            "objective_name": "Microsoft Windows Networking Features",
+            "tags": ["WindowsNetworking"],
+            "source": ["Professor Messer 220-1202 v1.40 p.13"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.7-microsoft-windows-networking-features",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.7",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::MicrosoftWindowsNetworkingFeatures",
+        "Basic",
+        "HighYield",
+        "WindowsNetworking",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:

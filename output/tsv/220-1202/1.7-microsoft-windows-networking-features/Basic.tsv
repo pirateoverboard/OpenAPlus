@@ -1,0 +1,88 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.7-B001	"<p>Five office PCs need to share resources without centralized authentication.
+Each PC will maintain its own user accounts. Should the technician configure a
+domain or a workgroup?</p>"		<p>A workgroup.</p>	"<p>Workgroups fit small peer networks because account and device administration
+remains on each computer. A domain is the better match when centralized
+authentication and management are required.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking Workgroup Source::Messer-v140
+1.7-B002	"<p>An organization wants users to authenticate centrally and access managed
+resources from many Windows clients. Should the clients join a domain or a
+workgroup?</p>"		<p>A domain.</p>	"<p>A domain centralizes authentication and device access across a business
+network. Joining it also requires an eligible Windows edition and appropriate
+rights.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking Domain Source::Messer-v140
+1.7-B003	"<p>A user repeatedly accesses a file-server share and wants it to appear in File
+Explorer with a local drive letter. What should the technician configure?</p>"		<p>A mapped network drive.</p>	"<p>Mapping associates a drive letter with a server share and can reconnect it
+automatically. Entering the network path directly reaches the same resource
+without creating the drive-letter association.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, pp. 13 and 15	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking FileSharing MappedDrive Source::Messer-v140
+1.7-B004	"<p>A printer is connected to one Windows PC and must be made available to other
+network users. Which property should the technician configure on the host PC?</p>"		<p>The printer's sharing property.</p>	"<p>Windows shares an existing printer through Printer Properties. Other users can
+then add the shared printer through File Explorer or Windows Settings.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking PrinterSharing Source::Messer-v140
+1.7-B005	"<p>A technician wants to open the <code>Projects</code> share on a server named <code>File01</code>
+directly in File Explorer. What network path should be entered?</p>"		<p><code>\\File01\Projects</code></p>	"<p>A Windows network path identifies the server first and the share second. The
+same path can later be assigned a drive letter if persistent mapped access is
+useful.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking FileSharing NetworkPath Source::Messer-v140
+1.7-B006	"<p>An approved application needs inbound network access, but the Windows firewall
+must remain enabled. What should the technician configure?</p>"		<p>An application or feature exception in Windows Defender Firewall.</p>	"<p>A targeted exception permits the approved application without removing host
+firewall protection for unrelated traffic. Disabling the entire firewall is a
+broader and less secure change.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking Firewall ApplicationException Source::Messer-v140
+1.7-B007	"<p>A Windows client already has allowed-app exceptions, but the current network
+requires the most restrictive inbound setting. Which firewall option ignores
+the exception list?</p>"		<p>Block all incoming connections.</p>	"<p>This setting overrides ordinary allowed-app exceptions for the applicable
+network profile. It is a deliberate restrictive mode, not the normal way to
+permit a trusted application.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking Firewall Source::Messer-v140
+1.7-B008	"<p>No predefined firewall exception matches a required inbound port. Which type
+of Windows Defender Firewall rule gives the technician control over that port?</p>"		<p>A custom rule.</p>	"<p>Predefined exceptions cover common cases. A custom rule is appropriate when
+the technician must explicitly allow or block a port or apply other detailed
+conditions.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking Firewall CustomRule Source::Messer-v140
+1.7-B009	"<p>A Windows client should receive its IP configuration automatically from the
+network. Should the adapter use static addressing or DHCP?</p>"		<p>DHCP.</p>	"<p>DHCP supplies dynamic client configuration automatically. Static configuration
+instead requires the technician to enter the necessary IP parameters.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking DHCP DynamicAddressing Source::Messer-v140
+1.7-B010	"<p>A Windows client must always use specific administrator-provided IP settings
+instead of requesting them automatically. Which addressing method should be
+configured?</p>"		<p>Static addressing.</p>	"<p>Static configuration manually fixes the client's IP parameters. The
+technician must supply correct values for the local network rather than rely on
+DHCP.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking StaticAddressing Source::Messer-v140
+1.7-B011	"<p>A Windows client configured for automatic addressing receives a <code>169.254.x.x</code>
+address and cannot reach the internet. What addressing fallback is the client
+using?</p>"		<p>APIPA.</p>	"<p>Windows uses Automatic Private IP Addressing when it has no static address and
+cannot obtain DHCP configuration. The link-local address may support nearby
+communication but does not provide normal routed connectivity.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking APIPA DHCP Source::Messer-v140
+1.7-B012	"<p>A technician is entering a static IPv4 configuration. Which value tells the
+client which destination addresses are on its local subnet?</p>"		<p>The subnet mask.</p>	"<p>The mask defines the local subnet boundary. The default gateway has a different
+role: it is used when the destination lies outside that local subnet.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking SubnetMask Source::Messer-v140
+1.7-B013	"<p>A Windows client can communicate with hosts on its local subnet but cannot
+reach any off-subnet IP address. Which client setting should be checked?</p>"		<p>The default gateway.</p>	"<p>The default gateway routes traffic beyond the local subnet. Because the
+scenario already confirms local IP communication, the subnet's immediate link
+is working and the gateway setting is the relevant client value.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking DefaultGateway Source::Messer-v140
+1.7-B014	"<p>A Windows client reaches a server by IP address but not by hostname. Which
+client network setting should the technician check?</p>"		<p>The DNS settings.</p>	"<p>Domain Name System settings identify the resolver used to translate names into
+IP addresses. Successful access by IP narrows this scenario to name resolution
+rather than general routing.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking DNS Source::Messer-v140
+1.7-B015	"<p>A mobile Windows client normally uses DHCP, but it needs known static settings
+when connected to a network where DHCP is unavailable. What adapter feature
+should the technician configure?</p>"		<p>An alternate static configuration.</p>	"<p>Alternate Configuration supplies defined fallback values when DHCP cannot be
+reached. Without a configured static fallback, Windows normally uses APIPA.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking AlternateConfiguration DHCP Source::Messer-v140
+1.7-B016	"<p>A remote employee needs to use the built-in Windows client to connect to the
+workplace network with assigned credentials. Which network connection should
+the technician configure?</p>"		<p>A VPN connection.</p>	"<p>Windows includes a VPN client for workplace connections. Depending on the
+organization, authentication may use entered credentials or a smart card.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking VPN Source::Messer-v140
+1.7-B017	"<p>A laptop must connect through a mobile carrier when neither Ethernet nor Wi-Fi
+is the intended access method. Which Windows network connection type applies?</p>"		<p>WWAN, or cellular networking.</p>	"<p>Wireless wide area networking uses compatible cellular hardware and carrier
+service. Provider-specific software and setup can vary, so confirm the adapter
+and service requirements.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 14	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking WWAN Cellular Source::Messer-v140
+1.7-B018	"<p>An organization requires supported client traffic to pass through an
+intermediary address, except for specified internal destinations. Which Windows
+network setting should be configured?</p>"		<p>Proxy settings, including the proxy address and bypass exceptions.</p>	"<p>A proxy changes the path used by supported application traffic. Exceptions
+identify destinations that should bypass it, and not every application or
+protocol necessarily uses the same proxy configuration.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic WindowsNetworking Proxy Source::Messer-v140
+1.7-B019	"<p>A user connects a Windows laptop to untrusted café Wi-Fi and does not need
+local device sharing. Should the technician select the public or private
+network profile?</p>"		<p>The public network profile.</p>	"<p>Public is the restrictive choice for an untrusted network. Private is intended
+for a trusted home or work network where local discovery and sharing are
+needed; firewall behavior can differ by profile.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, pp. 14-15	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking NetworkProfile PublicNetwork Source::Messer-v140
+1.7-B020	"<p>A Windows client is using a usage-billed link. Which connection setting tells
+Windows and supported applications to reduce some background data use?</p>"		<p>Mark the connection as metered.</p>	"<p>Metering is useful for capped, costly, or slow links and can reduce activities
+such as updates or synchronization. It does not correct invalid IP, DNS, or
+gateway settings.</p>"	medium	basic	220-1202 1.7 - Microsoft Windows Networking Features	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.7; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.7 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsNetworkingFeatures Basic HighYield WindowsNetworking MeteredConnection Source::Messer-v140
