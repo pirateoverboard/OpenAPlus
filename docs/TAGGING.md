@@ -51,6 +51,7 @@ scope authority.
 | `1.8-macos-features-and-tools` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.9-linux-features-and-tools` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.10-application-installation-requirements` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
+| `1.11-cloud-based-productivity-tools` | `A+::220-1202::Domain1-OperatingSystems` | `Source::Messer-v140` |
 | `1.3-mobile-device-networks` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-management` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |

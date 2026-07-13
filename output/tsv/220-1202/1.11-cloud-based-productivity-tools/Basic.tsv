@@ -1,0 +1,59 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.11-B001	"<p>An organization wants its email service hosted outside its local data center
+and managed as an online productivity service. Which type of system should be
+configured?</p>"		<p>A cloud email system.</p>	"<h3>Why</h3>
+<p>The mail service resides in the cloud instead of on an email server maintained
+in the organization's local data center. Product names can vary, but that
+service-location distinction is stable.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic HighYield CloudProductivity Email Scenario Source::Messer-v140
+1.11-B002	"<p>A user saves a document on a laptop and needs the updated file to become
+available automatically on the user's other registered devices. Which cloud
+storage feature should be configured?</p>"		<p>File synchronization.</p>	"<h3>Why</h3>
+<p>Synchronization uploads the local change to cloud storage and makes it
+available to the other synchronized devices. Folder settings determine which
+content participates and whether it remains stored locally.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic HighYield CloudProductivity Storage Synchronization Scenario Source::Messer-v140
+1.11-B003	"<p>A laptop has limited local storage. The user needs one project folder available
+offline, while older cloud files can remain available on demand. What should
+the technician configure?</p>"		"<p>Configure the cloud storage folder settings so the project folder is stored
+locally and the older content uses streaming or on-demand access.</p>"	"<h3>Why</h3>
+<p>Folder settings control which content consumes local space. The offline
+requirement identifies what must remain local; the remaining content can stay
+cloud-backed until accessed.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic HighYield CloudProductivity Storage FolderSettings Scenario Source::Messer-v140
+1.11-B004	"<p>Several remote employees need to update the same table of budget values and
+formulas. Which cloud collaboration tool best matches the task?</p>"		<p>A cloud spreadsheet.</p>	"<h3>Why</h3>
+<p>Rows, columns, formulas, and shared numerical data point to a spreadsheet. A
+word processor is better suited to a primarily narrative document.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic CloudProductivity Collaboration Spreadsheets Scenario Source::Messer-v140
+1.11-B005	"<p>A distributed team needs a scheduled live meeting in which remote participants
+can see and hear one another. Which cloud collaboration tool should be used?</p>"		<p>A videoconferencing tool.</p>	"<h3>Exam Trap</h3>
+<p>Instant messaging supports quick text exchanges, but the requirement for a live
+audio-and-video meeting identifies videoconferencing.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic CloudProductivity Collaboration Videoconferencing Scenario Source::Messer-v140
+1.11-B006	"<p>A sales team needs to coauthor a sequence of visual slides for a customer
+briefing. Which cloud collaboration tool best fits this work?</p>"		<p>A cloud presentation tool.</p>	"<h3>Why</h3>
+<p>The required output is a slide-based briefing. Videoconferencing may deliver
+the briefing remotely, but it does not replace the tool used to create the
+slides.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic CloudProductivity Collaboration Presentations Scenario Source::Messer-v140
+1.11-B007	"<p>Two employees need to draft and revise the same text-focused policy document
+from different locations. Which cloud collaboration tool best matches the
+task?</p>"		<p>A cloud word processing tool.</p>	"<h3>Why</h3>
+<p>The output is a narrative document, which makes word processing the appropriate
+category. A spreadsheet is intended for structured rows, columns, and
+calculations.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic CloudProductivity Collaboration WordProcessing Scenario Source::Messer-v140
+1.11-B008	"<p>Remote support staff need quick text conversations and short status updates
+without scheduling a meeting. Which cloud collaboration tool best fits the
+need?</p>"		<p>Instant messaging.</p>	"<h3>Exam Trap</h3>
+<p>Use videoconferencing when the scenario requires a live audio-and-video
+session. Short, near-real-time text exchanges point to instant messaging.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic CloudProductivity Collaboration InstantMessaging Scenario Source::Messer-v140
+1.11-B009	"<p>An administrator creates a new employee in the organization's managed
+directory. The account must then appear automatically in connected cloud
+directories. What should be configured?</p>"		<p>Identity synchronization.</p>	"<h3>Why</h3>
+<p>Identity synchronization propagates directory changes to connected identity
+systems. It reduces duplicate account maintenance, but it does not automatically
+grant every licensed application.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic HighYield CloudProductivity Identity Synchronization Scenario Source::Messer-v140
+1.11-B010	"<p>A new employee's synchronized cloud identity exists, but the employee cannot
+use a subscription productivity application. What configuration should the
+administrator verify next?</p>"		<p>Verify that the required cloud application license is assigned to the user.</p>	"<h3>Exam Trap</h3>
+<p>Identity synchronization creates or updates the cloud account; license
+assignment grants the user's entitlement to the subscription application. One
+can succeed while the other is still missing.</p>"	medium	basic	220-1202 1.11 - Cloud-Based Productivity Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.11; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.11 A+::220-1202::Domain1-OperatingSystems A+::220-1202::CloudBasedProductivityTools Basic HighYield CloudProductivity Licensing Identity Scenario Source::Messer-v140

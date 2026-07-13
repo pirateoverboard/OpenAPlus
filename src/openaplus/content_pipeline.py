@@ -74,6 +74,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "1.10-application-installation-requirements": (
         "A+::220-1202::Domain1-OperatingSystems"
     ),
+    "1.11-cloud-based-productivity-tools": ("A+::220-1202::Domain1-OperatingSystems"),
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -137,6 +138,9 @@ _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.9-linux-features-and-tools"] = (
     "Source::Messer-v140"
 )
 _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.10-application-installation-requirements"] = (
+    "Source::Messer-v140"
+)
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["1.11-cloud-based-productivity-tools"] = (
     "Source::Messer-v140"
 )
 _SECTION_REQUIREMENTS = {
