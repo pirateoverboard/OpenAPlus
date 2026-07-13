@@ -1,0 +1,21 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.9-C001	"<p>Linux registered-user account records are stored in
+{{c1::/etc/passwd}}.</p>"	"<p>The records include account attributes such as user and group IDs, home
+directories, and shells.</p>"	"<p>Keep general account records separate from the password hashes and aging data
+stored in <code>/etc/shadow</code>.</p>"	easy	cloze	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 19	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Cloze Linux Accounts Configuration Source::Messer-v140
+1.9-C002	"<p>Linux password hashes and password-aging information are stored in
+{{c1::/etc/shadow}}.</p>"	<p>The file is distinct from the broader user-account records in <code>/etc/passwd</code>.</p>	"<p>Do not infer from the name <code>/etc/passwd</code> that it stores the password hashes;
+the approved notes associate those hashes with <code>/etc/shadow</code>.</p>"	easy	cloze	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 19	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Cloze HighYield Linux Accounts Configuration Source::Messer-v140
+1.9-C003	"<p>Local Linux hostname-to-address mappings are stored in
+{{c1::/etc/hosts}}.</p>"	<p>A local mapping can supply a name result separately from DNS.</p>	"<p>Do not confuse local mappings with DNS resolver settings in
+<code>/etc/resolv.conf</code>.</p>"	easy	cloze	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 19	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Cloze Linux DNS Configuration Source::Messer-v140
+1.9-C004	"<p>Linux filesystem mount definitions are listed in
+{{c1::/etc/fstab}}.</p>"	"<p>The mount process reads this configuration to make defined filesystems
+available through the directory tree.</p>"	"<p>Think “filesystem table”: the filename <code>fstab</code> points to stored filesystem
+mount definitions.</p>"	easy	cloze	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 19	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Cloze HighYield Linux Filesystems Configuration Source::Messer-v140
+1.9-C005	"<p>Linux DNS resolver configuration is stored in
+{{c1::/etc/resolv.conf}}.</p>"	<p>Incorrect resolver settings can disrupt services that depend on DNS.</p>	"<p><code>/etc/hosts</code> supplies local name mappings; <code>/etc/resolv.conf</code> controls resolver
+details.</p>"	easy	cloze	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 19	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Cloze Linux DNS Configuration Source::Messer-v140

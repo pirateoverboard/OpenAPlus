@@ -1,0 +1,34 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.9-B001	"<p>A file has the correct owner, but that owner needs execute permission. Should
+the technician use <code>chmod</code> or <code>chown</code>?</p>"		<p>Use <code>chmod</code> to change the file's access mode.</p>	"<p><code>chmod</code> controls read, write, and execute permissions. <code>chown</code> changes
+ownership, so it would not address the stated problem.</p>"	medium	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, pp. 19-20	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux Permissions Source::Messer-v140
+1.9-B002	"<p>A technician knows a filename and needs to locate that file in a directory
+tree. Should the technician start with <code>grep</code> or <code>find</code>?</p>"		<p>Use <code>find</code>.</p>	"<p><code>find</code> locates filesystem entries that match criteria such as a name. <code>grep</code>
+searches text for a matching pattern.</p>"	medium	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, pp. 19-20	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic Linux Search Source::Messer-v140
+1.9-B003	"<p>A technician needs elevated rights for one command without remaining in a root
+shell. Should the technician use <code>sudo</code> or <code>su</code>?</p>"		<p>Use <code>sudo</code>.</p>	"<p><code>sudo</code> applies the requested authority to the specified command. <code>su</code> changes
+the shell's user identity until that session is exited.</p>"	medium	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 20	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux Administration Source::Messer-v140
+1.9-B005	"<p>A technician wants a continuously updated view of Linux processes and current
+resource utilization. Should the technician use <code>top</code> or <code>ps</code>?</p>"		<p>Use <code>top</code>.</p>	"<p><code>top</code> provides the live resource view. <code>ps</code> reports process information and
+process IDs as a listing.</p>"	medium	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 21	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux Processes Source::Messer-v140
+1.9-B006	"<p>A filesystem is nearly full. Which command identifies the space consumed by a
+specific directory: <code>df</code> or <code>du</code>?</p>"		<p><code>du</code>.</p>	"<p><code>du</code> reports usage for a file or directory. <code>df</code> reports free space for
+filesystems, so it establishes capacity but does not attribute usage to one
+directory.</p>"	medium	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 21	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux Storage Source::Messer-v140
+1.9-B007	"<p>A technician needs to review configured DNS resolver details, not a local
+hostname override. Which file should be checked?</p>"		<p><code>/etc/resolv.conf</code>.</p>	"<p><code>/etc/hosts</code> stores local name-to-address mappings. <code>/etc/resolv.conf</code> holds
+resolver configuration used for DNS.</p>"	medium	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 19	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux DNS Configuration Source::Messer-v140
+1.9-B008	"<p>Which Linux OS component is run after firmware selects the boot device and then
+starts the operating system?</p>"		<p>The bootloader.</p>	"<p>The bootloader bridges firmware device selection and kernel startup. It is not
+the kernel or the service manager.</p>"	easy	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 18	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic Linux Boot Source::Messer-v140
+1.9-B009	"<p>Which protected core component manages Linux processes and interaction with
+hardware?</p>"		<p>The kernel.</p>	"<p>Applications run outside protected kernel space. The kernel starts system
+processes and mediates access to devices.</p>"	easy	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 18	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux Kernel Source::Messer-v140
+1.9-B010	"<p>Which Linux OS component manages services and important daemons after being
+started by the kernel?</p>"		<p><code>systemd</code>.</p>	"<p><code>systemd</code> is a system and service manager. Keep its service-management role
+separate from the kernel's protected core role.</p>"	easy	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 18	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic Linux systemd Source::Messer-v140
+1.9-B011	<p>What user ID identifies the Linux root account?</p>		<p>User ID 0.</p>	"<p>Root has full system control, including the ability to run commands, modify
+files, and change ownership or permissions.</p>"	easy	basic	220-1202 1.9 - Linux Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.9; Professor Messer 220-1202 v1.40, p. 18	A+::220-1202::1.9 A+::220-1202::Domain1-OperatingSystems A+::220-1202::LinuxFeaturesandTools Basic HighYield Linux Root Administration Source::Messer-v140
