@@ -69,6 +69,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "1.7-microsoft-windows-networking-features": (
         "A+::220-1202::Domain1-OperatingSystems"
     ),
+    "1.8-macos-features-and-tools": "A+::220-1202::Domain1-OperatingSystems",
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -123,6 +124,9 @@ _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.6-microsoft-windows-settings"] = (
     "Source::Messer-v140"
 )
 _OBJECTIVE_SOURCE_VALIDATION_TAGS["1.7-microsoft-windows-networking-features"] = (
+    "Source::Messer-v140"
+)
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["1.8-macos-features-and-tools"] = (
     "Source::Messer-v140"
 )
 _SECTION_REQUIREMENTS = {

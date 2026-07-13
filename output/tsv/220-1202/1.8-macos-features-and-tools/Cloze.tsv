@@ -1,0 +1,13 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.8-C001	<p>In macOS, a <code>.dmg</code> file is a mountable {{c1::disk image}}.</p>	"<p>Finder can mount it like a drive, and Disk Utility can create and manage disk
+images.</p>"	"<p>Do not confuse <code>.dmg</code> with <code>.pkg</code>, which runs an installer, or <code>.app</code>, which is
+an application bundle.</p>"	easy	cloze	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Cloze HighYield macOS FileTypes Source::Messer-v140
+1.8-C002	<p>In macOS, a <code>.pkg</code> file is an {{c1::installer package}}.</p>	"<p>Opening it runs an installation process that can place application components
+on the system.</p>"	"<p>A <code>.pkg</code> runs an installer process. Some applications also include a separate
+uninstall program for removal.</p>"	easy	cloze	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Cloze HighYield macOS FileTypes Source::Messer-v140
+1.8-C003	<p>In macOS, an <code>.app</code> item is an {{c1::application bundle}}.</p>	"<p>It appears as one application in Finder while containing the files needed by
+that application.</p>"	"<p>This bundle design is why many self-contained applications can be removed by
+moving the <code>.app</code> item to the Trash.</p>"	easy	cloze	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Cloze macOS FileTypes Source::Messer-v140

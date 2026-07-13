@@ -1,0 +1,97 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.8-B001	"<p>A technician needs to remove a self-contained macOS application that has no
+dedicated uninstaller. What is the normal removal method?</p>"		<p>Move the application's <code>.app</code> bundle from <code>/Applications</code> to the Trash.</p>	"<p>Many macOS applications are self-contained bundles. Some applications include
+a separate uninstall program; use that program when it is provided.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS Applications Source::Messer-v140
+1.8-B002	"<p>What maintenance advantage does the macOS App Store provide for applications
+obtained through it?</p>"		<p>It provides a centralized place to obtain and update those applications.</p>	"<p>Applications installed from other sources may use a separate update mechanism.
+The App Store should not be assumed to manage every application on the Mac.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS AppStore Source::Messer-v140
+1.8-B003	"<p>Which macOS system folder is the standard shared location for installed
+applications?</p>"		<p><code>/Applications</code></p>	"<p>This location is the usual starting point when launching, inspecting, or
+removing an installed application. <code>/Library</code> holds shared support resources,
+not the application collection itself.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS SystemFolders Source::Messer-v140
+1.8-B004	<p>What is the difference between <code>/Library</code> and <code>~/Library</code> in macOS?</p>		"<p><code>/Library</code> contains support resources shared across the computer, while
+<code>~/Library</code> contains preferences and support data for the current user.</p>"	"<p>The tilde means the current user's home directory, so <code>~/Library</code> resolves to a
+path such as <code>/Users/&lt;username&gt;/Library</code>. The official objective's
+<code>/Users/Library</code> wording is treated as the user-specific Library concept, not
+as a literal shared path.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS SystemFolders Source::Messer-v140
+1.8-B005	"<p>Why should a company use Managed Apple IDs instead of employees' personal
+Apple IDs for organization-assigned applications and content?</p>"		"<p>Managed Apple IDs keep account and content administration under organizational
+control rather than tying company resources to an employee's personal account.</p>"	"<p>Managed Apple IDs can be administered through Apple Business Manager and
+integrated with corporate identity and device-management systems. The key exam
+distinction is personal ownership versus managed organizational control.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 15	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS AppleID Source::Messer-v140
+1.8-B006	"<p>A macOS user needs to recover an earlier version of a file from a configured
+backup destination. Which built-in feature should the technician use?</p>"		<p>Time Machine.</p>	"<p>Time Machine maintains successive backups for restoration and removes the
+oldest retained data as the destination fills. Disk Utility manages storage
+and disk images; it is not the versioned backup-and-restore feature.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, pp. 15-16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS TimeMachine Backup Source::Messer-v140
+1.8-B007	<p>What ongoing maintenance is necessary for antimalware software on a Mac?</p>		<p>Keep the software and its threat signatures updated.</p>	"<p>Protection becomes less effective when detection data is stale. macOS should
+not be treated as immune to malware simply because it has historically faced a
+different threat volume than Windows.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS Antivirus Source::Messer-v140
+1.8-B008	"<p>A widespread macOS security issue needs an urgent fix. Which update mechanism
+is designed for this purpose?</p>"		<p>Rapid Security Response (RSR).</p>	"<p>RSR targets urgent security issues and is managed with automatic-update
+settings. It complements routine operating-system and application patching; it
+does not replace the broader update process.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS RSR Updates Source::Messer-v140
+1.8-B009	"<p>Which macOS settings area is used to arrange multiple monitors and adjust
+resolution, brightness, or color?</p>"		<p>Displays.</p>	"<p>The stable concept is the purpose of the Displays area. Exact interface labels
+and navigation paths may differ between macOS releases.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS Displays Source::Messer-v140
+1.8-B010	"<p>Where in macOS settings would a technician configure a wired or wireless
+interface's IP and DNS values?</p>"		<p>The Network settings area.</p>	"<p>Network settings cover interface-specific configuration, including automatic
+or manual addressing and more detailed options. The card tests the settings
+area, not a version-specific click path.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS NetworkSettings Source::Messer-v140
+1.8-B011	"<p>Which macOS settings area lets a technician add or remove a printer or scanner
+and check its status?</p>"		<p>Printers &amp; Scanners.</p>	"<p>This area also exposes device-specific configuration and sharing options. It is
+the macOS counterpart to managing these peripherals through a central settings
+interface.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS PrintersScanners Source::Messer-v140
+1.8-B012	"<p>A conferencing application cannot use the Mac's camera or microphone. Which
+settings category should the technician check for per-application access?</p>"		<p>Privacy.</p>	"<p>Privacy controls limit access to sensitive data and hardware such as location,
+photos, calendars, cameras, and microphones. Grant only the access required by
+an approved application.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS Privacy Permissions Source::Messer-v140
+1.8-B013	"<p>An approved automation utility must control keyboard and mouse input but macOS
+is blocking that control. Which permission category should the technician
+review?</p>"		<p>Accessibility.</p>	"<p>Accessibility permission can allow broader input or control capabilities than
+ordinary application access. This is distinct from Privacy permissions for
+sensitive data and devices such as photos, cameras, or microphones.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 16	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS Accessibility Permissions Source::Messer-v140
+1.8-B014	"<p>Which macOS feature provides multiple desktops so a user can separate windows
+by task?</p>"		<p>Spaces.</p>	"<p>Spaces are the multiple desktops themselves. Mission Control provides the
+overview used to see running windows and manage or move among those desktops.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS Spaces Source::Messer-v140
+1.8-B015	<p>Which macOS feature displays an overview of open windows and multiple desktops?</p>		<p>Mission Control.</p>	"<p>Mission Control exposes the desktop overview. Spaces names the individual
+multiple desktops, so the two features are related but are not interchangeable.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS MissionControl Source::Messer-v140
+1.8-B016	"<p>A technician needs to inspect securely stored passwords and certificates for a
+macOS user. Which built-in feature manages this information?</p>"		<p>Keychain, accessed through Keychain Access.</p>	"<p>Keychain protects credentials, certificates, secure notes, and similar
+secrets. FileVault has a different scope: it encrypts the Mac's disk rather
+than serving as a credential manager.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS Keychain Credentials Source::Messer-v140
+1.8-B017	"<p>Which macOS feature searches for applications, files, images, and other
+content?</p>"		<p>Spotlight.</p>	"<p>Spotlight's primary task is search. Finder is the file manager used to browse,
+move, rename, or delete items after they are located.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS Spotlight Source::Messer-v140
+1.8-B018	"<p>A user wants supported documents and other data to remain synchronized across
+their Apple devices. Which macOS-integrated service provides this function?</p>"		<p>iCloud.</p>	"<p>iCloud integrates synchronization across macOS, iOS, and iPadOS. iCloud Drive
+is its cloud-file-storage component; Messages and FaceTime provide messaging
+and communication services within the same ecosystem.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS iCloud Source::Messer-v140
+1.8-B019	"<p>Which macOS tool is the primary file manager for browsing, moving, renaming,
+and deleting files?</p>"		<p>Finder.</p>	"<p>Finder also provides access to file servers, remote storage, and related
+resources. Spotlight searches for content, while Finder performs the ongoing
+file-management work.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS Finder Source::Messer-v140
+1.8-B020	<p>What is the primary purpose of the macOS Dock?</p>		"<p>It provides quick access to applications and folders and shows which
+applications are running.</p>"	"<p>The Dock is a launch and status area rather than a file-search tool or a
+multiple-desktop overview. Its placement and visibility can be customized.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS Dock Source::Messer-v140
+1.8-B021	"<p>Which Apple feature family lets a user move work and supported capabilities
+between a Mac and other Apple devices?</p>"		<p>Continuity.</p>	"<p>Continuity supports cross-device workflows such as transferring files,
+forwarding communication, or using capabilities from another device. It is
+coordinated through the Apple ecosystem and iCloud.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS Continuity Source::Messer-v140
+1.8-B022	"<p>A technician needs to inspect a Mac's storage device, modify partition details,
+or create a disk image. Which built-in utility should be used?</p>"		<p>Disk Utility.</p>	"<p>Disk Utility manages disks, filesystems, partitions, and disk images and can
+verify or repair supported filesystems. Time Machine is used for versioned
+backup and restoration, so the tools should not be confused.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS DiskUtility Storage Source::Messer-v140
+1.8-B023	"<p>A company wants data on a lost Mac to remain unreadable without authorized
+startup authentication. Which macOS feature should be enabled?</p>"		<p>FileVault full-disk encryption.</p>	"<p>FileVault protects data at rest across the disk. Keychain instead stores and
+protects credentials, certificates, secure notes, and similar secrets within
+the user's environment.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 17	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS FileVault Encryption Source::Messer-v140
+1.8-B024	"<p>Which macOS application provides command-line access for scripts, file
+management, and system configuration?</p>"		<p>Terminal.</p>	"<p>Terminal exposes a command-line interface to macOS. This objective tests the
+tool's purpose; exact shell commands belong to the task being performed and are
+not duplicated as Objective 1.8 command cards.</p>"	easy	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 18	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic macOS Terminal Source::Messer-v140
+1.8-B025	"<p>A macOS application is unresponsive and needs to be stopped. Which feature
+should the technician use?</p>"		<p>Force Quit the unresponsive application.</p>	"<p>Force Quit stops the selected application from executing and provides a list
+from which the application can be selected.</p>"	medium	basic	220-1202 1.8 - macOS Features and Tools	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.8; Professor Messer 220-1202 v1.40, p. 18	A+::220-1202::1.8 A+::220-1202::Domain1-OperatingSystems A+::220-1202::macOSFeaturesandTools Basic HighYield macOS ForceQuit Source::Messer-v140
