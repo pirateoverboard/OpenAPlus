@@ -1,0 +1,8 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.10-C001	"<p>A 32-bit operating system is commonly limited to approximately
+{{c1::4 GB}} of addressable memory.</p>"	"<p>A 32-bit address space contains 2^32 possible values. Application and OS
+architecture must still be checked separately from the amount of installed RAM.</p>"	"<p>This fact explains a common 32-bit system limitation; it does not mean every
+64-bit application will run merely because a computer has more than 4 GB of RAM.</p>"	easy	cloze	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Cloze HighYield Applications Architecture Memory Source::Messer-v140

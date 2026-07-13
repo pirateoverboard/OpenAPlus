@@ -1,0 +1,65 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.10-B001	"<p>A required application is 64-bit, but the target computer runs a 32-bit
+operating system. Can the application be installed as a compatible solution?</p>"		<p>No. A 64-bit application requires a 64-bit operating system.</p>	"<p>The reverse relationship is different: 64-bit Windows can commonly run 32-bit
+applications. Always compare the application's architecture requirement with
+the installed OS.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic HighYield Applications Compatibility Architecture Source::Messer-v140
+1.10-B002	"<p>An application meets the workstation's CPU and RAM requirements, but its
+publisher does not list the installed operating system as supported. What
+requirement still blocks the installation decision?</p>"		<p>Application-to-OS compatibility.</p>	"<p>Adequate hardware does not establish software compatibility. Confirm the
+supported OS and version before treating the system as ready.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Compatibility Scenario Source::Messer-v140
+1.10-B003	"<p>A 3D application requires a dedicated graphics card, but a laptop has only
+integrated graphics. What requirement is unmet?</p>"		<p>The dedicated-graphics requirement is unmet.</p>	"<p>With integrated graphics, the CPU and GPU are on the same chip, and graphics
+uses system memory. Dedicated, or discrete, graphics uses a separate graphics
+card with its own video memory.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic HighYield Applications Graphics Scenario Source::Messer-v140
+1.10-B004	"<p>Before installing a graphics-intensive application, which graphics-memory
+specification should a technician compare with the application's requirement?</p>"		<p>The graphics card's available VRAM.</p>	"<p>VRAM is video random-access memory used by a dedicated graphics card. Do not
+substitute the computer's total system RAM for a stated VRAM requirement.</p>"	easy	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Graphics VRAM Source::Messer-v140
+1.10-B005	"<p>A workstation has exactly the RAM listed for a new application, but the OS and
+several required applications will run at the same time. What should the
+technician consider before installation?</p>"		"<p>Whether enough RAM remains for the new application after the OS and concurrent
+applications use memory.</p>"	"<p>An application's RAM requirement is above the memory already needed by the OS.
+Insufficient available RAM can cause poor performance or prevent the
+application from operating.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic HighYield Applications Memory Scenario Source::Messer-v140
+1.10-B006	"<p>What should a technician compare when checking whether a workstation meets an
+application's CPU requirement?</p>"		"<p>Compare the installed processor and its processing speed with the application's
+published CPU requirement.</p>"	"<p>CPU demand varies by workload. Use the application's stated requirement rather
+than assuming that any processor with a high clock number is compatible.</p>"	easy	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications CPU Requirements Source::Messer-v140
+1.10-B007	"<p>A specialized application installs successfully but will not operate unless a
+particular USB device is connected. What requirement is this device satisfying?</p>"		<p>An external hardware-token requirement.</p>	"<p>The token authorizes application use. It must remain available to the assigned
+user or system, so token management affects ongoing operation as well as the
+initial installation.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Licensing HardwareToken Source::Messer-v140
+1.10-B008	"<p>An installer fits in the available drive space, but the application will create
+large project files after installation. Which storage requirement should drive
+the readiness decision?</p>"		"<p>The total space needed for the installed application and its ongoing use, not
+just the installer size.</p>"	"<p>Installation media size, installed size, and working-data growth are different.
+The destination needs enough capacity for the application's practical use.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic HighYield Applications Storage Scenario Source::Messer-v140
+1.10-B009	"<p>A technician receives an optical-disc image as one file and the workstation has
+no optical drive. How can the technician expose the installation files to the
+operating system?</p>"		<p>Mount the ISO file so it appears as a separate drive.</p>	"<p>An ISO preserves the contents of optical media in a file. Mounting uses the
+image directly; physical media would instead require a compatible drive or
+port.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Distribution ISO Source::Messer-v140
+1.10-B010	"<p>A technician will use a downloadable application package. Which source should
+be preferred over an unrelated third-party download site?</p>"		"<p>The software publisher's official download or a trusted centralized
+application store.</p>"	"<p>The distribution method is electronic, but the source still matters. An
+unrelated third-party site adds uncertainty that a direct publisher source or
+centralized application store avoids.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 22	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Distribution Download Source::Messer-v140
+1.10-B011	"<p>An organization needs many matching virtual machines with the OS and required
+applications already installed. Which distribution method best fits this goal?</p>"		<p>Image deployment.</p>	"<p>A prepared image installs a complete, consistent system build quickly. It must
+match the target platform; virtual machines simplify this because their
+presented hardware can be identical.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, pp. 22-23	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic HighYield Applications Distribution Imaging Source::Messer-v140
+1.10-B012	"<p>After an application upgrade, one workstation becomes slow and some local files
+are missing. Which installation-impact category do these effects represent?</p>"		<p>Device impact.</p>	"<p>These effects occur on the endpoint itself. Network access, workflow changes,
+and organization-wide downtime belong to separate impact categories.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Impact Device Source::Messer-v140
+1.10-B013	"<p>A newly installed application must reach an internal service and write to a
+shared folder. Which impact category requires review?</p>"		<p>Network impact, including service access and permissions to the share.</p>	"<p>Successful local installation does not prove that network dependencies are
+available. Required access and share permissions must support the application's
+use.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic HighYield Applications Impact Network Source::Messer-v140
+1.10-B014	"<p>An application update changes the steps employees must follow for a
+time-sensitive daily task. Which installation-impact category is this?</p>"		<p>Operational impact.</p>	"<p>Operational impact concerns how work is performed. Even a functioning
+application can disrupt a workflow when its process changes.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Impact Operations Source::Messer-v140
+1.10-B015	"<p>Downtime during an application change would stop a critical process and delay
+other departments that depend on its results. Which impact category is this?</p>"		<p>Business impact.</p>	"<p>Business impact captures consequences to critical processes and downstream
+teams. It is broader than a single device problem or a changed user workflow.</p>"	medium	basic	220-1202 1.10 - Application Installation Requirements	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.10; Professor Messer 220-1202 v1.40, p. 23	A+::220-1202::1.10 A+::220-1202::Domain1-OperatingSystems A+::220-1202::ApplicationInstallationRequirements Basic Applications Impact Business Source::Messer-v140

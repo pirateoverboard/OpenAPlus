@@ -670,6 +670,38 @@ def test_core2_objective_19_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_110_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("1.10-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "1.10",
+            "objective_name": "Application Installation Requirements",
+            "tags": ["Applications"],
+            "source": ["Professor Messer 220-1202 v1.40 p.22"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="1.10-application-installation-requirements",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::1.10",
+        "A+::220-1202::Domain1-OperatingSystems",
+        "A+::220-1202::ApplicationInstallationRequirements",
+        "Basic",
+        "HighYield",
+        "Applications",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
