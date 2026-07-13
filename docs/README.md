@@ -18,6 +18,12 @@ Start with [CONTENT_CREATION_RULES.md](CONTENT_CREATION_RULES.md), then use:
 - [SOURCE_AND_CITATION_RULES.md](SOURCE_AND_CITATION_RULES.md) for evidence;
 - [OBJECTIVE_COMPLETION_CHECKLIST.md](OBJECTIVE_COMPLETION_CHECKLIST.md) for
   acceptance;
+- [agents/independent-reviewer-standard.md](agents/independent-reviewer-standard.md)
+  as the authoritative specialist standard for full independent objective
+  reviews;
+- [OpenAPlus_Review_Prompt_Pack.md](OpenAPlus_Review_Prompt_Pack.md) for the
+  staged maintainer workflow covering omitted-concept review, independent
+  review invocation, blocker verification, and smoke-test recording;
 - [SMOKE_TEST_COMMIT_POLICY.md](SMOKE_TEST_COMMIT_POLICY.md) for committing
   accepted objective changes after a passing smoke test;
 - [CARD_QUALITY_EXAMPLES.md](CARD_QUALITY_EXAMPLES.md) for comparative examples;

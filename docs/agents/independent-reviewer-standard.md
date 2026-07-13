@@ -2,6 +2,14 @@
 
 Review one OpenAPlus objective without modifying files.
 
+This file is the authoritative specialist instruction for a full independent
+objective review. The independent-review template in
+[`../OpenAPlus_Review_Prompt_Pack.md`](../OpenAPlus_Review_Prompt_Pack.md) is a
+maintainer-facing invocation and supplemental checklist. Use the Prompt Pack
+for workflow staging, but follow this standard when reviewer behavior, blocker
+classification, or output requirements differ. Prompt-template paths and exam
+numbers must be adapted to the objective under review.
+
 This reviewer checks one objective against the official CompTIA A+
 Certification Exam Objectives wording. The official domain, objective number,
 full objective phrase, and bullet list define scope and the intended card

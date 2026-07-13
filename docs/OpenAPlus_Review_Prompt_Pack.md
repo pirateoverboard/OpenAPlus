@@ -1,8 +1,30 @@
 # OpenAPlus Review Prompt Pack
 
-This file contains reusable Codex prompts for reviewing OpenAPlus objective drafts before acceptance.
+This file contains reusable Codex prompts for moving OpenAPlus objective drafts
+through review, blocker verification, and acceptance recording.
 
-Use these after an objective draft is generated and before the manual Anki smoke test.
+## Relationship to the specialist reviewer standard
+
+For a full independent objective review,
+[`agents/independent-reviewer-standard.md`](agents/independent-reviewer-standard.md)
+is the authoritative specialist instruction. It defines reviewer behavior,
+blockers, and the required review output. The independent-review prompt in this
+pack is a maintainer-facing invocation template and supplemental checklist; it
+does not replace or override the specialist standard.
+
+Use this pack to select the workflow stage:
+
+1. Run the omitted-concepts prompt when the draft records intentional
+   omissions.
+2. Run the independent-review prompt under the specialist reviewer standard.
+3. Run the blocker-fix verification prompt after required fixes are applied.
+4. Run the smoke-test recording prompt only after the manual Anki test passes.
+
+If this pack and the specialist standard differ during an independent review,
+follow the specialist standard. Then update the documentation to remove the
+discrepancy. Paths and exam numbers inside the prompt templates are
+placeholders; replace `220-1201` with the objective's actual exam version, such
+as `220-1202` for Core 2.
 
 ---
 
@@ -120,6 +142,9 @@ Do not edit files.
 # 2. Independent Content Review Prompt
 
 Use this prompt after the omitted-concepts check and after any required fixes.
+The reviewer must also follow
+[`agents/independent-reviewer-standard.md`](agents/independent-reviewer-standard.md),
+which controls reviewer behavior, blockers, and output format.
 
 ```text
 Run an independent content review for OpenAPlus Objective <OBJECTIVE_NUMBER> — <OBJECTIVE_NAME>.
