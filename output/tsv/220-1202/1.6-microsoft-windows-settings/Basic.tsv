@@ -1,0 +1,107 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+1.6-B001	"<p>A technician needs to change legacy internet security zones and certificate
+settings. Which Control Panel destination should the technician use?</p>"		<p>Internet Options.</p>	"<p>Internet Options groups legacy internet properties such as security, privacy,
+content certificates, connections, programs, and advanced settings. It is not
+the destination for configuring a network adapter itself.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings InternetOptions Source::Messer-v140
+1.6-B002	"<p>A user wants a simple Control Panel view for adding and configuring a printer.
+Which destination best matches the task?</p>"		<p>Devices and Printers.</p>	"<p>Devices and Printers offers a simplified view of connected devices. Device
+Manager is the better match when the task concerns driver or hardware status.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Devices Source::Messer-v140
+1.6-B003	"<p>A technician needs to enable or disable an optional Windows component. Which
+Control Panel destination should the technician use?</p>"		<p>Programs and Features.</p>	"<p>Programs and Features manages installed desktop applications and provides the
+path for turning optional Windows features on or off.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings Applications Source::Messer-v140
+1.6-B004	"<p>A technician wants the Control Panel destination for viewing network adapters
+and changing adapter or sharing settings. Which destination should be opened?</p>"		<p>Network and Sharing Center.</p>	"<p>Network and Sharing Center collects adapter, addressing, and sharing
+configuration. Internet Options instead handles legacy internet properties.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Networking Source::Messer-v140
+1.6-B005	"<p>A technician needs to reach remote-access and system-protection settings from
+Control Panel. Which applet provides those paths?</p>"		<p>System.</p>	"<p>The System applet also presents computer and Windows information. Network and
+Sharing Center is for adapter and sharing configuration, not Remote Desktop or
+system protection.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings System Source::Messer-v140
+1.6-B006	"<p>A support task requires changing the local Windows host-firewall
+configuration. Which Control Panel destination should be used?</p>"		<p>Windows Defender Firewall.</p>	"<p>Windows Defender Firewall is the operating system's local firewall interface.
+It is distinct from Network and Sharing Center, which manages network and
+sharing settings.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Firewall Source::Messer-v140
+1.6-B007	"<p>A user with a compatible desktop mail client needs to manage a local mail
+profile and its data files. Which Control Panel applet should be used?</p>"		<p>Mail.</p>	"<p>The Mail applet appears when a supported mail client is installed and exposes
+local account, profile, and data-file configuration.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Mail Source::Messer-v140
+1.6-B008	"<p>A PC has several speakers and microphones. Which Control Panel destination
+lets the user select devices and adjust input or output levels?</p>"		<p>Sound.</p>	"<p>Sound handles audio input and output devices and their levels. Device Manager
+would be used instead for an audio device's driver or hardware status.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 11	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Audio Source::Messer-v140
+1.6-B009	"<p>A technician needs to change a local account's type, password, or picture in
+Control Panel. Which applet should be opened?</p>"		<p>User Accounts.</p>	"<p>User Accounts manages local account details. Domain accounts are maintained in
+the domain rather than by this local Control Panel applet.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Accounts Source::Messer-v140
+1.6-B010	"<p>A newly connected device is not working, and the technician needs immediate
+hardware status and driver-management options. Which tool should be opened?</p>"		<p>Device Manager.</p>	"<p>Device Manager is the direct destination for hardware and driver status and
+for actions such as enabling, disabling, adding, or removing a device.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings Drivers Source::Messer-v140
+1.6-B011	"<p>Windows searches need to include an additional folder that is not currently
+indexed. Which Control Panel destination should the technician modify?</p>"		<p>Indexing Options.</p>	"<p>Indexing Options controls which locations Windows indexes to speed searches.
+File Explorer search options influence search behavior but do not replace the
+index-location configuration.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Search Source::Messer-v140
+1.6-B012	"<p>A technician must access a folder that File Explorer does not normally
+display. Which settings destination contains the option to show hidden files?</p>"		<p>File Explorer Options, under the View settings.</p>	"<p>The View settings control whether hidden content appears. This is separate
+from showing file extensions, even though both choices are in File Explorer
+Options.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings FileExplorer Source::Messer-v140
+1.6-B013	"<p>Two files have similar names and icons, so a technician needs to see their
+actual filename suffixes. Which File Explorer setting should be changed?</p>"		<p>Disable the option that hides extensions for known file types.</p>	"<p>Showing extensions exposes the suffix used to identify the file type. Showing
+hidden files solves a different visibility problem.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings FileExplorer Source::Messer-v140
+1.6-B014	"<p>A laptop must preserve open work on disk before powering down so the session
+does not depend on continuous memory power. Which power state should be used?</p>"		<p>Hibernate.</p>	"<p>Hibernate saves the session to disk. Sleep keeps the active session in memory
+for a quicker return but continues to require some power.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Power Source::Messer-v140
+1.6-B015	"<p>A user wants a reduced-power state that keeps open applications in memory for
+a quick return. Which power state fits the goal?</p>"		<p>Sleep, also called suspend or standby.</p>	"<p>Sleep retains the working session in memory. Hibernate writes the session to
+disk and is the better choice when maintaining memory power is undesirable.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Power Source::Messer-v140
+1.6-B016	"<p>An administrator wants to switch a laptop between predefined groups of energy
+and performance behavior. Which Power Options feature should be configured?</p>"		<p>Power plans.</p>	"<p>A power plan groups power-usage settings so the system can be tuned for
+different energy or performance goals.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Power Source::Messer-v140
+1.6-B017	"<p>A docked laptop should keep running when its built-in display is closed. Which
+Power Options setting should be changed?</p>"		"<p>Choose what closing the lid does, and set the applicable lid-close action to
+keep the system running.</p>"	"<p>The configurable lid-close action is useful at a docking station, where the
+laptop may need to keep operating with external devices in use.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings Power Source::Messer-v140
+1.6-B018	"<p>A technician is investigating startup behavior and wants to test whether a
+configurable power feature is contributing. Which Power Options feature can be
+disabled during this troubleshooting?</p>"		<p>Fast Startup.</p>	"<p>Fast Startup uses hibernation and can be enabled or disabled while
+troubleshooting startup behavior.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings Startup Source::Messer-v140
+1.6-B019	"<p>A laptop should reduce power use by suspending individual idle USB devices.
+Which advanced power feature provides this behavior?</p>"		<p>USB selective suspend.</p>	"<p>Selective suspend targets individual USB devices instead of putting the whole
+computer into sleep or hibernation.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings USB Source::Messer-v140
+1.6-B020	"<p>A user needs Windows usability changes for the display, keyboard, and mouse.
+Which Control Panel destination groups these accessibility settings?</p>"		<p>Ease of Access.</p>	"<p>Ease of Access groups interaction and accessibility adjustments, including
+options for users who need alternate display, pointer, keyboard, or screen-free
+operation.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Accessibility Source::Messer-v140
+1.6-B021	"<p>A user needs to add a Windows display language and correct automatic clock
+configuration. Which Windows Settings category contains these options?</p>"		<p>Time and Language.</p>	"<p>Time and Language groups clock, regional, and language configuration. Correct
+time is also important for environments that rely on synchronized
+authentication.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Localization Source::Messer-v140
+1.6-B022	"<p>A user wants Windows Update to avoid restarting the PC during normal working
+hours. Which Settings category contains the active-hours configuration?</p>"		<p>Update and Security.</p>	"<p>Update and Security manages operating-system updates. Active hours identify
+the normal use period so update restarts are less disruptive.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Updates Source::Messer-v140
+1.6-B023	"<p>A user wants to change the desktop wallpaper, colors, and lock-screen
+appearance. Which Windows Settings category should be used?</p>"		<p>Personalization.</p>	"<p>Personalization changes how Windows looks and feels. It does not manage user
+identity or sign-in methods; those belong under Accounts.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Personalization Source::Messer-v140
+1.6-B024	"<p>A user wants the modern Windows Settings category for uninstalling an
+installed application. Which category should be opened?</p>"		<p>Apps.</p>	"<p>Apps manages installed applications and optional features in Windows
+Settings. Programs and Features is the related legacy Control Panel
+destination.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Applications Source::Messer-v140
+1.6-B025	"<p>A user wants to review whether Windows shares activity, language, or speech
+data with online services. Which Windows Settings category should be opened?</p>"		<p>Privacy.</p>	"<p>Privacy contains controls for information and activity shared by applications
+or services. Accounts instead manages identity and sign-in configuration.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 12	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Privacy Source::Messer-v140
+1.6-B026	"<p>A user needs to change display scaling, Night light, and notification behavior
+in Windows Settings. Which category contains these options?</p>"		<p>System.</p>	"<p>The System category covers display, audio, and notification settings. The
+legacy System Control Panel applet instead emphasizes computer information and
+paths to remote and protection settings.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings System Source::Messer-v140
+1.6-B027	"<p>A user wants the Windows Settings category for Bluetooth devices, printers,
+mouse behavior, and pen input. Which category should be opened?</p>"		<p>Devices.</p>	"<p>Devices groups peripheral and input configuration in Windows Settings. Device
+Manager remains the better tool for hardware status and drivers.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Devices Source::Messer-v140
+1.6-B028	"<p>A technician needs the Windows Settings category that shows connection status
+and provides network and IP configuration. Which category should be opened?</p>"		<p>Network and Internet.</p>	"<p>Network and Internet is the modern Settings destination for connectivity and
+address configuration. Network and Sharing Center is the related Control Panel
+destination.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic HighYield WindowsSettings Networking Source::Messer-v140
+1.6-B029	"<p>A user needs to configure Xbox Game Bar and related Windows gaming features.
+Which Windows Settings category should be used?</p>"		<p>Gaming.</p>	"<p>Gaming groups Xbox Game Bar and related gaming-network features. It is not the
+destination for graphics display scaling or general notifications.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Gaming Source::Messer-v140
+1.6-B030	"<p>A user wants to change between local and Microsoft account information and
+configure a PIN or security key. Which Windows Settings category should be
+opened?</p>"		<p>Accounts.</p>	"<p>Accounts manages sign-in identity, email integration, and sign-in methods.
+Personalization changes appearance rather than authentication choices.</p>"	medium	basic	220-1202 1.6 - Microsoft Windows Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 1.6; Professor Messer 220-1202 v1.40, p. 13	A+::220-1202::1.6 A+::220-1202::Domain1-OperatingSystems A+::220-1202::MicrosoftWindowsSettings Basic WindowsSettings Accounts Source::Messer-v140
