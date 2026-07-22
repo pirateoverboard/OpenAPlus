@@ -1,0 +1,88 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.11-B001	"<p>A technician needs a new browser installer. Which download approach best
+reduces the risk of receiving a substituted malicious installer?</p>"		"<p>Go directly to the browser publisher's official site or another
+organization-approved trusted source.</p>"	"<p>An unfamiliar third-party site or an untrusted message link can deliver a
+different file than the legitimate publisher intended. Source trust is the
+first decision; a later integrity check does not make an unknown publisher
+trustworthy.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity SoftwareSources Downloads Source::Messer-v140
+2.11-B002	"<p>A browser publisher lists a hash for its installer. How should a technician use
+that value after downloading the file?</p>"		"<p>Calculate the downloaded file's hash and compare it with the publisher's known
+hash. The values should match.</p>"	"<p>The comparison checks whether the downloaded bytes match the version
+represented by the publisher. It complements—but does not replace—the decision
+to obtain software from a trusted source.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Hashing FileIntegrity Source::Messer-v140
+2.11-B003	"<p>A browser is several releases behind and is missing available security fixes.
+Which configuration action addresses this risk?</p>"		"<p>Update the browser to a current supported release through its trusted update
+mechanism.</p>"	"<p>The updater may be integrated with the operating system or built into the
+browser. The durable security decision is to apply browser patches rather than
+memorize a vendor-specific menu path.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Patching Updates Source::Messer-v140
+2.11-B004	"<p>A user needs an approved browser extension. From where should the extension be
+installed?</p>"		"<p>Use the browser's official extension catalog or another organization-approved,
+known-good source.</p>"	"<p>Extensions execute within a browser that handles sensitive sessions and data.
+An official catalog improves source accountability, although installed add-ons
+should still be limited to those that are needed and approved.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Extensions SoftwareSources Source::Messer-v140
+2.11-B005	"<p>A browser contains an unfamiliar extension that was not approved or
+intentionally installed. What should the technician do in browser feature
+management?</p>"		<p>Disable the extension.</p>	"<p>Unexpected add-ons can be installed by unwanted software and may gain access
+to browser activity. Disabling an untrusted component reduces the active
+browser attack surface.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, pp. 47-48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Extensions FeatureManagement Source::Messer-v140
+2.11-B006	"<p>A user needs a different strong password for each website without memorizing
+every credential. Which browser-related security tool fits this requirement?</p>"		<p>A password manager with an encrypted credential vault.</p>	"<p>The manager centralizes protected credential storage while supporting unique
+passwords across sites. This is more secure than solving the memory problem by
+reusing one password.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity PasswordManagers Credentials Source::Messer-v140
+2.11-B007	"<p>A browser reports a certificate warning for a secure site. Which three
+certificate details should be checked before trusting the connection?</p>"		"<p>Check that the certificate:</p>
+<ol>
+<li>matches the requested domain,</li>
+<li>is within its valid date range, and</li>
+<li>is signed through a trusted certificate authority.</li>
+</ol>"	"<p>Encryption alone does not establish the site's identity. A mismatch in any of
+these checks explains why the browser cannot validate the certificate as
+expected.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Certificates HTTPS Source::Messer-v140
+2.11-B008	"<p>A workstation's clock was reset to the wrong date. Secure sites now report that
+their certificates are outside their validity periods. Which local setting
+should be corrected?</p>"		<p>Check and correct the computer's date and time.</p>	"<p>Certificate validation compares a certificate's validity period with the local
+clock. A clock that is far ahead or behind can make valid certificates appear
+expired or not yet valid.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Certificates SystemTime Source::Messer-v140
+2.11-B009	"<p>A trusted business site requires a pop-up for one legitimate workflow. How
+should the browser be configured without allowing pop-ups from every site?</p>"		"<p>Keep the pop-up blocker enabled and allow a narrow exception for the trusted
+site.</p>"	"<p>Browser pop-up controls can block or allow by site. A scoped exception meets
+the stated need while preserving the broader protection.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity Popups SiteExceptions Source::Messer-v140
+2.11-B010	"<p>A browser profile must no longer retain its history, download list, or saved
+website credentials. Which browser action addresses those stored categories?</p>"		<p>Clear the browsing data and select those categories for removal.</p>	"<p>Clearing browsing data is broader than clearing only cached website resources.
+The selected categories matter because browsers can retain several distinct
+types of local information.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity BrowsingData Privacy Source::Messer-v140
+2.11-B011	"<p>A site loads an outdated or incomplete local copy of its content while the
+current site works on another device. Which browser data should be cleared?</p>"		<p>Clear the browser cache.</p>	"<p>The cache stores local copies of website resources. Removing those copies lets
+the browser retrieve fresh content without unnecessarily erasing every other
+browsing-data category.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity Cache WebContent Source::Messer-v140
+2.11-B012	"<p>A user needs a browser session that will discard its normal local history,
+download list, and cached session information when closed. Which mode should
+the user select?</p>"		<p>Private-browsing mode.</p>	"<p>This mode addresses what the browser retains from that local session. It does
+not replace browser patching, certificate validation, or the need to obtain
+software from trusted sources.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity PrivateBrowsing Privacy Source::Messer-v140
+2.11-B013	"<p>A user wants the same browser favorites, history, extensions, and settings on
+their computer, tablet, and phone. Which browser feature should be configured?</p>"		"<p>Sign in to the browser and enable browser-data synchronization for the intended
+categories.</p>"	"<p>Synchronization deliberately shares selected browser data across the signed-in
+user's devices. Do not enable it on a device or account where that sharing is
+not intended.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity BrowserSync Privacy Source::Messer-v140
+2.11-B014	"<p>A user wants the browser to reduce displayed advertising. Which browser
+control matches that requirement?</p>"		<p>Enable an ad blocker at an appropriate security level.</p>	"<p>Ad blocking is imperfect because a browser may not recognize every
+advertisement, and the control is not always available. When supported, its
+security level can be adjusted for the required amount of blocking.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity AdBlocking Privacy Source::Messer-v140
+2.11-B015	"<p>An organization requires browsers to send web requests through an explicit
+proxy. Which connection details must be configured for the browser?</p>"		<p>Configure the proxy server's address and port.</p>	"<p>An explicit proxy requires client configuration so the browser knows where to
+send requests. A transparent proxy works without those browser-specific
+settings.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity Proxy NetworkConfiguration Source::Messer-v140
+2.11-B016	"<p>An organization requires browser name lookups to use encrypted HTTPS transport
+instead of ordinary plaintext DNS. Which browser security setting should be
+enabled?</p>"		"<p>Enable secure DNS, such as DNS over HTTPS (DoH), using a DNS service that
+supports it.</p>"	"<p>Secure DNS encrypts the lookup path between the client and the compatible DNS
+provider. It protects the DNS request from ordinary plaintext observation; it
+is separate from the HTTPS connection to the destination website.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic HighYield BrowserSecurity SecureDNS DoH Source::Messer-v140
+2.11-B017	"<p>An approved browser extension remains installed, but its expected feature is
+no longer available. Which browser setting should be checked?</p>"		<p>Check browser feature management to confirm that the extension is enabled.</p>	"<p>Installed and enabled are separate states. This decision differs from trusting
+a new extension source: here the component is already approved, and the task is
+to verify its current state.</p>"	medium	basic	220-1202 2.11 - Browser Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.11; Professor Messer 220-1202 v1.40, p. 48	A+::220-1202::2.11 A+::220-1202::Domain2-Security A+::220-1202::BrowserSecuritySettings Basic BrowserSecurity FeatureManagement Extensions Source::Messer-v140
