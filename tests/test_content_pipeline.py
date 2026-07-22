@@ -766,6 +766,38 @@ def test_core2_objective_21_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_22_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("2.2-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "2.2",
+            "objective_name": "Windows OS Security Settings",
+            "tags": ["WindowsSecurity"],
+            "source": ["Professor Messer 220-1202 v1.40 p.28"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="2.2-windows-os-security-settings",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::2.2",
+        "A+::220-1202::Domain2-Security",
+        "A+::220-1202::WindowsOSSecuritySettings",
+        "Basic",
+        "HighYield",
+        "WindowsSecurity",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:

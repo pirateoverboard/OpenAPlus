@@ -1,0 +1,116 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.2-B001	"<p>A trusted application stops working while Microsoft Defender real-time
+protection is active. What is a safe way to test whether Defender is involved?</p>"		"<p>Temporarily deactivate real-time protection, perform the controlled test, and
+reactivate protection immediately afterward.</p>"	"<p>Disabling antivirus increases exposure. It is a short diagnostic step, not a
+lasting compatibility fix.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Defender Antivirus Scenario Source::Messer-v140
+2.2-B002	"<p>Microsoft Defender is active, but its threat definitions are outdated. What
+security action should a technician take?</p>"		<p>Check for and install the latest virus and threat protection updates.</p>	"<p>Real-time scanning and current definitions solve different parts of the
+problem: scanning must be active, and its known-threat information must also be
+kept current.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Defender Antivirus Updates Source::Messer-v140
+2.2-B003	"<p>A connection works only while Windows Firewall is disabled. After confirming
+the firewall is involved, what should the technician do instead of leaving it
+disabled?</p>"		"<p>Re-enable the firewall and configure the narrow rule or exception required for
+the connection on the appropriate network profile.</p>"	"<p>Temporary deactivation can isolate a cause. A targeted rule restores the
+needed traffic while retaining protection for unrelated traffic.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Firewall NetworkProfiles Scenario Source::Messer-v140
+2.2-B004	"<p>A Windows host must accept inbound traffic identified by one required TCP
+port. Which firewall control should be configured?</p>"		<p>Create an inbound port rule for the required TCP port.</p>	"<p>A port rule scopes the exception to the stated protocol and port. Opening more
+ports or disabling the firewall would expose unrelated services.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Firewall Ports Scenario Source::Messer-v140
+2.2-B005	"<p>Only one approved Windows program should receive a firewall exception. Which
+type of firewall rule best matches that requirement?</p>"		<p>An application rule that permits the approved program.</p>	"<p>An application rule follows the program requirement. A broad port exception
+could also permit unrelated software using that port.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Firewall Applications Scenario Source::Messer-v140
+2.2-B006	"<p>A user wants one Windows sign-in connected to Microsoft services with supported
+settings synchronized across devices. Should the user choose a local account
+or a Microsoft account?</p>"		<p>A Microsoft account.</p>	"<p>A local account belongs to one device. A Microsoft account can integrate cloud
+services and synchronize supported settings; neither choice by itself defines
+whether the account has administrator rights.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic Accounts MicrosoftAccount LocalAccount Source::Messer-v140
+2.2-B007	"<p>An employee needs to use ordinary applications but should not make protected
+operating-system changes. Which Windows account type should be assigned?</p>"		<p>A standard user account.</p>	"<p>Routine work should use standard privilege. A specific administrative task can
+be elevated separately without giving every process unrestricted rights.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Accounts StandardUser LeastPrivilege Source::Messer-v140
+2.2-B008	"<p>An application installer must add a Windows service and modify protected system
+files. Which level of access does the installation require?</p>"		<p>Administrator access.</p>	"<p>Installing a service and changing protected system files are privileged tasks.
+The user can keep a standard session and elevate only the installer.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, pp. 28–29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Accounts Administrator Scenario Source::Messer-v140
+2.2-B009	"<p>A public-use Windows computer needs a temporary account with very limited local
+access. Which built-in account type best fits?</p>"		<p>The Guest account.</p>	"<p>Guest access is deliberately limited. It is a poor fit for a named employee
+who needs persistent settings or normal organizational access.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic Accounts Guest Scenario Source::Messer-v140
+2.2-B010	"<p>On a current Windows system, should the legacy Power Users group be treated as
+a reliable privilege level between standard user and administrator?</p>"		"<p>No. Its former elevated permissions were removed, so it is effectively similar
+to a standard user on current Windows versions.</p>"	"<p>The group name is a historical trap. Do not select it when a task actually
+requires administrative elevation.</p>"	easy	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic Accounts PowerUsers Legacy Source::Messer-v140
+2.2-B011	"<p>A user wants a short sign-in code associated with the local Windows device
+instead of typing the account password. Which log-in option fits?</p>"		<p>A personal identification number (PIN).</p>	"<p>The device association distinguishes this PIN use from entering the account's
+reusable username-and-password credentials.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic Authentication PIN Passwords Source::Messer-v140
+2.2-B012	"<p>A Windows sign-in must verify an inherent physical characteristic rather than
+something the user types. Which two biometric sign-in options listed in
+Objective 2.2 meet that requirement?</p>"		<p>Fingerprint recognition or facial recognition.</p>	"<p>Both are biometric options. A PIN is something the user knows, even when it is
+used through Windows Hello.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic Authentication Biometrics WindowsHello Source::Messer-v140
+2.2-B013	"<p>A domain user should authenticate once and then reach permitted network
+resources without entering credentials separately for each resource. Which
+log-in capability provides this experience?</p>"		<p>Single sign-on (SSO).</p>	"<p>SSO reduces repeated authentication prompts. It does not grant access beyond
+the permissions assigned to the user's identity.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Authentication SSO Domain Source::Messer-v140
+2.2-B014	"<p>An organization wants Windows users to sign in with facial recognition, a
+security key, or another Windows Hello method instead of a password. What
+authentication approach is it configuring?</p>"		<p>Passwordless authentication through Windows Hello.</p>	"<p>Passwordless describes the sign-in path, not unrestricted access. Windows
+still applies identity and authorization policy, and another factor or recovery
+method may exist.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 28	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Authentication Passwordless WindowsHello Source::Messer-v140
+2.2-B015	"<p>Which Windows permission layer applies to a file both when it is opened locally
+and when it is reached through a network share?</p>"		<p>NTFS permissions.</p>	"<p>Share permissions apply only across the network. A network request can be
+limited by both share and NTFS permissions, while local access is not governed
+by share permissions.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Permissions NTFS Shares Source::Messer-v140
+2.2-B016	"<p>A user has NTFS permission to read a folder locally but is denied by the
+folder's share permissions. What access will the user have through the network
+share?</p>"		"<p>No access; the most restrictive applicable permission wins, and deny takes
+priority over allow.</p>"	"<p>Remote access evaluates both permission layers. A permissive NTFS entry cannot
+override a restrictive share result.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Permissions NTFS Shares Scenario Source::Messer-v140
+2.2-B017	"<p>An administrator wants a parent folder's NTFS permission settings to propagate
+to its child folders and files. Which permission behavior should be used?</p>"		<p>Permission inheritance.</p>	"<p>Inherited entries come from the parent. An explicit permission set directly on
+a child object takes precedence over an inherited entry.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Permissions Inheritance NTFS Source::Messer-v140
+2.2-B018	"<p>A technician is signed in to Windows and needs one management application to
+edit protected system files. How should the application be launched?</p>"		<p>Use <strong>Run as administrator</strong> to launch that application with elevated rights.</p>	"<p>Membership in Administrators does not make every process elevated by default.
+Elevating the required program preserves standard privilege for routine work.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Elevation RunAsAdministrator LeastPrivilege Source::Messer-v140
+2.2-B019	"<p>Which Windows security feature presents a consent or credential boundary before
+software receives administrative access?</p>"		<p>User Account Control (UAC).</p>	"<p>UAC limits silent elevation. Its secure desktop also makes it harder for
+another process to automate interaction with the elevation prompt.</p>"	easy	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield UAC Elevation WindowsSecurity Source::Messer-v140
+2.2-B020	"<p>Company laptops must keep the entire internal volume, including the operating
+system and user data, unreadable if a drive is removed. Which Windows feature
+should be configured?</p>"		<p>BitLocker.</p>	"<p>BitLocker protects a whole volume. A sign-in control alone would not protect
+the data after the physical drive is attached to another computer.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Encryption BitLocker Scenario Source::Messer-v140
+2.2-B021	"<p>An organization must encrypt an entire removable USB flash drive using a
+Windows volume-encryption feature. Which feature should it use?</p>"		<p>BitLocker To Go.</p>	"<p>BitLocker To Go is the removable-volume form of BitLocker. EFS instead protects
+selected files or folders on NTFS.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Encryption BitLockerToGo RemovableMedia Source::Messer-v140
+2.2-B022	"<p>A user needs to encrypt only selected files and folders on an NTFS volume,
+without encrypting the whole volume. Which Windows feature fits?</p>"		<p>Encrypting File System (EFS).</p>	"<p>EFS works at the file-system object level. BitLocker is the choice when the
+entire volume must be encrypted.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield Encryption EFS NTFS Source::Messer-v140
+2.2-B023	"<p>A new Windows computer must use centrally managed domain authentication and
+receive domain management. What Active Directory action is required?</p>"		<p>Join the computer to the Active Directory domain.</p>	"<p>Joining establishes the computer as a domain participant. A workgroup device
+remains independently managed even if it can reach resources on the network.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 29	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield ActiveDirectory Domain CentralizedManagement Source::Messer-v140
+2.2-B024	"<p>An administrator wants a defined sequence of tasks to run automatically when
+members of a department sign in. Which Active Directory setting should be
+assigned?</p>"		"<p>A log-in script assigned through Group Policy to the appropriate users, group,
+or organizational unit.</p>"	"<p>The script performs sign-in automation. Group Policy provides the assignment
+mechanism and scope.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic ActiveDirectory LoginScripts Automation Source::Messer-v140
+2.2-B025	"<p>An administrator wants to organize Active Directory users and computers by
+department so policy can be applied to that hierarchy. What should be created?</p>"		<p>Organizational units (OUs).</p>	"<p>OUs provide an administrative hierarchy and policy scope. Security groups are
+better suited to assigning permissions based on membership.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic ActiveDirectory OrganizationalUnits GroupPolicy Source::Messer-v140
+2.2-B026	"<p>A computer object belongs under a different departmental OU. In Active
+Directory Users and Computers, what should the administrator do?</p>"		<p>Move the computer object to the target organizational unit.</p>	"<p>Moving the object changes its place in the administrative hierarchy and can
+change which OU-scoped policies apply. It does not copy or recreate the
+computer account.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic ActiveDirectory OrganizationalUnits ADUC Source::Messer-v140
+2.2-B027	"<p>Each domain user needs an assigned personal network location that administrators
+can manage and back up centrally. What should be assigned to the user profile?</p>"		<p>A network home folder.</p>	"<p>A home folder is the user's assigned network storage location. Folder
+redirection instead changes the storage location of known Windows folders such
+as Documents or Desktop.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic ActiveDirectory HomeFolders Storage Source::Messer-v140
+2.2-B028	"<p>An administrator must enforce a password security requirement for domain users
+from a central policy. Which Active Directory feature should be applied?</p>"		<p>Group Policy.</p>	"<p>Group Policy centrally configures user and computer settings. A log-in script
+runs after sign-in and is not the control that enforces an authentication rule.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield ActiveDirectory GroupPolicy PasswordPolicy Source::Messer-v140
+2.2-B029	"<p>Many users need the same access to a network resource, and membership will
+change over time. What is the efficient Active Directory permission approach?</p>"		"<p>Assign the resource permissions to a security group, then add or remove users
+from that group.</p>"	"<p>Group-based assignment avoids repeatedly editing the resource permissions for
+individual users. OU placement organizes and scopes policy; it is not a
+substitute for the security group permission assignment.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield ActiveDirectory SecurityGroups Permissions Source::Messer-v140
+2.2-B030	"<p>An organization wants each user's Documents folder to store its contents on a
+network share while keeping the familiar Documents path. What should be
+configured?</p>"		<p>Folder redirection through Group Policy.</p>	"<p>Folder redirection changes the backing location of a known Windows folder. A
+home folder is a separately assigned personal network location.</p>"	medium	basic	220-1202 2.2 - Windows OS Security Settings	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.2; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.2 A+::220-1202::Domain2-Security A+::220-1202::WindowsOSSecuritySettings Basic HighYield ActiveDirectory FolderRedirection GroupPolicy Source::Messer-v140
