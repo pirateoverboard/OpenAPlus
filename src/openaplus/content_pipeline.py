@@ -88,6 +88,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "2.7-workstation-security-and-hardening": "A+::220-1202::Domain2-Security",
     "2.8-mobile-device-security": "A+::220-1202::Domain2-Security",
     "2.9-data-destruction-and-disposal": "A+::220-1202::Domain2-Security",
+    "2.10-securing-a-soho-network": "A+::220-1202::Domain2-Security",
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -179,6 +180,9 @@ _OBJECTIVE_SOURCE_VALIDATION_TAGS["2.7-workstation-security-and-hardening"] = (
 )
 _OBJECTIVE_SOURCE_VALIDATION_TAGS["2.8-mobile-device-security"] = "Source::Messer-v140"
 _OBJECTIVE_SOURCE_VALIDATION_TAGS["2.9-data-destruction-and-disposal"] = (
+    "Source::Messer-v140"
+)
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["2.10-securing-a-soho-network"] = (
     "Source::Messer-v140"
 )
 _SECTION_REQUIREMENTS = {

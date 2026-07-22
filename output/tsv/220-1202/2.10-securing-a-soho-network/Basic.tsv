@@ -1,0 +1,61 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.10-B001	"<p>A newly installed SOHO router still uses its factory administrator
+credentials. Which security setting should be changed?</p>"		<p>Change the default administrator password to a strong password.</p>	"<p>Default router credentials are easy to obtain, and administrator access allows
+configuration changes. This protects the management account; it does not by
+itself control which clients may join the network.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield RouterSecurity Credentials Management Source::Messer-v140
+2.10-B002	"<p>A SOHO administrator must block traffic associated with one specific IP
+address while leaving other addresses allowed. Which router setting matches
+the requirement?</p>"		<p>An IP filtering deny rule for that address.</p>	"<p>IP filtering makes allow-or-deny decisions using addresses or address ranges.
+Content filtering is the nearby alternative when the requirement concerns a
+URL or category within the traffic instead.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic IPFiltering AccessControl Scenario Source::Messer-v140
+2.10-B003	"<p>A router manufacturer releases firmware that corrects a security flaw. What
+should the administrator do to apply that protection?</p>"		<p>Update the router to the current supported firmware.</p>	"<p>SOHO appliances commonly receive fixes through manufacturer firmware. Keeping
+firmware current applies security patches as well as other supported fixes and
+improvements.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield Firmware PatchManagement RouterSecurity Source::Messer-v140
+2.10-B004	"<p>A small office wants its router to block websites in an inappropriate-content
+category. Which setting should it configure?</p>"		<p>Content filtering.</p>	"<p>Content filtering can act on URLs or website categories. IP filtering instead
+fits a requirement stated in terms of specific network addresses or ranges.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic ContentFiltering WebSecurity Scenario Source::Messer-v140
+2.10-B005	"<p>A router is mounted where visitors can reach its cables and reset controls.
+What physical security change should the administrator make?</p>"		<p>Move or secure the router in a location accessible only to authorized people.</p>	"<p>Physical access can bypass or disrupt logical settings. Placement should also
+preserve useful wireless coverage and allow authorized maintenance, so it
+should be planned rather than merely made inconvenient.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic PhysicalSecurity NetworkEquipment Placement Source::Messer-v140
+2.10-B006	"<p>Applications on a SOHO network are automatically opening inbound router ports
+without administrator approval. Which feature should be disabled unless a
+required application needs it?</p>"		<p>Universal Plug and Play (UPnP).</p>	"<p>UPnP supports zero-configuration discovery and lets internal applications
+request inbound openings. Disabling it restores deliberate administrator
+control over that exposure.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield UPnP PortSecurity RouterSecurity Source::Messer-v140
+2.10-B007	"<p>A small office must host a public service while adding separation between that
+service and its internal systems. Where should it place the public resource?</p>"		<p>In a screened subnet.</p>	"<p>A screened subnet is positioned between the Internet and the internal network
+for public-facing resources. It is the current term for what was commonly
+called a DMZ in this network design.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield ScreenedSubnet Segmentation PublicServices Source::Messer-v140
+2.10-B008	"<p>A SOHO router needs administration only from inside the local network. Which
+management-access change best matches that requirement?</p>"		<p>Disable remote management and allow management only from the local network.</p>	"<p>Limiting where administrative sessions can originate reduces exposure of the
+management interface. Strong credentials and an additional factor, if
+available, protect the account itself and complement the location restriction.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield ManagementAccess RemoteAccess RouterSecurity Source::Messer-v140
+2.10-B009	"<p>A new access point broadcasts a factory SSID that reveals its brand. What
+wireless setting should the administrator change?</p>"		<p>Replace the default SSID with a less obvious network name.</p>	"<p>The service set identifier is the wireless network name. Changing an obvious
+default avoids advertising a factory name, but the new name still needs real
+authentication and encryption protections.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic SSID WirelessSecurity Configuration Source::Messer-v140
+2.10-B010	"<p>An administrator disables SSID broadcast. What security result should the
+administrator expect?</p>"		"<p>The network name disappears from ordinary discovery lists, but wireless
+analysis can still identify it.</p>"	"<p>SSID suppression provides obscurity rather than strong access control. It does
+not replace WPA2 or WPA3 encryption and authentication.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 46	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield SSID WirelessSecurity Discovery Source::Messer-v140
+2.10-B011	"<p>A SOHO wireless network uses one shared credential and must not remain open.
+Which encryption configuration should the administrator choose?</p>"		<p>WPA2-Personal or WPA3-Personal with a pre-shared key.</p>	"<p>Personal mode fits a shared-key SOHO requirement. Enterprise mode instead
+authenticates users individually through an authentication service and is a
+different deployment model.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, pp. 46-47	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield WPA2 WPA3 Encryption WirelessSecurity Source::Messer-v140
+2.10-B012	"<p>A SOHO router has guest wireless access enabled by default, but the business
+does not provide guest access. What should the administrator do?</p>"		<p>Disable the guest network.</p>	"<p>An unneeded guest network creates unnecessary access. If guest access is
+actually required, it should be deliberately configured and protected with
+WPA2 or WPA3 rather than left open.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield GuestNetwork WPA2 WPA3 WirelessSecurity Source::Messer-v140
+2.10-B013	"<p>Several active network jacks in a public conference room are not needed. What
+should the administrator do with their switch ports?</p>"		<p>Administratively disable the unused ports.</p>	"<p>An enabled jack is a connection point even when no approved device currently
+uses it. Disabling the associated port removes that access until an
+administrator deliberately enables it again.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield PortSecurity WiredSecurity PhysicalPorts Source::Messer-v140
+2.10-B014	"<p>An internal service must accept connections sent to a specific port on the
+SOHO router's public address. Which firewall setting provides that mapping?</p>"		<p>Port forwarding (port mapping).</p>	"<p>The rule persistently maps an external IP address and port to an internal IP
+address and port. The two port numbers can differ, so the required mapping
+should be stated and configured deliberately.</p>"	medium	basic	220-1202 2.10 - Securing a SOHO Network	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.10; Professor Messer 220-1202 v1.40, p. 47	A+::220-1202::2.10 A+::220-1202::Domain2-Security A+::220-1202::SecuringaSOHONetwork Basic HighYield PortForwarding Firewall NAT PublicServices Source::Messer-v140

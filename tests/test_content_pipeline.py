@@ -1022,6 +1022,38 @@ def test_core2_objective_29_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_210_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("2.10-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "2.10",
+            "objective_name": "Securing a SOHO Network",
+            "tags": ["RouterSecurity"],
+            "source": ["Professor Messer 220-1202 v1.40 pp.46-47"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="2.10-securing-a-soho-network",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::2.10",
+        "A+::220-1202::Domain2-Security",
+        "A+::220-1202::SecuringaSOHONetwork",
+        "Basic",
+        "HighYield",
+        "RouterSecurity",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
