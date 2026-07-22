@@ -1,0 +1,76 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.7-B001	"<p>A company is concerned that someone could read a laptop's storage after
+stealing the device. Which workstation security option directly addresses
+this risk?</p>"		<p>Data-at-rest encryption, such as full-disk encryption.</p>	"<p>Authentication controls normal sign-in, but drive encryption protects stored
+data even when an attacker has physical possession of the storage device.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield Encryption DataAtRest Scenario Source::Messer-v140
+2.7-B002	"<p>A password policy already permits several character types, but users still
+choose very short passwords. Which password consideration should be strengthened?</p>"		<p>Password length.</p>	"<p>Character variety does not compensate for a password that is too short. A
+longer password or passphrase increases the work required to guess it.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield Passwords Length Scenario Source::Messer-v140
+2.7-B003	<p>Why can requiring varied character types improve password complexity?</p>		"<p>It broadens the possible password combinations and discourages simple,
+single-pattern choices.</p>"	"<p>Character types are one part of complexity. Length and unpredictability still
+matter; a familiar word with a predictable symbol added is not strong merely
+because it satisfies a category rule.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield Passwords Complexity CharacterTypes Source::Messer-v140
+2.7-B004	"<p>One employee uses the same strong password for several services. Which
+password consideration is missing?</p>"		<p>Password uniqueness.</p>	"<p>A password can meet length and complexity rules yet still create risk through
+reuse. Unique passwords keep one compromised service from exposing the same
+credential elsewhere.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield Passwords Uniqueness Scenario Source::Messer-v140
+2.7-B005	"<p>Which password-policy consideration determines how long a password remains
+valid before it must be changed?</p>"		<p>Password expiration.</p>	"<p>Password expiration changes the credential on an otherwise active account.
+Account expiration instead disables the account at a specified date.</p>"	easy	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic Passwords Expiration Policy Source::Messer-v140
+2.7-B006	"<p>Which BIOS/UEFI password type should be configured to prevent unauthorized
+changes to firmware settings?</p>"		<p>The firmware supervisor or administrator password.</p>	"<p>This password protects configuration access. A firmware user password instead
+requires authentication before booting the computer.</p>"	easy	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic BIOS UEFI Firmware Source::Messer-v140
+2.7-B007	"<p>Which BIOS/UEFI password type requires authentication before the workstation
+can boot?</p>"		<p>The firmware user password.</p>	"<p>A pre-boot password does not encrypt stored data. If protection is required
+after someone removes the drive, data-at-rest encryption addresses that risk.</p>"	easy	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic BIOS UEFI BootSecurity Source::Messer-v140
+2.7-B008	"<p>Employees sometimes step away from signed-in workstations without securing
+them. Which hardening option protects these unattended sessions automatically?</p>"		<p>A password-protected screen lock that activates after an inactivity timeout.</p>	"<p>The timeout limits the window in which an unattended authenticated session is
+exposed. Users should also lock the screen manually when stepping away.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield ScreenLock Timeout Scenario Source::Messer-v140
+2.7-B009	"<p>A user has finished working on a shared workstation. Should the user lock the
+screen or log off?</p>"		<p>Log off.</p>	"<p>A lock is appropriate for a temporary absence because it preserves the user's
+session. Logging off ends the finished session so the next user cannot resume
+it under the previous identity.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic Logoff Sessions Scenario Source::Messer-v140
+2.7-B010	"<p>Company laptops are left unattended in an accessible office area. Which
+end-user hardening practice directly reduces the risk that a laptop is taken?</p>"		<p>Physically secure the laptop, such as with a suitable lock or secure storage.</p>	"<p>Encryption protects data if a device is stolen, but it does not prevent the
+hardware loss. Physical protection addresses the theft risk itself.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic PhysicalSecurity Laptops Scenario Source::Messer-v140
+2.7-B011	"<p>A fixed workstation displays PII where people passing in a hallway can see the
+screen, and the display cannot be relocated. Which protection directly
+addresses this exposure?</p>"		<p>Use a privacy filter.</p>	"<p>This scenario involves visual disclosure from an authorized session. A screen
+lock protects the display after inactivity, but positioning or a privacy filter
+helps while the user is actively working.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic PII Privacy Scenario Source::Messer-v140
+2.7-B012	"<p>Users reuse passwords because they cannot remember a different strong password
+for every account. Which security option best supports unique passwords?</p>"		<p>A password manager.</p>	"<p>A password manager stores many credentials in one protected database, making
+unique passwords practical. Its own access credentials and recovery method
+must be secured carefully.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield PasswordManagers Passwords Scenario Source::Messer-v140
+2.7-B013	"<p>An employee needs one business application but has administrator rights for
+all workstation tasks. Which account-management change best limits the impact
+of misuse or malicious software?</p>"		<p>Restrict the account to only the permissions required for the employee's work.</p>	"<p>This is least privilege. Unnecessary administrative rights expand what can be
+changed or accessed if the account is misused or compromised.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield LeastPrivilege Permissions Scenario Source::Messer-v140
+2.7-B014	"<p>A partner account should be usable only during an approved nightly support
+window. Which account control best enforces that requirement?</p>"		<p>Restrict the account's permitted log-in times.</p>	"<p>Log-in time restrictions limit when authentication is allowed. Account
+expiration is different: it ends access on a date rather than defining a
+recurring time window.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic LoginTimes Accounts Scenario Source::Messer-v140
+2.7-B015	"<p>A workstation's guest account is not required. What should be done with it as
+part of account hardening?</p>"		<p>Disable the guest account.</p>	"<p>An unneeded account is another possible access path. Disabling it removes that
+path without granting ordinary users broader permissions.</p>"	easy	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield GuestAccount Accounts Hardening Source::Messer-v140
+2.7-B016	"<p>Logs show repeated failed password guesses against the same workstation
+account. Which account control directly slows this online guessing attempt?</p>"		<p>A failed-attempt lockout policy.</p>	"<p>Lockout stops further authentication attempts after a configured threshold.
+The threshold and recovery method should follow organizational policy rather
+than a universal value.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield AccountLockout BruteForce Scenario Source::Messer-v140
+2.7-B017	"<p>A contractor's workstation access must end automatically when the engagement
+ends. Which account setting should be configured?</p>"		<p>An account expiration date.</p>	"<p>Account expiration disables use of the account after a date. Password
+expiration merely requires the active user to replace an aging password.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic AccountExpiration Accounts Scenario Source::Messer-v140
+2.7-B018	"<p>A newly deployed workstation still uses its default administrator account name
+and password. What hardening change is required?</p>"		<p>Change both the default administrator account name and its password.</p>	"<p>Defaults can be widely known and give an attacker a predictable username and
+credential to target. Changing only the password still leaves a known account
+name.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield DefaultCredentials Administrator Hardening Source::Messer-v140
+2.7-B019	"<p>Which workstation hardening setting prevents inserted media from automatically
+starting a program through its AutoRun instructions?</p>"		<p>Disable AutoRun.</p>	"<p>AutoRun can initiate a program according to media instructions. AutoPlay is a
+related but separate feature that presents handling choices to the user.</p>"	easy	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield AutoRun RemovableMedia Hardening Source::Messer-v140
+2.7-B020	"<p>A workstation is running a network-accessible service that no approved
+application uses. What hardening action reduces the related attack surface?</p>"		<p>Disable the unused service.</p>	"<p>An active service can provide code or an interface for an attacker to target.
+Confirm that it is truly unnecessary before disabling it so required functions
+and dependencies are not disrupted.</p>"	medium	basic	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Basic HighYield Services AttackSurface Hardening Source::Messer-v140

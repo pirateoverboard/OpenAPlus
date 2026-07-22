@@ -1,0 +1,7 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.7-C001	<p>PII expands to {{c1::personally identifiable information}}.</p>	"<p>Workstation hardening includes protecting PII from unauthorized disclosure or
+observation.</p>"	"<p>PII describes information that identifies or can be linked to a person; it is
+not the name of a particular security control.</p>"	easy	cloze	220-1202 2.7 - Workstation Security and Hardening	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.7; Professor Messer 220-1202 v1.40, p. 43	A+::220-1202::2.7 A+::220-1202::Domain2-Security A+::220-1202::WorkstationSecurityandHardening Cloze HighYield PII Privacy Acronyms Source::Messer-v140
