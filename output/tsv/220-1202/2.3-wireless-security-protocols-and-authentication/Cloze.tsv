@@ -1,0 +1,15 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.3-C001	<p>TKIP expands to {{c1::Temporal Key Integrity Protocol}}.</p>	"<p>TKIP was the transitional encryption method used with the original WPA on
+existing hardware.</p>"	"<p>Associate TKIP with the older WPA transition. AES is the stronger encryption
+choice associated with WPA2.</p>"	easy	cloze	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Cloze HighYield TKIP WirelessEncryption Acronyms Source::Messer-v140
+2.3-C002	<p>AES expands to {{c1::Advanced Encryption Standard}}.</p>	<p>WPA2 uses AES, which provides stronger encryption than legacy TKIP.</p>	"<p>The acronym expansion is the recall target. The applied Basic cards separately
+test when to choose AES and how it relates to WPA2.</p>"	easy	cloze	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Cloze HighYield AES WirelessEncryption Acronyms Source::Messer-v140
+2.3-C003	<p>RADIUS expands to {{c1::Remote Authentication Dial-in User Service}}.</p>	"<p>RADIUS provides centralized AAA for services such as wireless 802.1X and VPN
+access; it is not limited to dial-up connections.</p>"	"<p>Do not let “Dial-in” make the term seem obsolete. The applied Basic card tests
+its modern centralized-authentication role.</p>"	easy	cloze	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Cloze RADIUS AAA Acronyms Source::Messer-v140
+2.3-C004	<p>TACACS+ is the current “plus” version of {{c1::Terminal Access Controller Access-Control System}}.</p>	"<p>TACACS+ is a remote authentication protocol commonly associated with Cisco
+network devices.</p>"	"<p>The plus sign distinguishes the current protocol described by the objective
+from earlier TACACS versions.</p>"	easy	cloze	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, pp. 31–32	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Cloze TACACSPlus NetworkDevices Acronyms Source::Messer-v140

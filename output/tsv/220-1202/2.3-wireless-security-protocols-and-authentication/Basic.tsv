@@ -1,0 +1,47 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.3-B001	"<p>A wireless design must both protect traffic from listeners and verify which
+users may connect. Why are encryption and authentication both needed?</p>"		"<p>Encryption protects the wireless data, while authentication verifies the user
+or device requesting access.</p>"	"<p>These controls solve different problems. WPA encryption does not by itself
+provide individual identity verification, and an authentication server does
+not replace wireless traffic encryption.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 30	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield WirelessSecurity Encryption Authentication Source::Messer-v140
+2.3-B002	"<p>How do the encryption methods commonly associated with WPA2 and the original
+WPA differ?</p>"		"<p>WPA2 uses Advanced Encryption Standard (AES), while the original WPA used the
+transitional Temporal Key Integrity Protocol (TKIP).</p>"	"<p>AES is stronger than TKIP. This card tests the protocol-to-encryption
+association; 2.3-B005 separately tests which method to select when both are
+offered.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield WPA2 AES WirelessEncryption Source::Messer-v140
+2.3-B003	"<p>Which two security improvements can justify upgrading a compatible wireless
+network from WPA2 to WPA3?</p>"		"<p>WPA3 offers stronger cryptographic options and better protection for the
+initial key exchange.</p>"	"<p>WPA3 also supports encryption on open networks, which 2.3-B004 tests
+separately.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield WPA2 WPA3 WirelessEncryption Source::Messer-v140
+2.3-B004	"<p>A public wireless network does not require an authentication password but
+should still encrypt each user's wireless traffic. Which Objective 2.3
+protocol adds that capability?</p>"		<p>WPA3.</p>	"<p>WPA3 can protect traffic on an open network. “Open” describes the lack of a
+shared authentication password; it does not require the radio traffic to be
+sent without encryption.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic WPA3 OpenNetworks WirelessEncryption Source::Messer-v140
+2.3-B005	"<p>When compatible hardware offers AES or TKIP for wireless encryption, which
+should be selected for stronger protection?</p>"		<p>AES.</p>	"<p>TKIP let the original WPA improve security on older hardware and served as a
+bridge to WPA2. AES is the stronger encryption choice associated with WPA2.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield TKIP AES WirelessEncryption Source::Messer-v140
+2.3-B007	"<p>An organization wants each wireless user authenticated individually by a
+central server instead of giving everyone the same pre-shared key. Should it
+use WPA Personal or WPA Enterprise?</p>"		<p>WPA Enterprise with 802.1X and an authentication server such as RADIUS.</p>	"<p>Personal mode uses a shared network key. Enterprise mode delegates individual
+authentication to a central service while the WPA protocol protects the
+wireless traffic.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield WPAEnterprise WPAPersonal RADIUS PSK Source::Messer-v140
+2.3-B008	"<p>Which authentication protocol can let wireless 802.1X, VPN, router, or switch
+services validate users through a central authentication server?</p>"		<p>Remote Authentication Dial-in User Service (RADIUS).</p>	"<p>RADIUS is broadly supported for centralized AAA. Despite “dial-in” in its
+name, its use is not limited to dial-up access.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield RADIUS AAA CentralizedAuthentication Source::Messer-v140
+2.3-B009	"<p>A network-device environment, particularly one built around Cisco equipment,
+needs a compatible remote authentication protocol. Which Objective 2.3 method
+is the likely fit?</p>"		<p>TACACS+.</p>	"<p>Protocol selection depends on what the devices and authentication service
+support. TACACS+ is commonly associated with Cisco equipment; it is an
+authentication method, not wireless encryption.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, pp. 31–32	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield TACACSPlus NetworkDevices Authentication Source::Messer-v140
+2.3-B010	"<p>A Microsoft-oriented network needs ticket-based single sign-on and mutual
+authentication between clients and services. Which authentication protocol
+fits?</p>"		<p>Kerberos.</p>	"<p>Kerberos uses cryptographic tickets after the initial authentication, reducing
+repeated credential entry and helping resist replay and on-path attacks.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 31	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield Kerberos SSO MutualAuthentication Source::Messer-v140
+2.3-B011	"<p>A sign-in requires a password followed by a code from a hardware token. Why is
+this multifactor authentication, while requiring two passwords is not?</p>"		"<p>The password and token come from different factor categories—something known
+and something possessed. Two passwords are both knowledge factors.</p>"	"<p>MFA counts distinct factor categories, not merely the number of prompts. It
+adds authentication assurance but does not provide wireless encryption.</p>"	medium	basic	220-1202 2.3 - Wireless Security Protocols and Authentication	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.3; Professor Messer 220-1202 v1.40, p. 32	A+::220-1202::2.3 A+::220-1202::Domain2-Security A+::220-1202::WirelessSecurityProtocolsandAuthentication Basic HighYield MFA AuthenticationFactors Source::Messer-v140

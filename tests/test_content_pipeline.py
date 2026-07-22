@@ -798,6 +798,38 @@ def test_core2_objective_22_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_23_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("2.3-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "2.3",
+            "objective_name": "Wireless Security Protocols and Authentication",
+            "tags": ["WirelessSecurity"],
+            "source": ["Professor Messer 220-1202 v1.40 p.31"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="2.3-wireless-security-protocols-and-authentication",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::2.3",
+        "A+::220-1202::Domain2-Security",
+        "A+::220-1202::WirelessSecurityProtocolsandAuthentication",
+        "Basic",
+        "HighYield",
+        "WirelessSecurity",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:
