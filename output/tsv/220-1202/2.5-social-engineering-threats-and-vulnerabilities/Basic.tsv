@@ -1,0 +1,86 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.5-B001	"<p>What feature makes a deceptive message a phishing attack rather than merely
+unsolicited email?</p>"		"<p>It uses deception to make the recipient reveal information, follow a malicious
+link, or perform another unsafe action.</p>"	"<p>Spoofed identity or copied branding can make the lure believable, but the
+human-directed attempt to obtain an action or information is the key.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 35	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield Phishing SocialEngineering Recognition Source::Messer-v140
+2.5-B002	"<p>A caller claiming to represent a bank asks a user to confirm account details.
+Which phishing variant uses this voice channel?</p>"		<p>Vishing (voice phishing).</p>	"<p>Caller ID can be spoofed, so the displayed number does not authenticate the
+caller.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 35	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield Vishing Phishing Voice Source::Messer-v140
+2.5-B003	"<p>A text message claims a package cannot be delivered until the recipient opens
+a link and confirms personal information. Which phishing variant is this?</p>"		<p>Smishing (SMS phishing).</p>	"<p>The text-message channel distinguishes smishing from email phishing and
+voice-based vishing.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 35	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield Smishing Phishing SMS Source::Messer-v140
+2.5-B004	"<p>An attacker places a replacement QR-code sticker over a legitimate code so
+scans open a malicious site. What attack is this?</p>"		<p>QR code phishing.</p>	"<p>The code conceals its destination until it is scanned, making destination
+verification an important defense.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 35	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic QRPhishing Phishing Recognition Source::Messer-v140
+2.5-B005	<p>How does whaling differ from spear phishing?</p>		"<p>Spear phishing targets a particular person or group; whaling is spear phishing
+aimed specifically at a senior executive or other high-value leader.</p>"	"<p>Both are targeted and may use information about the victim. The target's senior
+or high-value role is what makes the attack whaling.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 35	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield SpearPhishing Whaling Comparison Source::Messer-v140
+2.5-B006	"<p>What social-engineering attack obtains sensitive information by watching a
+person's screen or keyboard?</p>"		<p>Shoulder surfing.</p>	"<p>The observer may be nearby or use a camera or other distant viewing method.
+Screen placement and privacy filters help reduce exposure.</p>"	easy	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, pp. 35-36	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield ShoulderSurfing PhysicalSecurity Recognition Source::Messer-v140
+2.5-B007	"<p>An unauthorized person slips through a controlled door immediately behind an
+employee without the employee's consent. What attack occurred?</p>"		<p>Tailgating.</p>	"<p>The approved notes contrast tailgating with piggybacking, where the authorized
+person knowingly permits the follower to enter. Neither gives the follower
+independent authorization.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 36	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield Tailgating PhysicalSecurity AccessControl Source::Messer-v140
+2.5-B008	"<p>An attacker claims to be from the help desk and uses technical language to
+persuade an employee to disclose a code. Which social-engineering method is
+central to the attack?</p>"		<p>Impersonation.</p>	"<p>The attacker pretends to hold a trusted identity or role. Authority,
+familiarity, and technical detail are persuasion tools, not proof of identity.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 36	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic Impersonation SocialEngineering Trust Source::Messer-v140
+2.5-B009	"<p>What attack searches discarded material for names, schedules, invoices, or
+other information useful in a later attack?</p>"		<p>Dumpster diving.</p>	"<p>Discarded fragments can make later phishing or impersonation more convincing
+even when no password is found.</p>"	easy	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 36	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic DumpsterDiving SocialEngineering InformationGathering Source::Messer-v140
+2.5-B010	"<p>What distinguishes a distributed denial-of-service attack from a general
+denial-of-service attack?</p>"		"<p>A DDoS attack coordinates the disruption from many systems, while a DoS attack
+does not require multiple distributed sources.</p>"	"<p>Both target availability. DDoS commonly uses a botnet to exhaust bandwidth or
+service resources from many origins at once.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 36	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield DoS DDoS Availability Comparison Source::Messer-v140
+2.5-B011	"<p>A malicious access point uses the same SSID and a similar captive portal as a
+trusted hotspot. What threat does this describe?</p>"		<p>An evil twin.</p>	"<p>The access point imitates a legitimate network to attract users. A familiar
+SSID alone does not authenticate the wireless network.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 37	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield EvilTwin WirelessSecurity Recognition Source::Messer-v140
+2.5-B012	<p>What makes an attack a zero-day attack?</p>		"<p>It exploits a vulnerability before that vulnerability has been detected or
+publicly disclosed.</p>"	"<p>Attackers may keep an unknown flaw private so they can use it before defenders
+publish details and begin remediation.</p>"	easy	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 38	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield ZeroDay Vulnerabilities Recognition Source::Messer-v140
+2.5-B013	<p>How does spoofing differ from an on-path attack?</p>		"<p>Spoofing falsifies an identity or source. An on-path attack intercepts and
+relays communication between two parties, potentially reading or changing it.</p>"	"<p>The techniques can work together: ARP spoofing can redirect local traffic
+through an attacker and thereby establish an on-path position.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 37	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield Spoofing OnPath Comparison Source::Messer-v140
+2.5-B014	"<p>How does a dictionary password attack differ from a brute-force password
+attack?</p>"		"<p>A dictionary attack tries likely words and human-created patterns; brute force
+systematically tries the possible password combinations.</p>"	"<p>Dictionary attacks reduce the search space by exploiting predictable password
+choices. Brute force is broader and may require much more time or computing
+power.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 38	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield BruteForce DictionaryAttack Passwords Comparison Source::Messer-v140
+2.5-B015	<p>Why can an insider threat be especially difficult to identify and contain?</p>		"<p>The insider may already have trusted access and knowledge of valuable systems
+and normal organizational processes.</p>"	"<p>An insider may be an employee, contractor, or recruited trusted person. The
+defining advantage is legitimate access or institutional knowledge, not
+advanced technical skill.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 38	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield InsiderThreat AccessControl Recognition Source::Messer-v140
+2.5-B016	"<p>An application inserts untrusted input directly into a database query, allowing
+the input to alter the query's meaning. What attack is this?</p>"		<p>Structured Query Language (SQL) injection.</p>	"<p>The application failed to keep user-supplied data separate from database
+instructions. The manipulated query can expose or change database information.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 39	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield SQLInjection ApplicationSecurity InputValidation Source::Messer-v140
+2.5-B017	"<p>A website accepts attacker-supplied script that later executes in a visitor's
+browser as though it came from the trusted site. What attack is this?</p>"		<p>Cross-site scripting (XSS).</p>	"<p>XSS targets the browser and the user's trust in a site. This differs from SQL
+injection, which changes a query sent to a database.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 39	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield XSS ApplicationSecurity InputValidation Source::Messer-v140
+2.5-B018	"<p>An urgent email that appears to come from an executive directs accounting to
+send payment to a new bank account. What threat should be suspected?</p>"		<p>Business email compromise (BEC).</p>	"<p>BEC abuses trust in business communications, often through spoofing,
+compromised accounts, or targeted social engineering. Verify sensitive requests
+through a separate trusted channel.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 40	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield BEC EmailSecurity SocialEngineering Source::Messer-v140
+2.5-B019	"<p>Attackers compromise a vendor's trusted software-update process so malicious
+code reaches the vendor's customers. What type of attack is this?</p>"		<p>A supply chain or pipeline attack.</p>	"<p>The attacker reaches downstream organizations through something they trust
+from a supplier or provider. This differs from an insider acting from within
+the target organization.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, pp. 40-41	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield SupplyChain ThirdPartyRisk Trust Source::Messer-v140
+2.5-B020	<p>What makes a system non-compliant?</p>		<p>It does not meet the organization's required security baseline or policy.</p>	"<p>A non-compliant system might have unauthorized software, missing updates, or a
+configuration outside the approved standard operating environment.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 41	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic Compliance Baselines Vulnerabilities Source::Messer-v140
+2.5-B021	<p>Why is an unpatched system a security vulnerability?</p>		"<p>It lacks available fixes, leaving known operating-system or application flaws
+open to exploitation.</p>"	"<p>Patch management includes identifying, testing, prioritizing, and deploying
+updates across all systems, including easily overlooked devices.</p>"	easy	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 41	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield Patching Vulnerabilities Maintenance Source::Messer-v140
+2.5-B022	<p>What makes a system unprotected in the context of Objective 2.5?</p>		"<p>An expected security control, such as antivirus or a firewall, is missing or
+disabled.</p>"	"<p>Permanently removing a control to solve an application problem creates a new
+exposure. Troubleshoot the compatibility or configuration issue instead.</p>"	easy	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 41	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield SecurityControls Antivirus Firewall Vulnerabilities Source::Messer-v140
+2.5-B023	"<p>What security risk becomes critical when technology passes the point at which
+its vendor provides support and security updates?</p>"		"<p>Newly discovered vulnerabilities may remain unpatched because the vendor no
+longer supplies fixes.</p>"	"<p>The objective labels the lifecycle concern EOL. The approved notes distinguish
+end of sales from the later end of service life; loss of security updates is
+the decisive security issue.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 41	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield EOL Lifecycle Patching Vulnerabilities Source::Messer-v140
+2.5-B024	<p>Why does bring your own device create a security challenge for an organization?</p>		"<p>An employee-owned device mixes personal and work use, complicating security
+control, malware exposure, company-data protection, and data removal.</p>"	"<p>The organization must protect its data while the employee owns and also uses
+the device personally, including when the device is lost, sold, or replaced.</p>"	medium	basic	220-1202 2.5 - Social Engineering, Threats, and Vulnerabilities	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.5; Professor Messer 220-1202 v1.40, p. 41	A+::220-1202::2.5 A+::220-1202::Domain2-Security A+::220-1202::SocialEngineeringThreatsandVulnerabilities Basic HighYield BYOD MobileSecurity DataProtection Source::Messer-v140
