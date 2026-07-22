@@ -1,0 +1,53 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.9-B001	"<p>A company must remove all existing data from a working drive and then reuse the
+drive. Should it choose logical wiping or physical destruction?</p>"		<p>Logical wiping.</p>	"<p>Physical destruction makes the drive unusable. A whole-drive wipe addresses
+the stored data while preserving a working device for recycling or
+repurposing.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield DataSanitization Repurposing Comparison Source::Messer-v140
+2.9-B002	"<p>When a hard drive is destroyed by drilling, what must the drill pass through to
+damage the data-bearing media?</p>"		<p>The drive platters, not merely the outer case.</p>	"<p>The purpose of drilling is physical media damage. A hole that affects only the
+enclosure does not accomplish that goal.</p>"	easy	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic PhysicalDestruction Drilling HardDrives Source::Messer-v140
+2.9-B003	"<p>An organization is retiring many drives and wants heavy machinery to break the
+media into pieces so the drives cannot be reused. Which destruction method
+matches this requirement?</p>"		<p>Shredding.</p>	"<p>Shredding is a physical-destruction method. It fits a permanent retirement
+decision, unlike wiping or a regular format that preserves a usable drive.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield PhysicalDestruction Shredding Scenario Source::Messer-v140
+2.9-B004	"<p>A magnetic hard drive must be sanitized and permanently rendered unusable by
+removing its magnetic field. Which method should be used?</p>"		<p>Degaussing.</p>	"<p>Degaussing acts on magnetic storage. It is destructive to a hard drive rather
+than a reuse-oriented erasing method.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield Degaussing MagneticMedia Scenario Source::Messer-v140
+2.9-B005	"<p>Why is degaussing not an effective destruction method for an SSD or other flash
+storage?</p>"		"<p>Flash storage does not store data with the magnetic field that degaussing
+removes.</p>"	"<p>Match the destruction method to the media technology. If flash media must be
+physically destroyed, do not choose degaussing; use an approved method
+compatible with nonmagnetic storage.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield Degaussing SSD FlashStorage Comparison Source::Messer-v140
+2.9-B006	"<p>Which listed physical-destruction method uses intense heat to destroy storage
+media?</p>"		<p>Incineration.</p>	"<p>Incineration belongs with drilling, shredding, and degaussing in the
+physical-destruction category; it does not preserve a reusable drive.</p>"	easy	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic PhysicalDestruction Incineration Source::Messer-v140
+2.9-B007	"<p>A technician overwrites one sensitive file on a drive. What important
+limitation distinguishes this from a whole-drive wipe?</p>"		<p>The other files on the drive remain available.</p>	"<p>File-level overwriting has a narrow scope. It does not satisfy a requirement to
+sanitize every previously stored item before the drive leaves the
+organization.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic DataErasure FileOverwrite Comparison Source::Messer-v140
+2.9-B008	"<p>A working drive will be assigned to a new purpose, and all of its current data
+must be removed. Which erasure scope matches this requirement?</p>"		<p>A whole-drive wipe.</p>	"<p>A file-level overwrite affects only selected files. Whole-drive wiping matches
+the full-media scope while leaving the drive available for reuse.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield DataWiping Repurposing Scenario Source::Messer-v140
+2.9-B009	<p>Why is low-level formatting not a normal end-user data-destruction choice?</p>		<p>It is a factory-provided process rather than a recommended user operation.</p>	"<p>Do not choose low-level formatting merely because its name sounds more
+thorough. For reuse, compare approved wiping and regular formatting based
+on their actual overwrite behavior.</p>"	easy	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic Formatting LowLevelFormat Source::Messer-v140
+2.9-B010	"<p>Why should a quick standard format not be treated as proof that a drive's old
+data was sanitized?</p>"		"<p>It clears file-system indexing information without overwriting the existing
+data, so recovery may still be possible.</p>"	"<p>The word <em>format</em> does not by itself establish sanitization. The overwrite
+behavior distinguishes quick formatting from the regular option described
+by the source.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield Formatting QuickFormat DataRecovery Comparison Source::Messer-v140
+2.9-B011	"<p>At the source's stated Windows scope, which standard-format option overwrites
+the drive's sectors with zeros while keeping the drive usable?</p>"		<p>A regular format.</p>	"<p>A quick format clears the file table but does not overwrite the old data. The
+regular option is the reuse-oriented choice when sector overwriting is
+required.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield Formatting RegularFormat Repurposing Scenario Source::Messer-v140
+2.9-B012	"<p>A third-party vendor destroys or recycles an organization's drives. What
+document should the organization require as evidence of the completed work?</p>"		<p>A certificate of destruction or recycling.</p>	"<p>Outsourcing can provide equipment and scale, but the organization still needs
+a record of the result. The certificate creates the paper trail for what
+happened to the media.</p>"	medium	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield ThirdParty CertificateOfDestruction Documentation Scenario Source::Messer-v140
+2.9-B013	"<p>Before selecting or outsourcing a storage-disposal method, what external
+requirements must the organization identify?</p>"		<p>The applicable regulatory and environmental requirements.</p>	"<p>Local rules and policies may legally require storage drives to be destroyed.
+The applicable regulatory and environmental requirements must be checked
+rather than assuming one universal process.</p>"	easy	basic	220-1202 2.9 - Data Destruction and Disposal	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.9; Professor Messer 220-1202 v1.40, p. 45	A+::220-1202::2.9 A+::220-1202::Domain2-Security A+::220-1202::DataDestructionandDisposal Basic HighYield Compliance Regulations Environmental Disposal Source::Messer-v140
