@@ -894,6 +894,38 @@ def test_core2_objective_25_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_26_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("2.6-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "2.6",
+            "objective_name": "SOHO Malware Removal Procedures",
+            "tags": ["MalwareRemoval"],
+            "source": ["Professor Messer 220-1202 v1.40 p.42"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="2.6-soho-malware-removal-procedures",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::2.6",
+        "A+::220-1202::Domain2-Security",
+        "A+::220-1202::SOHOMalwareRemovalProcedures",
+        "Basic",
+        "HighYield",
+        "MalwareRemoval",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:

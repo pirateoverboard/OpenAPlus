@@ -57,6 +57,7 @@ scope authority.
 | `2.3-wireless-security-protocols-and-authentication` | `A+::220-1202::Domain2-Security` | `Source::Messer-v140` |
 | `2.4-malware-detection-removal-and-prevention` | `A+::220-1202::Domain2-Security` | `Source::Messer-v140` |
 | `2.5-social-engineering-threats-and-vulnerabilities` | `A+::220-1202::Domain2-Security` | `Source::Messer-v140` |
+| `2.6-soho-malware-removal-procedures` | `A+::220-1202::Domain2-Security` | `Source::Messer-v140` |
 | `1.3-mobile-device-networks` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-management` | `A+::220-1201::Domain1-MobileDevices` | `Source::Messer-v170` |
 | `1.3-mobile-device-security` | `A+::220-1201::Domain1-Security` | `Source::Messer-v170` |
