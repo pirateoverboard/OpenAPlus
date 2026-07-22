@@ -958,6 +958,38 @@ def test_core2_objective_27_domain_and_source_validation_tags_are_generated(
     ]
 
 
+def test_core2_objective_28_domain_and_source_validation_tags_are_generated(
+    tmp_path: Path,
+) -> None:
+    card_metadata = metadata("2.8-B001")
+    card_metadata.update(
+        {
+            "exam": "220-1202",
+            "objective": "2.8",
+            "objective_name": "Mobile Device Security",
+            "tags": ["MobileSecurity"],
+            "source": ["Professor Messer 220-1202 v1.40 p.44"],
+        }
+    )
+    path = write_card(
+        tmp_path,
+        card_metadata,
+        BASIC_BODY,
+        exam_directory="220-1202",
+        objective_directory="2.8-mobile-device-security",
+    )
+
+    assert final_tags_for_card(parse_card(path)) == [
+        "A+::220-1202::2.8",
+        "A+::220-1202::Domain2-Security",
+        "A+::220-1202::MobileDeviceSecurity",
+        "Basic",
+        "HighYield",
+        "MobileSecurity",
+        "Source::Messer-v140",
+    ]
+
+
 def test_objective_21_domain_and_source_validation_tags_are_generated(
     tmp_path: Path,
 ) -> None:

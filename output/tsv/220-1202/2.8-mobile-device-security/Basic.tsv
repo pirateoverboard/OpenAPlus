@@ -1,0 +1,59 @@
+#separator:Tab
+#html:true
+#tags column:10
+#columns:Card ID	Front	Hint	Back	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.8-B001	"<p>A company is concerned that someone could read locally stored data from a
+stolen smartphone. Which mobile-device hardening technique directly addresses
+this risk?</p>"		<p>Full-device encryption.</p>	"<p>A screen lock controls normal access to the device interface. Encryption adds
+protection for the stored data when an unauthorized person has physical
+possession of the device.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield Encryption DataProtection Scenario Source::Messer-v140
+2.8-B002	"<p>A user leaves a phone unattended on a desk. Which hardening control should
+require authentication before another person can use the device interface?</p>"		<p>A screen lock.</p>	"<p>The lock can use an approved method such as a PIN, biometric, or pattern.
+Device encryption serves a related but different purpose by protecting stored
+data.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield ScreenLock AccessControl Scenario Source::Messer-v140
+2.8-B003	"<p>Which two screen-lock methods listed in Objective 2.8 authenticate by a user's
+biometric traits?</p>"		<p>Facial recognition and fingerprint recognition.</p>	"<p>A PIN or pattern depends on information the user provides. Facial and
+fingerprint recognition instead measure a physical characteristic.</p>"	easy	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic Biometrics ScreenLock Recognition Source::Messer-v140
+2.8-B004	"<p>An administrator must apply one predefined set of email and device settings to
+every phone in a department. What should the administrator assign through the
+management platform?</p>"		<p>A configuration profile.</p>	"<p>A profile packages a consistent group of settings for distribution to many
+devices. This makes the setup easier to manage consistently than configuring
+each phone individually.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield ConfigurationProfiles MDM Scenario Source::Messer-v140
+2.8-B005	"<p>An organization needs one central system to manage mobile-device profiles,
+security controls, and application use. Which technology fits this need?</p>"		<p>Mobile device management (MDM).</p>	"<p>MDM is the centralized management layer. A configuration profile is one bundle
+of settings that the management system can deploy.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield MDM CentralizedManagement Scenario Source::Messer-v140
+2.8-B006	"<p>A phone's applications are current, but the mobile operating system is missing
+security fixes. Which patch-management action is required?</p>"		<p>Install the approved OS update.</p>	"<p>Application updates do not replace operating-system patches. Mobile patch
+management must keep both layers current.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield PatchManagement OSUpdates Scenario Source::Messer-v140
+2.8-B007	"<p>A phone's operating system is current, but one installed app is an outdated
+version with known security problems. Which patch-management action addresses
+that exposure?</p>"		<p>Update the application.</p>	"<p>An OS update does not update every installed application. Each software layer
+needs its corresponding updates.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield PatchManagement ApplicationUpdates Scenario Source::Messer-v140
+2.8-B008	"<p>Which category of mobile endpoint software is intended to detect or block
+malicious software?</p>"		<p>Antivirus or anti-malware software.</p>	"<p>Content filtering restricts access to selected sites or applications. It does
+not serve the same malware-detection role.</p>"	easy	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield Antivirus AntiMalware EndpointSecurity Source::Messer-v140
+2.8-B009	"<p>A company wants managed phones to block access to selected websites and
+applications. Which endpoint security control should it use?</p>"		<p>Content filtering.</p>	"<p>Filtering enforces access rules based on content or destination. Antivirus and
+anti-malware instead focus on malicious software.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield ContentFiltering EndpointSecurity Scenario Source::Messer-v140
+2.8-B010	"<p>A phone is misplaced nearby, and the owner wants to view its location or make
+it produce a sound. Which mobile security feature should be used?</p>"		<p>A locator application.</p>	"<p>Location and alert functions help recover the hardware. They do not erase its
+data or create a recoverable copy of that data.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic Locator LostDevice Scenario Source::Messer-v140
+2.8-B011	"<p>A stolen corporate phone is unlikely to be recovered, and its local data must
+be removed from a distance. Which action directly meets this requirement?</p>"		<p>Initiate a remote wipe.</p>	"<p>A locator may help find a device, while a remote backup preserves a copy of its
+data. Remote wipe is the control that deletes data from the device.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield RemoteWipe DataProtection Scenario Source::Messer-v140
+2.8-B012	"<p>A user must be able to restore mobile data to a replacement phone after the
+original is lost or damaged. Which mobile security method provides that
+recovery capability?</p>"		<p>A remote backup application.</p>	"<p>Backup preserves a separate recoverable copy. Encryption protects local data,
+and remote wipe removes it, but neither control creates the copy needed for
+restoration.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield RemoteBackup Recovery Scenario Source::Messer-v140
+2.8-B013	"<p>An attacker repeatedly guesses a phone's unlock code. Which mobile policy
+control directly limits continued guessing?</p>"		<p>A failed log-in attempt restriction.</p>	"<p>The configured response may lock the device, require additional account
+authentication, or wipe data. The exact threshold and response should follow
+policy rather than an assumed universal value.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield FailedLogins AccessControl Scenario Source::Messer-v140
+2.8-B014	"<p>Before applying mobile management controls, which ownership distinction should
+an organization's policy define?</p>"		<p>Whether the device is bring your own device (BYOD) or corporate-owned.</p>	"<p>The policy establishes which devices are managed and what management scope
+applies. MDM then provides the centralized mechanism for enforcing supported
+controls.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield BYOD CorporateOwned Policy Source::Messer-v140
+2.8-B015	"<p>An organization requires every managed phone to use encryption and an approved
+screen lock. Which policy element defines these mandatory controls?</p>"		<p>Profile security requirements.</p>	"<p>These requirements state the approved security controls. A configuration
+profile can package the settings so the MDM system can apply them consistently.</p>"	medium	basic	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Basic HighYield ConfigurationProfiles SecurityRequirements Scenario Source::Messer-v140

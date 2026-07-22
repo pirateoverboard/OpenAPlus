@@ -1,0 +1,7 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:Card ID	Text	Extra	Instructor Notes	Difficulty	Card Type	Objective	Source	Tags
+2.8-C001	<p>MDM expands to {{c1::mobile device management}}.</p>	"<p>MDM provides centralized administration for mobile devices and their security
+settings.</p>"	"<p>Do not confuse the management platform with a configuration profile. The
+profile is a settings bundle that MDM can distribute.</p>"	easy	cloze	220-1202 2.8 - Mobile Device Security	CompTIA 220-1202 Exam Objectives v4.0, Objective 2.8; Professor Messer 220-1202 v1.40, p. 44	A+::220-1202::2.8 A+::220-1202::Domain2-Security A+::220-1202::MobileDeviceSecurity Cloze HighYield MDM Acronyms MobileManagement Source::Messer-v140
