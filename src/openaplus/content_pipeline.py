@@ -80,6 +80,7 @@ _OBJECTIVE_DOMAIN_TAGS = {
     "2.3-wireless-security-protocols-and-authentication": (
         "A+::220-1202::Domain2-Security"
     ),
+    "2.4-malware-detection-removal-and-prevention": ("A+::220-1202::Domain2-Security"),
     "1.3-mobile-device-networks": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-management": "A+::220-1201::Domain1-MobileDevices",
     "1.3-mobile-device-security": "A+::220-1201::Domain1-Security",
@@ -157,6 +158,9 @@ _OBJECTIVE_SOURCE_VALIDATION_TAGS["2.2-windows-os-security-settings"] = (
 _OBJECTIVE_SOURCE_VALIDATION_TAGS[
     "2.3-wireless-security-protocols-and-authentication"
 ] = "Source::Messer-v140"
+_OBJECTIVE_SOURCE_VALIDATION_TAGS["2.4-malware-detection-removal-and-prevention"] = (
+    "Source::Messer-v140"
+)
 _SECTION_REQUIREMENTS = {
     "basic": ("Question", "Answer"),
     "cloze": ("Text",),
